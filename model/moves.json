@@ -1,0 +1,51 @@
+/*Description:
+**This json file is used to store pokemon move information
+**
+**Details:
+**The header is the name of the move
+**Points is the total cost of the move
+**Cooldown is how many rounds you must wait to use the move again
+**
+**The move may optinally have a bunch of different properties that represent statuses.
+**Each status may have a different target, number of characters affected, power, and duration
+**this allows for complex moves with multiple statuses. Most moves only need one status,
+**including the others is optional.
+**
+**Target may be none, allies, enemies, or both
+**Affected is how many characters can be effected by the move
+**Power can be any number of dice of a certain side or it may be a value like 10 for static effects.
+**effects that need no dice should have a power of 0.
+**Duration is how long the status acts
+*/
+/*Statuses
+	damage, stun, sleep, heal, accurate, shield, vulnerable, critical, haste, slow, push, pull
+*/
+var moves =
+{
+	"move1": 
+	{
+		"name": "basic attack",
+		"points": "10",
+		"cooldown": "1",
+		"damage":
+		{
+			"target": "enemies", 
+			"affected": "1", 
+			"power": "3d4", 
+			"duration": "1"
+		}
+	},
+	"move2":
+	{
+		"name": "basic heal",
+		"points": "10",
+		"cooldown": "1",
+		"heal":
+		{
+			"target": "allies", 
+			"affected": "1", 
+			"power": "1d10", 
+			"duration": "1"
+		}
+	}
+};

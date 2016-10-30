@@ -1,0 +1,10 @@
+/*Description:
+**A json file that stores all of the pokemon locally
+**
+**Details: 
+**Currently empty
+*/
+var pokemon = 
+{
+
+};
