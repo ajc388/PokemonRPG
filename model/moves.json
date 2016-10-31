@@ -23,51 +23,46 @@
 var moves =
 {
 	"Normal":
-		{
+	{
 		"Acupressure": 
-			{
-			"name": "Acupressure"
-			"power": "50"
-			"style": "Melee"
-			"flavor": "You press on an ally/'s pressure points to increase its vitality."
-			"effect": "The target/'s next attack does 60 extra damage."
-			"crit": "Does not crit."
-			}
-		}
 		{
+			"name": "Acupressure",
+			"power": "50",
+			"style": "Melee",
+			"flavor": "You press on an ally/'s pressure points to increase its vitality.",
+			"effect": "The target/'s next attack does 60 extra damage.",
+			"crit": "Does not crit."
+		},
 		"Attract": 
-			{
-			"name": "Attract"
-			"power": "40"
-			"style": "Ranged"
-			"flavor": "Romantic savvy charms the target."
+		{
+			"name": "Attract",
+			"power": "40",
+			"style": "Ranged",
+			"flavor": "Romantic savvy charms the target.",
 			"effect": "This causes a compulsion to charm the target into helping you and attacking anyone who is a 
 			threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group 
 			as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A 
-			Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die."
+			Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
 			"crit": "The effect is harsh if used on opposite-gendered Pokémon and will now affect a same-gendered Pokemon."
-			}
-		}
-		{
+		},
 		"Scratch": 
-			{
-			"name": "Scratch"
-			"power": "20"
-			"style": "Melee"
-			"flavor": "A light attack with claws."
-			"effect": "This deals 20 damage."
+		{
+			"name": "Scratch",
+			"power": "20",
+			"style": "Melee",
+			"flavor": "A light attack with claws.",
+			"effect": "This deals 20 damage.",
 			"crit": "15 repeating damage."
 			}
-		}
+		},
+		"test": 
 		{
-		"": 
-			{
-			"name": ""
-			"power": ""
-			"style": ""
-			"flavor": ""
-			"effect": ""
-			"crit": ""
-			}
+			"name": "test",
+			"power": "test",
+			"style": "test",
+			"flavor": "test",
+			"effect": "test",
+			"crit": "test"
 		}
+	}
 };
