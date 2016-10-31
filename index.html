@@ -18,8 +18,41 @@
   <script>
     $( document ).ready( function() {
       console.log(moves);
-      
+      var moveList = movePicker(moves, 3); //should be changed to fetch item from user
+      console.log(moveList);
+
     });
+
+    function movePicker(movesJSON, totalMoves)
+    {
+      var pickedMoves = [];
+      if ( Object.keys(movesJSON).length < totalMoves)
+      {
+        console.log("You asked for more moves than are available in the JSON file!"); //correctly handle error
+        return pickedMoves;
+      }
+      for ( var i = 0; i < totalMoves; i++)
+      {
+        var position = Math.floor(Math.random()*Object.keys(movesJSON).length);
+        var selectedMoveName = Object.keys(movesJSON)[position];
+        var selectedMove = movesJSON[selectedMoveName];
+        
+        if ( moveNotPicked(pickedMoves, selectedMoveName) )       
+        {
+          pickedMoves.push(selectedMove);
+        }       
+      }
+      return pickedMoves;
+    }
+
+    function moveNotPicked(pickedMoves, selectedMoveName)
+    {
+      for ( var name in pickedMoves )
+      {
+        if ( selectedMoveName == name ) { return false; }
+      }
+      return true;
+    }
 
 
   </script>
