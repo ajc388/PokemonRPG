@@ -3,65 +3,71 @@
 **
 **Details:
 **The header is the name of the move
-**Points is the total cost of the move
-**Cooldown is how many rounds you must wait to use the move again
+**Name is the given name of the move.
+**Power is a number the program can do calculations based on. 
+**Style will be one of 4 values: melee, ranged, self, or weather 
+**Flavor is flavor text, that explains what the move looks like. 
+**Effect is what the move actually does, mechanically. 
+**Crit is what happens when the move crits. A number of moves do not crit.
 **
-**The move may optinally have a bunch of different properties that represent statuses.
-**Each status may have a different target, number of characters affected, power, and duration
-**this allows for complex moves with multiple statuses. Most moves only need one status,
-**including the others is optional.
-**
-**Target may be none, allies, enemies, or both
-**Affected is how many characters can be effected by the move
-**Power can be any number of dice of a certain side or it may be a value like 10 for static effects.
-**effects that need no dice should have a power of 0.
-**Duration is how long the status acts
+**The program will print out a cost for the move equal to $50 times its power or its power squared or someting like that. 
+**The program will also make it worth 0-4 dice depending on power for rolling for roleplaying purposes.
+**A move grants dice for use equal to power/30 rounded to the nearest whole. 
+**A move with 50, 60, or 70 power grants 2 dice. So if you want to use 20 power scratch, it only grants 1 die.
+**Moves with 10 power grant no dice. Splash and struggle, nearly useless moves, are like this.
+**Moves typically have no more than 100 power, but there are one or two with 120 power. 
 */
 /*Statuses
 	damage, stun, sleep, heal, accurate, shield, vulnerable, critical, haste, slow, push, pull
 */
 var moves =
 {
-	"move1": 
-	{
-		"name": "basic attack",
-		"description": "This is a sample basic attack for any pokemon",
-		"points": "10",
-		"cooldown": "1",
-		"damage":
+	"Normal":
 		{
-			"target": "enemies", 
-			"affected": "1", 
-			"power": "3d4", 
-			"duration": "1"
+		"Acupressure": 
+			{
+			"name": "Acupressure"
+			"power": "50"
+			"style": "Melee"
+			"flavor": "You press on an ally/'s pressure points to increase its vitality."
+			"effect": "The target/'s next attack does 60 extra damage."
+			"crit": "Does not crit."
+			}
 		}
-	},
-	"move2":
-	{
-		"name": "basic heal",
-		"points": "10",
-		"description": "This is a sample basic heal ability for any pokemon",
-		"cooldown": "1",
-		"heal":
 		{
-			"target": "allies", 
-			"affected": "1", 
-			"power": "1d10", 
-			"duration": "1"
+		"Attract": 
+			{
+			"name": "Attract"
+			"power": "40"
+			"style": "Ranged"
+			"flavor": "Romantic savvy charms the target."
+			"effect": "This causes a compulsion to charm the target into helping you and attacking anyone who is a 
+			threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group 
+			as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A 
+			Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die."
+			"crit": "The effect is harsh if used on opposite-gendered Pokémon and will now affect a same-gendered Pokemon."
+			}
 		}
-	},
-	"move3":
-	{
-		"name": "sleep",
-		"description": "This is a sample sleep move for tricky pokemon",
-		"points": "30",
-		"cooldown": "2",
-		"heal":
 		{
-			"target": "enemies", 
-			"affected": "3", 
-			"power": "0", 
-			"duration": "3"
+		"Scratch": 
+			{
+			"name": "Scratch"
+			"power": "20"
+			"style": "Melee"
+			"flavor": "A light attack with claws."
+			"effect": "This deals 20 damage."
+			"crit": "15 repeating damage."
+			}
 		}
-	}
+		{
+		"": 
+			{
+			"name": ""
+			"power": ""
+			"style": ""
+			"flavor": ""
+			"effect": ""
+			"crit": ""
+			}
+		}
 };
