@@ -18,8 +18,10 @@
   <script>
     $( document ).ready( function() {
       console.log(moves);
-      var moveList = movePicker(moves, 3); //should be changed to fetch item from user
+      var moveList = movePicker(moves, 2); //should be changed to fetch item from user
       console.log(moveList);
+      console.log(moveList[0].name); //accessing object property name
+      console.log( moveList[0].description ); //accessing object property description
 
     });
 

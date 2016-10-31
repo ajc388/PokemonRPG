@@ -25,6 +25,7 @@ var moves =
 	"move1": 
 	{
 		"name": "basic attack",
+		"description": "This is a sample basic attack for any pokemon",
 		"points": "10",
 		"cooldown": "1",
 		"damage":
@@ -39,6 +40,7 @@ var moves =
 	{
 		"name": "basic heal",
 		"points": "10",
+		"description": "This is a sample basic heal ability for any pokemon",
 		"cooldown": "1",
 		"heal":
 		{
@@ -46,6 +48,20 @@ var moves =
 			"affected": "1", 
 			"power": "1d10", 
 			"duration": "1"
+		}
+	},
+	"move3":
+	{
+		"name": "sleep",
+		"description": "This is a sample sleep move for tricky pokemon",
+		"points": "30",
+		"cooldown": "2",
+		"heal":
+		{
+			"target": "enemies", 
+			"affected": "3", 
+			"power": "0", 
+			"duration": "3"
 		}
 	}
 };
