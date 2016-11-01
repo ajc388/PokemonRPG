@@ -5,41 +5,70 @@
   <meta charset="utf-8">
 
   <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <meta name="description" content="Local pokemon site">
   <meta name="author" content="SitePoint">
 
   <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <!--Include these json files for no server version-->
   <script type="text/javascript" src="model/moves.json"></script>
   <script type="test/javascript" src="model/pokemon.json"></script>
 
-  <!--Include these json files for no server version-->
+  
   <script>
     $( document ).ready( function() {
+      /*print out json files*/
       console.log(moves);
-      var moveList = movePicker(moves, 2); //should be changed to fetch item from user
-      console.log(moveList);
-      console.log(moveList[0].name); //accessing object property name
-      console.log( moveList[0].description ); //accessing object property description
+      //console.log(pokemon);
+
+      /*bind selectable options to move type drop down list user control*/
+      $("#moveTypeDropdownList").append(
+        $("<option></option>").val('Any').html('Any')
+      );
+      $.each(moves, function (key, value) {
+        $("#moveTypeDropdownList").append(
+          $("<option></option>").val(key).html(key)
+        );
+      });
+
+      /*bind events to form*/
+      /*bind click action to randomize button*/
+      $("#randomizeMovesButton").click(function() {
+        var numberOfMoves = $("#numberMovesTextBox").val();
+        var moveType = $("#moveTypeDropdownList").find("option:selected").text();
+        var moveList = movePicker(numberOfMoves, moveType)
+
+        console.log(moveList);
+      });
+
+      
 
     });
 
-    function movePicker(movesJSON, totalMoves)
+    function movePicker(desiredMoves, moveType)
     {
       var pickedMoves = [];
-      if ( Object.keys(movesJSON).length < totalMoves)
+      
+      /*if ( desiredMoves > totalMoveCount)
       {
-        console.log("You asked for more moves than are available in the JSON file!"); //correctly handle error
+        console.log("You asked for more moves than are available in the file!"); //Need to correctly handle error
         return pickedMoves;
-      }
-      for ( var i = 0; i < totalMoves; i++)
+      }*/
+      for ( var i = 0; i < desiredMoves; i++)
       {
-        var position = Math.floor(Math.random()*Object.keys(movesJSON).length);
-        var selectedMoveName = Object.keys(movesJSON)[position];
-        var selectedMove = movesJSON[selectedMoveName];
+        if (moveType == "Any")
+        {
+          var position = Math.floor(Math.random()*Object.keys(moves).length);
+          moveType = Object.keys(moves)[position];
+        }
+        var moveSet = eval("moves." + moveType);
+
+        var position = Math.floor(Math.random()*Object.keys(moveSet).length);
+        var selectedMoveName = Object.keys(moveSet)[position];
+        var selectedMove = moveSet[selectedMoveName];
         
-        if ( moveNotPicked(pickedMoves, selectedMoveName) )       
+        if ( !movePicked(pickedMoves, selectedMoveName) )       
         {
           pickedMoves.push(selectedMove);
         }       
@@ -47,13 +76,13 @@
       return pickedMoves;
     }
 
-    function moveNotPicked(pickedMoves, selectedMoveName)
+    function movePicked(pickedMoves, selectedMoveName)
     {
       for ( var name in pickedMoves )
       {
-        if ( selectedMoveName == name ) { return false; }
+        if ( selectedMoveName == name ) { return true; }
       }
-      return true;
+      return false;
     }
 
 
@@ -65,7 +94,28 @@
 </head>
 
 <body>
-  <h1>Pokemon RPG</h1>
-  <p>This is the start of something cool!</p>
+  <header id="header">
+    <h1>Pokemon RPG</h1>
+    <p>This is the start of something cool!</p>
+  </header>
+  
+  <section id="randomGenerator">
+    <div id="randomGeneratorDescription">
+      <h3>Pokemon Moves Selector</h3>
+      <p>These controls allow you to randomly load in moves from the local moves.json file.</p>
+    <div>
+
+    <form id="randomGeneratorForm">
+      <label for="numberMoves">Number of Moves: </label>
+      <input type="number" name="numberMoves" id="numberMovesTextBox" min="1" max="10" value="1"/> <br/>
+      <label for="moveType">Move Type: </label>
+      <select name="moveType" id="moveTypeDropdownList"></select><br/>
+      <input type="button" id="randomizeMovesButton" value="Randomize" /> 
+    </form>
+  </section>
+
+  <section id="selectedMoves">
+  </section>
+
 </body>
 </html>

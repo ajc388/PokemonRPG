@@ -6,5 +6,8 @@
 */
 var pokemon = 
 {
-
+	"Freebie":
+	{
+		"Name": "Freebie"
+	}
 };

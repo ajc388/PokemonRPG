@@ -1,24 +1,30 @@
-/*Description:
-**This json file is used to store pokemon move information
-**
-**Details:
-**The header is the name of the move
-**Name is the given name of the move.
-**Power is a number the program can do calculations based on. 
-**Style will be one of 4 values: melee, ranged, self, or weather 
-**Flavor is flavor text, that explains what the move looks like. 
-**Effect is what the move actually does, mechanically. 
-**Crit is what happens when the move crits. A number of moves do not crit.
-**
-**The program will print out a cost for the move equal to $50 times its power or its power squared or someting like that. 
-**The program will also make it worth 0-4 dice depending on power for rolling for roleplaying purposes.
-**A move grants dice for use equal to power/30 rounded to the nearest whole. 
-**A move with 50, 60, or 70 power grants 2 dice. So if you want to use 20 power scratch, it only grants 1 die.
-**Moves with 10 power grant no dice. Splash and struggle, nearly useless moves, are like this.
-**Moves typically have no more than 100 power, but there are one or two with 120 power. 
-*/
-/*Statuses
-	damage, stun, sleep, heal, accurate, shield, vulnerable, critical, haste, slow, push, pull
+/*
+Description:
+This json file is used to store pokemon move information
+
+Details:
+* Name is the name of the move
+* Points is how much the move is valued
+* Tier is the overally power level of hte move
+* Power is a statistic to determine how much of an effect the move will have
+* Style is the general type of the move
+* Flavor is the flavor text of the move
+* Effect is what the move can do in laymens terms
+* Critical is what happens if the move is super effective
+
+Move Template:
+"TEMPLATE": 
+{
+	"name": "", 
+	"points": "",
+	"tier": "",
+	"power": "",
+	"style": "",
+	"flavor": "",
+	"effect": "",
+	"critical": ""
+}
+
 */
 var moves =
 {
@@ -43,10 +49,7 @@ var moves =
 			"power": "40",
 			"style": "Ranged",
 			"flavor": "Romantic savvy charms the target.",
-			"effect": "This causes a compulsion to charm the target into helping you and attacking anyone who is a 
-			threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group 
-			as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A 
-			Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
+			"effect": "This causes a compulsion to charm the target into helping you and attacking anyone who is a \n threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group \n as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A \n Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
 			"critical": "The effect is harsh if used on opposite-gendered Pokémon and will now affect a same-gendered Pokemon."
 		},
 		"Scratch": 
@@ -59,17 +62,6 @@ var moves =
 			"flavor": "A light attack with claws.",
 			"effect": "This deals 20 damage.",
 			"critical": "15 repeating damage."
-		},
-		"TEMPLATE": 
-		{
-			"name": "",
-			"points": "",
-			"tier": "",
-			"power": "",
-			"style": "",
-			"flavor": "",
-			"effect": "",
-			"critical": ""
 		}
 	},
 	"Electric":
