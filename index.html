@@ -40,11 +40,26 @@
         var moveList = movePicker(numberOfMoves, moveType)
 
         console.log(moveList);
+        displayMoves(moveList);
       });
 
       
 
     });
+
+    function displayMoves(moveList)
+    {
+      $("#selectedMovesList").empty();
+      for (var i = 0; i < moveList.length; i++)
+      {
+        var move = moveList[i];
+        $("#selectedMovesList").append("<div id='move"+i+"'>");
+        $.each(move, function(key, value) {
+          $("#move"+i).append("<p><b>"+ key.toUpperCase() + "</b> : " + value +"</p>");  
+        }); 
+        $("#selectedMovesList").append("<br/>");
+      }
+    }
 
     function movePicker(desiredMoves, moveType)
     {
@@ -55,7 +70,7 @@
         console.log("You asked for more moves than are available in the file!"); //Need to correctly handle error
         return pickedMoves;
       }*/
-      for ( var i = 0; i < desiredMoves; i++)
+      for ( var i = 0; i < desiredMoves;)
       {
         if (moveType == "Any")
         {
@@ -68,21 +83,22 @@
         var selectedMoveName = Object.keys(moveSet)[position];
         var selectedMove = moveSet[selectedMoveName];
         
-        if ( !movePicked(pickedMoves, selectedMoveName) )       
+        if ( moveNotPicked(pickedMoves, selectedMoveName) )       
         {
           pickedMoves.push(selectedMove);
+          i++;
         }       
       }
       return pickedMoves;
     }
 
-    function movePicked(pickedMoves, selectedMoveName)
+    function moveNotPicked(pickedMoves, selectedMoveName)
     {
-      for ( var name in pickedMoves )
+      for ( var i = 0; i < pickedMoves.length; i++) //for each loop doesn't work?
       {
-        if ( selectedMoveName == name ) { return true; }
+        if ( selectedMoveName == pickedMoves[i].name ) { return false; }
       }
-      return false;
+      return true;
     }
 
 
@@ -96,12 +112,11 @@
 <body>
   <header id="header">
     <h1>Pokemon RPG</h1>
-    <p>This is the start of something cool!</p>
   </header>
   
   <section id="randomGenerator">
     <div id="randomGeneratorDescription">
-      <h3>Pokemon Moves Selector</h3>
+      <h3>Move Selector</h3>
       <p>These controls allow you to randomly load in moves from the local moves.json file.</p>
     <div>
 
@@ -114,7 +129,12 @@
     </form>
   </section>
 
-  <section id="selectedMoves">
+  <section id="selectedMoveSection">
+    <div id="selectedMoveSelectionDescription">
+      <h3>Selected Moves</h3>
+    </div>
+    <div id="selectedMovesList">
+    </div>
   </section>
 
 </body>
