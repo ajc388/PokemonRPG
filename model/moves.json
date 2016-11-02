@@ -14,16 +14,14 @@ Details:
 
 Move Template:
 "TEMPLATE": 
-{
-	"name": "", 
-	"points": "",
-	"tier": "",
-	"power": "",
-	"style": "",
-	"flavor": "",
-	"effect": "",
-	"critical": ""
-}
+		{
+			"name": "", 
+			"power": "",
+			"style": "",
+			"flavor": "",
+			"effect": "",
+			"critical": ""
+		}
 
 */
 var moves =
@@ -33,8 +31,6 @@ var moves =
 		"Acupressure": 
 		{
 			"name": "Acupressure",
-			"points": "",
-			"tier": "",
 			"power": "50",
 			"style": "Melee",
 			"flavor": "You press on an ally/'s pressure points to increase its vitality.",
@@ -44,8 +40,6 @@ var moves =
 		"Attract": 
 		{
 			"name": "Attract",
-			"points": "",
-			"tier": "",
 			"power": "40",
 			"style": "Ranged",
 			"flavor": "Romantic savvy charms the target.",
@@ -55,8 +49,6 @@ var moves =
 		"Scratch": 
 		{
 			"name": "Scratch",
-			"points": "",
-			"tier": "",
 			"power": "20",
 			"style": "Melee",
 			"flavor": "A light attack with claws.",
@@ -69,8 +61,6 @@ var moves =
 		"Jolt": 
 		{
 			"name": "Jolt",
-			"points": "30",
-			"tier": "1",
 			"power": "20",
 			"style": "Melee",
 			"flavor": "The user charges in and electrifies everyone around it.",
@@ -80,8 +70,6 @@ var moves =
 		"Electrify":
 		{
 			"name": "Electrify",
-			"points": "40",
-			"tier": "1",
 			"power": "20",
 			"style": "Ranged",
 			"flavor": "This shocks the target and continues to electrocute it.",
