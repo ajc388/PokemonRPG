@@ -23,67 +23,81 @@
         console.log(moveList);
         displayMoves(moveList);
       });
-
-      
-
     });
 
     function displayMoves(moveList)
     {
-      $("#selectedMovesList").empty();
-      for (var i = 0; i < moveList.length; i++)
+      $("#selectedMoves").empty();
+      if (moveList.length > 0)
       {
-        var move = moveList[i];
-        $("#selectedMovesList").append("<div id='move"+i+"'>");
-        $.each(move, function(key, value) {
-          $("#move"+i).append("<p><b>"+ key.toUpperCase() + "</b> : " + value +"</p>");  
-        }); 
-        $("#selectedMovesList").append("<br/>");
+        $("#selectedMoves").append("<div id='accordion'>");
+        for (var i = 0; i < moveList.length; i++)
+        {
+          var move = moveList[i];
+          if ( move )
+          {
+            $("#accordion").append("<h3>"+move.name+": " + move.flavor + " " + move.power + "</h3>");
+            $("#accordion")
+            .append("<div>"+
+                    "<p> Style: " + move.style + "</p>" +
+                    "<p> Effect: " + move.effect + "</p>"+
+                    "<p> Critical: " + move.critical + "</p>"+
+                    "</div>");
+          }
+        }
+        $("#accordion").accordion();
+      }
+      else 
+      {
+        $("#selectedMoves").append("<p>No results</p>");
       }
     }
 
+    //may want to simplify this entirely!
     function movePicker(desiredMoves, moveType)
     {
       var pickedMoves = [];
-      if ( getTotalMoves() < desiredMoves)
+      var type = moveType;
+      var moveBag = JSON.parse(JSON.stringify(moves)); //cloning the json file <_>
+      
+      if ( moveType == "Any" && desiredMoves > getTotalMoves(moveBag))
       {
         console.log("You asked for more moves than are available in the file!"); //Need to correctly handle error
         return pickedMoves;
-      }
-      for ( var i = 0; i < desiredMoves;)
+      } 
+      else if ( moveType != "Any" && desiredMoves > Object.keys(moveBag[type]).length)
       {
-        if (moveType == "Any")
-        {
-          var position = Math.floor(Math.random()*Object.keys(moves).length);
-          moveType = Object.keys(moves)[position];
-        }
-        var moveSet = moves[moveType];
-
-        var position = Math.floor(Math.random()*Object.keys(moveSet).length);
-        var selectedMoveName = Object.keys(moveSet)[position];
-        var selectedMove = moveSet[selectedMoveName];
-        
-        if ( moveNotPicked(pickedMoves, selectedMoveName) )       
-        {
-          pickedMoves.push(selectedMove);
-          i++;
-        }       
+        console.log("You asked for move moves than are listed in that move type!");
+        return pickedMoves;
       }
+      else 
+      {
+        for ( var i = 0; i < desiredMoves; i++)
+        {
+          if (moveType == "Any")
+          {
+            var position = Math.round(Math.random()*(Object.keys(moveBag).length-1), 0);
+            //console.log(position);
+            type = Object.keys(moveBag)[position];
+          }
+
+          var moveSet = moveBag[type];
+          var position = Math.round(Math.random()*(Object.keys(moveSet).length-1), 0);
+          //console.log(position);
+          var selectedMoveName = Object.keys(moveSet)[position];
+          var selectedMove = moveSet[selectedMoveName];
+            
+          pickedMoves.push(selectedMove);
+          delete moveSet[selectedMoveName];
+          if( Object.keys(moveBag[type]).length == 0 ) { delete moveBag[type]; } 
+        }
+      } 
       return pickedMoves;
     }
 
-    function getTotalMoves()
+    function getTotalMoves(moveBag)
     {
-      var sum = 0;
-      for ( var moveSet in moves) { sum += Object.keys(moves[moveSet]).length; }
-      return sum;
-    }
-
-    function moveNotPicked(pickedMoves, selectedMoveName)
-    {
-      for ( var i = 0; i < pickedMoves.length; i++) //for each loop doesn't work?
-      {
-        if ( selectedMoveName == pickedMoves[i].name ) { return false; }
-      }
-      return true;
+      var totalMoves = 0;
+      for ( var moveSet in moveBag) { totalMoves += Object.keys(moveBag[moveSet]).length; }
+      return totalMoves;
     }

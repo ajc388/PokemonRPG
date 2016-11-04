@@ -33,30 +33,24 @@ var moves =
 		"Acupressure": 
 		{
 			"name": "Acupressure",
-			"points": "",
-			"tier": "",
 			"power": "50",
 			"style": "Melee",
-			"flavor": "You press on an ally/'s pressure points to increase its vitality.",
+			"flavor": "You press on an ally's pressure points to increase its vitality.",
 			"effect": "The target/'s next attack does 60 extra damage.",
 			"critical": "Does not crit."
 		},
 		"Attract": 
 		{
 			"name": "Attract",
-			"points": "",
-			"tier": "",
 			"power": "40",
 			"style": "Ranged",
 			"flavor": "Romantic savvy charms the target.",
-			"effect": "This causes a compulsion to charm the target into helping you and attacking anyone who is a \n threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group \n as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A \n Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
+			"effect": "This causes a compulsion to charm the target into helping you and attacking anyone who is a threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
 			"critical": "The effect is harsh if used on opposite-gendered Pokémon and will now affect a same-gendered Pokemon."
 		},
 		"Scratch": 
 		{
 			"name": "Scratch",
-			"points": "",
-			"tier": "",
 			"power": "20",
 			"style": "Melee",
 			"flavor": "A light attack with claws.",
@@ -69,8 +63,6 @@ var moves =
 		"Jolt": 
 		{
 			"name": "Jolt",
-			"points": "30",
-			"tier": "1",
 			"power": "20",
 			"style": "Melee",
 			"flavor": "The user charges in and electrifies everyone around it.",
@@ -80,8 +72,6 @@ var moves =
 		"Electrify":
 		{
 			"name": "Electrify",
-			"points": "40",
-			"tier": "1",
 			"power": "20",
 			"style": "Ranged",
 			"flavor": "This shocks the target and continues to electrocute it.",
