@@ -13,20 +13,16 @@
       //Create auto complete feature for search bar
       $("#search").autocomplete({
         source: loadSearchTags(),
-        minLength: 2,
+        minLength: 0,
+        select: search(),
         delay: 500
       });
-      //bind search functionality to the search box on key press
-      $("#search").on("keyup", function() { search(); });
-
-      //bind search functionality to search box on enter
-      $("#search").on("keypress", function (e) {
-        //Enter key
-        if (e.keyCode === 13) { search(); }
-      });  
-
-      //bind search functionality on auto complete close.
-      $('#search').on('autocompleteclose', function () {  search(); });
+      //bind search functionality to the search box
+      $("#search")
+        .on("keyup", function() { search(); })
+        .on('autocompleteclose', function () {  search(); })
+        .on('change', function() { search(); })
+        .on('blur', function() { alert("made it"); search(); });
 
     });
 
