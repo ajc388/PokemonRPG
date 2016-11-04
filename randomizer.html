@@ -3,15 +3,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Pokemon RPG</title>
   <meta name="description" content="Local pokemon toolkit">
   <meta name="author" content="Cameron">
-  <script src="assets/jquery-3.1.1/jquery-3.1.1.js"></script>
-  <script src="assets/jquery-ui-1.12.1/jquery-ui.js"></script>
+  
   <link rel="stylesheet" type="text/css" href="assets/jquery-ui-1.12.1/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
-
+  <script type="text/javascript" src="model/moves.json"></script>
+  <script src="assets/jquery-3.1.1/jquery-3.1.1.js"></script>
+  <script src="assets/jquery-ui-1.12.1/jquery-ui.js"></script>
+  <script src="assets/javascript/randomizer.js"></script>
+  
 </head>
 
 <body>
@@ -29,13 +31,23 @@
   
   <section class="block" id="randomGenerator">
     <div id="randomGeneratorDescription">
-      <h3>Description</h3>
-      <p>Pokemon RPG is a game made by Cameron Miller. [add text]</p>
+      <h3 class="blockheader">Move Selector</h3>
      <div>
+
+    <form class="userinput" id="randomGeneratorForm">
+      <label for="numberMoves">Number of Moves: </label>
+      <input class="input" type="number" name="numberMoves" id="numberMovesTextBox" min="1" max="10" value="1"/> <br/>
+      <label for="moveType">Move Type: </label>
+      <select class="input" name="moveType" id="moveTypeDropdownList"></select><br/>
+      <input class="button" type="button" id="randomizeMovesButton" value="Randomize" /> 
+    </form>
   </section>
 
   <section class="block" id="selectedMoveSection">
-    
+    <div id="selectedMoveSelectionDescription">
+      <h3 class="blockheader">Moves</h3>
+    </div>
+    <div id="selectedMoves"></div>
   </section>
 
 </body>
