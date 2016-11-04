@@ -4,12 +4,17 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Pokemon RPG</title>
+  <title>The HTML5 Herald</title>
   <meta name="description" content="Local pokemon site">
   <meta name="author" content="SitePoint">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
 
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <!--Include these json files for no server version-->
+  <script type="text/javascript" src="model/moves.json"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
+  <script type="text/javascript" src="assets/javascript/move_randomizer.js"></script>
 </head>
 
 <body>
@@ -27,13 +32,24 @@
   
   <section class="block" id="randomGenerator">
     <div id="randomGeneratorDescription">
-      <h3>Description</h3>
-      <p>Pokemon RPG is a game made by Cameron Miller. [add text]</p>
+      <h3>Move Selector</h3>
      <div>
+
+    <form class="userinput" id="randomGeneratorForm">
+      <label for="numberMoves">Number of Moves: </label>
+      <input class="input" type="number" name="numberMoves" id="numberMovesTextBox" min="1" max="10" value="1"/> <br/>
+      <label for="moveType">Move Type: </label>
+      <select class="input" name="moveType" id="moveTypeDropdownList"></select><br/>
+      <input class="button" type="button" id="randomizeMovesButton" value="Randomize" /> 
+    </form>
   </section>
 
   <section class="block" id="selectedMoveSection">
-    
+    <div id="selectedMoveSelectionDescription">
+      <h3>Moves</h3>
+    </div>
+    <div id="selectedMovesList">
+    </div>
   </section>
 
 </body>
