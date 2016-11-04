@@ -21,35 +21,38 @@
         var moveList = movePicker(numberOfMoves, moveType)
 
         console.log(moveList);
-        displayMoves(moveList);
+        displayMoves(moveType, moveList);
       });
     });
 
-    function displayMoves(moveList)
+    function displayMoves(key, moveList)
     {
-      $("#selectedMoves").empty();
+      $("#moveList").empty();
+      
       if (moveList.length > 0)
       {
-        $("#selectedMoves").append("<div id='accordion'>");
+        $("#moveList").append("<div id='accordion"+key+"'>");
         for (var i = 0; i < moveList.length; i++)
         {
           var move = moveList[i];
           if ( move )
           {
-            $("#accordion").append("<h3>"+move.name+": " + move.flavor + " " + move.power + "</h3>");
-            $("#accordion")
-            .append("<div>"+
-                    "<p> Style: " + move.style + "</p>" +
-                    "<p> Effect: " + move.effect + "</p>"+
-                    "<p> Critical: " + move.critical + "</p>"+
-                    "</div>");
+            $("#accordion"+key).append("<div class='moveHeader' id='"+move.name+"'><span class='moveName'>"+move.name+
+                                       "</span> <span class='moveFlavor'>" + move.flavor + 
+                                       "</span> <span class='movePower'>" + move.power + "</span></div>");
+            $("#accordion"+key)
+            .append("<div class='moveContent'>"+
+                    "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
+                    "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
+                    "<p><span class='descriptiveHeader'> Critical: </span>" + move.critical + "</p>"+
+                    "</div></div>");
           }
         }
-        $("#accordion").accordion();
+        $("#accordion"+key).accordion();
       }
       else 
       {
-        $("#selectedMoves").append("<p>No results</p>");
+        $("#moveList").append("<p>No results!</p>");
       }
     }
 

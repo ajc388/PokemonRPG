@@ -64,3 +64,37 @@ nav li a:hover {
 	background-color: aliceblue;
 	border-radius: 8px;
 }
+
+/* Move Styles */
+.moveHeader {
+	background-color: gold;
+	border-width: 2px 2px 0px 2px;
+	border-style: outset;
+}
+.moveContent {
+	background-color: lightgoldenrodyellow;
+	border-width: 2px 2px 2px 0px;
+	border-style: outset;
+}
+.moveHeader span.moveName {
+	font-size: 110%;
+	font-weight: bold;
+	width: 10%;
+	min-width: 100px;
+}
+.moveHeader span.moveFlavor {
+	font-style: italic;
+	width: 50%;
+	min-width: 200px;
+	margin-left: 10%;
+	margin-right: 25%;
+}
+.moveHeader span.movePower {
+	font-weight: bold;
+	float:right;
+	width: 5%;
+	min-width: 20px;
+}
+.ui-autocomplete {
+	background-color: white;
+}

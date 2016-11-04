@@ -2,18 +2,37 @@
       /*print out json files*/
       console.log(moves);
 
-      var tags = loadSearchTags();
-      //build array of tags
+      //Create auto complete feature for search bar
       $("#search").autocomplete({
-        source: tags
+        source: loadSearchTags()
       });
 
       //print moves
       $.each(moves, function (key, value) {
-        $("#moveList").append("<div><h3>"+key+"</h3>");
+        $("#moveList").append("<div class='blockheader'><h3>"+key+"</h3>");
         var moveArray = $.map(moves[key], function(el) { return el});;
         displayMoves(key, moveArray);
       });
+
+      //bind search functionality to the search box
+      $("#search").on("keyup", function() { 
+          var input = $(this).val().toLowerCase();
+          $(".moveName").each( function() { 
+              var moveName = $(this).text();
+              //console.log(moveName);
+              if (moveName.indexOf(input)!=-1) { 
+                console.log($("#header_"+moveName));
+                $("#header_"+moveName).show(); 
+                $("#content_"+moveName).show(); 
+              }
+              else { 
+                $("#header_"+moveName).hide(); 
+                $("#content_"+moveName).hide(); 
+              }
+          });
+      });
+          
+
     });
 
     function loadSearchTags()
@@ -38,19 +57,21 @@
           var move = moveList[i];
           if ( move )
           {
-            $("#accordion"+key).append("<h3>"+move.name+": " + move.flavor + " " + move.power + "</h3>");
+            $("#accordion"+key).append("<div class='moveHeader' id='header_"+move.name+"'><span class='moveName'>"+move.name+
+                                       "</span> <span class='moveFlavor'>" + move.flavor + 
+                                       "</span> <span class='movePower'>" + move.power + "</span></div>");
             $("#accordion"+key)
-            .append("<div>"+
-                    "<p> Style: " + move.style + "</p>" +
-                    "<p> Effect: " + move.effect + "</p>"+
-                    "<p> Critical: " + move.critical + "</p>"+
-                    "</div>");
+            .append("<div class='moveContent' id='content_"+move.name+"'>"+
+                    "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
+                    "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
+                    "<p><span class='descriptiveHeader'> Critical: </span>" + move.critical + "</p>"+
+                    "</div></div>");
           }
         }
         $("#accordion"+key).accordion();
       }
       else 
       {
-        $("#moveList").append("<p>No results</p>");
+        $("#moveList").append("<p>No results!</p>");
       }
     }
