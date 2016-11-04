@@ -45,12 +45,11 @@
     function movePicker(desiredMoves, moveType)
     {
       var pickedMoves = [];
-      
-      /*if ( desiredMoves > totalMoveCount)
+      if ( getTotalMoves() < desiredMoves)
       {
         console.log("You asked for more moves than are available in the file!"); //Need to correctly handle error
         return pickedMoves;
-      }*/
+      }
       for ( var i = 0; i < desiredMoves;)
       {
         if (moveType == "Any")
@@ -71,6 +70,13 @@
         }       
       }
       return pickedMoves;
+    }
+
+    function getTotalMoves()
+    {
+      var sum = 0;
+      for ( var moveSet in moves) { sum += Object.keys(moves[moveSet]).length; }
+      return sum;
     }
 
     function moveNotPicked(pickedMoves, selectedMoveName)
