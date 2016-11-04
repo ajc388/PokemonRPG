@@ -1,19 +1,21 @@
   $( document ).ready( function() {
       /*print out json files*/
       console.log(moves);
-
-      //Create auto complete feature for search bar
-      $("#search").autocomplete({
-        source: loadSearchTags()
-      });
-
-      //print moves
+      
+      //Display moves
       $.each(moves, function (key, value) {
         $("#moveList").append("<div class='blockheader'><h3>"+key+"</h3>");
         var moveArray = $.map(moves[key], function(el) { return el});;
         displayMoves(key, moveArray);
       });
 
+      /*Search Functionality*/
+      //Create auto complete feature for search bar
+      $("#search").autocomplete({
+        source: loadSearchTags(),
+        minLength: 2,
+        delay: 500
+      });
       //bind search functionality to the search box on key press
       $("#search").on("keyup", function() { search(); });
 
@@ -23,23 +25,20 @@
         if (e.keyCode === 13) { search(); }
       });  
 
+      //bind search functionality on auto complete close.
+      $('#search').on('autocompleteclose', function () {  search(); });
+
     });
 
     function search()
     {
+        //alert("search");
         var input = $("#search").val().toLowerCase();
         $(".moveName").each( function() { 
             var moveName = $(this).text();
-            console.log(moveName);
-            if (moveName.toLowerCase().indexOf(input)!=-1) { 
-              console.log($("#header_"+moveName));
-              $("#header_"+moveName).show(); 
-              $("#content_"+moveName).show(); 
-            }
-            else { 
-              $("#header_"+moveName).hide(); 
-              $("#content_"+moveName).hide(); 
-            }
+            if (moveName.toLowerCase().indexOf(input)!=-1) { $("#header_"+moveName).show(); }
+            else { $("#header_"+moveName).hide(); }
+            $("#content_"+moveName).hide(); 
         });
     }
 
