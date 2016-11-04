@@ -74,6 +74,6 @@
       }
       else 
       {
-        $("#moveList").append("<p>No results!</p>");
+        $("#moveList").append("<p>No results!?!?!</p>");
       }
     }

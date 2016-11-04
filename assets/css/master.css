@@ -1,4 +1,4 @@
-/*Menu block*/
+/*Menu section*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -6,7 +6,6 @@ nav ul {
     overflow: hidden;
     background-color: #333;
 }
-
 nav li {
     float: left;
 }
@@ -24,7 +23,7 @@ nav li a:hover {
     background-color: #111;
 }
 
-/*New blocks*/
+/*Blocks section*/
 .blockheader {
 	font-size: 150%;
 	display: block;
@@ -36,7 +35,7 @@ nav li a:hover {
 	height: 32px;
 }
 
-/*User control form*/
+/*User controls section*/
 .userinput {
 	background-color: #DDD;
 	display: block;
@@ -66,39 +65,7 @@ nav li a:hover {
 	border-radius: 8px;
 }
 
-/* Move Styles */
-.moveHeader {
-	background-color: gold;
-	border-width: 2px 2px 0px 2px;
-	border-style: outset;
-}
-.moveContent {
-	background-color: lightgoldenrodyellow;
-	border-width: 2px 2px 2px 0px;
-	border-style: outset;
-}
-.moveHeader span.moveName {
-	display: inline-block;
-	font-size: 110%;
-	font-weight: bold;
-	width: 10%;
-	min-width: 40px;
-}
-.moveHeader span.moveFlavor {
-	display: inline-block;
-	font-style: italic;
-	width: 50%;
-	min-width: 200px;
-	margin-left: 10%;
-	margin-right: 25%;
-}
-.moveHeader span.movePower {
-	display: inline-block;
-	font-weight: bold;
-	float:right;
-	width: 4%;
-	min-width: 18px;
-}
+/*Auto complete section*/
 .ui-autocomplete {
 	background-color: white;
 }
