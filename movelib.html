@@ -3,15 +3,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Pokemon RPG</title>
   <meta name="description" content="Local pokemon toolkit">
   <meta name="author" content="Cameron">
-  <script src="assets/jquery-3.1.1/jquery-3.1.1.js"></script>
-  <script src="assets/jquery-ui-1.12.1/jquery-ui.js"></script>
+  
   <link rel="stylesheet" type="text/css" href="assets/jquery-ui-1.12.1/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
-
+  <script type="text/javascript" src="model/moves.json"></script>
+  <script src="assets/jquery-3.1.1/jquery-3.1.1.js"></script>
+  <script src="assets/jquery-ui-1.12.1/jquery-ui.js"></script>
+  <script src="assets/javascript/movelib.js"></script>
+  
 </head>
 
 <body>
@@ -27,15 +29,16 @@
     </menu>
   </header>
   
-  <section class="block" id="randomGenerator">
-    <div id="randomGeneratorDescription">
-      <h3>Description</h3>
-      <p>Pokemon RPG is a game made by Cameron Miller. [add text]</p>
-     <div>
-  </section>
-
-  <section class="block" id="selectedMoveSection">
-    
+  <section class="block" id="moveSection">
+    <div id="moves">
+      <h3 class="blockheader">Moves
+      <form style="display: inline; float:right;">
+        <label for="search">Search: </label>
+        <input class="input" id="search" type="search"></input>
+      </form>
+      </h3>
+    </div>
+    <div id="moveList"></div>
   </section>
 
 </body>
