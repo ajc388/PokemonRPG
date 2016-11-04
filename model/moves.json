@@ -64,9 +64,9 @@ var moves =
 			"effect": "Use the same move as the last Pokemon did.",
 			"critical": "none",
 		},
-		"Defense Curl":
+		"Defense_Curl":
 		{
-			"name": "Defense Curl", 
+			"name": "Defense_Curl", 
 			"power": "40",
 			"style": "Self",
 			"flavor": "The user rolls up into a ball for protection.",

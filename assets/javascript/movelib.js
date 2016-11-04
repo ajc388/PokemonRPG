@@ -14,32 +14,39 @@
         displayMoves(key, moveArray);
       });
 
-      //bind search functionality to the search box
-      $("#search").on("keyup", function() { 
-          var input = $(this).val().toLowerCase();
-          $(".moveName").each( function() { 
-              var moveName = $(this).text();
-              //console.log(moveName);
-              if (moveName.indexOf(input)!=-1) { 
-                console.log($("#header_"+moveName));
-                $("#header_"+moveName).show(); 
-                $("#content_"+moveName).show(); 
-              }
-              else { 
-                $("#header_"+moveName).hide(); 
-                $("#content_"+moveName).hide(); 
-              }
-          });
-      });
-          
+      //bind search functionality to the search box on key press
+      $("#search").on("keyup", function() { search(); });
+
+      //bind search functionality to search box on enter
+      $("#search").on("keypress", function (e) {
+        //Enter key
+        if (e.keyCode === 13) { search(); }
+      });  
 
     });
+
+    function search()
+    {
+        var input = $("#search").val().toLowerCase();
+        $(".moveName").each( function() { 
+            var moveName = $(this).text();
+            console.log(moveName);
+            if (moveName.toLowerCase().indexOf(input)!=-1) { 
+              console.log($("#header_"+moveName));
+              $("#header_"+moveName).show(); 
+              $("#content_"+moveName).show(); 
+            }
+            else { 
+              $("#header_"+moveName).hide(); 
+              $("#content_"+moveName).hide(); 
+            }
+        });
+    }
 
     function loadSearchTags()
     {
       var tags = [];
       $.each(moves, function(key, value) {
-        tags.push(key);
         $.each(moves[key], function(key, value) {
           tags.push(key);
         });

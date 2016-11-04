@@ -33,6 +33,7 @@ nav li a:hover {
 	background-color: #333;
 	margin-top: 10px;
 	padding: 0px;
+	height: 32px;
 }
 
 /*User control form*/
@@ -77,12 +78,14 @@ nav li a:hover {
 	border-style: outset;
 }
 .moveHeader span.moveName {
+	display: inline-block;
 	font-size: 110%;
 	font-weight: bold;
 	width: 10%;
-	min-width: 100px;
+	min-width: 40px;
 }
 .moveHeader span.moveFlavor {
+	display: inline-block;
 	font-style: italic;
 	width: 50%;
 	min-width: 200px;
@@ -90,10 +93,11 @@ nav li a:hover {
 	margin-right: 25%;
 }
 .moveHeader span.movePower {
+	display: inline-block;
 	font-weight: bold;
 	float:right;
-	width: 5%;
-	min-width: 20px;
+	width: 4%;
+	min-width: 18px;
 }
 .ui-autocomplete {
 	background-color: white;
