@@ -2,6 +2,12 @@
       /*print out json files*/
       console.log(moves);
 
+      var tags = loadSearchTags();
+      //build array of tags
+      $("#search").autocomplete({
+        source: tags
+      });
+
       //print moves
       $.each(moves, function (key, value) {
         $("#moveList").append("<div><h3>"+key+"</h3>");
@@ -9,6 +15,18 @@
         displayMoves(key, moveArray);
       });
     });
+
+    function loadSearchTags()
+    {
+      var tags = [];
+      $.each(moves, function(key, value) {
+        tags.push(key);
+        $.each(moves[key], function(key, value) {
+          tags.push(key);
+        });
+      });
+      return tags;
+    }
 
     function displayMoves(key, moveList)
     {
