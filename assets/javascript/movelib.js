@@ -4,7 +4,7 @@
       
       //Display moves
       $.each(moves, function (key, value) {
-        $("#moveList").append("<div class='blockheader'><h3>"+key+"</h3>");
+        $("#moveList").append("<div class='blockheader'><h3>"+key+"</h3></div>");
         var moveArray = $.map(moves[key], function(el) { return el});;
         displayMoves(key, moveArray);
       });
@@ -20,21 +20,29 @@
       //bind search functionality to the search box
       $("#search")
         .on("keyup", function() { search(); })
-        .on('autocompleteclose', function () {  search(); })
-        .on('change', function() { search(); })
-        .on('blur', function() { alert("made it"); search(); });
+        .on('autocompleteclose', function () {  search(); });
 
     });
 
     function search()
     {
-        //alert("search");
         var input = $("#search").val().toLowerCase();
+        var prevKey = "";
         $(".moveName").each( function() { 
-            var moveName = $(this).text();
-            if (moveName.toLowerCase().indexOf(input)!=-1) { $("#header_"+moveName).show(); }
-            else { $("#header_"+moveName).hide(); }
-            $("#content_"+moveName).hide(); 
+            var moveName = $(this).text().replace(' ', '_');
+            if (moveName.toLowerCase().indexOf(input)!=-1) {
+              var key = $(this).parent().parent().prop("id").replace("accordion", "");
+            
+              $("#header_"+moveName).show();
+              if ( prevKey != key ) { $("#content_"+moveName).show(); } 
+              else { $("#content_"+moveName).hide(); }
+
+              prevKey = key;
+            }
+            else { 
+              $("#header_"+moveName).hide(); 
+              $("#content_"+moveName).hide(); 
+            }
         });
     }
 
