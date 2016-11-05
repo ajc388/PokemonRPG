@@ -1,0 +1,81 @@
+var counters = 
+{
+	"Normal": 
+	{
+		"2x": 	[],
+		"1/2x": ["Rock", "Steel"],
+		"0x": 	["Ghost"]
+	},
+	"Fighting": 
+	{
+		"2x": 	["Normal", "Rock", "Steel", "Ice", "Dark"],
+		"1/2x": ["Flying", "Poison", "Bug", "Psychic", "Fairy"],
+		"0x": 	["Ghost"]
+	},
+	"Flying":
+	{
+		"2x": 	["Fighting", "Bug", "Grass"],
+		"1/2x": ["Rock", "Steel", "Electric"],
+		"0x": 	[]
+	},
+	"Poison":
+	{
+		"2x": 	["Grass", "Fairy"],
+		"1/2x": ["Poison", "Ground", "Rock", "Ghost"],
+		"0x": 	["Steel"]
+	},
+	"Ground":
+	{
+		"2x": 	["Grass", "Fairy"],
+		"1/2x": ["Poison", "Ground", "Rock", "Ghost"],
+		"0x": 	["Steel"]
+	},
+	"Rock":
+	{
+
+	},
+	"Bug":
+	{
+
+	},
+	"Ghost":
+	{
+
+	},
+	"Steel":
+	{
+
+	},
+	"Fire":
+	{
+
+	},
+	"Water":
+	{
+
+	},
+	"Electric":
+	{
+
+	},
+	"Psychic":
+	{
+
+	},
+	"Ice":
+	{
+
+	},
+	"Dragon":
+	{
+
+	},
+	"Dark":
+	{
+		
+	},
+	"Fairy":
+	{
+		
+	}
+}

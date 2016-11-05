@@ -2,6 +2,11 @@
       /*print out json files*/
       console.log(moves);
       
+      //Delete all types without moves - needed for empty json keys
+      $.each(moves, function(key) {
+        if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
+      });
+
       //Display moves
       $.each(moves, function (key, value) {
         $("#moveList").append("<div class='blockheader'><h3>"+key+"</h3></div>");

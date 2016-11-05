@@ -3,6 +3,11 @@
       console.log(moves);
       //console.log(pokemon);
 
+      //Delete all types without moves - needed for empty json keys
+      $.each(moves, function(key) {
+        if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
+      });
+
       /*bind selectable options to move type drop down list user control*/
       $("#moveTypeDropdownList").append(
         $("<option></option>").val('Any').html('Any')
@@ -62,7 +67,7 @@
       var pickedMoves = [];
       var type = moveType;
       var moveBag = JSON.parse(JSON.stringify(moves)); //cloning the json file <_>
-      
+
       if ( moveType == "Any" && desiredMoves > getTotalMoves(moveBag))
       {
         console.log("You asked for more moves than are available in the file!"); //Need to correctly handle error

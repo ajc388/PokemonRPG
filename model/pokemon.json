@@ -8,6 +8,32 @@ var pokemon =
 {
 	"Freebie":
 	{
-		"Name": "Freebie"
+		"Name": "Freebie",
+		"HP": 10,
+		"FP": 5,
+		"IV_Attributes": 
+		{
+			"Speed": 2,
+			"Strength": 2,
+			"Sense": 2,
+			"Mind": 2			  
+		}, 
+		"EV_Attributes":
+		{
+			"Speed": 0,
+			"Speed_Rand_Weight": 0.25,
+			"Strength": 0,
+			"Strength_Rand_Weight": 0.25,
+			"Sense": 0,
+			"Sense_Rand_Weight": 0.25,
+			"Mind": 0,
+			"Mind_Rand_Weight": 0.25,	
+		},
+		"Evolution_Method": "Method",
+		"Personality_Type": "Personality",
+		"Ability": "",
+		"Egg Group": ["type1", "type2", "type3"],
+		"Possible_Moves": ["move1", "move2", "move3"],
+		"Current_Moves": ["move1"]
 	}
 };

@@ -26,6 +26,71 @@ Move Template:
 */
 var moves =
 {
+	"Bug":
+	{
+
+	},
+	"Dark":
+	{
+
+	},
+	"Dragon":
+	{
+
+	},
+	"Electric":
+	{
+		"Jolt": 
+		{
+			"name": "Jolt",
+			"power": 20,
+			"style": "Melee",
+			"flavor": "The user charges in and electrifies everyone around it.",
+			"effect": "This deals 20 damage to all enemies around you.",
+			"critical": "Targets are stunned.",
+		},
+		"Electrify":
+		{
+			"name": "Electrify",
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "This shocks the target and continues to electrocute it.",
+			"effect": "This deals 20 repeating damage to the target.",
+			"critical": "The target is trapped.",
+		}
+	},
+	"Fairy":
+	{
+
+	},
+	"Fighting":
+	{
+
+	},
+	"Fire":
+	{
+
+	},
+	"Flying":
+	{
+
+	},
+	"Ghost":
+	{
+
+	},
+	"Grass":
+	{
+
+	},
+	"Ground":
+	{
+
+	},
+	"Ice":
+	{
+
+	},
 	"Normal":
 	{
 		"Acupressure": 
@@ -81,7 +146,7 @@ var moves =
 			"flavor": "The user hexes a target into temporary forgetfulness.",
 			"effect": "This burns out a move you know the target has, perhaps one it has already used.",
 			"critical": "Target is stunned.",
-		}
+		},
 		"Encode":
 		{
 			"name": "Encode", 
@@ -117,28 +182,27 @@ var moves =
 			"flavor": "A light attack with claws.",
 			"effect": "This deals 20 damage.",
 			"critical": "15 repeating damage.",
-		},
+		}
 
 	},
-	"Electric":
+	"Poison":
 	{
-		"Jolt": 
-		{
-			"name": "Jolt",
-			"power": "20",
-			"style": "Melee",
-			"flavor": "The user charges in and electrifies everyone around it.",
-			"effect": "This deals 20 damage to all enemies around you.",
-			"critical": "Targets are stunned.",
-		},
-		"Electrify":
-		{
-			"name": "Electrify",
-			"power": "20",
-			"style": "Ranged",
-			"flavor": "This shocks the target and continues to electrocute it.",
-			"effect": "This deals 20 repeating damage to the target.",
-			"critical": "The target is trapped.",
-		},
+
+	},
+	"Psychic":
+	{
+
+	},
+	"Rock":
+	{
+
+	},
+	"Steel":
+	{
+
+	},
+	"Water":
+	{
+
 	}
 };
