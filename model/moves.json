@@ -16,7 +16,7 @@ Move Template:
 "TEMPLATE": 
 		{
 			"name": "", 
-			"power": "",
+			"power": ,
 			"style": "",
 			"flavor": "",
 			"effect": "",
@@ -31,7 +31,7 @@ var moves =
 		"Acupressure": 
 		{
 			"name": "Acupressure",
-			"power": "50",
+			"power": 50,
 			"style": "Melee",
 			"flavor": "User presses on an ally's pressure points to increase its vitality.",
 			"effect": "The target's next attack does 60 extra damage.",
@@ -40,7 +40,7 @@ var moves =
 		"Attract": 
 		{
 			"name": "Attract",
-			"power": "40",
+			"power": 40,
 			"style": "Ranged",
 			"flavor": "Romantic savvy charms the target.",
 			"effect": "This causes a compulsion to charm the target into helping the user and attacking anyone who is a threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
@@ -49,7 +49,7 @@ var moves =
 		"Bind":
 		{
 			"name": "Bind", 
-			"power": "30",
+			"power": 30,
 			"style": "Melee",
 			"flavor": "User wraps itself around the target and starts squeezing.",
 			"effect": "Pin the target for 30 damage.",
@@ -58,7 +58,7 @@ var moves =
 		"Copycat":
 		{
 			"name": "Copycat", 
-			"power": "30",
+			"power": 30,
 			"style": "Self",
 			"flavor": "You replicate a move.",
 			"effect": "Use the same move as the last Pokemon did.",
@@ -67,7 +67,7 @@ var moves =
 		"Defense_Curl":
 		{
 			"name": "Defense_Curl", 
-			"power": "40",
+			"power": 40,
 			"style": "Self",
 			"flavor": "The user rolls up into a ball for protection.",
 			"effect": "The user takes 20 less damage from all attacks for the remainder of combat.",
@@ -76,11 +76,38 @@ var moves =
 		"Disable":
 		{
 			"name": "Disable", 
-			"power": "20",
+			"power": 20,
 			"style": "Ranged",
 			"flavor": "The user hexes a target into temporary forgetfulness.",
 			"effect": "This burns out a move you know the target has, perhaps one it has already used.",
 			"critical": "Target is stunned.",
+		}
+		"Encode":
+		{
+			"name": "Encode", 
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user erects a barrier that reduces moves to their constituent code.",
+			"effect": "Until the beginning of the user's next turn, if it is hit by a move it can make a mind save instead of the usual save to dodge attacks. If it succeeds, it creates a disk with the move's data on it.",
+			"critical": "none",
+		},
+		"Encore":
+		{
+			"name": "Encore", 
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user claps and applauds, compelling its target to keep using the same move.",
+			"effect": "This acts as a compulsion for the target to repeat the same move every turn. If the move was a difficult one for the Pokémon, it takes 30 damage every time it uses that move.",
+			"critical": "The status is harsh.",
+		},
+		"Endure":
+		{
+			"name": "Endure", 
+			"power": 40,
+			"style": "Self",
+			"flavor": "I will survive. I will survive!",
+			"effect": "If the user is KO'd, its remains on the field with 10 HP left. The user cannot use this two turns in a row.",
+			"critical": "none",
 		},
 		"Scratch": 
 		{
