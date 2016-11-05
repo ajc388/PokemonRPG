@@ -59,7 +59,7 @@
           var move = moveList[i];
           if ( move )
           {
-            $("#accordion"+key).append("<div class='moveHeader' id='header_"+move.name+"'><span class='moveName'>"+move.name+
+            $("#accordion"+key).append("<div class='moveHeader' id='header_"+move.name+"'><span class='moveName'>"+move.name.replace('_', ' ')+
                                        "</span> <span class='moveFlavor'>" + move.flavor + 
                                        "</span> <span class='movePower'>" + move.power + "</span></div>");
             $("#accordion"+key)
