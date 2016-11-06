@@ -1,0 +1,111 @@
+var counters = 
+{
+	"Normal": 
+	{
+		"2x": 	[],
+		"1/2x": ["Rock", "Steel"],
+		"0x": 	["Ghost"]
+	},
+	"Fighting": 
+	{
+		"2x": 	["Normal", "Rock", "Steel", "Ice", "Dark"],
+		"1/2x": ["Flying", "Poison", "Bug", "Psychic", "Fairy"],
+		"0x": 	["Ghost"]
+	},
+	"Flying":
+	{
+		"2x": 	["Fighting", "Bug", "Grass"],
+		"1/2x": ["Rock", "Steel", "Electric"],
+		"0x": 	[]
+	},
+	"Poison":
+	{
+		"2x": 	["Grass", "Fairy"],
+		"1/2x": ["Poison", "Ground", "Rock", "Ghost"],
+		"0x": 	["Steel"]
+	},
+	"Ground":
+	{
+		"2x": 	["Grass", "Fairy"],
+		"1/2x": ["Poison", "Ground", "Rock", "Ghost"],
+		"0x": 	["Steel"]
+	},
+	"Rock":
+	{
+		"2x": 	["Flying", "Fire", "Bug", "Ice"],
+		"1/2x": ["Fighting", "Ground", "Steel"],
+		"0x": 	[]
+	},
+	"Bug":
+	{
+		"2x": 	["Grass", "Psychic", "Dark"],
+		"1/2x": ["Fighting", "Flying", "Poison", "Ghost", "Steel", "Fire", "Fairy"],
+		"0x": 	[]
+	},
+	"Ghost":
+	{
+		"2x": 	["Ghost", "Psychic"],
+		"1/2x": ["Dark"],
+		"0x": 	["Normal"]
+	},
+	"Steel":
+	{
+		"2x": 	["Rock", "Ice", "Fairy"],
+		"1/2x": ["Steel", "Fire", "Water", "Electric"],
+		"0x": 	[]
+	},
+	"Fire":
+	{
+		"2x": 	["Bug", "Steel", "Grass", "Ice"],
+		"1/2x": ["Rock", "Fire", "Water", "Dragon"],
+		"0x": 	[]
+	},
+	"Water":
+	{
+		"2x": 	["Ground", "Rock", "Fire"],
+		"1/2x": ["Water", "Grass", "Dragon"],
+		"0x": 	[]
+	},
+	"Grass":
+	{
+		"2x": 	["Ground", "Rock", "Water"],
+		"1/2x": ["Flying", "Poison", "Bug", "Steel", "Fire", "Grass", "Dragon"],
+		"0x": 	[]
+	},
+	"Electric":
+	{
+		"2x": 	["Flying", "Water"],
+		"1/2x": ["Grass", "Electric", "Dragon"],
+		"0x": 	["Ground"]
+	},
+	"Psychic":
+	{
+		"2x": 	["Fighting", "Poison"],
+		"1/2x": ["Steel", "Psychic"],
+		"0x": 	["Dark"]
+	},
+	"Ice":
+	{
+		"2x": 	["Flying", "Ground", "Grass", "Dragon"],
+		"1/2x": ["Steel", "Fire", "Water", "Ice"],
+		"0x": 	[]
+	},
+	"Dragon":
+	{
+		"2x": 	["Dragon"],
+		"1/2x": ["Steel"],
+		"0x": 	["Fairy"]
+	},
+	"Dark":
+	{
+		"2x": 	["Ghost", "Psychic"],
+		"1/2x": ["Fighting", "Dark", "Fairy"],
+		"0x": 	[]
+	},
+	"Fairy":
+	{
+		"2x": 	["Fighting", "Dragon", "Dark"],
+		"1/2x": ["Poison", "Steel", "Fire"],
+		"0x": 	[]
+	}
+}
