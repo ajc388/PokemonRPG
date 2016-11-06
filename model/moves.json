@@ -42,7 +42,6 @@ var moves =
 	{
 		"Jolt": 
 		{
-			"name": "Jolt",
 			"power": 20,
 			"style": "Melee",
 			"flavor": "The user charges in and electrifies everyone around it.",
@@ -51,7 +50,6 @@ var moves =
 		},
 		"Electrify":
 		{
-			"name": "Electrify",
 			"power": 20,
 			"style": "Ranged",
 			"flavor": "This shocks the target and continues to electrocute it.",
@@ -95,7 +93,6 @@ var moves =
 	{
 		"Acupressure": 
 		{
-			"name": "Acupressure",
 			"power": 50,
 			"style": "Melee",
 			"flavor": "User presses on an ally's pressure points to increase its vitality.",
@@ -104,7 +101,6 @@ var moves =
 		},
 		"Attract": 
 		{
-			"name": "Attract",
 			"power": 40,
 			"style": "Ranged",
 			"flavor": "Romantic savvy charms the target.",
@@ -113,7 +109,6 @@ var moves =
 		},
 		"Bind":
 		{
-			"name": "Bind", 
 			"power": 30,
 			"style": "Melee",
 			"flavor": "User wraps itself around the target and starts squeezing.",
@@ -122,7 +117,6 @@ var moves =
 		},
 		"Copycat":
 		{
-			"name": "Copycat", 
 			"power": 30,
 			"style": "Self",
 			"flavor": "You replicate a move.",
@@ -131,7 +125,6 @@ var moves =
 		},
 		"Defense_Curl":
 		{
-			"name": "Defense_Curl", 
 			"power": 40,
 			"style": "Self",
 			"flavor": "The user rolls up into a ball for protection.",
@@ -140,7 +133,6 @@ var moves =
 		},
 		"Disable":
 		{
-			"name": "Disable", 
 			"power": 20,
 			"style": "Ranged",
 			"flavor": "The user hexes a target into temporary forgetfulness.",
@@ -149,7 +141,6 @@ var moves =
 		},
 		"Encode":
 		{
-			"name": "Encode", 
 			"power": 60,
 			"style": "Self",
 			"flavor": "The user erects a barrier that reduces moves to their constituent code.",
@@ -158,7 +149,6 @@ var moves =
 		},
 		"Encore":
 		{
-			"name": "Encore", 
 			"power": 30,
 			"style": "Ranged",
 			"flavor": "The user claps and applauds, compelling its target to keep using the same move.",
@@ -167,7 +157,6 @@ var moves =
 		},
 		"Endure":
 		{
-			"name": "Endure", 
 			"power": 40,
 			"style": "Self",
 			"flavor": "I will survive. I will survive!",
@@ -176,7 +165,6 @@ var moves =
 		},
 		"Flail": 
 		{
-			"name": "Flail", 
 			"power": 40,
 			"style": "Ranged",
 			"flavor": "User thrashes about aimlessly in its pain.",
@@ -185,26 +173,23 @@ var moves =
 		},
 		"Flash": 
 		{
-			"name": "Flash", 
 			"power": 40,
 			"style": "Ranged",
 			"flavor": "The Pokemon blinds everyone nearby with blinding light.",
 			"effect": "Everyone in range is blinded.",
 			"critical": "Blindness is harsh",
-			Out of Battle: This lights up the area and causes the Pokemon to glow for an hour or so.
+			"out_of_battle": "This lights up the area and causes the Pokemon to glow for an hour or so."
 		},
-		"Focus Energy": 
+		"Focus_Energy": 
 		{
-			"name": "Focus Energy", 
 			"power": 30,
 			"style": "Self",
 			"flavor": "User concentrates its power.",
 			"effect": "For the remainder of the fight the user crits on any doubles.",
 			"critical": "none",
 		},
-		"Fury Attack": 
+		"Fury_Attack": 
 		{
-			"name": "Fury Attack", 
 			"power": 30,
 			"style": "Melee",
 			"flavor": "The user attacks with uncontrolled rage.",
@@ -213,7 +198,6 @@ var moves =
 		},
 		"Growl": 
 		{
-			"name": "Growl", 
 			"power": 20,
 			"style": "Ranged",
 			"flavor": "A sharp growl causes the target to jump back.",
@@ -222,16 +206,14 @@ var moves =
 		},
 		"Harden": 
 		{
-			"name": "Harden", 
 			"power": 20,
 			"style": "Self",
 			"flavor": "User hardens its protective coating.",
 			"effect": "This allows the user to use strength saves when dodging.",
 			"critical": "none",
 		},
-		"Lock On": 
+		"Lock_On": 
 		{
-			"name": "Lock On", 
 			"power": 30,
 			"style": "Ranged",
 			"flavor": "User focuses on the target.",
@@ -252,26 +234,6 @@ var moves =
 	},
 	"Poison":
 	{
-<<<<<<< HEAD
-		"Jolt": 
-		{
-			"name": "Jolt",
-			"power": 20,
-			"style": "Melee",
-			"flavor": "The user charges in and electrifies everyone around it.",
-			"effect": "This deals 20 damage to all enemies around you.",
-			"critical": "Targets are stunned.",
-		},
-		"Electrify":
-		{
-			"name": "Electrify",
-			"power": 20,
-			"style": "Ranged",
-			"flavor": "This shocks the target and continues to electrocute it.",
-			"effect": "This deals 20 repeating damage to the target.",
-			"critical": "The target is trapped.",
-		},
-=======
 
 	},
 	"Psychic":
@@ -289,6 +251,5 @@ var moves =
 	"Water":
 	{
 
->>>>>>> 30311779a9f897148bc9a734f173c43777f7768e
 	}
 };
