@@ -13,7 +13,7 @@ Details:
 * Critical is what happens if the move is super effective
 
 Move Template:
-"TEMPLATE": 
+"": 
 		{
 			"name": "", 
 			"power": ,
@@ -174,6 +174,71 @@ var moves =
 			"effect": "If the user is KO'd, its remains on the field with 10 HP left. The user cannot use this two turns in a row.",
 			"critical": "none",
 		},
+		"Flail": 
+		{
+			"name": "Flail", 
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User thrashes about aimlessly in its pain.",
+			"effect": "This deals damage equal to half the HP the user has lost.",
+			"critical": "Now deals damage equal to total HP the user has lost.",
+		},
+		"Flash": 
+		{
+			"name": "Flash", 
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The Pokemon blinds everyone nearby with blinding light.",
+			"effect": "Everyone in range is blinded.",
+			"critical": "Blindness is harsh",
+			Out of Battle: This lights up the area and causes the Pokemon to glow for an hour or so.
+		},
+		"Focus Energy": 
+		{
+			"name": "Focus Energy", 
+			"power": 30,
+			"style": "Self",
+			"flavor": "User concentrates its power.",
+			"effect": "For the remainder of the fight the user crits on any doubles.",
+			"critical": "none",
+		},
+		"Fury Attack": 
+		{
+			"name": "Fury Attack", 
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user attacks with uncontrolled rage.",
+			"effect": "This deals 1d60 damage.",
+			"critical": "Deals an extra 1d60 damage.",
+		},
+		"Growl": 
+		{
+			"name": "Growl", 
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "A sharp growl causes the target to jump back.",
+			"effect": "Move the target 2 spaces.",
+			"critical": "The target takes a compulsion to stay away from the user.",
+		},
+		"Harden": 
+		{
+			"name": "Harden", 
+			"power": 20,
+			"style": "Self",
+			"flavor": "User hardens its protective coating.",
+			"effect": "This allows the user to use strength saves when dodging.",
+			"critical": "none",
+		},
+		"Lock On": 
+		{
+			"name": "Lock On", 
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User focuses on the target.",
+			"effect": "The user's next attack against the target will not miss, regardless of circumstances, even if it is out of range.",
+			"critical": "The user's next attack against the target automatically crits.",
+		},
+		
 		"Scratch": 
 		{
 			"name": "Scratch",
