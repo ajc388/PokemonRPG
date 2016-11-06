@@ -8,10 +8,10 @@
       });
 
       //Display moves
-      $.each(moves, function (key, value) {
-        $("#moveList").append("<div class='blockheader'><h3>"+key+"</h3></div>");
-        var moveArray = $.map(moves[key], function(el) { return el});;
-        displayMoves(key, moveArray);
+      $.each(moves, function (type, value) {
+        $("#moveList").append("<div class='blockheader'><h3>"+type+"</h3></div>");
+        //var moveArray = $.map(moves[key], function(el) { return el});;
+        displayMoves(type, moves[type]);
       });
 
       /*Search Functionality*/
@@ -62,28 +62,31 @@
       return tags;
     }
 
-    function displayMoves(key, moveList)
+    function displayMoves(type, moveList)
     {
-      if (moveList.length > 0)
+      console.log(moveList);
+      if (Object.keys(moveList).length > 0)
       {
-        $("#moveList").append("<div id='accordion"+key+"'>");
-        for (var i = 0; i < moveList.length; i++)
+        $("#moveList").append("<div id='accordion"+type+"'>");
+        
+        for (var prop in moveList)
         {
-          var move = moveList[i];
+          var move = moveList[prop];
+
           if ( move )
           {
-            $("#accordion"+key).append("<div class='moveHeader' id='header_"+move.name+"'><span class='moveName'>"+move.name.replace('_', ' ')+
+            $("#accordion"+type).append("<div class='moveHeader' id='header_"+prop+"'><span class='moveName'>"+prop.replace('_', ' ')+
                                        "</span> <span class='moveFlavor'>" + move.flavor + 
                                        "</span> <span class='movePower'>" + move.power + "</span></div>");
-            $("#accordion"+key)
-            .append("<div class='moveContent' id='content_"+move.name+"'>"+
+            $("#accordion"+type)
+            .append("<div class='moveContent' id='content_"+prop+"'>"+
                     "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
                     "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
                     "<p><span class='descriptiveHeader'> Critical: </span>" + move.critical + "</p>"+
                     "</div></div>");
           }
         }
-        $("#accordion"+key).accordion();
+        $("#accordion"+type).accordion();
       }
       else 
       {

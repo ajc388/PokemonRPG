@@ -30,41 +30,42 @@
       });
     });
 
-    function displayMoves(key, moveList)
+    function displayMoves(type, moveList)
     {
       $("#moveList").empty();
       
-      if (moveList.length > 0)
+      if (Object.keys(moveList).length > 0)
       {
-        $("#moveList").append("<div id='accordion"+key+"'>");
-        for (var i = 0; i < moveList.length; i++)
+        $("#moveList").append("<div id='accordion"+type+"'>");
+        
+        for (var prop in moveList)
         {
-          var move = moveList[i];
+          var move = moveList[prop];
           if ( move )
           {
-            $("#accordion"+key).append("<div class='moveHeader' id='"+move.name+"'><span class='moveName'>"+move.name.replace('_', ' ')+
+            $("#accordion"+type).append("<div class='moveHeader' id='header_"+prop+"'><span class='moveName'>"+prop.replace('_', ' ')+
                                        "</span> <span class='moveFlavor'>" + move.flavor + 
                                        "</span> <span class='movePower'>" + move.power + "</span></div>");
-            $("#accordion"+key)
-            .append("<div class='moveContent'>"+
+            $("#accordion"+type)
+            .append("<div class='moveContent' id='content_"+prop+"'>"+
                     "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
                     "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
                     "<p><span class='descriptiveHeader'> Critical: </span>" + move.critical + "</p>"+
                     "</div></div>");
           }
         }
-        $("#accordion"+key).accordion();
+        $("#accordion"+type).accordion();
       }
       else 
       {
-        $("#moveList").append("<p>No results!</p>");
+        $("#moveList").append("<p>No results!?!?!</p>");
       }
     }
 
     //may want to simplify this entirely!
     function movePicker(desiredMoves, moveType)
     {
-      var pickedMoves = [];
+      var pickedMoves = {};
       var type = moveType;
       var moveBag = JSON.parse(JSON.stringify(moves)); //cloning the json file <_>
 
@@ -95,7 +96,8 @@
           var selectedMoveName = Object.keys(moveSet)[position];
           var selectedMove = moveSet[selectedMoveName];
             
-          pickedMoves.push(selectedMove);
+          pickedMoves[selectedMoveName] = selectedMove;
+          console.log(pickedMoves)
           delete moveSet[selectedMoveName];
           if( Object.keys(moveBag[type]).length == 0 ) { delete moveBag[type]; } 
         }
