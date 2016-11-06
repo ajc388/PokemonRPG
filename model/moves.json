@@ -112,7 +112,7 @@ var moves =
 		"Scratch": 
 		{
 			"name": "Scratch",
-			"power": "20",
+			"power": 20,
 			"style": "Melee",
 			"flavor": "A light attack with claws.",
 			"effect": "This deals 20 damage.",
@@ -125,7 +125,7 @@ var moves =
 		"Jolt": 
 		{
 			"name": "Jolt",
-			"power": "20",
+			"power": 20,
 			"style": "Melee",
 			"flavor": "The user charges in and electrifies everyone around it.",
 			"effect": "This deals 20 damage to all enemies around you.",
@@ -134,7 +134,7 @@ var moves =
 		"Electrify":
 		{
 			"name": "Electrify",
-			"power": "20",
+			"power": 20,
 			"style": "Ranged",
 			"flavor": "This shocks the target and continues to electrocute it.",
 			"effect": "This deals 20 repeating damage to the target.",
