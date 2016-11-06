@@ -1,0 +1,95 @@
+//The key is the personality name
+//Description is what the personality does.
+//Weight_Min is the smallest roll on a d100 to get the personality
+//Weight_Max is the largest roll on a d100 to get the personality
+var personalities =
+{
+	"Winning": 
+	{
+		"Description": "The Pokémon gets one FP any time it faints a Pokémon or wins a battle.",
+		"Weight_Min": 0,
+		"Weight_Max": 5
+	},
+	"Playing": 
+	{
+		"Description": "It Pokémon gains double FP from being played with.",
+		"Weight_Min": 5,
+		"Weight_Max": 10,
+	},
+	"Encouragement":
+	{
+		"Description": "Any time you encourage the Pokémon during a fight, it gains an extra FP.",
+		"Weight_Min": 10,
+		"Weight_Max": 15
+	},
+	"Helping_Out":
+	{
+		"Description": "Any time the Pokémon assists you on a skill test, it gains an FP.",
+		"Weight_Min": 15,
+		"Weight_Max": 20
+	},
+	"GM’s_Choice":
+	{
+		"Description": "Any time the Pokémon assists you on a skill test, it gains an FP.",
+		"Weight_Min": 20,
+		"Weight_Max": 25
+	},
+	"Losing":
+	{
+		"Description": "The Pokémon gets 1 FP every time it faints and fills its FP every time a battle is lost.",
+		"Weight_Min": 25,
+		"Weight_Max": 26
+	},
+	"Retreating":
+	{
+		"Description": "Every time you return the Pokémon to its pokeball during a fight, it gets 2 FP.",
+		"Weight_Min": 26,
+		"Weight_Max": 27
+	},
+	"Adrenaline_Rush":
+	{
+		"Description": "Every time the Pokémon dodges an attack, it gains an FP.",
+		"Weight_Min": 27,
+		"Weight_Max": 28
+	},
+	"Showing_Off":
+	{
+		"Description": "Every time it uses a difficult move in combat, the Pokémon gets 1 FP.",
+		"Weight_Min": 28,
+		"Weight_Max": 29
+	}
+}
+
+/*15: Slacking: Every time it uses a natural move in combat, the Pokémon gets 1 FP.
+16: Not Fighting: Every battle the trainer gets into in which this Pokémon doesn’t participate, it gains 1 FP.
+21: Wandering: The player lets the Pokémon wander off on its own for a time. Restores 1d6 FP. (Secret: Every time the Pokémon wanders off it causes trouble. The FP restored correlate to how much trouble it causes. You may think up interesting incidents and then determine how many FP they’re worth, or roll randomly and then come up with trouble equal to the FP granted).
+22: Being Helpful: The Pokémon is ecstatic to help out. Every time you have the Pokémon assist you, it fills its FP. (Secret: Every time the Pokémon assists, it messes everything up, probably accidentally. Treat this as a critical failure. Go on and on about how thrilled the Pokémon is to help and how energetically it goes about it, and then give a description of its actions and the resulting mess that leads to facepalms.) 
+23: Stealing: Every time the Pokémon steals something, it gains an FP. (Secret: If the Pokémon is out of its ball you should, from time to time, announce that the player doesn’t see where it went. Soon it’ll return with an item in its mouth and it’ll have gained 1 FP. This will occasionally cause the player trouble.
+24: Independence: Every time you tell the Pokémon to do something, roll a d6. On a 1 the Pokémon does something other than what was instructed and gains an FP.
+25: Going Potty: Let the Pokémon out of its Pokeball to do its business and it gains 1 FP. (Secret: The Pokémon will try to find something to pee on or leave droppings on that it shouldn’t, earning more FP at the cause of hilarity at the player’s expense.)
+26: Teasing: In combat, as a free action, the Pokémon can tease an opponent in range. This Pokémon gains 1 FP and the enemy automatically loses one. (Secret: As a GM, you will at times have the Pokémon here also tease allies in or out of combat, gaining an FP at the ally’s expense.) 
+31: Chasing: Every time a wild Pokémon escapes, this one tries to chase it down and gains 1 FP. This desire does not give the Pokémon any extra ability to catch the fleeing Pokemon. 
+32: New Friends: Every time you catch a wild Pokémon both this and the new one gain 1 FP.
+33:  
+34: Costumes: If you dress the Pokémon up a costume it hasn’t worn in awhile, it gains 1 FP. If you put it in a new costume, it gains 3 FP. 
+35: Ugly Outfits: Normally, a Pokémon loses an FP if you send it out in an ugly outfit. Now, it gains one instead. 
+36: Acting: The Pokémon gains an FP every time it takes part in a Pokémon theater scene. 
+41: Being healed: Every time the Pokémon is healed by any means, it gets 1 FP
+42: Checkups: The Pokémon is neurotic about its health. Every time the Pokémon is taken to a Pokémon center, it fills half of its FP rounded up. 
+43: Swimming: The Pokémon likes to swim. It gain 1 FP every time you let it play in the water and every time it participates in a water battle or encounter. 
+44: Workout: The Pokémon likes being trained. Every time you train it, it gains an FP.
+45: 
+46: Being Alone: The Pokémon is an introvert. For every session it spends in the PC, it gains an FP. 
+51: Cheerleading: If you leave the Pokémon out of its Pokeball on the sidelines of a fight, it will cheer for the Pokémon in the fight. Every time you encourage a Pokémon, this one helps, and both Pokémon gain an FP. 
+52: Meeting People: Every time you have the Pokémon out while talking to someone it hasn’t met before, it checks out the new person, getting any petting it can. Then it gains an FP. 
+53: Being Traded: The Pokémon likes the thrill of a new trainer. Every time it is traded, instead of losing all FP, it fills its FP. 
+54: Mating: Every time you breed the Pokémon it gains 1 FP, but every time you make a juvenile comment about this ability or the breeding process it loses an FP.
+55: Rivalry: The Pokémon gain an FP every time it attacks a same-gendered Pokémon.
+56: Flirting: Every time the Pokémon uses a move on an opposite gendered Pokémon in combat, it gains an FP. If it used a move to assist one or more allies, all opposite gendered Pokémon gain an FP. 
+61: Hoarding: Every time you give this Pokémon an accessory, it gain 2 FP. If you take the accesory back, it loses 5 FP. 
+62: Grooming: Every time the Pokémon gets groomed (aka a haircut) it gets double FP. 
+63: Eating: Every time the Pokémon eats a berry or you go out of your way to feed it, it gets 1 FP.
+64: Magpie: Every time you give the Pokémon something shiny, it gets 1 FP.
+65: Bribery: The Pokémon likes money, for some reason. Every time you give it $100, it gains 1FP.
+66: Toys: Every time you give the Pokémon a new item to hold, it gains 1 FP. 
+*/
