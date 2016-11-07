@@ -36,6 +36,9 @@
         //bind sort functionality to buttons
         $("#sort_name_"+type).on('click', function() { sortByName(type); });
         $("#sort_power_"+type).on('click', function() { sortByValue(type); });
+
+        //Sort by name by default
+        sortByName(type); 
       });
 
       /*Search Functionality*/
