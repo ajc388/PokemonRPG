@@ -19,9 +19,9 @@
 </head>
 
 <body>
-  <header id="header">
-    <img src="assets/images/pokemon_menu.png" alt ="Pokemon RPG Menu" style="width:1200px;height:300px;"/>
-    <nav>
+  <header id="header" class="banner">
+    <img src="assets/images/pokemon_menu.png" alt ="Pokemon RPG Menu"/>
+    <nav class="menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="randomizer.html">Move Randomizer</a></li>
@@ -32,24 +32,25 @@
   </header>
   
   <section class="block" id="randomGenerator">
-    <div id="randomGeneratorDescription">
-      <h3 class="blockheader">Move Randomizer</h3>
-     <div>
+    <div class="blockheader" id="randomGeneratorDescription">
+      <span>Move Randomizer</span>
+    </div>
 
-    <form class="userinput" id="randomGeneratorForm">
+    <div class="userinput" id="randomGeneratorForm" >
       <label for="numberMoves">Number of Moves: </label>
       <input class="input" type="number" name="numberMoves" id="numberMovesTextBox" min="1" max="10" value="1"/> <br/>
       <label for="moveType">Move Type: </label>
       <select class="input" name="moveType" id="moveTypeDropdownList"></select><br/>
-      <input class="button" type="button" id="randomizeMovesButton" value="Randomize" /> 
-    </form>
+      <button class="button ui-button ui-widget ui-corner-all" id="randomize">Randomize</button> 
+    </div>
   </section>
 
   <section class="block" id="selectedMoveSection">
-    <div id="selectedMoveSelectionDescription">
-      <h3 class="blockheader">Moves</h3>
+    <div class="blockheader" id="selectedMoveSelectionDescription">
+      <span>Pokemon Moves</span>
     </div>
-    <div id="moveList"></div>
+    <div id="moveList">
+    </div>
   </section>
 
 </body>

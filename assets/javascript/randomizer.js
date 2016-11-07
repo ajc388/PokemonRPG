@@ -8,13 +8,6 @@
         if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
       });
 
-      //Create color map for UI
-      //First color is dark, second color is light
-      var colorMap = new Map();
-      colorMap.set("Fire", ["#9C531F", "#F08030"]); 
-      colorMap.set("Electric", ["#A1871F", "#F8D030"]); 
-      colorMap.set("Normal", ["#6D6D4E", "#A8A878"]);
-
       /*bind selectable options to move type drop down list user control*/
       $("#moveTypeDropdownList").append(
         $("<option></option>").val('Any').html('Any')
@@ -27,58 +20,54 @@
 
       /*bind events to form*/
       /*bind click action to randomize button*/
-      $("#randomizeMovesButton").click(function() {
+      $("#randomize").click(function() {
         var numberOfMoves = $("#numberMovesTextBox").val();
         var moveType = $("#moveTypeDropdownList").find("option:selected").text();
         var moveList = movePicker(numberOfMoves, moveType)
-
-        console.log(moveList);
-        displayMoves(moveType, moveList, colorMap);
+        
+        displayMoves(moveList);
       });
     });
 
-    function displayMoves(type, moveList, colorMap)
+    function displayMoves(moveList)
     {
       $("#moveList").empty();
       
       if (Object.keys(moveList).length > 0)
       {
-        $("#moveList").append("<div id='accordion"+type+"'>");
-        
+        var accordion = $("<div id='accordion'></div>");
         for (var moveName in moveList)
         {
           var move = moveList[moveName];
           if ( move )
           {
-            //Create header for accordion
-            $("#accordion"+type).append("<div class='moveHeader' id='header_"+moveName+"'>"+
+            //Create header div for accordion
+            accordion.append("<div class='moveHeader "+ move.type.toLowerCase() +"' id='header_"+moveName+"'>"+
                                        "<img class='icon' id='img_icon_"+moveName+"'"+ 
                                        "src= 'assets/images/type_icons/"+move.type+".png' ></img>"+
                                        "<span class='moveName'>"+moveName.replace('_', ' ')+"</span>"+
                                        "<span class='moveDice' id='img_dice_"+moveName+"'></span>"+
                                        "<span class='moveFlavor'>" + move.flavor +"</span>"+ 
-                                       "<span class='moveValue'>" + Math.pow(move.power,2) + "</span></div>");
+                                       "<span class='movePower'>" + move.power + "</span></div>");
             //Create dice icons - displayed after name inside the dice span tag
             for ( var i = 1; i < Math.round(move.power/30, 0)+1; i++ )
             {
-              $("#img_dice_"+moveName).append("<img class='icon' src='assets/images/dice_icons/die_"+i+".png'/>");
+              accordion.find("#img_dice_"+moveName).append("<img class='icon' src='assets/images/dice_icons/die_"+i+".png'/>");
             }
 
-            //Create content for accordion
-            $("#accordion"+type)
+            //Create content div for accordion
+            accordion
             .append("<div class='moveContent' id='content_"+moveName+"'>"+
-                    "<p><span class='descriptiveHeader'> Power: </span>" + move.power + "</p>" +
+                    "<p><span class='descriptiveHeader'> Power: </span>" + Math.pow(move.power,2) + "</p>" +
                     "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
                     "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
                     "<p><span class='descriptiveHeader'> Critical: </span>" + move.critical + "</p>"+
                     "</div>");
-            
-            //Set colors from colormap
-            $("#header_"+moveName).css('background-color', colorMap.get(move.type)[0] );
-            $("#content_"+moveName).css('background-color', colorMap.get(move.type)[1] );
           }
         }
-        $("#accordion"+type).accordion();
+
+        $("#moveList").append(accordion);
+        accordion.accordion();
       }
       else 
       {

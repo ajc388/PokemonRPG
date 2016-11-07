@@ -9,18 +9,11 @@
 }
 
 div.moveHeader {
-	height: 30px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-.moveHeader img.icon {
-	display: inline-block;
-	width: 25px;
-	min-width: 25px;
-	padding: 2px;
+	height: 25px;
 }
 .moveHeader span.moveName {
 	display: inline-block;
+	vertical-align: super;
 	font-size: 110%;
 	font-weight: bold;
 	width: 15%;
@@ -34,16 +27,39 @@ div.moveHeader {
 }
 .moveHeader span.moveFlavor {
 	display: inline-block;
+	vertical-align: super;
 	font-style: italic;
 	width: 65%;
 	min-width: 400px;
 	margin-left: 20px;
 }
-.moveHeader span.moveValue {
+.moveHeader span.movePower {
 	display: inline-block;
+	vertical-align: super;
 	font-size: 120%;
 	font-weight: bold;
 	width: 5%;
 	min-width: 40px;
 }
+
+div.typeheader {
+	border-style: outset;
+	border-width: 2px;
+	width: 99.2%;
+	border-color: #AAA;
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+.typeheader span {
+	display:inline-block; 
+	width:80%;
+	vertical-align: top;
+}
+.typeheader span span {
+	margin-left:20px;
+	margin-right:20px;
+	width:300px;
+}
+
+
 

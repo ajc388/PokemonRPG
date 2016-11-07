@@ -7,38 +7,45 @@
         if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
       });
 
-      //MOVE THIS TO CSS these values don't change dynamically
-      //Create color map for UI
-      //First color is dark, second color is light
-      var colorMap = new Map();
-      colorMap.set("Fire", ["#9C531F", "#F08030"]); 
-      colorMap.set("Electric", ["#A1871F", "#F8D030"]); 
-      colorMap.set("Normal", ["#6D6D4E", "#A8A878"]);
+      /*Fixed elements*/
+      $(function() {
+        fixedScroller($("#anchor"), $("#moves"))
+      });
 
       //Displays a group of accordions for every pokemon type
       $.each(moves, function (type, value) {
         $("#moveList").append(
-            "<div class='blockheader'>"+
-              "<button id='sort_name_"+type+"' class='sort_button ui-button ui-widget ui-corner-all'>Sort By Name</button>"+
-              "<span style='display: inline-block; width: 80%;'>"+type+"</span>"+
-              "<button id='sort_power_"+type+"' class='sort_button ui-button ui-widget ui-corner-all'>Sort By Power</button>"+
+              "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
+              "<button id='sort_name_"+type+"' class='button ui-button ui-widget ui-corner-all'>Sort By Name</button>"+
+              "<span>"+
+              "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+              "<span>"+type+"</span>"+
+              "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+              "</span>"+
+              "<button id='sort_power_"+type+"' class='button ui-button ui-widget ui-corner-all'>Sort By Power</button>"+
              "</div>"
             );
-        $(".sort_button").css({
-          display: 'inline-block',
-          width: '120px',
-          backgroundColor: 'darkslateblue',
-          color: 'white'
-        });
 
-        displayMoves(type, moves[type], colorMap);
+        displayMoves(type, moves[type]);
 
         //bind sort functionality to buttons
         $("#sort_name_"+type).on('click', function() { sortByName(type); });
-        $("#sort_power_"+type).on('click', function() { sortByValue(type); });
+        $("#sort_power_"+type).on('click', function() { sortByPower(type); });
 
         //Sort by name by default
         sortByName(type); 
+
+        /*SCROLL FUNCTIONALITY*/
+
+        $(".navIconMenu ul").append(
+                  "<li><a id='link_"+type+"'>"+
+                  "<img class='icon' src='assets/images/type_icons/"+type+".png' />"+
+                  "</a></li>");
+
+          $("#link_"+type).click(function() {
+            $('html, body').animate({
+                scrollTop: $("#category_"+type).offset().top - $("#moves").css("height").replace("px", "")
+            }, 1000 );
       });
 
       /*Search Functionality*/
@@ -53,9 +60,24 @@
       $("#search")
         .on("keyup", function() { search(); })
         .on('autocompleteclose', function () {  search(); });
-
-
+      });
     });
+
+    function fixedScroller(anchor, fixedElement) {
+      var move = function() {
+          var st = $(window).scrollTop();
+          var ot = anchor.offset().top;
+          if(st > ot) {
+              $(fixedElement).addClass("fixed");
+          } else {
+              if(st <= ot) {
+                  $(fixedElement).removeClass("fixed");
+              }
+          }
+      };
+      $(window).scroll(move);
+      move();
+    }
 
     function sortByName(type)
     {
@@ -79,7 +101,7 @@
         });
     }
 
-    function sortByValue(type)
+    function sortByPower(type)
     {
         var accordion = $("#accordion"+type);
         var entries = accordion.children('div');
@@ -90,7 +112,7 @@
         });
 
         var sort = map.sort(function (a, b) {
-          return parseInt($(a[0]).find(".moveValue").text()) < parseInt($(b[0]).find(".moveValue").text()) ? 1 : -1;
+          return parseInt($(a[0]).find(".movePower").text()) < parseInt($(b[0]).find(".movePower").text()) ? 1 : -1;
         });
 
         console.log(sort);
@@ -134,7 +156,7 @@
       return tags;
     }
 
-    function displayMoves(type, moveList, colorMap)
+    function displayMoves(type, moveList)
     {
       if (Object.keys(moveList).length > 0)
       {
@@ -145,13 +167,13 @@
           if ( move )
           {
             //Create header div for accordion
-            accordion.append("<div class='moveHeader' id='header_"+moveName+"'>"+
+            accordion.append("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'>"+
                                        "<img class='icon' id='img_icon_"+moveName+"'"+ 
                                        "src= 'assets/images/type_icons/"+type+".png' ></img>"+
                                        "<span class='moveName'>"+moveName.replace('_', ' ')+"</span>"+
                                        "<span class='moveDice' id='img_dice_"+moveName+"'></span>"+
                                        "<span class='moveFlavor'>" + move.flavor +"</span>"+ 
-                                       "<span class='moveValue'>" + Math.pow(move.power,2) + "</span></div>");
+                                       "<span class='movePower'>" + move.power + "</span></div>");
             //Create dice icons - displayed after name inside the dice span tag
             for ( var i = 1; i < Math.round(move.power/30, 0)+1; i++ )
             {
@@ -161,15 +183,11 @@
             //Create content div for accordion
             accordion
             .append("<div class='moveContent' id='content_"+moveName+"'>"+
-                    "<p><span class='descriptiveHeader'> Power: </span>" + move.power + "</p>" +
+                    "<p><span class='descriptiveHeader'> Value: </span>" + Math.pow(move.power,2) + "</p>" +
                     "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
                     "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
                     "<p><span class='descriptiveHeader'> Critical: </span>" + move.critical + "</p>"+
                     "</div>");
-            
-            //Set colors from colormap
-            accordion.find("#header_"+moveName).css('background-color', colorMap.get(type)[0] );
-            accordion.find("#content_"+moveName).css('background-color', colorMap.get(type)[1] );
           }
         }
 

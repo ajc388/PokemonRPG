@@ -1,0 +1,28 @@
+nav.navIconMenu {
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+}
+nav.navIconMenu ul {
+	list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+nav.navIconMenu li {
+    display: inline-block;
+}
+nav.navIconMenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-right:2px;
+}
+nav.navIconMenu li a:hover {
+	position: relative;
+	background-color: #1F1F1F;
+	top: 1px;
+	left: 1px;
+}

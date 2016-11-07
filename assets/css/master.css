@@ -1,53 +1,76 @@
 /*Menu section*/
-nav ul {
-    list-style-type: none;
+body {
+	padding: 0px;
+	margin: 0px;
+}
+.banner img {
+	width:100%;
+	height:300px;
+}
+.banner nav.menu li a {
+    font-size: 120%;
+    padding: 10px 10px;
+}
+nav.menu {
+	width: 100%;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+nav.menu ul {
+	list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-nav li {
-    float: left;
+nav.menu li {
+    display: inline-block;
 }
-
-nav li a {
+nav.menu li a {
     display: block;
     color: white;
     text-align: center;
-    font-size: 120%;
-    padding: 14px 16px;
     text-decoration: none;
 }
-
-nav li a:hover {
+nav.menu li a:hover {
     background-color: #111;
 }
 
 /*Blocks section*/
-.blockheader {
+div.block {
+	width: 100%;
+}
+
+div.blockheader {
 	font-size: 150%;
 	font-weight: bold;
 	display: block;
 	text-align: center;
+	width: 99.5%;
 	color: white;
 	background-color: #333;
-	margin-top: 10px;
-	padding: 0px;
-	height: 32px;
+	margin-bottom: 10px;
+	padding: 3px;
+	height: 30px;
+}
+div.blockHeader span {
+	display: inline-block; 
+	width: 100%;
 }
 
 /*User controls section*/
-.userinput {
-	background-color: #DDD;
+div.userinput {
+	background-color: #CCA;
 	display: block;
 	border-style: solid;
 	border-width: 1px;
-	margin-left: 25%;
-	margin-right: 25%;
-	padding: 20px;
+	margin-left: 22%;
+	padding: 25px;
 	width: 50%;
 	min-width: 200px;
 	border-radius: 20px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 .userinput label {
 	font-weight: bold;
@@ -57,16 +80,45 @@ nav li a:hover {
 }
 .input {
 	display: -webkit-inline-box;
-	margin-left:50px;
+	margin-left:10px;
+	margin-right:10px;
 	width: 150px;
 }
 .button {
-	font-size: 120%;
-	background-color: aliceblue;
-	border-radius: 8px;
+	color: #FFF;
+	width: 120px;
+	background-color: #333;
+	vertical-align: top;
+}
+
+.search {
+	position: absolute;
+	right: 5px;
+}
+.search input {
+	vertical-align: middle;
 }
 
 /*Auto complete section*/
 .ui-autocomplete {
-	background-color: white;
+	background-color: #FFF;
+}
+
+/*Coloring for pokemon types*/
+.electric {
+	background-color: #F8D030 !important; 
+}
+.normal {
+	background-color: #A8A878 !important;
+}
+
+.fixed {
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+.icon {
+	display: inline-block;
+	width: 25px;
+	min-width: 25px;
 }
