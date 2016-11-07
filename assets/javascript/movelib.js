@@ -7,6 +7,7 @@
         if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
       });
 
+      //MOVE THIS TO CSS these values don't change dynamically
       //Create color map for UI
       //First color is dark, second color is light
       var colorMap = new Map();
@@ -14,7 +15,7 @@
       colorMap.set("Electric", ["#A1871F", "#F8D030"]); 
       colorMap.set("Normal", ["#6D6D4E", "#A8A878"]);
 
-      //Display moves
+      //Displays a group of accordions for every pokemon type
       $.each(moves, function (type, value) {
         $("#moveList").append(
             "<div class='blockheader'>"+
@@ -33,12 +34,8 @@
         displayMoves(type, moves[type], colorMap);
 
         //bind sort functionality to buttons
-        $("#sort_name_"+type).on('click', function() {
-          sortByName(type);
-        });
-        $("#sort_power_"+type).on('click', function() {
-          sortByPower(type);
-        });
+        $("#sort_name_"+type).on('click', function() { sortByName(type); });
+        $("#sort_power_"+type).on('click', function() { sortByValue(type); });
       });
 
       /*Search Functionality*/
@@ -60,35 +57,44 @@
     function sortByName(type)
     {
         var accordion = $("#accordion"+type);
-        var entries = $.map(accordion.find('.accordionItem'), function(item) {
-          return $(item).add($(item).next());
-        });
-        console.log("here");
+        var entries = accordion.children('div');
 
-        var sort = entries.sort(function (a, b) {
-          return $(a).find(".moveName").text() > $(b).find(".moveName").text();
+        //Maps the two accordion DOM elemnets to an array
+        var map = $.map(entries, function(item, i) {
+          return i%2 == 0 ? [[$(item), $(item).next()]]: null;
         });
 
-        $.each(entries, function() {
-          this.detach().appendTo(accordion);
+        //Sort the accordions by move name
+        var sort = map.sort(function (a, b) {
+          return $(a[0]).find(".moveName").text() > $(b[0]).find(".moveName").text() ? 1 : -1;
+        });
+
+        //reattach the accordions
+        $.each(sort, function(key, item) {
+          accordion.append(item[0]);
+          accordion.append(item[1]);
         });
     }
 
-    function sortByPower(type)
+    function sortByValue(type)
     {
         var accordion = $("#accordion"+type);
-        $("#accordion"+type).empty();
+        var entries = accordion.children('div');
 
-        var entries = $.map(accordion.find('.accordionItem'), function(item) {
-          return $(item).add($(item).next());
+        //Maps the two accordion DOM elemnets to an array
+        var map = $.map(entries, function(item, i) {
+          return i%2 == 0 ? [[$(item), $(item).next()]]: null;
         });
 
-        var sort = entries.sort(function (a, b) {
-          return $(a).find(".moveValue").text() < $(b).find(".moveValue").text();
+        var sort = map.sort(function (a, b) {
+          return parseInt($(a[0]).find(".moveValue").text()) < parseInt($(b[0]).find(".moveValue").text()) ? 1 : -1;
         });
 
-        $.each(entries, function(e) {
-          e.detach().append(accordion);
+        console.log(sort);
+
+        $.each(sort, function(key, item) {
+          accordion.append(item[0]);
+          accordion.append(item[1]);
         });
     }
 
@@ -136,7 +142,7 @@
           if ( move )
           {
             //Create header div for accordion
-            accordion.append("<div class='moveHeader accordionItem' id='header_"+moveName+"'>"+
+            accordion.append("<div class='moveHeader' id='header_"+moveName+"'>"+
                                        "<img class='icon' id='img_icon_"+moveName+"'"+ 
                                        "src= 'assets/images/type_icons/"+type+".png' ></img>"+
                                        "<span class='moveName'>"+moveName.replace('_', ' ')+"</span>"+
@@ -151,7 +157,7 @@
 
             //Create content div for accordion
             accordion
-            .append("<div class='moveContent accordionItem' id='content_"+moveName+"'>"+
+            .append("<div class='moveContent' id='content_"+moveName+"'>"+
                     "<p><span class='descriptiveHeader'> Power: </span>" + move.power + "</p>" +
                     "<p><span class='descriptiveHeader'> Style: </span>" + move.style + "</p>" +
                     "<p><span class='descriptiveHeader'> Effect: </span>" + move.effect + "</p>"+
