@@ -1,4 +1,71 @@
 var specials = 
 {
-	
+	"Airborne": 
+	{
+		"Description": "This special is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain."
+	},
+	"Cosplayer":
+	{
+		"Description": "You may hold an extra accessory as part of your outfit."
+	},
+	"Heavy_Sleeper":
+	{
+		"Description": "You gain 30 health each turn while asleep."
+	},
+	"Hover":
+	{
+		"Description": "You hover, avoiding the effects of terrain and becoming immune to ground attacks."
+	},
+	"Intimidate":
+	{
+		"Description": "You break your enemies’ focus. The first time you come in range of an enemy Pokémon, it can’t use a difficult attack."
+	},
+	"Lazy":
+	{
+		"Description": "The Pokémon comes into combat asleep. Blubber deposits give it extra HP equal to its strength."
+	},
+	"Many Arms":
+	{
+		"Description": "You have 4 or more arms. When you pin a target, you may continue to make attacks as usual."
+	},
+	"Minions":
+	{
+		"Description": "You have a pair of offspring that you share a hive-mind relationship with. As far as being stored in a Pokeball and league rules are concerned, you all count as one Pokémon, like Exeggcute. But as far as game rules are concerned, they are treated as separate Pokémon, with the exception that when the Pokémon is recalled its minions return with it and when it is sent out the minions appear on spaces adjacent to it. The minions are both the lowest Pokémon on the evolutionary line, having the first two moves on their sheet available and 1 in all their EV’s. These Pokémon never increase their stats or learn new moves. On the Pokémon’s turn, it can either dash and take a standard action or have both of its minions dash and take a standard action. The minions have no FP available to them; instead they share the main Pokémon’s FP. Any compulsion that affects any of the Pokémon affects them all, once again because of the hive mind. Only the main Pokémon rolls mind saves."
+	},
+	"Peculiar_Resistance":
+	{
+		"Description": "The Pokémon is resistant to another type beyond what it would normally resist."
+	},
+	"Precision":
+	{
+		"Description": "Whenever you use a natural move that can crit, you may choose not to roll to crit. If you do so the attack hits automatically."
+	},
+	"Shell":
+	{
+		"Description": "Reduce all damage taken is reduced by ⅓ of your strength, rounded to the nearest 10. This includes self-inflicted damage."
+	},
+	"Sniper":
+	{
+		"Description": "Increase your range by 2."
+	},
+	"Specialist":
+	{
+		"Description": "You may use one of your difficult moves as if it were natural. You may change which move every time you learn a new move."
+	},
+	"Status_Immunity":
+	{
+		"Description": "You are immune to a particular status. For example, ghost Pokemon often have immunity to trapped."
+	},
+	"Sealthy":
+	{
+		"Description": "The Pokémon enters the field sneaking."
+	},
+	"Swift_Swim":
+	{
+		"Description": "You never have decreased dash in water. In fact, your dash distance is doubled. This also occurs during rain. But outside of the water your dash distance is decreased by 1. For instance, a Pokémon with dash 3 and this ability has dash 6 in the water but dash 2 on land. "
+	},
+	"Weak_Form":
+	{
+		"Description": "This special prevents you from learning any TM or HM moves, but when you evolve train all your stats twice instead of once."
+	}
 }
