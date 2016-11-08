@@ -1,0 +1,73 @@
+article.pokemon {
+	border-width: 5px;
+	border-style: outset;
+	border-radius: 15px;
+	border-color: #333;
+	height: 480px;
+}
+article.pokemon:first-child:hover {
+	margin-left: 0.1%;
+	border-style: inset;
+	border-color: green;
+	background-color: lightgreen;
+}
+article.pokemon:hover {
+	margin-left: 1.1%;
+	border-style: inset;
+	border-color: green;
+	background-color: lightgreen;
+}
+.pokemon div {
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+div.pokemonHeader {
+	font-size: 130%;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+span.type {
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: #333;
+	width: 40%;
+	margin-left: 0px;
+	color: #333;
+}
+
+span.eggGroup {
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: #333;
+	width: 40%;
+	margin-left: 15px;
+	color: #333;
+}
+
+.shortDescription span {
+	font-style: italic;
+}
+.shortDescription {
+	border-width: 1px 0px;
+	border-style: solid;
+}
+.pokemon .pic {
+	vertical-align: center;
+	width:250px;
+	height:250px;
+	margin-left: 7%;
+}
+.longDescription {
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+}
+.longDescription p {
+	padding: 5px;
+}
