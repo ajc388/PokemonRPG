@@ -1,62 +1,54 @@
 //The key is the personality name
 //Description is what the personality does.
-//Weight_Min is the smallest roll on a d100 to get the personality
-//Weight_Max is the largest roll on a d100 to get the personality
+//Weight is an abstract number to represent the odds of the personality appearing
+//all weight values are summed when the program runs. The weight is then weight/total
+//for the percentage chance to pop up.
 var personalities =
 {
 	"Winning": 
 	{
 		"Description": "The Pokémon gets one FP any time it faints a Pokémon or wins a battle.",
-		"Weight_Min": 0,
-		"Weight_Max": 5
+		"Weight": 5
 	},
 	"Playing": 
 	{
 		"Description": "It Pokémon gains double FP from being played with.",
-		"Weight_Min": 5,
-		"Weight_Max": 10,
+		"Weight": 5
 	},
 	"Encouragement":
 	{
 		"Description": "Any time you encourage the Pokémon during a fight, it gains an extra FP.",
-		"Weight_Min": 10,
-		"Weight_Max": 15
+		"Weight": 5
 	},
 	"Helping_Out":
 	{
 		"Description": "Any time the Pokémon assists you on a skill test, it gains an FP.",
-		"Weight_Min": 15,
-		"Weight_Max": 20
+		"Weight": 5
 	},
 	"GM’s_Choice":
 	{
 		"Description": "Any time the Pokémon assists you on a skill test, it gains an FP.",
-		"Weight_Min": 20,
-		"Weight_Max": 25
+		"Weight": 5
 	},
 	"Losing":
 	{
 		"Description": "The Pokémon gets 1 FP every time it faints and fills its FP every time a battle is lost.",
-		"Weight_Min": 25,
-		"Weight_Max": 26
+		"Weight": 1
 	},
 	"Retreating":
 	{
 		"Description": "Every time you return the Pokémon to its pokeball during a fight, it gets 2 FP.",
-		"Weight_Min": 26,
-		"Weight_Max": 27
+		"Weight": 1
 	},
 	"Adrenaline_Rush":
 	{
 		"Description": "Every time the Pokémon dodges an attack, it gains an FP.",
-		"Weight_Min": 27,
-		"Weight_Max": 28
+		"Weight": 1
 	},
 	"Showing_Off":
 	{
 		"Description": "Every time it uses a difficult move in combat, the Pokémon gets 1 FP.",
-		"Weight_Min": 28,
-		"Weight_Max": 29
+		"Weight": 1
 	}
 }
 
