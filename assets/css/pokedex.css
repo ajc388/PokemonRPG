@@ -3,7 +3,7 @@ article.pokemon {
 	border-style: outset;
 	border-radius: 15px;
 	border-color: #333;
-	height: 480px;
+	height: 330px;
 }
 article.pokemon:first-child:hover {
 	margin-left: 0.1%;
@@ -63,11 +63,4 @@ span.eggGroup {
 	width:250px;
 	height:250px;
 	margin-left: 7%;
-}
-.longDescription {
-	border-width: 1px 0px 0px 0px;
-	border-style: solid;
-}
-.longDescription p {
-	padding: 5px;
 }
