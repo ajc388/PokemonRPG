@@ -1,6 +1,11 @@
 $( document ).ready( function() {
   /*print out json files*/
-  dataGrid({
+  DataGrid(
+  {
     model: personalities, 
-    searchCriteria: ".name" });
+    searchFlag: true,
+    sortFlag: true,
+    name: "Personlaties"
+  });
+
 });
