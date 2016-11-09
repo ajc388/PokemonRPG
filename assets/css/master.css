@@ -128,7 +128,18 @@ table.dataGrid {
 .normal {
 	background-color: #A8A878 !important;
 }
-
+.dark {
+	background-color: #303030 !important;
+}
+.fairy {
+	background-color: #ff6699 !important;
+}
+.fighting {
+	background-color: #ffa31a !important;
+}
+.dragon {
+	background-color: #cc9900 !important;
+}
 .fixed {
 	position: fixed;
 	top: 0px;
