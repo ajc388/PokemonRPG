@@ -3,25 +3,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+
   <title>Pokemon RPG</title>
   <meta name="description" content="Local pokemon toolkit">
   <meta name="author" content="Cameron">
   
   <link rel="stylesheet" type="text/css" href="assets/vendor/jquery-ui-1.12.1/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/moves.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/movelib.css" />
-  
+
   <script src="assets/vendor/jquery-3.1.1/jquery-3.1.1.js"></script>
   <script src="assets/vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
-  <script src="assets/javascript/movelib.js"></script>
+  <script src="assets/javascript/menu.js"></script>
+
+  <script src="assets/javascript/personalities.js"></script>
+
+  <script type="text/javascript" src="model/personalities.json"></script>
   
-  <script type="text/javascript" src="model/moves.json"></script>
-  
+
 </head>
 
 <body>
-
   <header id="header" class="banner">
     <img src="assets/images/pokemon_menu.png" alt ="Pokemon RPG Menu"/>
     <nav class="menu">
@@ -29,26 +30,28 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="randomizer.html">Move Randomizer</a></li>
           <li><a href="movelib.html">Move Library</a></li>
+          <li><a href="personalities.html">Personalities</a></li>
+          <li><a href="abilities.html">Personalities</a></li>
           <li><a href="pokedex.html">Pokedex</a></li>
         </ul>
     </nav>
   </header>
   
-  <section class="block" id="moveSection">
+  <section class="block" >
     <div id="anchor"></div>
-    <div id="moves" class="blockheader">
-      <nav class="navIconMenu">
-        <ul>
-        </ul>
-      </nav>
-      <span>Pokemon Moves</span>
+    <div id="selector" class="blockheader">
+      <span >Pokemon Personalities</span>
       <span class="search">
         <label for="search">Search: </label>
         <input class="input" id="search" type="search"></input>
       </span>
     </div>
-    <div id="moveList"></div>
   </section>
 
+  <section class="block">
+    <div id="personalities">
+  
+    </div>
+  </section>
 </body>
 </html>
