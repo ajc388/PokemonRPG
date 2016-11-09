@@ -2,33 +2,33 @@ var counters =
 {
 	"Normal": 
 	{
-		"2x": 	[],
-		"1/2x": ["Rock", "Steel"],
+		"2x": 	["Fighting"],
+		"1/2x": [],
 		"0x": 	["Ghost"]
 	},
 	"Fighting": 
 	{
-		"2x": 	["Normal", "Rock", "Steel", "Ice", "Dark"],
-		"1/2x": ["Flying", "Poison", "Bug", "Psychic", "Fairy"],
+		"2x": 	["Fairy", "Flying", "Psychic"],
+		"1/2x": ["Bug", "Dark", "Rock"],
 		"0x": 	["Ghost"]
 	},
 	"Flying":
 	{
-		"2x": 	["Fighting", "Bug", "Grass"],
-		"1/2x": ["Rock", "Steel", "Electric"],
-		"0x": 	[]
+		"2x": 	["Electric", "Ice", "Rock"],
+		"1/2x": ["Bug", "Fighting", "Grass"],
+		"0x": 	["Ground"]
 	},
 	"Poison":
 	{
-		"2x": 	["Grass", "Fairy"],
-		"1/2x": ["Poison", "Ground", "Rock", "Ghost"],
-		"0x": 	["Steel"]
+		"2x": 	["Ground", "Psychic"],
+		"1/2x": ["Fighting", "Poison", "Bug", "Grass", "Fairy"],
+		"0x": 	[]
 	},
 	"Ground":
 	{
-		"2x": 	["Grass", "Fairy"],
-		"1/2x": ["Poison", "Ground", "Rock", "Ghost"],
-		"0x": 	["Steel"]
+		"2x": 	["Grass", "Ice", "Water"],
+		"1/2x": ["Poison", "Rock"],
+		"0x": 	["Electric"]
 	},
 	"Rock":
 	{
@@ -38,63 +38,63 @@ var counters =
 	},
 	"Bug":
 	{
-		"2x": 	["Grass", "Psychic", "Dark"],
-		"1/2x": ["Fighting", "Flying", "Poison", "Ghost", "Steel", "Fire", "Fairy"],
+		"2x": 	["Fire", "Flying", "Rock"],
+		"1/2x": ["Fighting", "Grass", "Ground"],
 		"0x": 	[]
 	},
 	"Ghost":
 	{
-		"2x": 	["Ghost", "Psychic"],
-		"1/2x": ["Dark"],
-		"0x": 	["Normal"]
+		"2x": 	["Ghost", "Dark"],
+		"1/2x": ["Bug", "Poison"],
+		"0x": 	["Normal", "Fighting"]
 	},
 	"Steel":
 	{
-		"2x": 	["Rock", "Ice", "Fairy"],
-		"1/2x": ["Steel", "Fire", "Water", "Electric"],
-		"0x": 	[]
+		"2x": 	["Fighting", "Fire", "Ground"],
+		"1/2x": ["Steel", "Bug", "Dark", "Dragon", "Flying", "Ghost", "Grass", "Ice", "Normal", "Psychic", "Rock", "Steel"],
+		"0x": 	["Poison"]
 	},
 	"Fire":
 	{
-		"2x": 	["Bug", "Steel", "Grass", "Ice"],
-		"1/2x": ["Rock", "Fire", "Water", "Dragon"],
+		"2x": 	["Ground", "Rock", "Water"],
+		"1/2x": ["Bug", "Fire", "Grass", "Ice", "Steel"],
 		"0x": 	[]
 	},
 	"Water":
 	{
-		"2x": 	["Ground", "Rock", "Fire"],
-		"1/2x": ["Water", "Grass", "Dragon"],
+		"2x": 	["Electric", "Grass"],
+		"1/2x": ["Fire", "Ice", "Steel", "Water"],
 		"0x": 	[]
 	},
 	"Grass":
 	{
-		"2x": 	["Ground", "Rock", "Water"],
-		"1/2x": ["Flying", "Poison", "Bug", "Steel", "Fire", "Grass", "Dragon"],
+		"2x": 	["Bug", "Fire", "Flying", "Ice", "Poison"],
+		"1/2x": ["Electric", "Grass", "Ground", "Water"],
 		"0x": 	[]
 	},
 	"Electric":
 	{
-		"2x": 	["Flying", "Water"],
-		"1/2x": ["Grass", "Electric", "Dragon"],
-		"0x": 	["Ground"]
+		"2x": 	["Ground"],
+		"1/2x": ["Electric", "Flying", "Steel"],
+		"0x": 	[]
 	},
 	"Psychic":
 	{
-		"2x": 	["Fighting", "Poison"],
-		"1/2x": ["Steel", "Psychic"],
-		"0x": 	["Dark"]
+		"2x": 	["Bug", "Dark", "Ghost"],
+		"1/2x": ["Fighting", "Psychic"],
+		"0x": 	[]
 	},
 	"Ice":
 	{
-		"2x": 	["Flying", "Ground", "Grass", "Dragon"],
-		"1/2x": ["Steel", "Fire", "Water", "Ice"],
+		"2x": 	["Fighting", "Fire", "Rock", "Steel"],
+		"1/2x": ["Ice"],
 		"0x": 	[]
 	},
 	"Dragon":
 	{
-		"2x": 	["Dragon"],
-		"1/2x": ["Steel"],
-		"0x": 	["Fairy"]
+		"2x": 	["Dragon", "Fairy", "Ice"],
+		"1/2x": ["Electric", "Grass", "Fire", "Water"],
+		"0x": 	[]
 	},
 	"Dark":
 	{
@@ -104,8 +104,8 @@ var counters =
 	},
 	"Fairy":
 	{
-		"2x": 	["Fighting", "Dragon", "Dark"],
-		"1/2x": ["Poison", "Steel", "Fire"],
-		"0x": 	[]
+		"2x": 	["Poison", "Steel"],
+		"1/2x": ["Bug", "Dark", "Fighting"],
+		"0x": 	["Dragon"]
 	}
 }
