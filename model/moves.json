@@ -42,7 +42,7 @@ var moves =
 	{
 		"Jolt": 
 		{
-			"power": 20,
+			"power": 30,
 			"style": "Melee",
 			"flavor": "The user charges in and electrifies everyone around it.",
 			"effect": "This deals 20 damage to all enemies around the user.",
@@ -50,7 +50,7 @@ var moves =
 		},
 		"Electrify":
 		{
-			"power": 20,
+			"power": 40,
 			"style": "Ranged",
 			"flavor": "This shocks the target and continues to electrocute it.",
 			"effect": "This deals 20 repeating damage to the target.",
@@ -64,15 +64,753 @@ var moves =
 			"effect": "User and everyone in range are charged, meaning the next uncharged Pokemon that moves adjacent to them takes 2d60 electric damage.",
 			"critical": "none",
 		},
-		
+		"Electrolocation": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user senses electrical impulses to scan the environment.",
+			"effect": "The target is identified.",
+			"critical": "Target is harshly identified. ",
+			"out_of_battle": "This move is particularly adept at picking up on electrical sources, such as the nervous systems of animals or lost electronics.",
+		},
+		"Electroweb":
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User traps the targets in a web of electricity.",
+			"effect": "This traps the targets and all adjacent targets.",
+			"critical": "Targets are harshly trapped. ",
+		},
+		"Lightning_Reflexes": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "User’s nerves begin to conduct electrical impulses quicker and more effectively.",
+			"effect": "",
+			"critical": "For the remainder of combat, the user automatically gets the benefit of the dodge order without that needing to be said, due to a shortened reaction time..",
+		},
+		"Magnet_Rise": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user floats on magnetic currents.",
+			"effect": "User gains the hover ability.",
+			"critical": "none",
+		},
+		"Magnetize": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User causes the target to be attracted to metal.",
+			"effect": "The target is now weak against steel attacks.",
+			"critical": "none",
+		},
+		"Nuzzle": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User rubs its electrified cheeks against the target.",
+			"effect": "This stuns the target.",
+			"critical": "Also deals 30 automatic damage.",
+		},
+		"Shuffle": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "User shuffles its feet along the ground, building up a charge.",
+			"effect": "Reduce the user’s dash by 1 while using this move. The user’s next electric attack deals double damage.",
+			"critical": "none",
+		},
+		"Spark": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "A spark jumps from the user to a foe.",
+			"effect": "This deals 20 damage to the target.",
+			"critical": "Stuns the target.",
+		},
+		"Supercharge": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "The user provides an ally with enormous amounts of electricity.",
+			"effect": "Target’s next electric attack does double damage.",
+			"critical": "none",
+			"out_of_battle": "The Pokemon can provide the target with way more energy than it needs to function, increasing performance. This move gives the GM the right and responsibility to insult anyone who says 'That can cause problems with technology in our world, so the semi-magical nature of Pokémon moves will always have the exact same effect on advanced Pokémon-world tech that is designed to be able to handle exposure to electric attacks.'",
+			"mark": "Designer's Choice"
+		},
+		"Superstatic": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user builds up a massive static charge that is about to go off.",
+			"effect": "This deals 60 damage to the next Pokemon that moves adjacent to the user.",
+			"critical": "",
+		},
+		"Thunder_Shock": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User shoots the target with electricity.",
+			"effect": "This deals 30 damage.",
+			"critical": "Stuns the target.",
+		},
+		"Zap": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User shoots a bit of lightning at a foe.",
+			"effect": "This deals 40 damage.",
+			"critical": "+30 damage.",
+		},
+		"Ball_Lightning": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User shoots an exploding orb of electricity.",
+			"effect": "Deal 60 damage to the target and all adjacent targets, friend or foe.",
+			"critical": "+30 damage.",
+		},
+		"Charge": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User builds up an electrical charge.",
+			"effect": "The next electric attack the user does inflicts double damage.",
+			"critical": "This move does not crit.",
+		},
+		"Discharge": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User releases a powerful electric blast in every direction.",
+			"effect": "Deal 60 damage to all adjacent targets, friend or foe.",
+			"critical": "Targets are stunned.",
+		},
+		"Eerie_Impulse": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "St. Elmo’s fire distracts the opponent, keeping it from targeting allies.",
+			"effect": "The target’s range is halved for the remainder of combat.",
+			"critical": "Target is also blinded.",
+		},
+		"Empty_Batteries": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User pours all its electrical energy into the target.",
+			"effect": "Deal 80 damage to the target. User can't use electric attacks next turn.",
+			"critical": "Target is trapped.",
+		},
+		"Parabolic_Charge": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User absorbs electrical energy from all adjacent enemies and uses that to recharge. ",
+			"effect": "Deal 40 damage to all adjacent targets, friend or foe, and restore health equal to 10 times the number of targets shocked.",
+			"critical": "+20 damage and double the healing. ",
+		},
+		"Tetrashock": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots lightning out in 4 directions.",
+			"effect": "Choose 4 directions; either north, east, south, and west, or northeast, southeast, southwest, and northwest. Deal 50 damage to all targets along those 4 lines, friend or foe.",
+			"critical": "+30 damage.",
+		},
+		"Ion_Beam": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "A broad beam of electrons washes over everything in its path.",
+			"effect": "Every target along a line takes 40 damage.",
+			"critical": "+30 damage.",
+		},
+		"Thunderbolt": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots a bolt of lightning at the target.",
+			"effect": "This deals 60 damage.",
+			"critical": "Crit: Target is stunned.",
+		},
+		"Thunder_Fang": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User bites the target with electrified teeth.",
+			"effect": "This deals 50 damage.",
+			"critical": "Target is stunned. ",
+		},
+		"Thunder_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User punches the target with an electrified fist.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Thunderwave": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "Waves of electricity roll over the target.",
+			"effect": "The target is harshly stunned. ",
+			"critical": "Target takes 30 damage. ",
+		},
+		"Bolt_Strike": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User shoots the target with a powerful bolt of lightning.",
+			"effect": "This deals 100 damage to the target.",
+			"critical": "Target is stunned. ",
+		},
+		"Charge_Beam": 
+		{
+			"power": 100 ,
+			"style": "Ranged",
+			"flavor": "User zaps the target and absorbs the leftover electricity.",
+			"effect": "This deals 40 damage to the target and doubles the damage of the next electric attack from the user.",
+			"critical": "+30 damage.",
+		},
+		"Electro_Ball": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User shoots a lightning-fast ball of electricity.",
+			"effect": "This deals the user’s speed +40 in damage to the target. ",
+			"critical": "+30 damage.",
+		},
+		"Lightning": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "A pure bolt of electric devastation.",
+			"effect": "This deals 80 damage to the target.",
+			"critical": "+30 damage.",
+		},
+		"Shockwave": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User shoots a lightning-fast bolt of electricity.",
+			"effect": "This deals 70 damage and does not miss.",
+			"critical": "none",
+		},
+		"Thunder": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User calls down lightning, channeling it through its own body into an explosion of lightning.",
+			"effect": "This deals 80 damage to everyone adjacent to the user.",
+			"critical": "Stun the targets.",
+		},
+		"Thunderstorm": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User calls down lightning from the sky, blasting the area with bolt after bolt.",
+			"effect": "This deals 90 damage to all targets within range, friend or foe.",
+			"critical": "Stun the targets.",
+		},
+		"Volt_Tackle": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "User electrifies itself, charges the target, and shocks it repeatedly.",
+			"effect": "User deals 120 damage but takes 40 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Wild_Charge": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User electrifies itself and rams the target.",
+			"effect": "This deals 110 damage, but the user takes 20 damage.",
+			"critical": "+40 damage and the user takes +10 damage.",
+		},
+		"Zap_Cannon": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User shoots a powerful beam of lightning at the target.",
+			"effect": "This deals 80 damage and stuns the target.",
+			"critical": "none",
+		},
 	},
 	"Fairy":
 	{
-
+		"Charm": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "Using wiles to distract the enemy.",
+			"effect": "The target cannot use a difficult move next turn.",
+			"critical": "Target cannot use difficult moves for the rest of combat.",
+		},
+		"Disarming_Voice": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User lower the targets’ defense and then smacks them.",
+			"effect": "This deals 20 damage to all adjacent foes and does not miss.",
+			"critical": "none",
+		},
+		"Fairy_Dust": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "The user sprinkles mysterious magical dust on the target.",
+			"effect": "Roll a d6 and do an effect from this list: 1: The target is stunned 2: The target is asleep 3: The target takes 30 fire damage 4: The target takes 30 grass damage 5: The target takes a compulsion to pretending it’s a fairy 6: The target takes 15 repeating damage",
+			"critical": "Roll twice and do both effects.",		
+			"out_of_battle": "This can be applied to various inanimate objects. This has whatever effect on the item the GM says it has, or roll a d6. 1: The object disappears, where to no one knows. 2: The object is transformed into a similar object. 3: The object is transformed into the Pokémon that most closely resembles the object. 4: The object is transformed into the opposite of itself. 5: Ask a really creative player what should happen, but it can’t be the player who used the move. If the GM agrees, that happens. If not, the GM picks something annoying and that happens instead. 6: The user takes its mind in damage and may no longer use this move this game session."
+		},
+		"Fairy_Tail":
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "The user slaps the target with a magical tail.",
+			"effect": "This deals 20 damage.",
+			"critical": "Crit: +30 damage.",
+		},
+		"Fairy_Wind": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User sends a blast of enchanted wind at its target.",
+			"effect": "This deals 30 damage.",
+			"critical": "Move the target 3 spaces.",
+		},
+		"Glomp": 
+		{
+			"power": 10,
+			"style": "Melee",
+			"flavor": "User tacklehugs its opponent, distracting it with kindness.",
+			"effect": "This pins the target for no damage, and grants it a friendship point. The target is under a compulsion not to hurt the user.",
+			"critical": "Target has a compulsion to protect and aid the user above all else. ",
+		},
+		"Sweet_Kiss": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "A quick peck and some fairy magic and the target suddenly goes bananas.",
+			"effect": "The target suffers a compulsion to confusion.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Aromatic_Mist": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User sprays a stimulating aromatherapy scent.",
+			"effect": "User and all adjacent targets regain the use of a burnt out move.",
+			"critical": "none",
+		},
+		"Baby-Doll_Eyes": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User bats its cute eyes at a Pokémon, lowering its aggression.",
+			"effect": "This has a range of 3 extra spaces. The target has a compulsion not to hurt others.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Dazzling_Gleam": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User blasts all targets in the area with fairy light.",
+			"effect": "All targets in range take 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Draining_Kiss": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "Wow, what a kiss!",
+			"effect": "This deals 40 damage and heals half the damage dealt.",
+			"critical": "+20 damage with increased healing. ",
+		},
+		"Fairy_Godmother": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User blesses the target with luck and good health.",
+			"effect": "The target’s next attack automatically crits and it restores 20 health. ",
+			"critical": "This move does not crit.",
+			"out_of_battle": "Every time an egg hatches, if you have at least one Pokémon in your party that knows this move, the egg trains all stats. Multiple fairy godmothers do not stack. ",
+		},
+		"Friendship_Is_Magic": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User channels the power of its friendship into a powerful blast.",
+			"effect": "This deals damage equal to 10 times the number of friendship points the user has. ",
+			"critical": "Double Damage",
+		},
+		"Crafty_Shield": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "A protective field keeps friends safe.",
+			"effect": "User and all allies in range, but not enemies, are protected from all statuses for the remainder of combat. ",
+			"critical": "none",
+		},
+		"Fairy_Lock": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "Fairy barriers keep everyone together.",
+			"effect": "No Pokémon may leave the battlefield unless KO’d, whether that is being returned by pokeball, leaving the field, or being forcibly moved off.",
+			"critical": "none",
+		},
+		"Geas": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User forces the enemy to play fair and not be a cheaty cheaterson.",
+			"effect": "Pick a target anywhere on the battlefield. It is under a harsh compulsion to abandon whatever overpowered, piece of crap strategy it’s been abusing. This move does not miss.",
+			"critical": "none",
+		},
+		"Geomancy": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "User slowly draws elemental power from the environment.",
+			"effect": "At the end of the user's next turn, all of its moves are now natural.",
+			"critical": "none",
+		},
+		"Giant_Slayer": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user takes down a greater foe with a smart plan and a clever wit.",
+			"effect": "This move has one less space of range, but it deals damage equal to the sum total of the target’s IV’s. Thus, it’s most effective against overpowered Pokémon. Giant slayer does double damage to gargantuan Pokémon.",
+			"critical": "Extra damage equal to the target’s strength EV. ",
+		},
+		"Light_of_Ruin": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "A devastating ray of light, fuelled by the user’s strength.",
+			"effect": "This deals 100 damage to every target along a line, but the user takes 50 damage.",
+			"critical": "+30 damage",
+		},
+		"Misty_Terrain": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "Healing mist rolls in low to the ground.",
+			"effect": "All Pokémon on the ground are immune to status effects and immune to dragon moves. ",
+			"critical": "This move does not crit.",
+		},
+		"Moonblast": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "In the name of the moon I will punish you.",
+			"effect": "This deals 90 damage to the target and all adjacent targets.",
+			"critical": "+30 damage.",
+		},
+		"Moonlight": 
+		{
+			"power": 90,
+			"style": "Self",
+			"flavor": "User raise its arms to the moon and draws in energy.",
+			"effect": "Restore 50 health, or 80 if it’s nighttime and the user can see the light of the moon.",
+			"critical": "none",
+		},
+		"Play_Rough": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "Time to get serious.",
+			"effect": "This deals 90 damage.",
+			"critical": "Target cannot use a difficult attack next turn.",
+		},
 	},
 	"Fighting":
 	{
-
+		"Arm_Thrust": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User repeatedly palm-strikes the enemy.",
+			"effect": "This deals 1d60 damage. ",
+			"critical": "+1d60 damage. ",
+		},
+		"Karate_Chop": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "Hiyaaa!",
+			"effect": "This deals 20 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Headlock": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "User grabs the target by the head.",
+			"effect": "This pins the target for 20 damage.",
+			"critical": "Pin is harsh.",
+		},
+		"Rock_Smash": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User smashes whatever is in front of it.",
+			"effect": "This deals 30 damage and crits on any doubles.",
+			"critical": "The target takes double damage from the next attack.",
+		},
+		"Spin_Kick": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "A reckless twirling kick.",
+			"effect": "This deals 20 damage and hits all adjacent targets.",
+			"critical": "Move all targets 3 spaces.",
+		},
+		"Slap": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "A quick fighting smack.",
+			"effect": "This deals 20 damage.",
+			"critical": "+30 damage.",
+		},
+		"Submission": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User grabs the target and dives for the ground.",
+			"effect": "This deals 60 damage and the user takes 30 damage.",
+			"critical": "Target is stunned. ",
+		},
+		"Triple_Kick": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "3 short kicks.",
+			"effect": "Make 3 attacks, each doing 10 damage.",
+			"critical": "Roll to crit for each, and on each crit, do +10 damage. ",
+		},
+		"Aura_Sphere": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "Hadouken!",
+			"effect": "This deals 30 damage and does not miss, hitting the target and all adjacent targets.",
+			"critical": "none",
+		},
+		"Brick_Break": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User chops straight through the enemy’s defenses.",
+			"effect": "This deals 40 damage and ignores any buffs or abilities the user may have that allow it to avoid attacks or reduce damage taken.",
+			"critical": "+30 damage.",
+		},
+		"Bulk_Up": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User becomes even more muscled.",
+			"effect": "The user’s next attack deals double damage.",
+			"critical": "none",
+		},
+		"Circle_Throw": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User twirls the target around and tosses it from the area.",
+			"effect": "This deals 30 damage and moves the target 4 spaces. ",
+			"critical": "+30 damage.",
+		},
+		"Close_Combat": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User strikes with reckless abandon.",
+			"effect": "This deals 100 damage and the user burns out all its difficult moves.",
+			"critical": "+40 damage dealt, +10 damage",
+		},
+		"Counter": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "A riposte that knocks the enemy back.",
+			"effect": "If the user did not dash before using this move, it deals 100 damage and moves the target back 1 space.",
+			"critical": "+30 damage",
+		},
+		"Cross_Chop": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User chops with each arm in an X pattern.",
+			"effect": "This deals 40 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Double_Kick": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User kicks in quick succession with each foot.",
+			"effect": "This deals 30 damage, and the user attacks twice.",
+			"critical": "Roll a crit for each attack, each crit does +20 damage.",
+		},
+		"Drain_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "Users saps energy from the target with the hit.",
+			"effect": "This deals 40 damage, and if it hits the user restores half the damage dealt.",
+			"critical": "+20 damage with the extra healing that would result. ",
+		},
+		"Force_Palm": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User makes a forceful blow with its hand. ",
+			"effect": "This deals 40 damage and moves the target 2 spaces. ",
+			"critical": "Target is stunned.",
+		},
+		"Grapple": 
+		{
+			"power": 50,
+			"style": "User puts the target in a wrestling hold.",
+			"flavor": "Pin the target for 50 damage.",
+			"effect": "",
+			"critical": "+30 immediate damage.",
+		},
+		"Hammer_Arm": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User brings its fist down in a devastating attack.",
+			"effect": "This deals 90 damage but the user loses its next dash action.",
+			"critical": "Target is stunned. ",
+		},
+		"Jump_Kick": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User leaps to the target foot first.",
+			"effect": "Draw a line from the user straight through the target. One a hit, this moves the user adjacent to the target and deals 80 damage. On a miss, the user moves its full movement distance to the end of the line and the user takes 30 damage.",
+			"critical": "+30 damage.",
+		},
+		"Low_Kick": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "Using a low, sweeping kick that is more effective against heavier targets.",
+			"effect": "This deals damage equal to the target’s strength.",
+			"critical": "User kicks the jewels. Target burns out its difficult moves.",
+		},
+		"Low_Sweep": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "Users sweeps the target’s legs.",
+			"effect": "This deals 30 damage and the target loses its next dash action.",
+			"critical": "Target is stunned.",
+		},
+		"Mach_Punch": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User flies forward and delivers a lightning-speed punch.",
+			"effect": "This deals 40 damage and allows the user to move 3 extra spaces.",
+			"critical": "Take an extra dash action.",
+		},
+		"Power-Up_Punch": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User throws warm-up punches to get ready.",
+			"effect": "This deals 20 damage and doubles the damage of the user’s next attack.",
+			"critical": "Double damage to the next 2 attacks instead of just 1.",
+		},
+		"Roundhouse": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User punches and follows through in a circle.",
+			"effect": "This deals 50 damage to all adjacent targets, friend or foe.",
+			"critical": "+30 damage.",
+		},
+		"Seismic_Toss": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User picks the target up and throws it on the ground.",
+			"effect": "This does damage equal the user’s strength.",
+			"critical": "Target is stunned.",
+		},
+		"Sky_Uppercut": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "Shoryuken!",
+			"effect": "This deals 50 damage and flying Pokémon are treated as being weak against it. It also allows the user to hit targets flying above the battlefield without any range penalty.",
+			"critical": "+30 damage.",
+		},
+		"Dynamic_Punch": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "A punch straight to head.",
+			"effect": "This deals 60 damage, and the target has a compulsion to acting dazed.",
+			"critical": "Target loses 30 mind.",
+		},
+		"Final_Gambit": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User risks it all for one last takedown.",
+			"effect": "This deals 180 damage, and the user instantly faints. ",
+			"critical": "+30 damage. ",
+		},
+		"Fists_of_Fury": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User barrages its opponent with punches.",
+			"effect": "This deals 3d60 damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Focus_Blast": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User channels its chi into an erratic blast.",
+			"effect": "This deals 120 damage to the target and all adjacent targets.",
+			"critical": "none",
+		},
+		"Flying_Press": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User dives down on the target from above.",
+			"effect": "This deals 80 damage. Treat it as being either fighting or flying, whichever is of the most benefit to you at the moment.",
+			"critical": "+30 damage",
+		},
+		"One-Armed_Hold": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User picks the target up in a one-armed chokehold and carries it around.",
+			"effect": "This pins the target for 50 damage a turn, but instead of the user being unable to act, if the Pokémon is light enough to ride it, the user simply carries it around. If the Pokémon has many arms, this deals double damage.",
+			"critical": "Pin is harsh.",
+		},
+		"War_Dance": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "Like the ancient Moiri, the user and allies perform a haka dance.",
+			"effect": "This allows the user and all adjacent allies to take an extra dash action next turn, and their next attacks deal double damage.",
+			"critical": "none",
+		},
 	},
 	"Fire":
 	{
@@ -706,7 +1444,7 @@ var moves =
 		},
 		"Self_Destruct": 
 		{
-			"power": 60,
+			"power": 70,
 			"style": "Melee",
 			"flavor": "The user explodes into fragments, fainting from the damage. It will get better at some point.",
 			"effect": "This deals 150 damage to all adjacent targets, friend or foe. The user is KO'd.",
@@ -842,7 +1580,7 @@ var moves =
 		},
 		"Explosion": 
 		{
-			"power": 90,
+			"power": 100,
 			"style": "Ranged",
 			"flavor": "The user self-destructs, taking everyone nearby with it.",
 			"effect": "This deals 180 damage to all targets in range. The user is KO'd.",
