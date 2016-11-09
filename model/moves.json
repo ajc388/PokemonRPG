@@ -55,7 +55,16 @@ var moves =
 			"flavor": "This shocks the target and continues to electrocute it.",
 			"effect": "This deals 20 repeating damage to the target.",
 			"critical": "The target is trapped.",
-		}
+		},
+		"Electric_Boogaloo": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user rocks on to electric avenue with a dance that builds up static.",
+			"effect": "User and everyone in range are charged, meaning the next uncharged Pokemon that moves adjacent to them takes 2d60 electric damage.",
+			"critical": "none",
+		},
+		
 	},
 	"Fairy":
 	{
@@ -235,6 +244,7 @@ var moves =
 			"flavor": "The user prepares to attack unwary foes.",
 			"effect": "For the remainder of combat, if any foe gets adjacent to the user but doesn't use a melee move on it, the user may deal its strength in damage to the enemy.",
 			"critical": "none",
+			"mark": "Designer's Choice."
 		},
 		"Sharpen": 
 		{
@@ -299,7 +309,7 @@ var moves =
 			"flavor": "High-pitched chatter causes hearing loss, annoyance, and distraction.",
 			"effect": "No one in range can crit or dodge on their next turn.",
 			"critical": "Crit: +30 damage.",
-			"mark": "Designer's Choice."
+			"mark": "Designer's Choice"
 		},
 		"Rapid_Spin": 
 		{
@@ -325,7 +335,7 @@ var moves =
 			"flavor": "A variety of aromas and pheromones draw in nearby Pokémon.",
 			"effect": "All Pokémon in range, friend or foe, are compelled to come as close as possible to the user.",
 			"critical": "The compulsion is harsh",
-			"out_of_battle": "Once per session this move can be used to initiate an encounter with local Pokemon."
+			"out_of_battle": "Once per session this move can be used to initiate an encounter with local Pokemon.",
 		},
 		"Tackle": 
 		{
@@ -472,7 +482,7 @@ var moves =
 			"effect": "Make 2 attacks. Both do 20 damage.",
 			"critical": "Each attack does +20 damage on a crit.",
 		},
-		"Double Team": 
+		"Double_Team": 
 		{
 			"power": 60,
 			"style": "Self",
@@ -501,152 +511,187 @@ var moves =
 			"power": 70,
 			"style": "Ranged",
 			"flavor": "The user sees just into the future, spotting a target without fail.",
-			"effect": "This harshly identifies a target. Ghost Pokémon become vulnerable to normal and fighting type moves.",
+			"effect": "This harshly identifies a target. Ghost Pokémon take 1x damage from normal and fighting type moves.",
 			"critical": "Target is stunned.",
 		},
+		"Frustration": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user pours out its frustrations with its trainer on a foe.",
+			"effect": "This deals damage equal to 30 plus ten times all the friendship points the user is currently missing.",
+			"critical": "+50 damage and the user loses an FP.",
+		},
+		"Fury_Swipes": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes the target in a rage.",
+			"effect": "This deals 2d60 damage.",
+			"critical": "Crit: +1d60 damage.",
+		},
+		"Glare": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "A paralyzing stare.",
+			"effect": "The target is harshly stunned.",
+			"critical": "The target also has a compulsion to flee from the user.",
+		},
+		"Headbutt": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The Pokémon rams the other with its thick head.",
+			"effect": "This deals 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Head_Charge": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User charges the target head-on.",
+			"effect": "Target takes 90 damage and the user takes 20 automatic damage.",
+			"critical": "+40 damage dealt and user takes an extra 10.",
+		},
+		"Heal_Bell": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user rings a curative bell.",
+			"effect": "Cure all statuses of everyone within range.",
+			"critical": "none",
+		},
+		"Hold_Hands": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "Hand in hand two friends share an adventure.",
+			"effect": "Choose an adjacent ally. Both user and ally automatically move together. Both lose their dash actions, but as long as they choose to continue to hold hands, both of gain a friendship point each turn.",
+			"critical": "none",
+		},
+		"Herd": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user gathers together several enemies into one location.",
+			"effect": "All enemies in range have a compulsion to move to a spot of your choosing.",
+			"critical": "The compulsion is harsh, and you may change the spot by having the same Pokémon use this move again, with automatic success against anyone under the compulsion.",
+			"mark": "Designer's Choice.",
+		},
+		"Horn_Attack": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "When in doubt, gore someone.",
+			"effect": "This deals 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Hyper_Fang": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user bites down hard on a foe.",
+			"effect": "This deals 70 damage.",
+			"critical": "Target is pinned for 30 damage.",
+		},
+		"Payday": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User throws coins at the target.",
+			"effect": "This deals 20 damage. It drops pokedollars on the battlefield equal to 10 times the user’s speed stat.",
+			"critical": "+20 damage and 5 times the pokedollars dropped.",
+			"out_of_battle": "You can use a downtime action with this Pokémon to drop 50 times its speed stat in Pokedollars. Additionally, once per scene when you make a financial transaction, you can decrease the total amount owed by that amount.",
+			"opinion": "This move should be steel-typed, due to metal coins.",
+		},
+		"Perish_Song": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User sings a dirge that dooms everyone around it.",
+			"effect": "Every Pokemon in range will faint at the end of its second turn.",
+			"critical": "All affected have one turn left.",
+		},
+		"Power_Nap": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "In the midst of a fight, when everything's on the line, few have the courage to sleep.",
+			"effect": "This heals 60 damage. And then the user falls asleep.",
+			"critical": "none",
+		},
+		"Pound": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User smashes the target with all its might.",
+			"effect": "This deals 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Present": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User give the target a present with a mystery gift.",
+			"effect": "Choose a target in range and announce your choice. This deals 3d60 damage, but if the dice come up triples it heals the target by the amount listed.",
+			"critical": "none",
+			"out_of_battle": "once per session you may use a downtime action on a Pokémon with this move to have it give you a present. You get an item chosen by the GM, which will probably be good but maybe not.",
+		},
+		"Protect": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "User protects itself at all cost.",
+			"effect": "User automatically passes all dodge rolls for one turn, except crits.",
+			"critical": "none",
+		},
+		"Rage": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User focus its anger into a berserk attack.",
+			"effect": "This deals 80 damage. It is under a compulsion to continue to use rage as long as it is possible to use it on an enemy.",
+			"critical": "+20 damage on this and all further uses of rage until another move is used.",
+		},
+		"Retaliate": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "A strike driven by the need to avenge a fallen comrade.",
+			"effect": "This deals 100 damage if an ally fainted since the user’s last turn. Otherwise, 40.",
+			"critical": "+30 damage for each ally that has fainted since the user’s last turn.",
+		},
+		"Roar": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "A fearsome roar causes the target to take leave of its senses.",
+			"effect": "This causes a compulsion to flee the area and does not miss. The compulsion ends if the Pokémon is not returned.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Rock_Ballad": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "A move that inspires allies by rocking out. Yeeaaaaahhhhhh!!!!! ",
+			"effect": "The user and every ally in range does 30 extra damage on their next attacks.",
+			"critical": "none",
+			"mark": "Designer's Choice",
+		},
+		"Scary_Face": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "A move that paralyzes the target with fear. ",
+			"effect": "The target is trapped.",
+			"critical": "The trap is harsh",
+		},
+		
 /*
-Frustration ⠅ 70
-Style: Melee / Type: Normal
-The user pours out its frustrations with its trainer on a foe.
-This deals damage equal to 30 plus ten times all the friendship points the user is currently missing.
-Crit: +50 damage and the user loses an FP.
+ ⠅ 
+Style:  / Type: Normal
 
-
-Fury Swipes ⠅ 60
-Style: Melee / Type: Normal
-User slash the target in a rage.
-This deals 2d60 damage.
-Crit: +1d60 damage.
-
-
-Glare ⠅ 60
-Style: Ranged / Type: Normal
-A paralyzing stare.
-The target is harshly stunned.
-Crit: The target also has a compulsion to flee from the user
-
-
-Headbutt ⠅ 70
-Style: Melee / Type: Normal
-The Pokémon rams the other with its thick head.
-This deals 70 damage.
-Crit: +30 damage.
-
-
-Head Charge ⠅ 70
-Style: Melee / Type: Normal
-User charges the target head-on.
-Target takes 90 damage and the user takes 20 automatic damage.
-Crit: +40 damage dealt and user takes an extra 10.
-
-
-Heal Bell ⠅ 50
-Style: Ranged / Type: Normal
-The user rings a curative bell.
-Cure all statuses of everyone within range.
-Crit: This move does not crit.
-
-
-Hold Hands ⠅ 50
-Style: Melee / Type: Normal
-Hand in hand two all
-Choose an adjacent ally. Both user and ally automatically move together. Both lose their dash actions, but as long as they choose to continue to hold hands, both of gain a friendship point each turn. 
-
-
-Herd ⠅ 60
-Style: Ranged / Type: Normal
-The user gathers together several enemies into one location.
-All enemies in range have a compulsion to move to a spot of your choosing.
-Crit: The compulsion is harsh, and you may change the spot by having the same Pokémon use this move again, with automatic success against anyone under the compulsion. 
-
-
-Horn Attack ⠅ 60
-Style: Melee / Type: Normal
-When in doubt, gore someone.
-This deals 60 damage.
-Crit: +30 damage.
-
-
-Hyper Fang ⠅ 70
-Style: Melee / Type: Normal
-The user bites down hard on a foe.
-This deals 70 damage.
-Crit: Target is pinned for 30 damage.
-
-
-Payday ⠅ 60
-Style: Ranged
-User throws coins at the target.
-This deals 20 damage. It drops pokedollars on the battlefield equal to 10 times the user’s speed stat.
-Crit: +20 damage and 5 times the pokedollars dropped.
-Out of Combat: You can use a downtime action with this Pokémon to drop 50 times its speed stat in Pokedollars. Additionally, once per scene when you make a financial transaction, you can decrease the total amount owed by that amount.
-(It is our opinion that this should be a steel-type attack, since bits of metal are being thrown. But the move is listed here to make it easy to find.)
-
-
-Perish Song ⠅ 100
-Style: Ranged
-User sings a dirge that dooms everyone around it.
-Every Pokemon in range has a compulsion to faint. If they act on it, they are instantly KO’d.
-Crit: All Pokémon in range instantly faint.
-
-
-Power Nap ⠅ 60
-Style: Self
-In the midst of a fight, when everything's on the line, few have the courage to sleep.
-This heals 60 damage. And then the user falls asleep.
-
-
-Pound ⠅ 70
-Style: Melee
-User pound on the target with all its might.
-This deals 70 damage.
-Crit: +30 damage.
-
-
-Present ⠅ 60
-Style: Melee
-User give the target a present with a hidden gift.
-This deals 3d60 automatic damage to the target
-Crit: The target is healed by 3d60.
-Out of combat, once per session you may use a downtime action on a Pokémon with this move to have it give you a present. You get an item chosen by the GM, which will probably be good but maybe not.
-
-
-Protect ⠅ 60
-Style: Self / Type: Normal
-User protect itself at all cost.
-User automatically passes all dodge rolls for one turn, except crits.
-
-
-Rage ⠅ 60
-Style: Melee / Type: Normal
-User focus its anger into an attack.
-This deals 80 damage. It is under a compulsion to continue to use rage.
-Crit: +20 damage on this and all further uses of rage until another move is used.
-
-
-Retaliate ⠅ 70
-Style: Melee / Type: Normal
-A strike driven by the need to avenge a fallen comrade.
-This deals 100 damage if an ally fainted since the user’s last turn. Otherwise, 40.
-Crit: +30 damage for each ally that has fainted since the user’s last turn.
-
-
-Roar ⠅ 50
-Style: Ranged / Type: Normal
-A fearsome roar causes the target to take leave of its senses
-This causes a harsh compulsion to flee the area. The compulsion ends if the Pokémon is not returned.
-Crit: The target is stunned on the turn when it comes back into the fight, from all the fear.
-
-
-Rock Ballad ⠅ 70
-Style: Ranged / Type: Normal
-A move that inspires allies by rocking out. Yeeaaaaahhhhhh!!!!! 
-The user and every ally in range does 30 extra damage on their next attacks.
-
-
-Scary Face ⠅ 50
-Style: Ranged / Type: Normal
-A move that paralyzes the target with fear. 
 The target cannot dash at all on its next turn, not even on a melee move.
 Crit: Target is stunned.
 
