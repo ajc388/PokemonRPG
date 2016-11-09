@@ -51,7 +51,7 @@ div.blockheader {
 	background-color: #333;
 	margin-bottom: 10px;
 	padding: 3px;
-	height: 30px;
+	height: 33px;
 }
 div.blockHeader span {
 	display: inline-block; 
@@ -121,4 +121,5 @@ div.userinput {
 	display: inline-block;
 	width: 25px;
 	min-width: 25px;
+	vertical-align: inherit;
 }

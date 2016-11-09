@@ -19,6 +19,7 @@ nav.navIconMenu li a {
     text-align: center;
     text-decoration: none;
     margin-right:2px;
+    vertical-align: middle;
 }
 nav.navIconMenu li a:hover {
 	position: relative;
