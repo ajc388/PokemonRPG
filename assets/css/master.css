@@ -99,6 +99,23 @@ div.userinput {
 	vertical-align: middle;
 }
 
+.sort {
+	position: absolute;
+	right: 300px;
+}
+.sort input {
+	vertical-align: middle;
+}
+
+table.dataGrid {
+	font-size: 120%;
+	width: 90%;
+	margin-left: 5%;
+}
+.dataValue {
+	padding: 10px;
+}
+
 /*Auto complete section*/
 .ui-autocomplete {
 	background-color: #FFF;
