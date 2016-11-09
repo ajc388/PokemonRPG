@@ -45,7 +45,7 @@ var moves =
 			"power": 20,
 			"style": "Melee",
 			"flavor": "The user charges in and electrifies everyone around it.",
-			"effect": "This deals 20 damage to all enemies around you.",
+			"effect": "This deals 20 damage to all enemies around the user.",
 			"critical": "Targets are stunned.",
 		},
 		"Electrify":
@@ -104,7 +104,7 @@ var moves =
 			"power": 40,
 			"style": "Ranged",
 			"flavor": "Romantic savvy charms the target.",
-			"effect": "This causes a compulsion to charm the target into helping the user and attacking anyone who is a threat to you. This only affects opposite-gendered Pokémon, but if the target is in the same egg group as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
+			"effect": "This causes a compulsion to charm the target into helping the user and attacking anyone who is a threat to it. This only affects opposite-gendered Pokémon, but if the target is in the same egg group as the user, the effect is harsh even if the target would be resistant or immune to normal attacks. A Pokémon that knows this move rolls an extra die to determine if breeding is successful, taking the highest die.",
 			"critical": "The effect is harsh if used on opposite-gendered Pokémon and will now affect a same-gendered Pokemon.",
 		},
 		"Bind":
@@ -119,7 +119,7 @@ var moves =
 		{
 			"power": 30,
 			"style": "Self",
-			"flavor": "You replicate a move.",
+			"flavor": "User replicates a move.",
 			"effect": "Use the same move as the last Pokemon did.",
 			"critical": "none",
 		},
@@ -219,18 +219,692 @@ var moves =
 			"flavor": "User focuses on the target.",
 			"effect": "The user's next attack against the target will not miss, regardless of circumstances, even if it is out of range.",
 			"critical": "The user's next attack against the target automatically crits.",
-		},
-		
+		},	
 		"Scratch": 
 		{
-			"name": "Scratch",
 			"power": 20,
 			"style": "Melee",
 			"flavor": "A light attack with claws.",
 			"effect": "This deals 20 damage.",
 			"critical": "15 repeating damage.",
-		}
+		},
+		"Sentry": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "The user prepares to attack unwary foes.",
+			"effect": "For the remainder of combat, if any foe gets adjacent to the user but doesn't use a melee move on it, the user may deal its strength in damage to the enemy.",
+			"critical": "none",
+		},
+		"Sharpen": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user gets sharper while making that “shwing” sound.",
+			"effect": "The user’s next attack does 30 extra damage.",
+			"critical": "none",
+		},
+		"Sing": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The hypnotic song lulls everyone nearby into a slumber.",
+			"effect": "This inflicts sleep on everyone in range, friend or foe.",
+			"critical": "Sleep is harsh.",
+		},
+		"Sleep_Talk": 
+		{
+			"power": 20,
+			"style": "?",
+			"flavor": "User talks in its sleep and then suddenly use a move at random.",
+			"effect": "Roll a d6. On a 1, the Pokemon uses its first move, on a 2 the second, and so on. If sleep talk itself is picked, choose another move of your choice.",
+			"critical": "Only roll for a crit on the chosen move.",
+		},
+		"Sleepwalk": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user moves about in its sleep, fighting its enemies in dream and reality.",
+			"effect": "This move deals 50 damage. It can only be used while asleep.",
+			"critical": "+30 damage",
+		},
+		"Snore": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user snores so loudly that it distracts and damages its foes.",
+			"effect": "This deals 60 damage. It can only be used while asleep.",
+			"critical": "+30 damage.",
+		},
+		"Sonic_Boom": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "The target is hit with precise waves of sound.",
+			"effect": "The target takes 30 automatic damage.",
+			"critical": "none",
+		},
+		"Spike_Cannon": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The target is hit with a volley of spikes.",
+			"effect": "The target takes 1d60 damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Squeak": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "High-pitched chatter causes hearing loss, annoyance, and distraction.",
+			"effect": "No one in range can crit or dodge on their next turn.",
+			"critical": "Crit: +30 damage.",
+			"mark": "Designer's Choice."
+		},
+		"Rapid_Spin": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user spins rapidly, freeing itself from constraints.",
+			"effect": "This deals 30 damage to all adjacent targets and can be used even if trapped or pinned. It removes trapped, pinned, and leech seed.",
+			"critical": "+30 damage",
+		},
+		"Struggle": 
+		{
+			"power": 10,
+			"style": "Melee",
+			"flavor": "A desperate attempt to hurt the enemy.",
+			"effect": "This 20 damage and the user takes 10 damage.",
+			"critical": "+40 damage dealt, +20 damage self-inflicted.",
+			"special": "Any Pokemon may learn this as a free action."
+		},
+		"Sweet_Scent": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "A variety of aromas and pheromones draw in nearby Pokémon.",
+			"effect": "All Pokémon in range, friend or foe, are compelled to come as close as possible to the user.",
+			"critical": "The compulsion is harsh",
+			"out_of_battle": "Once per session this move can be used to initiate an encounter with local Pokemon."
+		},
+		"Tackle": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "The user body-checks its opponent.",
+			"effect": "This deals 20 damage.",
+			"critical": "Crit: +30 damage.",
+		},
+		"Tail_Wag": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User wags its tail, distracting a foe.",
+			"effect": "An enemy in range cannot crit or dodge until the user’s next turn.",
+			"critical": "This status becomes harsh, meaning is lasts the rest of combat.",
+		},
+		"Odor_Sleuth": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user’s sense of smell allows it to locate the enemy with ease, no matter the distance.",
+			"effect": "The target is identified.",
+			"critical": "The target is harshly identified.",
+			"out_of_battle": "Once per encounter, when a wild Pokémon escapes, if you have a Pokémon with this move handling roundup, you may have it make a sense save. If it passes, it tracks down the fleeing Pokémon giving you a second shot at catching it. You may use this immediately after the first encounter has ended. Tracking down the fleeing Pokémon to catch it counts as a new encounter, so if it flees again you can make a new sense save to track it again.",
+		},
+		"Transform": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user copies another Pokémon on a cellular level.",
+			"effect": "Choose a Pokemon on the map. The user now have the same typing and know all the same attacks as the target Pokémon, as well as taking on its appearance and abilities. This does not copy the target’s stats or personality. The user may revert to its original form as a free action.",
+			"critical": "none",
+		},
+		"Quick_Attack": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User quickly strikes its opponent.",
+			"effect": "User moves 2 extra spaces and deal half its agility in damage.",
+			"critical": "User may make a dash after using this attac.",
+		},
+		"Yawn": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "Stop yawning. That’s contagio-",
+			"effect": "Causes a compulsion on the target for it to fall asleep. The sleep is harsh but once the target falls asleep the compulsion ends. If the user woke up last turn, it automatically crits.",
+			"critical": "The target falls asleep immedaitely.",
+		},
+		"Agility": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "A quick warmup increases the user’s speed.",
+			"effect": "For the remainder of combat, the user takes an extra dash action each turn.",
+			"critical": "none",
+		},
+		"Barrage": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user fires a stream of projectiles at the target.",
+			"effect": "This deals 2d60 damage.",
+			"critical": "Crit: +1d60 damage.",
+		},
+		"Baton_Pass": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User passes on its boosts to an ally.",
+			"effect": "This causes the Pokemon to retreat and forces the trainer to make a switch. Any status effects this Pokémon has are transferred to the next one. ",
+			"critical": "none",
+		},
+		"Belly_Drum": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User drums harshly on its stomach, becoming stronger.",
+			"effect": "User deals 50 damage to itself, but all its attacks for the rest of the fight do double damage.",
+			"critical": "none",
+		},
+		"Bide": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User absorbs energy and supercharges it.",
+			"effect": "Once used, keep track all damage dealt to the user. On the user’s next turn, as its standard action, deal double that damage to a Pokémon in range. This attack does not miss.",
+			"critical": "none",
+		},
+		"Bullrush": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User charges recklessly across the field.",
+			"effect": "This deals 50 damage, and while using it the user can cross any terrain but water without terrain problems. If it is a water type, it can also cross water hazards without a problem.",
+			"critical": "+30 damage.",
+		},
+		"Claw": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User snips the target with its claws.",
+			"effect": "This deals 50 damage and the target cannot take a dash action next turn.",
+			"critical": "+30 damage.",
+		},
+		"Comet_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User punches the target repeatedly.",
+			"effect": "This deals 2d60 damage.",
+			"critical": "Crit: +1d60 damage.",
+		},
+		"Constrict": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User wraps itself around the target and starts squeezing.",
+			"effect": "Pin the target for 50 damage.",
+			"critical": "The pin is harsh.",
+		},
+		"Conversion": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "A change in type.",
+			"effect": "Pick a type. The user is now that type.",
+			"critical": "none",
+		},
+		"Crush_Claw": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "A strong claw can break an enemy’s defense.",
+			"effect": "This deals 40 damage. Flip a coin. On heads, the target takes double damage from the next attack to hit it.",
+			"critical": "+20 damage and there is no need to flip a coin, the target will take the double damage from the next attack.",
+		},
+		"Double_Slap": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User smacks the target twice.",
+			"effect": "Make 2 attacks. Both do 20 damage.",
+			"critical": "Each attack does +20 damage on a crit.",
+		},
+		"Double Team": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "User moves so quickly that its opponents see 2 of it.",
+			"effect": "Place a second marker for your Pokémon on the field. Move both individually. One of those markers is the real pokemon, one is a fake. Whenever the user performs an action that affects another Pokémon, or one of the markers is attacked with a move, choose which one is the real one at that point.",
+			"critical": "none",
+		},
+		"Double_Whip": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User whips the target twice.",
+			"effect": "Make 2 attacks. Both do 30 damage.",
+			"critical": "Roll independently for each hit. On a crit, +20 damage.",
+		},
+		"Follow_Me": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User draw attention to itself.",
+			"effect": "This places a harsh compulsion on all enemies in range to attack only the user.",
+			"critical": "none",
+		},
+		"Foresight": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "The user sees just into the future, spotting a target without fail.",
+			"effect": "This harshly identifies a target. Ghost Pokémon become vulnerable to normal and fighting type moves.",
+			"critical": "Target is stunned.",
+		},
+/*
+Frustration ⠅ 70
+Style: Melee / Type: Normal
+The user pours out its frustrations with its trainer on a foe.
+This deals damage equal to 30 plus ten times all the friendship points the user is currently missing.
+Crit: +50 damage and the user loses an FP.
 
+
+Fury Swipes ⠅ 60
+Style: Melee / Type: Normal
+User slash the target in a rage.
+This deals 2d60 damage.
+Crit: +1d60 damage.
+
+
+Glare ⠅ 60
+Style: Ranged / Type: Normal
+A paralyzing stare.
+The target is harshly stunned.
+Crit: The target also has a compulsion to flee from the user
+
+
+Headbutt ⠅ 70
+Style: Melee / Type: Normal
+The Pokémon rams the other with its thick head.
+This deals 70 damage.
+Crit: +30 damage.
+
+
+Head Charge ⠅ 70
+Style: Melee / Type: Normal
+User charges the target head-on.
+Target takes 90 damage and the user takes 20 automatic damage.
+Crit: +40 damage dealt and user takes an extra 10.
+
+
+Heal Bell ⠅ 50
+Style: Ranged / Type: Normal
+The user rings a curative bell.
+Cure all statuses of everyone within range.
+Crit: This move does not crit.
+
+
+Hold Hands ⠅ 50
+Style: Melee / Type: Normal
+Hand in hand two all
+Choose an adjacent ally. Both user and ally automatically move together. Both lose their dash actions, but as long as they choose to continue to hold hands, both of gain a friendship point each turn. 
+
+
+Herd ⠅ 60
+Style: Ranged / Type: Normal
+The user gathers together several enemies into one location.
+All enemies in range have a compulsion to move to a spot of your choosing.
+Crit: The compulsion is harsh, and you may change the spot by having the same Pokémon use this move again, with automatic success against anyone under the compulsion. 
+
+
+Horn Attack ⠅ 60
+Style: Melee / Type: Normal
+When in doubt, gore someone.
+This deals 60 damage.
+Crit: +30 damage.
+
+
+Hyper Fang ⠅ 70
+Style: Melee / Type: Normal
+The user bites down hard on a foe.
+This deals 70 damage.
+Crit: Target is pinned for 30 damage.
+
+
+Payday ⠅ 60
+Style: Ranged
+User throws coins at the target.
+This deals 20 damage. It drops pokedollars on the battlefield equal to 10 times the user’s speed stat.
+Crit: +20 damage and 5 times the pokedollars dropped.
+Out of Combat: You can use a downtime action with this Pokémon to drop 50 times its speed stat in Pokedollars. Additionally, once per scene when you make a financial transaction, you can decrease the total amount owed by that amount.
+(It is our opinion that this should be a steel-type attack, since bits of metal are being thrown. But the move is listed here to make it easy to find.)
+
+
+Perish Song ⠅ 100
+Style: Ranged
+User sings a dirge that dooms everyone around it.
+Every Pokemon in range has a compulsion to faint. If they act on it, they are instantly KO’d.
+Crit: All Pokémon in range instantly faint.
+
+
+Power Nap ⠅ 60
+Style: Self
+In the midst of a fight, when everything's on the line, few have the courage to sleep.
+This heals 60 damage. And then the user falls asleep.
+
+
+Pound ⠅ 70
+Style: Melee
+User pound on the target with all its might.
+This deals 70 damage.
+Crit: +30 damage.
+
+
+Present ⠅ 60
+Style: Melee
+User give the target a present with a hidden gift.
+This deals 3d60 automatic damage to the target
+Crit: The target is healed by 3d60.
+Out of combat, once per session you may use a downtime action on a Pokémon with this move to have it give you a present. You get an item chosen by the GM, which will probably be good but maybe not.
+
+
+Protect ⠅ 60
+Style: Self / Type: Normal
+User protect itself at all cost.
+User automatically passes all dodge rolls for one turn, except crits.
+
+
+Rage ⠅ 60
+Style: Melee / Type: Normal
+User focus its anger into an attack.
+This deals 80 damage. It is under a compulsion to continue to use rage.
+Crit: +20 damage on this and all further uses of rage until another move is used.
+
+
+Retaliate ⠅ 70
+Style: Melee / Type: Normal
+A strike driven by the need to avenge a fallen comrade.
+This deals 100 damage if an ally fainted since the user’s last turn. Otherwise, 40.
+Crit: +30 damage for each ally that has fainted since the user’s last turn.
+
+
+Roar ⠅ 50
+Style: Ranged / Type: Normal
+A fearsome roar causes the target to take leave of its senses
+This causes a harsh compulsion to flee the area. The compulsion ends if the Pokémon is not returned.
+Crit: The target is stunned on the turn when it comes back into the fight, from all the fear.
+
+
+Rock Ballad ⠅ 70
+Style: Ranged / Type: Normal
+A move that inspires allies by rocking out. Yeeaaaaahhhhhh!!!!! 
+The user and every ally in range does 30 extra damage on their next attacks.
+
+
+Scary Face ⠅ 50
+Style: Ranged / Type: Normal
+A move that paralyzes the target with fear. 
+The target cannot dash at all on its next turn, not even on a melee move.
+Crit: Target is stunned.
+
+
+Screech ⠅ 60
+Style: Ranged / Type: Normal
+A sharp cry distracts enemies.
+Everyone in range loses its dash action next turn and deals half damage, whether friend or foe.
+Crit: All targets are also stunned.
+
+
+Secret Power ⠅ 50
+Style: Self / Type: Normal
+The Pokémon turns nearby terrain into a secret base.
+The Pokémon cannot move on the turn it uses this. Mark the area it’s standing on as containing a base. Any Pokémon in that base takes half damage from all attacks and has 2 extra spaces of range. 
+Crit: This move does not crit
+Out of Battle: This creates a secret base in a tree, cave, or something else that allows the players some downtime even in a somewhat hostile environment. The secret base can be decorated, furnished, and even used as a home for a long time to come, or it can simply be used as a temporary camp. Wild Pokémon and trainers will have a hard time finding, let alone entering the secret base. This is a great way to get some downtime. 
+
+
+Self Destruct ⠅ 60
+Style: Melee / Type: Normal
+The user explodes into fragments, fainting from the damage. It will get better at some point.
+This deals 150 damage to all adjacent targets, friend or foe. The user is KO'd.
+Crit: +30 damage.
+
+
+Shell Smash ⠅ 70
+Style: Self / Type: Normal
+The user cracks its shell, reducing defense but increasing offense.
+This move can only be used if the user has the shell special. It loses that special but for the rest of combat it takes an extra dash action and it does 30 extra damage on each attack. 
+Crit: This move does not crit.
+
+
+Slash ⠅ 60
+Style: Melee / Type: Normal
+A sharp cut that can leave a bleeding wound.
+This deals 60 damage.
+Crit: Also deals 15 repeating damage.
+
+
+Strength ⠅60
+Style: Melee / Type: Normal
+User wrestles the target with raw strength.
+This deals the user’s strength in damage and moves it one space. 
+Crit: +20 damage or +2 spaces of movement.
+
+
+Sonar ⠅ 50
+Style: Self / Type: Normal
+By projecting sound waves and listening to the echoes, the user can see even in pitch black.
+Identify a target.
+Crit: The target is harshly identified. 
+
+
+Stomp ⠅ 60
+Style: Melee / Type: Normal
+User steps on a smaller enemy.
+Deal the user’s strength + 20 damage. This only affects enemies that are lower in strength (though a gargantuan Pokémon may use this on any non-gargantuan Pokémon).
+Crit: Target is stunned.
+
+
+Substitute ⠅ 60
+Style: Self / Type: Normal
+User creates a small golem to take damage for it.
+User takes its strength in damage. This creates a substitute that will absorb that much damage before breaking. While a substitute in play, the user may carry as if it were riding the user, and it takes all damage that would go to the user, and any negative status effects that aren’t self-inflicted. If the substitute takes more damage than would be required to break it, the damage does not roll over onto the user. 
+
+
+You may instead have the substitute wander off on its own, using all of the user’s stats, moves, and so on but taking damage separately. If the user faints, the substitute is destroyed, but not vice versa. Basically, the substitute is acting as a copy you can send into dangerous situations to attack enemies without risking the real version.
+Crit: this move does not crit.
+
+
+Swift ⠅ 70
+Style: Ranged / Type: Normal
+User shoots a rain of stars at its foe.
+This deals the user’s speed in damage and does not miss.
+Crit: This move does not crit.
+
+
+Swords Dance ⠅ 70
+Style: Self / Type: Normal
+An elegant dance to prepare for an all-out assault.
+On the user’s next turn,  it takes an extra dash action and deals double damage.
+Crit: This move does not crit. 
+
+
+Takedown ⠅ 50
+Style: Melee / Type: Normal
+The user recklessly charges the target.
+This deals 80 damage. The user takes 30 damage.
+Crit: Target is stunned.
+
+
+Thrash ⠅ 60
+Style: Melee / Type: Normal
+The user recklessly attacks everyone in the area.
+This deals 90 damage. However, the user has a compulsion to continue to use that. When that compulsion is gone, replace it with a compulsion to insanity.
+Crit: +30 damage.
+
+
+Whirlwind  ⠅ 60
+Style: Ranged / Type: Normal
+A tornado blows the target around the battlefield.
+This moves the target 6 spaces.
+Crit: +3 spaces.
+
+
+Tier 3
+
+
+Body Slam ⠕ 100
+Style: Melee / Type: Normal
+The user crushes a foe beneath its bulk.
+This deals twice the user’s strength in damage the target.
+Crit: The target is stunned.
+
+
+Boomburst ⠕ 100
+Style: Ranged / Type: Normal
+The user releases a devastating sonic wave.
+This deals 90 damage to everything in range.
+Crit: Targets take a compulsion to confusion.
+
+
+Crush Grip ⠕ 80
+Style: Melee / Type: Normal
+Crushing the target in a massive grip. The bigger they are, the harder they fall.
+This deals damage equal to half the target's current HP, rounded down.
+Crit: This move does not crit.
+
+
+Double Edge ⠕ 90
+Style: Melee / Type: Normal
+The user recklessly swipes at the target.
+This deals 150 damage, but the user takes 60 automatic damage.
+Crit: +50 damage dealt, and the user takes an extra 20 damage.
+
+
+Egg Bomb ⠕ 80
+Style: Ranged / Type: Normal
+The user launches an exploding egg.
+This deals 70 damage to the target and all adjacent targets.
+Crit: +30 damage.
+
+
+Explosion ⠕ 90
+Style: Ranged / Type: Normal
+The user self-destructs, taking everyone nearby with it.
+This deals 180 damage to all targets in range. The user is KO'd.
+Crit: +30 damage.
+
+
+Extreme Speed ⠕ 90
+Style: Melee / Type: Normal
+User charges speedily across the battlefield.
+This deals the user’s speed in damage to the target, and it gets to move 4 extra spaces.
+Crit: +30 damage.
+
+
+Giga Impact ⠕ 90
+Style: Melee / Type: Normal
+The user wears itself out attacking.
+This deals 130 damage. The user may not use difficult moves next turn.
+Crit: Target is stunned.
+
+
+Horn Drill ⠕ 100
+Style: Melee / Type: Normal
+The user charges the target with a vicious drill, not stopping until it faints.
+The target gets to save twice against this. If both saves fail, the target is KO'd.
+Crit: The target only gets one save.
+
+
+Hyper Beam ⠕ 100
+Style: Ranged / Type: Normal
+The user fires an unstoppable beam of pure energy. 
+This deals 70 damage to every target along a line. User may not use any more moves until encouraged by its trainer.
+Crit: +30 damage.
+
+
+Maximize ⠕ 90
+Style: Self / Type: Normal
+The user grows to gargantuan size.
+The user adds the gargantuan ability to itself, but it does not get the stat boosts. However, the maximized Pokémon is not considered legendary. Minimize and maximize are opposites, and if one is used the other will cancel it out. 
+Crit: This move does not crit.
+
+
+Minimize ⠕ 90
+Style: Self / Type: Normal
+The user gets smaller and faster.
+For the remainder of combat, the user takes an extra dash action and rolls twice on all saves.
+Crit: This move does not crit.
+
+
+Milk Drink ⠕ 90
+Style: Melee / Type: Normal
+Refreshing milk to heal the bones.
+The target is healed for 60 damage. 
+Crit: This move does not crit.
+Out of Combat: As a downtime action, you can get one bottle of milk that heals 60 HP.
+
+
+Noble Roar ⠕ 80
+Style: Ranged / Type: Normal
+The user roars an all enemies in range are shaken.
+All enemies in range, but not allies, take double damage from all attacks until the the end of the user’s next turn.
+Crit: Also causes a compulsion to stay as far away as possible from the user.
+
+
+Pincer ⠕ 90
+Style: Melee / Type: Normal
+The user catches the target in its claws.
+This pins the target for 90 damage.
+Crit: The pin is harsh.
+
+
+Round ⠕ 80
+Style: Ranged / Type: Normal
+The user and allies all sing together.
+This deals 30 damage plus another 30 for each ally in range. Damage is dealt to all enemies in range.
+Crit: +30 damage.
+
+
+Skull Bash ⠕ 90
+Style: Melee / Type: Normal
+User charges and ram the target.
+On the first turn, the user tucks in its head. It takes half damage from all attacks until its next turn. On the second turn, it gets to dash and deal 120 damage.
+Crit: +30 damage.
+
+
+Slam ⠕ 90
+Style: Melee / Type: Normal
+The user slams the target with a tail, vines, or other such appendage.
+This deals 90 damage.
+Crit: +30 damage.
+
+
+Razor Wind ⠕ 80
+Style: Ranged / Type: Normal
+The user calls forth a storm of blades.
+The user must be encouraged before using this attack. It deals 130 damage.
+Crit: +30 damage.
+
+
+Soft Boiled ⠕ 90
+Style: Melee / Type: Normal
+User gives an ally a cooked, refreshing egg.
+This restores 60 HP to the target.
+Crit: This move does not crit.
+Out of combat: This move can be used as a downtime action to cure 60 health.
+
+
+Super Fang ⠕ 90
+Style: Melee / Type: Normal
+User bites down extremely hard on the target.
+This halves the target's current health, rounded up.
+Crit: +30 damage.
+*/
+		
 	},
 	"Poison":
 	{
