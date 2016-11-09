@@ -32,7 +32,350 @@ var moves =
 	},
 	"Dark":
 	{
-
+		"Ambush": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "User prepares to hit the target at the last second.",
+			"effect": "The user must remain stationary when using this move. It allows the user to delay taking its standard action until later in the fight. When the time comes, declare what standard action you’re taking and immediately take it, even if this interrupts someone else’s turn. If you have not taken your move action yet, you may immediately take it as well. The opportunity this move offers ends when your next turn comes up.",
+			"critical": "none",
+		},
+		"Bribery": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user pays off an opponent.",
+			"effect": "Give the target pokedollars equal to 10 times its mind. It is now under a compulsion to fight on the user’s side. The target’s trainer gets to keep the cash. This move does not miss.",
+			"critical": "Double the payout, but the compulsion is harsh.",
+		},
+		"Chaos_Tail": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User whips its tail at the target with pure chaos following behind.",
+			"effect": "This deals 1d60 damage.",
+			"critical": "Crit: +1d60 damage.",
+		},
+		"Dark_Void": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User opens a portal to the netherworld of dreams.",
+			"effect": "The target and all adjacent targets are asleep.",
+			"critical": "Sleep is harsh. ",
+		},
+		"Embargo": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "A dark curse prevents items from reaching the target.",
+			"effect": "The target cannot use items and items cannot be used on the target.",
+			"critical": "The target is trapped. ",
+		},
+		"Fake_Tears": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user tricks the target into lowering its guard with crocodile tears.",
+			"effect": "The next attack against the target automatically crits.",
+			"critical": "The target is under a compulsion to not attack the user.",
+		},
+		"Flattery": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user manipulates the enemy with false praise.",
+			"effect": "This inflicts a compulsion on the target to side with the user. Its next attack deals 10 extra damage regardless of whether it attacks friend or foe.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Fling": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User throws its item at the target, smashing it into shards.",
+			"effect": "This deals damage equal to 1/10 the value of the item in pokedollars. The item is broken.",
+			"critical": "The item does not break.",
+		},
+		"Nip": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User quickly bites the target.",
+			"effect": "Move an extra space and deal 20 damage.",
+			"critical": "+30 damage.",
+		},
+		"Punishment": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User slams the target for its hubris.",
+			"effect": "This deals 30 damage plus 20 extra damage for each beneficial status the target has.",
+			"critical": "Target loses all beneficial statuses.",
+		},
+		"Steal_Item": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User takes something.",
+			"effect": "If the user isn’t holding something and the target is, it takes the target’s item. The item may be used or kept if the fight is won.",
+			"critical": "Player may keep the item even on a loss.",
+		},
+		"Steal_Heart": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User transfers the affection the target had for its trainer onto itself.",
+			"effect": "The target is under a compulsion to aid and defend the user. The target makes a save by rolling 2d6 and hoping to get under its current friendship points.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Stealth": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "Enemies have a vague idea of where the user was, but not well enough to hit it.",
+			"effect": "The user is sneaking.",
+			"critical": "none",
+		},
+		"Taunt": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User angers the foe into attacking wildly.",
+			"effect": "The target is under a compulsion to use the most damaging move available, and if possible to attack the user.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Torment": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The target faces a fear of repeating its mistakes.",
+			"effect": "This causes the last move the target used to burn out.",
+			"critical": "Burn out a second move of your choice.",
+		},
+		"Anger_Strike": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User’s anger fuels the attack.",
+			"effect": "This deals damage equal to 10 times the amount of friendship points the user is missing, and the user cannot use friendship points to aid this move.",
+			"critical": "Double damage.",
+		},
+		"Backstab": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user runs up behind its target and attack.",
+			"effect": "This deals 50 damage. If the user attacking from the opposite side as one of its allies, this move automatically crits.",
+			"critical": "+50 damage",
+		},
+		"Beat_Up": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "The user and allies lay the smackdown on a common enemy.",
+			"effect": "This deals 30 damage to a foe, and anyone else adjacent to the foe can add 30 damage if they wish.",
+			"critical": "Every participant can do any natural melee attack.",
+		},
+		"Bite": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User sinks its teeth into the target, its jaws filled with dark energy.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Chaos_Swipe": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User chaotically slashes at the target.",
+			"effect": "This deals 2d60 damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Feint_Attack": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User attacks with deception and cunning, faking out its foe.",
+			"effect": "This deals the user’s sense in damage and does not miss.",
+			"critical": "none",
+		},
+		"Foul_Play": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User tricks the opponent into hurting itself.",
+			"effect": "The target takes damage equal to its strength.",
+			"critical": "+30 damage.",
+		},
+		"Hit_and_Run": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user shoots the target and runs away before it can face a counterattack.",
+			"effect": "This deals 30 damage and the user can move 2 spaces after using it. Additionally, if it didn’t dash beforehand, it may dash afterward.",
+			"critical": "+20 damage and +1 space of movement.",
+		},
+		"Hone_Claws": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "The user prepares to attack with extra viciousness.",
+			"effect": "For the remainder of combat, the user crits on any doubles.",
+			"critical": "none",
+		},
+		"Knock_Off": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User smacks the target and force it to drop what it is holding.",
+			"effect": "This deals the user’s strength in damage and forces the target to drop held items and pinned opponents. Previously held items can be picked up after battle.",
+			"critical": "+50 damage.",
+		},
+		"Memento": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user puts the last of its energy into giving its target something to remember it by.",
+			"effect": "The target does half damage for the remainder of the fight, but the user faints from the effort.",
+			"critical": "Target has a compulsion to terror.",
+		},
+		"Nasty_Plot": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user plans its opponents’ downfall.",
+			"effect": "The user deals 30 extra damage on all damaging attacks. ",
+			"critical": "none",
+		},
+		"Night_Slash": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User attacks with dark claws.",
+			"effect": "This deals 50 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Pursuit": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "There’s nowhere to escape from the user’s wrath.",
+			"effect": "This deals 60 damage. Until the user's next turn, if the target is returned to a Pokeball, tries to leave the battlefield, or is forced off the battlefield,  it immediately takes 40 extra damage.",
+			"critical": "The target is trapped as well.",
+		},
+		"Sabretooth": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User sinks its teeth into the target and doesn’t let go.",
+			"effect": "This pins the target for 60 damage.",
+			"critical": "The pin is harsh.",
+		},
+		"Snipe": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "The user shoot from afar.",
+			"effect": "This deals 30 damage and has a range of +4 spaces.",
+			"critical": "Headshot! +30 damage.",
+		},
+		"Thief": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "An old-fashioned mugging.",
+			"effect": "This deals 40 damage, and if the target has a held item but the user don’t, take the target’s item.",
+			"critical": "+30 damage.",
+		},
+		"Assassinate": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User sneaks up behind the target and takes it out in one well-placed attack.",
+			"effect": "This automatically KO’s the target unless it makes a speed save. This move cannot be used unless the user is sneaking.",
+			"critical": "The target is KO’d without a save.",
+		},
+		"Chaos_Blast": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "Pure chaos assaults a group of enemies.",
+			"effect": "This deals 3d60 damage to the target and all adjacent targets.",
+			"critical": "+1d60 damage.",
+		},
+		"Chomp": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "The user bites down with massive jaws.",
+			"effect": "This deals 80 damage.",
+			"critical": "+30 damage.",
+		},
+		"Dark_Pulse": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User releases a beam of black energy.",
+			"effect": "This deals 90 damage.",
+			"critical": "The target is stunned.",
+		},
+		"Eclipse": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "Darkness across the land.",
+			"effect": "All dark and ghost types gain the sneaking status at the end of their turn.",
+			"critical": "none",
+		},
+		"Hyperspace_Fury": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "User pounds the target with extradimensional arms.",
+			"effect": "This deals 60 damage. It does not miss.",
+			"critical": "none",
+		},
+		"Moonshadow": 
+		{
+			"power": 80,
+			"style": "Self",
+			"flavor": "The user blends in with the darkness like a shadow in the night.",
+			"effect": "The user is sneaking and remains sneaking even when it takes actions that would end the effect. Only bright light can end the sneaking effect such as a fire or electric attack.",
+			"critical": "none",
+		},
+		"Night_Daze": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User shoots a wave of blinding darkness at the sucker who earned its wrath.",
+			"effect": "This deals 90 damage.",
+			"critical": "The target is blinded.",
+		},
+		"Steal_Mojo": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "User takes the target’s positive vibes.",
+			"effect": "If the target has any positive statuses, the user gains all of them and the target loses all of them.",
+			"critical": "The target misses its next attack, and user crits its next attack.",
+		},
+		"Ultimate_Chaos": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user unleashes unfettered chaos.",
+			"effect": "Flip a coin. On tails, this does 2d60 of damage. On heads, it crits. (The coin flip replaces the normal crit roll.)",
+			"critical": "+2d60 damage.",
+		},
+		"Vampire_Bite": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user bites the target and siphons its health.",
+			"effect": "The target takes 60 damage and the user recovers half the damage dealt in HP. If this faints the target, the target replaces one of its moves with vampire bite.",
+			"critical": "+20 damage dealt with increased healing.",
+		}, 		
 	},
 	"Dragon":
 	{
