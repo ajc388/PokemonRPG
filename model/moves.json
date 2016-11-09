@@ -36,7 +36,200 @@ var moves =
 	},
 	"Dragon":
 	{
-
+		"Dragon’s_Luck": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "Have you ever heard of an unlucky dragon?",
+			"effect": "The next move the user performs automatically crits.",
+			"critical": "none",
+			"mark": "Designer's Choice",
+		},
+		"Grow_Scales": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user grows extra scales that counteract various hazards.",
+			"effect": "The user is immune to the next status that would otherwise be inflicted on it.",
+			"critical": "none",
+			"mark": "Designer's Choice",
+		},
+		"Twister": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "Leathery wings send out a small cyclone to bat around foes.",
+			"effect": "This deals 20 damage to the target and all adjacent targets, friend or foe.",
+			"critical": "Targets are trapped. ",
+		},
+		"Ancestral_Power": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User calls upon the power of its forebears.",
+			"effect": "The next attack the user makes deals double damage.",
+			"critical": "none",
+		},
+		"Dragon_Claw": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes with draconic talons.",
+			"effect": "This deals 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Dragon_Dance": 
+		{
+			"power": 80,
+			"style": "Self",
+			"flavor": "User dances like only a dragon can, and its physical prowess rises.",
+			"effect": "The user gains an extra dash action for the remainder of combat and its next attack deals 30 extra damage.",
+			"critical": "none",
+		},
+		"Dragon_Pulse": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User create a massive shockwave and expel it from its mouth.",
+			"effect": "This deals 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Dragon_Rage": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "A dragon’s wrath is not hot and random but cold and calculating. This fiery breath hits all alike.",
+			"effect": "This deals 60 damage regardless of typing, damage multipliers, or other factors involved.. ",
+			"critical": "",
+		},
+		"Dual_Chop": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User strikes twice, like the double dragon.",
+			"effect": "This makes 2 attacks at 30 damage each.",
+			"critical": "Roll a crit for each, and each crit deals +20 damage.",
+		},
+		"Dragon_Roar": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "There are two kinds of Pokémon: those that are friends with dragons, and those that are KO’d.",
+			"effect": "All enemies in range are under a compulsion to stay far away from the user. Allies are not affected.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Shrug_Off": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "Dragons don’t take sick days. ",
+			"effect": "Cure all statuses on the user.",
+			"critical": "none",
+		},
+		"Dragon_Landing": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User lands so hard it makes a crater. It might not be able to fly any longer, but it’s more a dragon than ever.",
+			"effect": "This deals 50 damage to all adjacent targets. Lose the flying type, and replace it with the dragon type if user isn’t already a dragon. If the user has an ability like airborne or hover, lose it, and deal 30 extra damage.",
+			"critical": "All adjacent enemies are moved 4 spaced directly away from the user. If two spaces seem equally good as a landing position, the user chooses where the target lands.",
+		},
+		"Complete_Humiliation": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "The user reminds the target of how weak it is.",
+			"effect": "Burn out all of the target’s difficult moves.",
+			"critical": "The target has a compulsion to complete apathy.",
+		},
+		"Draco_Meteor": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User calls down a meteor from the sky with sheer force of mind.",
+			"effect": "This does 90 damage to the targeted space, all spaces adjacent to that, and all spaces adjacent to those.",
+			"critical": "+30 damage.",
+		},
+		"Dragon_Rush": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User charges the target with wings and scales.",
+			"effect": "This deals 90 damage.",
+			"critical": "The target is stunned.",
+		},
+		"Dragon_Tail": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "Looks like Team Rocket’s blasting off again.",
+			"effect": "The target is moved 8 spaces in a direction of your choosing.",
+			"critical": "The target is moved anywhere on the map you wish, or off the map.",
+		},
+		"Dragon’s_Wings": 
+		{
+			"power": 90,
+			"style": "",
+			"flavor": "Melee",
+			"effect": "User flies forward, borne by reptilian wings.",
+			"critical": "This deals 50 damage, and the user moves 3 extra spaces, ignoring terrain hazards.",
+		},
+		"Indomitable_Will": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "You’re a dragon. Who’s going to boss you around?",
+			"effect": "Clear any compulsions on the user. This move can be used by choice even if the user is under compulsion. ",
+			"critical": "none",
+		},
+		"Outrage": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user fills itself with imperial fury and smashes its foes.",
+			"effect": "This deals 90 damage, and the user is under a compulsion to continue to use it turn after turn. While doing so, it may continue to use this move as if it were natural. When the compulsion ends, the user takes a compulsion to insanity.",
+			"critical": "Don’t roll saves against compulsion to continue using this move. Remove it or not as you see fit. ",
+		},
+		"Protect_the_Hoard": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "No one separates a dragon from its money.",
+			"effect": "This deals damage equal to 1/10 the pokedollars you currently have on you.",
+			"critical": "Gain $ equal to damage dealt, due to interest payments on money owned. ",
+		},
+		"Roar_of_Time": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User shouts as it chaotically rends time and space to attack a foe.",
+			"effect": "This deals 120 damage, but the user cannot use any further moves until encouraged.",
+			"critical": "Use a natural move immediately due to speeding up the user’s personal time.",
+		},
+		"Seize_Power": 
+		{
+			"power": 90,
+			"style": "Self",
+			"flavor": "Bored by the foes around it, the user concentrates on increasing its power for a later, more challenging fight.",
+			"effect": "If used move in combat, immediately train one of the user’s stats. It does nothing else, and automatically fails outside of combat.",
+			"critical": "none",
+		},
+		"Spatial_Rend": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "The user bends the fabric of space to defeat its foe.",
+			"effect": "This deals 80 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Ultimate_Power": 
+		{
+			"power": 120,
+			"style": "Ranged",
+			"flavor": "The user unleashes its true power, firing a beam of pure blue light that obliterates everything in its way.",
+			"effect": "Every target along a line takes damage equal to the user’s mind plus its strength.",
+			"critical": "If there are any survivors, one of them is KO’d at random.",
+		},	
 	},
 	"Electric":
 	{
@@ -111,7 +304,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User rubs its electrified cheeks against the target.",
 			"effect": "This stuns the target.",
-			"critical": "Also deals 30 automatic damage.",
+			"critical": "Also deals 30 damage.",
 		},
 		"Shuffle": 
 		{
@@ -781,10 +974,10 @@ var moves =
 		},
 		"Focus_Blast": 
 		{
-			"power": 90,
+			"power": 80,
 			"style": "Ranged",
 			"flavor": "User channels its chi into an erratic blast.",
-			"effect": "This deals 120 damage to the target and all adjacent targets.",
+			"effect": "This deals 100 damage to the target and all adjacent targets.",
 			"critical": "none",
 		},
 		"Flying_Press": 
@@ -805,7 +998,7 @@ var moves =
 		},
 		"War_Dance": 
 		{
-			"power": 90,
+			"power": 80,
 			"style": "Melee",
 			"flavor": "Like the ancient Moiri, the user and allies perform a haka dance.",
 			"effect": "This allows the user and all adjacent allies to take an extra dash action next turn, and their next attacks deal double damage.",
@@ -1029,7 +1222,7 @@ var moves =
 			"power": 20,
 			"style": "Ranged",
 			"flavor": "The target is hit with precise waves of sound.",
-			"effect": "The target takes 30 automatic damage.",
+			"effect": "The target takes 30 damage regardless of multipliers, type effectivness, or other factors.",
 			"critical": "none",
 		},
 		"Spike_Cannon": 
@@ -1289,7 +1482,7 @@ var moves =
 			"power": 70,
 			"style": "Melee",
 			"flavor": "User charges the target head-on.",
-			"effect": "Target takes 90 damage and the user takes 20 automatic damage.",
+			"effect": "Target takes 90 damage and the user takes 20 damage.",
 			"critical": "+40 damage dealt and user takes an extra 10.",
 		},
 		"Heal_Bell": 
@@ -1567,7 +1760,7 @@ var moves =
 			"power": 90,
 			"style": "Melee",
 			"flavor": "The user recklessly swipes at the target.",
-			"effect": "This deals 150 damage, but the user takes 60 automatic damage.",
+			"effect": "This deals 150 damage, but the user takes 60 damage.",
 			"critical": "+50 damage dealt, and the user takes an extra 20 damage.",
 		},
 		"Egg_Bomb": 
