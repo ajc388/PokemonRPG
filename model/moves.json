@@ -2929,7 +2929,288 @@ var moves =
 	},
 	"Poison":
 	{
-
+		"Knockout_Venom": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "A poisonous sting forces the target into a deep sleep.",
+			"effect": "The target is asleep.",
+			"critical": "Sleep is harsh.",
+		},
+		"Mark_Territory": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "Pheromone markers signal others to back off while increasing the user’s territorial instincts.",
+			"effect": "Designate every square on the map as the user’s territory. It is under a compulsion to remain in the territory and all enemies in it currently or who enter later must make a will save or be under the compulsion as well. Allies are considered part of the pack and may come and go, but if the user leaves, even against its will, the area is no longer considered the user’s territory and the effect ends. The user’s damaging attacks do 30 extra damage while on its territory.",
+			"critical": "none",
+		},
+		"Stench": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user releases such a powerful odor that everyone must flee.",
+			"effect": "Every target in range, friend or foe, is under a compulsion to stay out of the user’s range.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Paralyzing_Venom": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User nips the target with its fangs, paralyzing it.",
+			"effect": "Target is stunned.",
+			"critical": "+30 damage.",
+		},
+		"Poison_Powder": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User dumps toxic dust on its target.",
+			"effect": "Target takes 20 repeating damage.",
+			"critical": "Repeating damage is harsh.",
+		},
+		"Poison_Sting": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User stings the target and release the contents of its venom sac.",
+			"effect": "This deals 30 damage to the target.",
+			"critical": "Crit: Target takes 15 repeating damage.",
+		},
+		"Poo_Fling": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "When life gives you crap, make a crappapault.",
+			"effect": "This deals 40 damage to the target.",
+			"critical": "Target is blinded.",
+		},
+		"Smokescreen": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User belches out smoke until the area is covered in a dense, rolling cloud.",
+			"effect": "Every target in range is blinded.",
+			"critical": "Allies are not blinded.",
+		},
+		"Sticky_Glob": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User spits goo or sap onto the area that slows the target.",
+			"effect": "The target is trapped.",
+			"critical": "Trap is harsh.",
+		},
+		"Toxic_Gas": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User blasts toxic gas onto its foes.",
+			"effect": "The target and all adjacent targets take 10 repeating damage.",
+			"critical": "20 repeating damage instead.",
+		},
+		"Acid": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User shoots a glob of acid at the target.",
+			"effect": "This deals 50 damage.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Acid_Armor": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "A protective layer of acidic slime keeps attacks at bay.",
+			"effect": "From now on the user takes 30 less damage from all attacks.",
+			"critical": "none",
+		},
+		"Acidic_Cloud": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User belches out a cloud of damaging mist.",
+			"effect": "This deals 60 damage to everyone in range, friend or foe.",
+			"critical": "Crit: The target takes 30 repeating damage.",
+		},
+		"Berserker_Toxin": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots a dart that causes the target to fly into uncontrollable rage.",
+			"effect": "The target takes 30 damage and has a compulsion to attack the nearest Pokemon, be it friend or foe.",
+			"critical": "+30 damage",
+		},
+		"Coil": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "User coils up and prepares to strike, readying its venom glands.",
+			"effect": "The user’s next poison attack automatically crits.",
+			"critical": "none",
+		},
+		"Cross_Poison": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes with a poisoned blade.",
+			"effect": "This deals 60 damage.",
+			"critical": "User burns out a difficult move.",
+		},
+		"Gastro_Acid": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User belches the acidic content of its stomach onto the opponents.",
+			"effect": "Target loses all abilities and its next attack deals half damage. If the user ate something last turn, this undoes the effect of that food, and the attack does +50 damage.",
+			"critical": "+30 damage.",
+		},
+		"Infected_Bite": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User bite the target with infected teeth.",
+			"effect": "The user takes 40 damage and its next attack deals half damage.",
+			"critical": "Target takes 10 harsh repeating damage.",
+		},
+		"Oil_Glob": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User spits a globule of oil that binds to the target.",
+			"effect": "The target takes 30 damage and is now weak against fire.",
+			"critical": "Target is trapped.",
+		},
+		"Oil_Spill": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User dumps oil all over the water.",
+			"effect": "This affects every Pokemon in the same body of water the user is in. They take 10 repeating damage and are now weak against fire.",
+			"critical": "+15 repeating damage.",
+			"mark": "Designer's Choice",
+			"note": "Oil spills could be vegetable/olive oil. Not necessarily petroleum.",
+		},
+		"Poison_Fang": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User bites the target with venomous fangs.",
+			"effect": "The target takes 70 damage.",
+			"critical": "Target also takes 15 repeating damage.",
+		},
+		"Poison_Jab": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User quickly stabs the target with poisoned stingers.",
+			"effect": "Move 2 extra spaces, and the target takes 40 damage.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Poison_Tail": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User stings the target with the venom spike on its tail.",
+			"effect": "This deals 40 damage and crits on any doubles.",
+			"critical": "Target takes 10 harsh repeating damage.",
+		},
+		"Adrenaline_Shot": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User injects pure adrenaline right into an ally.",
+			"effect": "The target gets an extra dash action for the remainder of combat.",
+			"critical": "none",
+		},
+		"Sludge_Bomb": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User hurls a clump of gunk that explodes on impact.",
+			"effect": "This deals 50 damage to the target and all adjacent targets, friend or foe.",
+			"critical": "Targets take 15 repeating damage.",
+		},
+		"Toxic_Cloud": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User belches out a cloud of poisonous gas.",
+			"effect": "This deals 30 repeating damage to everyone in range.",
+			"critical": "The repeating damage is harsh.",
+		},
+		"Venom_Drench": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User covers its opponent in venom.",
+			"effect": "All targets in range that are taking repeating damage have their repeating damage doubled. Additionally, this attack does not miss.",
+			"critical": "none",
+		},
+		"Acid_Rain": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "The rain begins to bring pollutants out of the atmosphere onto the battlefield.",
+			"effect": "All Pokemon on the field take 1d60 poison damage if they don't resist poison. Those weak against it take increased damage as usual.",
+			"critical": "none",
+		},
+		"Acid_Spray": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User covers the target in acid that erodes the defenses.",
+			"effect": "Target and all adjacent targets take 40 damage and double damage from the next attack.",
+			"critical": "Targets are stunned.",
+		},
+		"Belch": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User eats a berry and burp out toxic gasses from its gut.",
+			"effect": "This deals 120 damage, but the user must consume a berry to use it.",
+			"critical": "Gain the effect of the berry again.",
+		},
+		"Digest": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "The user swallows an enemy whole. ",
+			"effect": "This pins the target for 90 damage. The target of this move may not be hit by any other moves, being inside the user’s stomach and all.",
+			"critical": "The pin is harsh.",
+		},
+		"Gunk_Shot": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User throws garbage or goo at the target.",
+			"effect": "This deals 90 damage.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Sludge_Wave": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User covers the area in dense sludge.",
+			"effect": "This deals 90 damage to all targets in range, friend or foe.",
+			"critical": "Targets take 10 harsh repeating damage.",
+		},
+		"Toxic": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User shoots a glob of toxic goo.",
+			"effect": "Target takes 40 repeating damage.",
+			"critical": "Repeating damage is harsh. ",
+		},
+		"Venoshock": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User initiates anaphalactic shock in the target.",
+			"effect": "The target takes 60 damage, plus damage equal to twice the repeating damage it is currently taking.",
+			"critical": "+30 damage.",
+		}, 
 	},
 	"Psychic":
 	{
