@@ -28,7 +28,175 @@ var moves =
 {
 	"Bug":
 	{
-
+		"Chitin": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "User reinforces its armored shell.",
+			"effect": "For the remainder of combat, the user takes 20 less damage from all attacks.",
+			"critical": "none",
+		},
+		"Fell_Stinger": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User stings the target and tries to take the last of its might.",
+			"effect": "This deals 20 damage. If it KO’s the target, restore the use of a burnt out move.",
+			"critical": "restore the use of a burnt-out move",
+		},
+		"Leech_Life": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User sucks a bit of the target’s energy.",
+			"effect": "This deals 20 damage and the user heals half the damage dealt.",
+			"critical": "+20 damage dealt with increased healing. ",
+		},
+		"Powder": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User covers the target in explosive powder.",
+			"effect": "The target is now weak against fire.",
+			"critical": "The target takes 15 repeating damage.",
+		},
+		"Spider_Web": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User traps the target in a web.",
+			"effect": "The target is trapped.",
+			"critical": "The trap is harsh. ",
+		},
+		"String_Shot": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "A streak of silk binds up the target.",
+			"effect": "The target loses its next dash action.",
+			"critical": "The target is trapped.",
+		},
+		"Bug_Bite": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User bites the target, and its goodies if possible.",
+			"effect": "This deals 50 damage. If the target is holding a berry, immediately eat it and gain the benefit.",
+			"critical": "+30 damage.",
+		},
+		"Fury_Cutter": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes the target with growing rage.",
+			"effect": "This deals 30 damage, +30 for each time it has already been used in combat.",
+			"critical": "+30 damage.",
+		},
+		"Hive_Mind": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user calls to all other bugs to coordinate.",
+			"effect": "This causes the user to crit its next attack, as with all other allied insect Pokémon on the field.",
+			"critical": "none",
+			"mark": "Designer's Choice",
+		},
+		"Honey_Gather": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "The user gathers up some honey and eats it.",
+			"effect": "This heal the user for 40 HP. If used while adjacent to an allied plant Pokémon, that Pokémon’s next attack deals double damage.",
+			"critical": "none",
+		},
+		"Infestation": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User bites into the target and holds on tight.",
+			"effect": "The target is pinned for 60 damage.",
+			"critical": "Recover 40 HP each turn of the pin.",
+		},
+		"Rage_Powder": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User cover the area in a pheromone that causes all targets to be enraged at the user.",
+			"effect": "All enemies in range are under a compulsion to attack only the user. This move does not miss.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Silver_Wind": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User blow silver scales on the wind to damage a foe.",
+			"effect": "This deals 50 damage to the target and all adjacent targets. ",
+			"critical": "User’s next attack deals double damage.",
+		},
+		"Struggle_Bug": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User attacks with all its legs.",
+			"effect": "This deals 30 damage to all adjacent targets, friend or foe, and they cannot use a difficult move next turn.",
+			"critical": "Burns out all the targets’ difficult moves ",
+		},
+		"Attack_Order": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User orders its insect underlings to swarm the target.",
+			"effect": "This deals 70 damage and crits on any doubles.",
+			"critical": "The target takes 15 repeating damage.",
+		},
+		"Bug_Buzz": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User vibrates its wings to create a deafening shockwave of sound.",
+			"effect": "This deals 80 damage.",
+			"critical": "+30 damage.",
+		},
+		"Defend_Order": 
+		{
+			"power": 80,
+			"style": "Self",
+			"flavor": "User orders its insect underlings to swarm around it protectively.",
+			"effect": "The user takes 40 less damage from all attacks for the remainder of combat.",
+			"critical": "none",
+		},
+		"Heal_Order": 
+		{
+			"power": 90,
+			"style": "Self",
+			"flavor": "User order its insect underlings to rub healing salve on it.",
+			"effect": "Restore 60 HP.",
+			"critical": "none",
+		},
+		"Queen_Bee": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User dominates the insects in range.",
+			"effect": "You can make all allied insect Pokémon take an extra standard action of your choice this turn. This does not affect Pokémon that have already been affected by Queen Bee this turn, or that know this move. ",
+			"critical": "none",
+		},
+		"Megahorn": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User rams the target with the massive horn on its head.",
+			"effect": "This deals 90 damage.",
+			"critical": "+30 damage.",
+		},
+		"Pin_Missile": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User fires a barrage of tiny spikes at the target.",
+			"effect": "This deals 2d60 damage to all targets along a line.",
+			"critical": "+1d60 damage. ",
+		},
 	},
 	"Dark":
 	{
@@ -1350,11 +1518,525 @@ var moves =
 	},
 	"Fire":
 	{
-
+		"Ember": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User flings burning embers onto the target.",
+			"effect": "This deals 30 damage.",
+			"critical": "15 repeating damage.",
+		},
+		"Flame": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "User smacks the target with an open flame.",
+			"effect": "This deals 20 damage.",
+			"critical": "+30 damage.",
+		},
+		"Thermography": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "Heat-sensing pits detect the flow of thermal energy to see prey even in pitch-black conditions.",
+			"effect": "Identify a target.",
+			"critical": "The target is harshly identified.",
+		},
+		"Torch": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User attacks with a burning fire.",
+			"effect": "This deals 40 damage.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Will-O-Wisp": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User shoots a queer ball of fire that burns the target.",
+			"effect": "This deals 10 repeating damage to the target and all adjacent targets.",
+			"critical": "Repeating damage is harsh.",
+		},
+		"Brand": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User leaves a burn mark on the target that disracts with pain.",
+			"effect": "The target burns out all its difficult moves.",
+			"critical": "+30 automatic damage.",
+		},
+		"Burning_Aura": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user bursts into flames that singe anyone nearby.",
+			"effect": "Anyone who comes adjacent to the user for the rest of combat takes 40 fire damage.",
+			"critical": "none",
+		},
+		"Burning_Land": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user charges across the land, leaving burning footprints behind.",
+			"effect": "Any terrain the user crosses this turn is on fire, dealing 50 fire damage. The user may incorporate this effect into both its dash action and standard action for extra fire.",
+			"critical": "",
+		},
+		"Blaze_Kick": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "User kicks the target with a burning foot.",
+			"effect": "This deals 40 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Fire_Fang": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User bites the target while breathing fire.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Fire_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User punches the target with a burning fist.",
+			"effect": "The target takes 60 damage.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Flame_Charge": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User wreaths itself in flames and charges.",
+			"effect": "Move 2 extra spaces and deal 50 damage. ",
+			"critical": "+50 damage.",
+		},
+		"Flame_Wheel": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User rolls out, spinning and burning.",
+			"effect": "Deal 50 damage to all adjacent targets.",
+			"critical": "Targets takes 15 repeating damage.",
+		},
+		"Flamethrower": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User spews a plume of fire.",
+			"effect": "This deals 40 damage to all targets along a line.",
+			"critical": "+30 damage.",
+		},
+		"Flame_Burst": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots an exploding ball of fire.",
+			"effect": "This deals 50 damage to the target and all adjacent targets, friend or foe.",
+			"critical": "15 repeating damage.",
+		},
+		"Hazard_Flame": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user builds up fire until the last second and then shoots it.",
+			"effect": "This deals 90 damage to the target and crits on any doubles.",
+			"critical": "User takes 90 automatic damage.",
+		},
+		"Heat_Crash": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User crashes into the target while burning.",
+			"effect": "This deals the user’s strength in damage.",
+			"critical": "Target is stunned.",
+		},
+		"Heat_Wave": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User burns brightly, scorching everyone in range.",
+			"effect": "This deals 60 damage to everyone in range, friend or foe.",
+			"critical": "Burn out all the targets’ difficult moves.",
+		},
+		"Incinerate": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User burns the target and its held item.",
+			"effect": "This deals 50 damage and if the target is holding a berry it destroys the berry.",
+			"critical": "+20 damage.",
+		},
+		"Immolate": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User bursts into flames and goes straight towards the enemies.",
+			"effect": "User takes 60 damage and deals 120 damage to all adjacent targets, friend or foe.",
+			"critical": "+30 damage taken, +60 damage dealt.",
+			"mark": "Designer's Choice",
+		},
+		"Lava_Plume": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User rides a wave of lava.",
+			"effect": "User moves an extra space and deals 40 damage to all adjacent targets, friend or foe.",
+			"critical": "+30 damage.",
+		},
+		"Overheat": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User attacks with burning intensity and suffers the consequences.",
+			"effect": "This deals 90 damage and the user must burn out one of its difficult moves.",
+			"critical": "Burnout is avoided.",
+		},
+		"Napalm": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User breathes sticky, flaming goo onto the target.",
+			"effect": "This deals 40 repeating damage to the target.",
+			"critical": "Repeating damage is harsh.",
+		},
+		"Pyre": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User catches on fire and deals extra damage to its foe.",
+			"effect": "This deals 100 damage to the target and the user takes 40 automatic damage.",
+			"critical": "+30 damage.",
+			"mark": "Designer's Choice",
+		},
+		"Searing_Shot": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User burns everything around the target.",
+			"effect": "This deals 40 damage to the target and everything adjacent to the target, friend or foe.",
+			"critical": "+30 damage dealt.",
+		},
+		"Combustion": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User explodes in fiery devastation.",
+			"effect": "This deals 100 damage to everyone in range, friend or foe, and the user takes 50 damage.",
+			"critical": "+50 damage dealt and +20 damage self-inflicted.",
+		},
+		"Blastburn": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User hits with all its power.",
+			"effect": "This deals 120 damage, but the user must be encouraged before it can use any moves afterward.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Blue_Flare": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User burns an area with glowing blue flame.",
+			"effect": "This deals 70 damage to the target and all adjacent targets, friend or foe.",
+			"critical": "+30 damage.",
+		},
+		"Eruption": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User calls up a volcanic explosion.",
+			"effect": "The target and all adjacent targets have their HP halved, rounded up. This affects friend and foe.",
+			"critical": "none",
+		},
+		"Fire_Blast": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User creates an explosion of fire that bursts out in 5 directions.",
+			"effect": "Draw 5 lines going out from the user, going east, north, west, southeast, and southwest (or that same figure rotated by increments of 45 degrees). Every enemy along those lines takes 90 damage.",
+			"critical": "Crit: +50 damage.",
+		},
+		"Firespin": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User shoots a flaming tornado at the target.",
+			"effect": "This deals 30 repeating damage and the target is trapped.",
+			"critical": "+30 damage.",
+		},
+		"Firestorm": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User calls down fire from the sky.",
+			"effect": "This deals 90 damage to all targets in range.",
+			"critical": "15 repeating damage.",
+		},
+		"Flare_Blitz": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User rushes the target and attack.",
+			"effect": "Move up to 2 extra spaces and deal 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Inferno": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User unleashes a massive blast of fiery devastation.",
+			"effect": "The target takes 40 damage and 30 repeating damage.",
+			"critical": "+30 damage.",
+		},
+		"Sunny_Day": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "The sun shines down on everyone.",
+			"effect": "The heat makes all fire type moves natural except for sunny day itself. All Pokémon lose their weaknesses to water and ice from the heat.",
+			"critical": "none",
+		},
 	},
 	"Flying":
 	{
-
+		"Defog": 
+		{
+			"power": 40,
+			"style": "Weather",
+			"flavor": "A strong wind clears away battlefield hazards.",
+			"effect": "This clears away all fog in the region. Additionally, it nullifies the effects of attacks that hang in the air, such as stun spore, smokescreen, sand attack, or mist, if they were used since your last turn.",
+			"critical": "none",
+		},
+		"Feather_Dance": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "User coats the target in feathers, softening its blows.",
+			"effect": "The target’s next attack deals half damage.",
+			"critical": "The status is harsh, meaning it remains until the end of combat. Perhaps this involves tar and feathers.",
+		},
+		"Gust": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "By whipping its wings, the user causes a gust to blow the target over.",
+			"effect": "This deals 20 damage and moves the target one space in any direction.",
+			"critical": "The target is moved 3 spaces in any direction you wish.",
+		},
+		"Mirror_Move": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user observes the target and copies its move.",
+			"effect": "Pick any target on the map. Use the last move that it did against it. You cannot use this move and not target the one you were observing unless you are mimicking a self-style move.",
+			"critical": "This copies the move, so the crit will be determind by that move.",
+		},
+		"Peck": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "A sharp rap from the beak.",
+			"effect": "This deals 30 damage.",
+			"critical": "+30 damage.",
+		},
+		"Acrobatics": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user nimbly swoops through the air to make an attack.",
+			"effect": "This does 40 damage, 80 if the user isn’t carrying an item.",
+			"critical": "+30 damage",
+		},
+		"Aerial_Ace": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "By flying with incredible speed, the user hits without fail.",
+			"effect": "This does 40 damage and does not miss.",
+			"critical": "none",
+		},
+		"Air_Cutter": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user launches razor-like wind to slash the opponents.",
+			"effect": "This deals 30 damage to the target and all adjacent targets.",
+			"critical": "+30 damage",
+		},
+		"Air_Slash": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user attacks with a slicing blade of air.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is stunned",
+		},
+		"Bounce": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user makes a long, high series of bouncing jumps, soaring over the terrain.",
+			"effect": "This move takes two turns. While in use the user is its dash in spaces above the battlefield, ignoring terrain hazards. On the second turn, this deals 120 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Brave_Bird": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user dive-bombs an enemy, doing extreme damage at the cost of its own health.",
+			"effect": "This deals 120 damage to the target and the user takes 40 damage even on a miss.",
+			"critical": "This deals an extra 60 damage and the user takes 30 more.",
+		},
+		"Falcon_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User punch the target with avian swiftness.",
+			"effect": "This deals the user’s speed in damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Fly": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user soars above the battlefield to swoop down and strike later.",
+			"effect": "This allows the user to fly its dash in spaces above the battlefield on the first turn. On the second, it may dash again on its standard action to deal 80 damage. With a proper license, this allows the trainer to fly around the map to places they know already and can navigate to.",
+			"critical": "",
+		},
+		"Flyby": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User swoop down, scratches the target with its talons, and keep on going.",
+			"effect": "This is move that lets flying pokémon hit and keep moving. They move their dash distance +2, do 40 damage, and then can continue to move any distance they have left to take.",
+			"critical": "+30 damage.",
+			"mark": "Designer's Choice",
+		},
+		"Pluck": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "A quick jab with the beak to mug the target.",
+			"effect": "This deals 40 damage and if the target is holding a berry the user immediately eats it and gain the effect.",
+			"critical": "+20 damage and the user steals the target’s item regardless of what it is. Any consumables are eaten.",
+		},
+		"Sky_Drop": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user picks up the target and drops it from the heights.",
+			"effect": "On the first turn the user grabs the target. The target is pinned for no damage. While this move is in use the user is flying a number of spaces above the battlefield equal to its dash distance. The user may release the target on any turn after the first. It takes damage equal to the user’s speed.",
+			"critical": "+30 damage.",
+		},
+		"Tailwind": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "The user calls up a beneficial wind to move everyone along.",
+			"effect": "User and all adjacent allies get to immediately make a dash. This means an extra dash for the user, since self attacks allow one dash to begin with.",
+			"critical": "none",
+		},
+		"Wing_Attack": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "A strike with imposing wings.",
+			"effect": "This deals 50 damage. ",
+			"critical": "+30 damage",
+		},
+		"Aeroblast": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "A vortex of air is shot at the target.",
+			"effect": "This deals 80 damage.",
+			"critical": "User crits on any doubles for the remainder of combat.",
+		},
+		"Dragon_Ascent": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "User mega evolves without needing to draw power from any stone.",
+			"effect": "This move causes the user to mega evolve and immediately be able to take another standard action.",
+			"critical": "none",
+			"opinion": "It is our opinion that this move should be dragon type.",
+		},
+		"Drill_Peck": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user drills into the target with a sharp beak, as it would to fish insects out of a dense log.",
+			"effect": "This deals 90 damage.",
+			"critical": "+30 damage.",
+		},
+		"Hawkeye": 
+		{
+			"power": 90,
+			"style": "Self",
+			"flavor": "The user’s perfect eyesight pierces all illusions, sees across all distances, and stares into the very soul of the target.",
+			"effect": "Identify any target on the map. If the user is blinded, the target is no longer identified.",
+			"critical": "The target is harshly identified.",
+		},
+		"Hurricane": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "Massive winds blow everyone in dizzying circles.",
+			"effect": "This deals 90 damage to everyone within range, friend or foe.",
+			"critical": "The targets have a compulsion to confusion.",
+		},
+		"Oblivion_Wing": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "A wing like the angel of death strikes the opponent.",
+			"effect": "This deals 60 damage and on a hit restores half the damage dealt as health to the user.",
+			"critical": "+20 damage, with a corresponding increase in healing.",
+		},
+		"Roost": 
+		{
+			"power": 80,
+			"style": "Self",
+			"flavor": "User rests on the ground, restoring its strength.",
+			"effect": "This restores 60 health. While on the ground, the user not considered a flying type. User does not get to dash on its next turn.",
+			"critical": "none",
+		},
+		"Sky_Attack": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User builds up power and dash through the air.",
+			"effect": "This deals 140 damage but the user must be encouraged one the previous turn before it can use the move.",
+			"critical": "Target is stunned.",
+		},
+		"Sonic_Wake": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "The user breaks the sound barrier and leaves an injurous trail of sonic blasts.",
+			"effect": "The user must draw a straight line that passes through no fewer than 10 spaces and no more than 10 plus the user’s dash distance. All Pokémon along this path take 20 damage unless they can pass a speed save. If the user’s path runs through terrain it cannot pass through before the first 10 spaces are up, it takes 100 damage from plowing straight into something.",
+			"critical": "none",
+		},
+		"Bombing_Run": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user flies over the battlefield, shooting balls of elemental energy at its foes.",
+			"effect": "This move can only be learned by Pokémon who have a type besides flying, and treat this move as if it is that type. Once learned, classify it is a move of whatever type the Pokémon has that isn’t flying. For example, a fire/flying type once it learns this move treats it as a fire move. Move twice the user’s dash distance, flying over any Pokémon in the way. Every Pokémon along the path takes 30 damage of this move’s new type. Yes, even though this is classified as a ranged move, the user can only target enemies directly below it and and it changes locations while using it.",
+			"critical": "",
+		},
+		"Gale_Force": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "User changes the weather to overpowering, shifting winds.",
+			"effect": "Every time your turn comes up, choose a wind direction. Everyone on the map is moved the user's dash in spaces.",
+			"critical": "none",
+		},
 	},
 	"Ghost":
 	{
