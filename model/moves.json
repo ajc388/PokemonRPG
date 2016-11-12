@@ -3228,4 +3228,16 @@ var moves =
 	{
 
 	}
+	"Null":
+	{
+		"Novelty_Pokemon": 
+		{
+			"name": "Novelty Pokemon", 
+			"power": 0,
+			"style": "N/A",
+			"flavor": "The Pokemon has a tendency to picking up odd moves.",
+			"effect": "This is not a move. Instead, if your Pokemon has this, you may teach it any move of your choice as a way to give it a cute quirk.",
+			"critical": "N/A",
+		},		
+	}
 };
