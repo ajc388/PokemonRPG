@@ -8,6 +8,8 @@ function DataGrid(parameters)
     var gridName = parameters.name ? parameters.name : "Data Grid";
     var suppress = parameters.suppressCols ? parameters.suppressCols : [];
 
+    if ( !model ) { console.log("Wherez my model at beotch!"); return; }
+
     //construct menu items
     $("#datagrid").append(
         '<div id="anchor"></div>'+
@@ -46,7 +48,6 @@ function DataGrid(parameters)
             return parseInt($(a).find("."+col).text()) > parseInt($(b).find("."+col).text()) ? 1 : -1; 
           }
           else if ( $.type($(a).find("."+col).text()) === "string" ) { 
-            console.log($(a).find("."+col).text());
             return $(a).find("."+col).text() > $(b).find("."+col).text() ? 1 : -1; 
           }
           //May need to handle more complex types in here
@@ -68,7 +69,7 @@ function DataGrid(parameters)
       //Create auto complete feature for search bar
       $("#search").autocomplete({
         source: loadSearchTags(model),
-        minLength: 2,
+        minLength: Object.keys(model)/100,
         select: search($(".name")),
         delay: 500
       });

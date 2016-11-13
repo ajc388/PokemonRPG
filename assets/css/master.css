@@ -122,24 +122,26 @@ table.dataGrid {
 }
 
 /*Coloring for pokemon types*/
-.electric {
-	background-color: #F8D030 !important; 
-}
-.normal {
-	background-color: #A8A878 !important;
-}
-.dark {
-	background-color: #303030 !important;
-}
-.fairy {
-	background-color: #ff6699 !important;
-}
-.fighting {
-	background-color: #ffa31a !important;
-}
-.dragon {
-	background-color: #cc9900 !important;
-}
+.bug { background-color: #A8B820 !important; }
+.dark { background-color: #303030 !important; }
+.dragon { background-color: #cc9900 !important; }
+.electric { background-color: #F8D030 !important; }
+.fairy { background-color: #ff6699 !important; }
+.fighting { background-color: #A890F0 !important; }
+.fire { background-color: #F08030 !important; } 
+.flying { background-color: #A890F0 !important; }
+.ghost { background-color: #705898 !important; }
+.grass { background-color: #78C850 !important; } 
+.ground { background-color: #E0C068 !important; }
+.ice { background-color: #98D8D8 !important; }
+.normal { background-color: #A8A878 !important; }
+.poison { background-color: #A040A0 !important; }
+.psychic { background-color: #F85888 !important; }
+.rock { background-color: #B8A038 !important; }
+.steel { background-color: #B8B8D0 !important; }
+.water { background-color: #6890F0 !important; }
+.null {background-color: #333 !important; }
+
 .fixed {
 	position: fixed;
 	top: 0px;
