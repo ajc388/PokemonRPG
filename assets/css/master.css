@@ -157,6 +157,9 @@ table tr.dataRow:first-child {
 table tr.dataRow:nth-child(even) {
 	background-color: #EEE;
 }
+table tr.dataRow:not(:first-child):hover {
+	background-color: lightblue;
+}
 table tr.dataRow {
 	font-size: 120%;
 }
