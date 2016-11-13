@@ -54,9 +54,7 @@
 
       $("#sort").on("change", function() { 
           var selected = $(this).val();
-          $.each( moves, function(key) { 
-            sort(key, selected); 
-          });
+          $.each( moves, function(key) { sort(key, selected); });
       });
     });
 
@@ -152,7 +150,7 @@
             var power = typeof move.power !== "undefined" ? move.power : "0";
 
             //Create header div for accordion
-            var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'>></div>");
+            var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
             header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' ></img>");
             header.append("<span class='moveName'>"+moveName.replace('_', ' ')+"</span>");
             header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");

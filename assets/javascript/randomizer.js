@@ -25,26 +25,30 @@
         var moveType = $("#moveTypeDropdownList").find("option:selected").text();
         var moveList = movePicker(numberOfMoves, moveType)
         
+        console.log(moveList);
         displayMoves(moveList);
       });
     });
 
-    function displayMoves(type, moveList)
+    function displayMoves(moveList)
     {
+      var moves = $("#moveList");
+      moves.empty();
       if (Object.keys(moveList).length > 0)
       {
-        var accordion = $("<div id='accordion"+type+"'></div>");
+        var accordion = $("<div id='accordion'></div>");
         for (var moveName in moveList)
         {
           var move = moveList[moveName];
+          console.log(move);
           if ( move )
           {
             var flavor = typeof move.flavor !== "undefined" ? move.flavor : "No text!";
             var power = typeof move.power !== "undefined" ? move.power : "0";
 
             //Create header div for accordion
-            var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'>></div>");
-            header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' ></img>");
+            var header = $("<div class='moveHeader "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
+            header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+move.type+".png' ></img>");
             header.append("<span class='moveName'>"+moveName.replace('_', ' ')+"</span>");
             header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");
             header.append("<span class='moveFlavor'>" + flavor +"</span>");
@@ -70,16 +74,15 @@
             if (critical != "") { content.append("<p><span class='descriptiveHeader'> Critical: </span>" + critical + "</p>"); }
             if (outofbattle != "") { content.append("<p><span class='descriptiveHeader'> Out Of Battle: </span>" + outofbattle + "</p>"); }
             accordion.append(content);
-
           }
         }
 
-        $("#moveList").append(accordion);
+        moves.append(accordion);
         accordion.accordion();
       }
       else 
       {
-        $("#moveList").append("<p>No results!?!?!</p>");
+        moves.append("<p>No results!?!?!</p>");
       }
     }
 

@@ -123,7 +123,7 @@ table.dataGrid {
 
 /*Coloring for pokemon types*/
 .bug { background-color: #A8B820 !important; }
-.dark { background-color: #303030 !important; }
+.dark { background-color: #666 !important; }
 .dragon { background-color: #cc9900 !important; }
 .electric { background-color: #F8D030 !important; }
 .fairy { background-color: #ff6699 !important; }
@@ -140,7 +140,7 @@ table.dataGrid {
 .rock { background-color: #B8A038 !important; }
 .steel { background-color: #B8B8D0 !important; }
 .water { background-color: #6890F0 !important; }
-.null {background-color: #333 !important; }
+.null {background-color: #666 !important; }
 
 .fixed {
 	position: fixed;
