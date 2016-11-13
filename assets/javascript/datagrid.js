@@ -2,19 +2,19 @@
 function DataGrid(parameters) 
 { 
     //Load in parameters
-    var model = parameters.model != {} ? parameters.model : {};
-    var searchFlag = parameters.searchFlag ? true : false;
-    var sortFlag = parameters.sortFlag ? true : false;
-    var gridName = parameters.name ? parameters.name : "Data Grid";
-    var suppress = parameters.suppressCols ? parameters.suppressCols : [];
-
-    if ( !model ) { console.log("Wherez my model at beotch!"); return; }
-
+    if ( parameters.model == {} ) { return; }  
+    var model = parameters.model;
+    var searchFlag = typeof parameters.searchFlag == "undefined" ? true : false;
+    var sortFlag = typeof parameters.sortFlag == "undefined" ? true : false;
+    var title = typeof parameters.title == "undefined" ? "Data Grid" : parameters.title;
+    var suppress = typeof parameters.suppressCols == "undefined" ? [] : parameters.suppressCols;
+    var headerFlag = typeof parameters.headerFlag == "undefined" ? true : parameters.headerFlag;
+    
     //construct menu items
     $("#datagrid").append(
         '<div id="anchor"></div>'+
         '<div id="selector" class="blockheader">'+
-          '<span >'+gridName+'</span>'+
+          '<span >'+title+'</span>'+
         '</div>'+
         '<div id="grid"></div>');
 
@@ -38,21 +38,6 @@ function DataGrid(parameters)
 
       //default sorting
       sort();
-    }
-
-    function sort() {
-        var rows = $(".dataRow");
-        var col = $("#sort").val();
-        rows = rows.sort(function (a, b) {
-          if ( $.type($(a).find("."+col).text()) === "number") { 
-            return parseInt($(a).find("."+col).text()) > parseInt($(b).find("."+col).text()) ? 1 : -1; 
-          }
-          else if ( $.type($(a).find("."+col).text()) === "string" ) { 
-            return $(a).find("."+col).text() > $(b).find("."+col).text() ? 1 : -1; 
-          }
-          //May need to handle more complex types in here
-        });
-        rows.detach().appendTo($("#grid"));
     }
 
     //Build dom elements
@@ -79,7 +64,7 @@ function DataGrid(parameters)
         .on('autocompleteclose', function () { search($(".name")); });
     }
     
-    displayTable(model, $("#datagrid"));
+    displayTable(model, $("#grid"));
 
     /*Fixed elements*/
     $(function() {
@@ -87,6 +72,20 @@ function DataGrid(parameters)
     });
 
     //FUNCTIONS
+    function sort() {
+      var rows = $(".dataRow");
+      var col = $("#sort").val();
+      rows = rows.sort(function (a, b) {
+        if ( $.type($(a).find("."+col).text()) === "number") { 
+          return parseInt($(a).find("."+col).text()) > parseInt($(b).find("."+col).text()) ? 1 : -1; 
+        }
+        else if ( $.type($(a).find("."+col).text()) === "string" ) { 
+          return $(a).find("."+col).text() > $(b).find("."+col).text() ? 1 : -1; 
+        }
+      });
+      rows.detach().appendTo($("#grid"));
+    }
+
     function search(criteria)
     { 
         var input = $("#search").val().toLowerCase();
@@ -131,8 +130,15 @@ function DataGrid(parameters)
       if (Object.keys(data).length > 0)
       {
         var table = $("<table class='dataGrid'></table>");
-        //var header = true;
-
+        if ( headerFlag )
+        {
+          var row = $("<tr class='dataRow'></tr>");
+          row.append("<th class='dataHeader'>Name</th>");
+          $.each(data[Object.keys(data)[0]], function(key) {
+            row.append("<th class='dataHeader'>"+ key +"</th>");
+          });
+          table.append(row);
+        }
         $.each(data, function(key) {
           var row = $("<tr class='dataRow'></tr>");
           row.append("<td class='dataValue Name'>"+key+"</td>");
@@ -146,7 +152,7 @@ function DataGrid(parameters)
       }
       else 
       {
-        $(root).append("<p>No results!?!?!</p>");
+        root.append("<p>No results!?!?!</p>");
       }
     }
 }
