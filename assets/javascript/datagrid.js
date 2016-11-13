@@ -35,9 +35,6 @@ function DataGrid(parameters)
       });
 
       $("#sort").on("change", function() { sort(); });
-
-      //default sorting
-      sort();
     }
 
     //Build dom elements
@@ -66,6 +63,9 @@ function DataGrid(parameters)
     
     displayTable(model, $("#grid"));
 
+    //default sorting
+    sort();
+    
     /*Fixed elements*/
     $(function() {
       fixedScroller($("#anchor"), $("#selector"))
@@ -83,7 +83,7 @@ function DataGrid(parameters)
           return $(a).find("."+col).text() > $(b).find("."+col).text() ? 1 : -1; 
         }
       });
-      rows.detach().appendTo($("#grid"));
+      rows.detach().appendTo($("#dataGrid"));
     }
 
     function search(criteria)
@@ -129,10 +129,10 @@ function DataGrid(parameters)
     {
       if (Object.keys(data).length > 0)
       {
-        var table = $("<table class='dataGrid'></table>");
+        var table = $("<table id='dataGrid' class='dataGrid'></table>");
         if ( headerFlag )
         {
-          var row = $("<tr class='dataRow'></tr>");
+          var row = $("<tr class='dataRowHeader'></tr>");
           row.append("<th class='dataHeader'>Name</th>");
           $.each(data[Object.keys(data)[0]], function(key) {
             row.append("<th class='dataHeader'>"+ key +"</th>");
@@ -141,7 +141,7 @@ function DataGrid(parameters)
         }
         $.each(data, function(key) {
           var row = $("<tr class='dataRow'></tr>");
-          row.append("<td class='dataValue Name'>"+key+"</td>");
+          row.append("<td class='dataValue Name'>"+key.replace("_", " ")+"</td>");
           
           $.each(data[key], function(att, val) {
               row.append("<td class='dataValue "+att+"'>"+val+"</td>");    
