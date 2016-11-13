@@ -14,33 +14,23 @@
 
       //Displays a group of accordions for every pokemon type
       $.each(moves, function (type, value) {
-        $("#moveList").append(
-              "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
-              "<button id='sort_name_"+type+"' class='button ui-button ui-widget ui-corner-all'>Sort By Name</button>"+
-              "<span>"+
-              "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
-              "<span>"+type+"</span>"+
-              "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
-              "</span>"+
-              "<button id='sort_power_"+type+"' class='button ui-button ui-widget ui-corner-all'>Sort By Power</button>"+
-             "</div>"
-            );
+          $("#moveList").append(
+                "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
+                "<span>"+
+                "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+                "<span>"+type+"</span>"+
+                "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+                "</span>"+
+               "</div>"
+              );
 
-        displayMoves(type, moves[type]);
+          displayMoves(type, moves[type]);
 
-        //bind sort functionality to buttons
-        $("#sort_name_"+type).on('click', function() { sortByName(type); });
-        $("#sort_power_"+type).on('click', function() { sortByPower(type); });
-
-        //Sort by name by default
-        sortByName(type); 
-
-        /*SCROLL FUNCTIONALITY*/
-
-        $(".navIconMenu ul").append(
-                  "<li><a id='link_"+type+"'>"+
-                  "<img class='icon' src='assets/images/type_icons/"+type+".png' />"+
-                  "</a></li>");
+          /*SCROLL FUNCTIONALITY*/
+          $(".navIconMenu ul").append(
+                    "<li><a id='link_"+type+"'>"+
+                    "<img class='icon' src='assets/images/type_icons/"+type+".png' />"+
+                    "</a></li>");
 
           $("#link_"+type).click(function() {
             $('html, body').animate({
@@ -61,6 +51,13 @@
         .on("keyup", function() { search(); })
         .on('autocompleteclose', function () {  search(); });
       });
+
+      $("#sort").on("change", function() { 
+          var selected = $(this).val();
+          $.each( moves, function(key) { 
+            sort(key, selected); 
+          });
+      });
     });
 
     function fixedScroller(anchor, fixedElement) {
@@ -79,44 +76,29 @@
       move();
     }
 
-    function sortByName(type)
+    function sort(moveType, sortType)
     {
-        var accordion = $("#accordion"+type);
+        var accordion = $("#accordion"+moveType);
         var entries = accordion.children('div');
 
         //Maps the two accordion DOM elemnets to an array
         var map = $.map(entries, function(item, i) {
           return i%2 == 0 ? [[$(item), $(item).next()]]: null;
         });
-
+        
         //Sort the accordions by move name
         var sort = map.sort(function (a, b) {
-          return $(a[0]).find(".moveName").text() > $(b[0]).find(".moveName").text() ? 1 : -1;
+          if ( sortType == "Name" ) 
+          {
+            return $(a[0]).find(".moveName").text() > $(b[0]).find(".moveName").text() ? 1 : -1;
+          } 
+          else if ( sortType == "Power") 
+          {
+            return parseInt($(a[0]).find(".movePower").text()) < parseInt($(b[0]).find(".movePower").text()) ? 1 : -1;
+          }
         });
-
+      
         //reattach the accordions
-        $.each(sort, function(key, item) {
-          accordion.append(item[0]);
-          accordion.append(item[1]);
-        });
-    }
-
-    function sortByPower(type)
-    {
-        var accordion = $("#accordion"+type);
-        var entries = accordion.children('div');
-
-        //Maps the two accordion DOM elemnets to an array
-        var map = $.map(entries, function(item, i) {
-          return i%2 == 0 ? [[$(item), $(item).next()]]: null;
-        });
-
-        var sort = map.sort(function (a, b) {
-          return parseInt($(a[0]).find(".movePower").text()) < parseInt($(b[0]).find(".movePower").text()) ? 1 : -1;
-        });
-
-        console.log(sort);
-
         $.each(sort, function(key, item) {
           accordion.append(item[0]);
           accordion.append(item[1]);
