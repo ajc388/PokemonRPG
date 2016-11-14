@@ -33,7 +33,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User reinforces its armored shell.",
 			"effect": "For the remainder of combat, the user takes 20 less damage from all attacks.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Fell_Stinger": 
 		{
@@ -97,7 +97,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user calls to all other bugs to coordinate.",
 			"effect": "This causes the user to crit its next attack, as with all other allied insect Pokémon on the field.",
-			"critical": "none",
+			"critical": "",
 			"mark": "Designer's Choice",
 		},
 		"Honey_Gather": 
@@ -106,7 +106,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user gathers up some honey and eats it.",
 			"effect": "This heal the user for 40 HP. If used while adjacent to an allied plant Pokémon, that Pokémon’s next attack deals double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Infestation": 
 		{
@@ -162,7 +162,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User orders its insect underlings to swarm around it protectively.",
 			"effect": "The user takes 40 less damage from all attacks for the remainder of combat.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Heal_Order": 
 		{
@@ -170,7 +170,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User order its insect underlings to rub healing salve on it.",
 			"effect": "Restore 60 HP.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Queen_Bee": 
 		{
@@ -178,7 +178,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User dominates the insects in range.",
 			"effect": "You can make all allied insect Pokémon take an extra standard action of your choice this turn. This does not affect Pokémon that have already been affected by Queen Bee this turn, or that know this move. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Megahorn": 
 		{
@@ -205,7 +205,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User prepares to hit the target at the last second.",
 			"effect": "The user must remain stationary when using this move. It allows the user to delay taking its standard action until later in the fight. When the time comes, declare what standard action you’re taking and immediately take it, even if this interrupts someone else’s turn. If you have not taken your move action yet, you may immediately take it as well. The opportunity this move offers ends when your next turn comes up.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Bribery": 
 		{
@@ -301,7 +301,7 @@ var moves =
 			"style": "Self",
 			"flavor": "Enemies have a vague idea of where the user was, but not well enough to hit it.",
 			"effect": "The user is sneaking.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Taunt": 
 		{
@@ -365,7 +365,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User attacks with deception and cunning, faking out its foe.",
 			"effect": "This deals the user’s sense in damage and does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Foul_Play": 
 		{
@@ -389,7 +389,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user prepares to attack with extra viciousness.",
 			"effect": "For the remainder of combat, the user crits on any doubles.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Knock_Off": 
 		{
@@ -413,7 +413,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user plans its opponents’ downfall.",
 			"effect": "The user deals 30 extra damage on all damaging attacks. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Night_Slash": 
 		{
@@ -493,7 +493,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "Darkness across the land.",
 			"effect": "All dark and ghost types gain the sneaking status at the end of their turn.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Hyperspace_Fury": 
 		{
@@ -501,7 +501,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User pounds the target with extradimensional arms.",
 			"effect": "This deals 60 damage. It does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Moonshadow": 
 		{
@@ -509,7 +509,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user blends in with the darkness like a shadow in the night.",
 			"effect": "The user is sneaking and remains sneaking even when it takes actions that would end the effect. Only bright light can end the sneaking effect such as a fire or electric attack.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Night_Daze": 
 		{
@@ -552,7 +552,7 @@ var moves =
 			"style": "Self",
 			"flavor": "Have you ever heard of an unlucky dragon?",
 			"effect": "The next move the user performs automatically crits.",
-			"critical": "none",
+			"critical": "",
 			"mark": "Designer's Choice",
 		},
 		"Grow_Scales": 
@@ -561,7 +561,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user grows extra scales that counteract various hazards.",
 			"effect": "The user is immune to the next status that would otherwise be inflicted on it.",
-			"critical": "none",
+			"critical": "",
 			"mark": "Designer's Choice",
 		},
 		"Twister": 
@@ -578,7 +578,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User calls upon the power of its forebears.",
 			"effect": "The next attack the user makes deals double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Dragon_Claw": 
 		{
@@ -594,7 +594,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User dances like only a dragon can, and its physical prowess rises.",
 			"effect": "The user gains an extra dash action for the remainder of combat and its next attack deals 30 extra damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Dragon_Pulse": 
 		{
@@ -634,7 +634,7 @@ var moves =
 			"style": "Self",
 			"flavor": "Dragons don’t take sick days. ",
 			"effect": "Cure all statuses on the user.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Dragon_Landing": 
 		{
@@ -690,7 +690,7 @@ var moves =
 			"style": "Self",
 			"flavor": "You’re a dragon. Who’s going to boss you around?",
 			"effect": "Clear any compulsions on the user. This move can be used by choice even if the user is under compulsion. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Outrage": 
 		{
@@ -722,7 +722,7 @@ var moves =
 			"style": "Self",
 			"flavor": "Bored by the foes around it, the user concentrates on increasing its power for a later, more challenging fight.",
 			"effect": "If used move in combat, immediately train one of the user’s stats. It does nothing else, and automatically fails outside of combat.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Spatial_Rend": 
 		{
@@ -765,7 +765,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user rocks on to electric avenue with a dance that builds up static.",
 			"effect": "User and everyone in range are charged, meaning the next uncharged Pokemon that moves adjacent to them takes 2d60 electric damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Electrolocation": 
 		{
@@ -798,7 +798,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user floats on magnetic currents.",
 			"effect": "User gains the hover ability.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Magnetize": 
 		{
@@ -806,7 +806,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User causes the target to be attracted to metal.",
 			"effect": "The target is now weak against steel attacks.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Nuzzle": 
 		{
@@ -822,7 +822,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User shuffles its feet along the ground, building up a charge.",
 			"effect": "Reduce the user’s dash by 1 while using this move. The user’s next electric attack deals double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Spark": 
 		{
@@ -838,7 +838,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "The user provides an ally with enormous amounts of electricity.",
 			"effect": "Target’s next electric attack does double damage.",
-			"critical": "none",
+			"critical": "",
 			"out_of_battle": "The Pokemon can provide the target with way more energy than it needs to function, increasing performance. This move gives the GM the right and responsibility to insult anyone who says 'That can cause problems with technology in our world, so the semi-magical nature of Pokémon moves will always have the exact same effect on advanced Pokémon-world tech that is designed to be able to handle exposure to electric attacks.'",
 			"mark": "Designer's Choice"
 		},
@@ -880,7 +880,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User builds up an electrical charge.",
 			"effect": "The next electric attack the user does inflicts double damage.",
-			"critical": "This move does not crit.",
+			"critical": "",
 		},
 		"Discharge": 
 		{
@@ -1000,7 +1000,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User shoots a lightning-fast bolt of electricity.",
 			"effect": "This deals 70 damage and does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Thunder": 
 		{
@@ -1040,7 +1040,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User shoots a powerful beam of lightning at the target.",
 			"effect": "This deals 80 damage and stuns the target.",
-			"critical": "none",
+			"critical": "",
 		},
 	},
 	"Fairy":
@@ -1059,7 +1059,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User lower the targets’ defense and then smacks them.",
 			"effect": "This deals 20 damage to all adjacent foes and does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Fairy_Dust": 
 		{
@@ -1108,7 +1108,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User sprays a stimulating aromatherapy scent.",
 			"effect": "User and all adjacent targets regain the use of a burnt out move.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Baby-Doll_Eyes": 
 		{
@@ -1140,7 +1140,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User blesses the target with luck and good health.",
 			"effect": "The target’s next attack automatically crits and it restores 20 health. ",
-			"critical": "This move does not crit.",
+			"critical": "",
 			"out_of_battle": "Every time an egg hatches, if you have at least one Pokémon in your party that knows this move, the egg trains all stats. Multiple fairy godmothers do not stack. ",
 		},
 		"Friendship_Is_Magic": 
@@ -1157,7 +1157,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "A protective field keeps friends safe.",
 			"effect": "User and all allies in range, but not enemies, are protected from all statuses for the remainder of combat. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Fairy_Lock": 
 		{
@@ -1165,7 +1165,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "Fairy barriers keep everyone together.",
 			"effect": "No Pokémon may leave the battlefield unless KO’d, whether that is being returned by pokeball, leaving the field, or being forcibly moved off.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Geas": 
 		{
@@ -1173,7 +1173,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User forces the enemy to play fair and not be a cheaty cheaterson.",
 			"effect": "Pick a target anywhere on the battlefield. It is under a harsh compulsion to abandon whatever overpowered, piece of crap strategy it’s been abusing. This move does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Geomancy": 
 		{
@@ -1181,7 +1181,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User slowly draws elemental power from the environment.",
 			"effect": "At the end of the user's next turn, all of its moves are now natural.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Giant_Slayer": 
 		{
@@ -1205,7 +1205,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "Healing mist rolls in low to the ground.",
 			"effect": "All Pokémon on the ground are immune to status effects and immune to dragon moves. ",
-			"critical": "This move does not crit.",
+			"critical": "",
 		},
 		"Moonblast": 
 		{
@@ -1221,7 +1221,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User raise its arms to the moon and draws in energy.",
 			"effect": "Restore 50 health, or 80 if it’s nighttime and the user can see the light of the moon.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Play_Rough": 
 		{
@@ -1304,7 +1304,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "Hadouken!",
 			"effect": "This deals 30 damage and does not miss, hitting the target and all adjacent targets.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Brick_Break": 
 		{
@@ -1320,7 +1320,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User becomes even more muscled.",
 			"effect": "The user’s next attack deals double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Circle_Throw": 
 		{
@@ -1488,7 +1488,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User channels its chi into an erratic blast.",
 			"effect": "This deals 100 damage to the target and all adjacent targets.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Flying_Press": 
 		{
@@ -1512,7 +1512,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "Like the ancient Moiri, the user and allies perform a haka dance.",
 			"effect": "This allows the user and all adjacent allies to take an extra dash action next turn, and their next attacks deal double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 	},
 	"Fire":
@@ -1571,7 +1571,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user bursts into flames that singe anyone nearby.",
 			"effect": "Anyone who comes adjacent to the user for the rest of combat takes 40 fire damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Burning_Land": 
 		{
@@ -1749,7 +1749,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User calls up a volcanic explosion.",
 			"effect": "The target and all adjacent targets have their HP halved, rounded up. This affects friend and foe.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Fire_Blast": 
 		{
@@ -1797,7 +1797,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user bursts into flames, fainting to bring an ally back to fighting fitness.",
 			"effect": "Choose a fainted ally in range. Restore that ally to half health. This KO's the user.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Sunny_Day": 
 		{
@@ -1805,7 +1805,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "The sun shines down on everyone.",
 			"effect": "The heat makes all fire type moves natural except for sunny day itself. All Pokémon lose their weaknesses to water and ice from the heat.",
-			"critical": "none",
+			"critical": "",
 		},
 	},
 	"Flying":
@@ -1816,7 +1816,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "A strong wind clears away battlefield hazards.",
 			"effect": "This clears away all fog in the region. Additionally, it nullifies the effects of attacks that hang in the air, such as stun spore, smokescreen, sand attack, or mist, if they were used since your last turn.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Feather_Dance": 
 		{
@@ -1864,7 +1864,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "By flying with incredible speed, the user hits without fail.",
 			"effect": "This does 40 damage and does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Air_Cutter": 
 		{
@@ -1945,7 +1945,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user calls up a beneficial wind to move everyone along.",
 			"effect": "User and all adjacent allies get to immediately make a dash. This means an extra dash for the user, since self attacks allow one dash to begin with.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Wing_Attack": 
 		{
@@ -1969,7 +1969,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User mega evolves without needing to draw power from any stone.",
 			"effect": "This move causes the user to mega evolve and immediately be able to take another standard action.",
-			"critical": "none",
+			"critical": "",
 			"opinion": "It is our opinion that this move should be dragon type.",
 		},
 		"Drill_Peck": 
@@ -2010,7 +2010,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User rests on the ground, restoring its strength.",
 			"effect": "This restores 60 health. While on the ground, the user not considered a flying type. User does not get to dash on its next turn.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Sky_Attack": 
 		{
@@ -2026,7 +2026,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "The user breaks the sound barrier and leaves an injurous trail of sonic blasts.",
 			"effect": "The user must draw a straight line that passes through no fewer than 10 spaces and no more than 10 plus the user’s dash distance. All Pokémon along this path take 20 damage unless they can pass a speed save. If the user’s path runs through terrain it cannot pass through before the first 10 spaces are up, it takes 100 damage from plowing straight into something.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Bombing_Run": 
 		{
@@ -2042,7 +2042,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "User changes the weather to overpowering, shifting winds.",
 			"effect": "Every time your turn comes up, choose a wind direction. Everyone on the map is moved the user's dash in spaces.",
-			"critical": "none",
+			"critical": "",
 		},
 	},
 	"Ghost":
@@ -2069,7 +2069,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User moves across the battlefield, straight through solid objects.",
 			"effect": "Move 1 extra space this turn, and ignore any terrain you wish to avoid, with the exception of ghostly terrain. This move can be used if the target is pinned or trapped, and it automatically escapes such problems.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Ghost_Hand": 
 		{
@@ -2077,7 +2077,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "The user passes its hand right through the target, damaging it from within.",
 			"effect": "This deals 50 damage without regard to type multipliers or damage modifiers.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Invisibility": 
 		{
@@ -2085,7 +2085,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user turns transparent.",
 			"effect": "The user is now sneaking.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Lick": 
 		{
@@ -2141,7 +2141,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User frees itself from the concerns of this world.",
 			"effect": "For the remainder of combat, increase the user’s dash by 2. It is never too heavy to ride a Pokémon.",
-			"critical": "This move does not crit.",
+			"critical": "",
 		},
 		"Memories of the Departed": 
 		{
@@ -2149,7 +2149,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user picks up some of the experiences of the fainted.",
 			"effect": "If a target fainted since the user’s last turn, the user trains its mind stat.",
-			"critical": "none",
+			"critical": "",
 			"out_of_battle": "This move allows the user and trainer to have recollections of what happened in the past, usually used on an item or location.",
 		},
 		"Nightshade": 
@@ -2190,7 +2190,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User turns invisible and reappears to strike an unblockable attack.",
 			"effect": "On the first turn, the user is sneaking. On the second turn, it reappears and deals 100 damage. This move does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Shadow_Ball": 
 		{
@@ -2214,7 +2214,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "You can't block a ghostly hand.",
 			"effect": "This deals 40 damage and does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Shadow_Sneak": 
 		{
@@ -2222,7 +2222,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user projects its shadow right behind the target and attacks it from behind.",
 			"effect": "This deals 30 damage, and has a range of 3 extra spaces. It does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Haunt": 
 		{
@@ -2262,7 +2262,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User turns into shadow and then disappear, reappearing from thin air to strike. ",
 			"effect": "On the first turn, the user is sneaking. On the second turn, the user deals 130 damage. This move does not miss or crit. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Unhallowed_Ground": 
 		{
@@ -2278,12 +2278,327 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user calls up the spirits of the defeated to avenge themselves.",
 			"effect": "Choose a target in range. Every fainted allied Pokemon gets to make a natural attack against the target as if the fainted Pokémon were still active on the field. This attack has no chance to miss or crit, but the attacks of the fainted roll individually for that.",
-			"critical": "none",
+			"critical": "",
 		},
 	},
 	"Grass":
 	{
-
+		"Absorb": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User sucks nutrients from the target.",
+			"effect": "This deals 20 damage, and if it hits the user heals half the damage dealt.",
+			"critical": "+20 damage with increased healing. ",
+		},
+		"Forest_Curse": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User turns the target’s flesh into dry twigs.",
+			"effect": "The target is now weak against fire.",
+			"critical": "Target is stunned.",
+		},
+		"Graft": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user plucks a berry from its branches to eat.",
+			"effect": "This move causes the user to ripen an otherwise inedible berry on its branches, for it or an adjacent ally to eat as a free action.",
+			"critical": "",
+			"out_of_battle": "Once per session do one of two things. 1) You may graft a berry branch onto the Pokémon. 2) If you don’t do #1, you may instead pick one berry from the Pokémon.",
+		},
+		"Grass_Whistle": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User blows rhythmically on a grass flute, lulling a target to sleep.",
+			"effect": "This inflicts sleep.",
+			"critical": "Sleep is harsh.",
+		},
+		"Ingrain": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "User roots itself to the ground.",
+			"effect": "The user is trapped, but instead of rolling to save, it ends the effect at the end of its turn when it wishes. As long as the user is trapped, it has double range and regenerates 20 health per turn.",
+			"critical": "",
+		},
+		"Herbal_Remedy": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "The user provides an ally with an herb that cures all maladies.",
+			"effect": "An ally has all negative statuses cured, though it loses a friendship point.",
+			"critical": "",
+			"out_of_battle": "Once per session you may pick and preserve an herbal remedy that has the same effect.",		
+		},
+		"Stun_Spore": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User release a cloud of paralyzing spores.",
+			"effect": "Inflicts stun on every target in range, friend or foe.",
+			"critical": "Stun is harsh.",
+		},
+		"Uproot": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "User picks up its roots, moving quicker but cutting itself off from nutrients.",
+			"effect": "The user takes an extra dash action each turn, but takes 10 repeating damage.",
+			"critical": "",
+		},
+		"Worry_Seed": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User plants a seed on an ally, bugging it a bit.",
+			"effect": "The target is immune to sleep for the remainder of combat.",
+			"critical": "",
+		},
+		"Aromatherapy": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User releases pleasant smells into the area.",
+			"effect": "This cures all negative status effects on the user and all Pokémon in range, friend or foe.",
+			"critical": "",
+		},
+		"Bullet_Seed": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User fires a stream of seed bullets.",
+			"effect": "This deals 2d60 of damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Coffee_Seed": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user gives an ally one of its seeds, containing high amounts of caffeine.",
+			"effect": "The target gets an extra dash action each turn.",
+			"critical": "",
+		},
+		"Cotton_Guard": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "User wraps itself in protective cotton.",
+			"effect": "The user takes 30 less damage from all attacks.",
+			"critical": "",
+		},
+		"Energy_Ball": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User absorbs nature’s energy and fires it at the target.",
+			"effect": "The target and all adjacent targets take 60 damage.",
+			"critical": "All targets are forced to burn out a move of their choice that isn't already burnt out.",
+		},
+		"Grass_Knot": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User grows grass to trip the target and make it fall.",
+			"effect": "This deals the target’s strength in damage.",
+			"critical": "Target is trapped.",
+		},
+		"Healing_Herb": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user allows an ally to munch on one of its healing herb tendrils.",
+			"effect": "The user takes 20 damage and the ally heals 70 health. The bitter taste costs the ally a friendship point.",
+			"critical": "",
+			"out_of_battle": "Once per session you may pick and preserve an herb that heals 70 health and costs the eater a friendship point."
+		},
+		"Leaf_Blade": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes an enemy with a razor-sharp leaf.",
+			"effect": "This deals 40 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Leaf_Storm": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User fires leaves in every direction until its willpower is spent.",
+			"effect": "This deals 120 damage but burns out all the user’s difficult moves.",
+			"critical": "+30 damage.",
+		},
+		"Leaf_Tornado": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User binds the target in a storm of razor-sharp leaves.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is trapped.",
+		},
+		"Leech_Seed": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User plants seedlings on the target that siphon health for it.",
+			"effect": "The target takes 20 repeating damage and user immediately recovers all damage inflicted as health.",
+			"critical": "Repeating damage is harsh.",
+		},
+		"Magical_Leaf": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots a leaf on enchanted winds, going straight toward the target.",
+			"effect": "The targets takes 40 damage. This attack does not miss.",
+			"critical": "",
+		},
+		"Mega_Drain": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User sucks nutrients from the target.",
+			"effect": "This deals 40 damage, and if it hits the user heals half the damage dealt.",
+			"critical": "+20 damage with extra healing.",
+		},
+		"Needle Arm": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User wraps the target in thorny arms.",
+			"effect": "This pins the target for 60 damage.",
+			"critical": "The pin is harsh.",
+		},
+		"Overgrowth": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user changes the plants in the area.",
+			"effect": "Mark 6 spaces on the map with the same type of plant. These spaces are hazardous grass terrain which deals 20 repeating damage or 1d60 grass damage, chosen when you grow the plants. This move fails on places where plants cannot grow, such as indoors on a steel floor.",
+			"critical": "+3 spaces of growth.",
+			"out_of_battle": "This can cause the local vegetation to grow much more quickly or produce fruit/flowers/seeds out of season.",
+		},
+		"Poison_Thorns": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User smacks the target with poisonous thorns.",
+			"effect": "The target takes 30 damage and 20 repeating damage.",
+			"critical": "+30 damage.",
+		},
+		"Razor_Leaf": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots sharpened leaves that tear up a foe.",
+			"effect": "The target takes 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Seed_Bomb": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User drops an exploding seed on its target.",
+			"effect": "This deals 60 damage to the target and all adjacent targets.",
+			"critical": "Move the targets 3 spaces in a direction of your choice.",
+		},
+		"Spiky_Shield": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "User surrounds itself in thick, tough thorns.",
+			"effect": "Anyone who hits the user with a melee attack takes 30 damage. This lasts the remainder of combat.",
+			"critical": "",
+		},
+		"Sleep_Powder": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User releases a narcotic powder that causes others to fall asleep.",
+			"effect": "Inflicts sleep on every target in range, friend or foe. This move does not miss.",
+			"critical": "",
+		},
+		"Spore": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User releases a barrage of spores that paralyze the targets.",
+			"effect": "This inflicts stun on the target and all adjacent targets. This move does not miss.",
+			"critical": "",
+		},
+		"Vine_Whip": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User whips the target with vines.",
+			"effect": "The target takes 70 damage.",
+			"critical": "Target is trapped.",
+		},
+		"Frenzy_Plant": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User knocks a tree onto the target.",
+			"effect": "This deals 120 damage. The user cannot make use of any moves until it is encouraged.",
+			"critical": "Stun is harsh.",
+		},
+		"Giga_Drain": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User sucks great amounts of nutrients from the target.",
+			"effect": "This deals 60 damage and if it hits the user regains half the damage dealt as HP.",
+			"critical": "+20 damage with more healing.",
+		},
+		"Petal_Dance": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User surrounds itself with 10,000 cherry blossoms.",
+			"effect": "This deals 40 damage to every target in range and blinds them.",
+			"critical": "+30 damage.",
+		},
+		"Power_Whip": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User harshly beats the target with vines.",
+			"effect": "This deals 90 damage to the target.",
+			"critical": "Target is trapped.",
+		},
+		"Seed_Flare": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User shoots a seed that explodes with power and blinding light.",
+			"effect": "This deals 60 damage to the target and all adjacent target, and they are blinded.",
+			"critical": "+30 damage.",
+		},
+		"Solar_Beam": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User absorbs sunlight and fires it with horrific power.",
+			"effect": "This deals 100 damage to every target along a line. It requires the user to be encouraged before use. Additionally, the power is affected by the weather conditions: Normal Day: no change Night: -30 damage Bad Weather: -30 damage (stacks with nighttime) Sunny Day: +60 damage",
+			"critical": "+30 damage.",
+		},
+		"Synthesis": 
+		{
+			"power": 90,
+			"style": "Self",
+			"flavor": "User absorbs sunlight to heal.",
+			"effect": "Restore 60 health.",
+			"critical": "",
+		},
+		"Wood_Hammer": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "User slams its target with oaken might.",
+			"effect": "This deals 120 damage, but the user takes 40 damage.",
+			"critical": "Target is stunned.",
+		},
 	},
 	"Ground":
 	{
@@ -2301,7 +2616,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User presses on an ally's pressure points to increase its vitality.",
 			"effect": "The target's next attack does 60 extra damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Attract": 
 		{
@@ -2325,7 +2640,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User replicates a move.",
 			"effect": "Use the same move as the last Pokemon did.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Defense_Curl":
 		{
@@ -2333,7 +2648,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user rolls up into a ball for protection.",
 			"effect": "The user takes 20 less damage from all attacks for the remainder of combat.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Disable":
 		{
@@ -2349,7 +2664,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user erects a barrier that reduces moves to their constituent code.",
 			"effect": "Until the beginning of the user's next turn, if it is hit by a move it can make a mind save instead of the usual save to dodge attacks. If it succeeds, it creates a disk with the move's data on it.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Encore":
 		{
@@ -2365,7 +2680,7 @@ var moves =
 			"style": "Self",
 			"flavor": "I will survive. I will survive!",
 			"effect": "If the user is KO'd, its remains on the field with 10 HP left. The user cannot use this two turns in a row.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Flail": 
 		{
@@ -2390,7 +2705,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User concentrates its power.",
 			"effect": "For the remainder of the fight the user crits on any doubles.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Fury_Attack": 
 		{
@@ -2414,7 +2729,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User hardens its protective coating.",
 			"effect": "This allows the user to use strength saves when dodging.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Lock_On": 
 		{
@@ -2438,7 +2753,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user prepares to attack unwary foes.",
 			"effect": "For the remainder of combat, if any foe gets adjacent to the user but doesn't use a melee move on it, the user may deal its strength in damage to the enemy.",
-			"critical": "none",
+			"critical": "",
 			"mark": "Designer's Choice."
 		},
 		"Sharpen": 
@@ -2447,7 +2762,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user gets sharper while making that “shwing” sound.",
 			"effect": "The user’s next attack does 30 extra damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Sing": 
 		{
@@ -2487,7 +2802,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The target is hit with precise waves of sound.",
 			"effect": "The target takes 30 damage regardless of multipliers, type effectivness, or other factors.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Spike_Cannon": 
 		{
@@ -2563,7 +2878,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user copies another Pokémon on a cellular level.",
 			"effect": "Choose a Pokemon on the map. The user now have the same typing and know all the same attacks as the target Pokémon, as well as taking on its appearance and abilities. This does not copy the target’s stats or personality. The user may revert to its original form as a free action.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Quick_Attack": 
 		{
@@ -2587,7 +2902,7 @@ var moves =
 			"style": "Self",
 			"flavor": "A quick warmup increases the user’s speed.",
 			"effect": "For the remainder of combat, the user takes an extra dash action each turn.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Barrage": 
 		{
@@ -2603,7 +2918,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User passes on its boosts to an ally.",
 			"effect": "This causes the Pokemon to retreat and forces the trainer to make a switch. Any status effects this Pokémon has are transferred to the next one. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Belly_Drum": 
 		{
@@ -2611,7 +2926,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User drums harshly on its stomach, becoming stronger.",
 			"effect": "User deals 50 damage to itself, but all its attacks for the rest of the fight do double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Bide": 
 		{
@@ -2619,7 +2934,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User absorbs energy and supercharges it.",
 			"effect": "Once used, keep track all damage dealt to the user. On the user’s next turn, as its standard action, deal double that damage to a Pokémon in range. This attack does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Bullrush": 
 		{
@@ -2659,7 +2974,7 @@ var moves =
 			"style": "Self",
 			"flavor": "A change in type.",
 			"effect": "Pick a type. The user is now that type.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Crush_Claw": 
 		{
@@ -2683,7 +2998,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User moves so quickly that its opponents see 2 of it.",
 			"effect": "Place a second marker for your Pokémon on the field. Move both individually. One of those markers is the real pokemon, one is a fake. Whenever the user performs an action that affects another Pokémon, or one of the markers is attacked with a move, choose which one is the real one at that point.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Double_Whip": 
 		{
@@ -2699,7 +3014,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User draw attention to itself.",
 			"effect": "This places a harsh compulsion on all enemies in range to attack only the user.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Foresight": 
 		{
@@ -2755,7 +3070,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user rings a curative bell.",
 			"effect": "Cure all statuses of everyone within range.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Hold_Hands": 
 		{
@@ -2763,7 +3078,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "Hand in hand two friends share an adventure.",
 			"effect": "Choose an adjacent ally. Both user and ally automatically move together. Both lose their dash actions, but as long as they choose to continue to hold hands, both of gain a friendship point each turn.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Herd": 
 		{
@@ -2814,7 +3129,7 @@ var moves =
 			"style": "Self",
 			"flavor": "In the midst of a fight, when everything's on the line, few have the courage to sleep.",
 			"effect": "This heals 60 damage. And then the user falls asleep.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Pound": 
 		{
@@ -2830,7 +3145,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User give the target a present with a mystery gift.",
 			"effect": "Choose a target in range and announce your choice. This deals 3d60 damage, but if the dice come up triples it heals the target by the amount listed.",
-			"critical": "none",
+			"critical": "",
 			"out_of_battle": "once per session you may use a downtime action on a Pokémon with this move to have it give you a present. You get an item chosen by the GM, which will probably be good but maybe not.",
 		},
 		"Protect": 
@@ -2839,7 +3154,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User protects itself at all cost.",
 			"effect": "User automatically passes all dodge rolls for one turn, except crits.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Rage": 
 		{
@@ -2871,7 +3186,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "A move that inspires allies by rocking out. Yeeaaaaahhhhhh!!!!! ",
 			"effect": "The user and every ally in range does 30 extra damage on their next attacks.",
-			"critical": "none",
+			"critical": "",
 			"mark": "Designer's Choice",
 		},
 		"Scary_Face": 
@@ -2896,7 +3211,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The Pokémon turns nearby terrain into a secret base.",
 			"effect": "The Pokémon cannot move on the turn it uses this. Mark the area it’s standing on as containing a base. Any Pokémon in that base takes half damage from all attacks and has 2 extra spaces of range.",
-			"critical": "none",
+			"critical": "",
 			"out_of_battle": "This creates a secret base in a tree, cave, or something else that allows the players some downtime even in a somewhat hostile environment. The secret base can be decorated, furnished, and even used as a home for a long time to come, or it can simply be used as a temporary camp. Wild Pokémon and trainers will have a hard time finding, let alone entering the secret base. This is a great way to get some downtime. ",
 		},
 		"Self_Destruct": 
@@ -2913,7 +3228,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user cracks its shell, reducing defense but increasing offense.",
 			"effect": "This move can only be used if the user has the shell special. It loses that special but for the rest of combat it takes an extra dash action and it does 30 extra damage on each attack.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Slash": 
 		{
@@ -2953,7 +3268,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User creates a small golem to take damage for it.",
 			"effect": "User takes its strength in damage. This creates a substitute that will absorb that much damage before breaking. While a substitute in play, the user may carry as if it were riding the user, and it takes all damage that would go to the user, and any negative status effects that aren’t self-inflicted. If the substitute takes more damage than would be required to break it, the damage does not roll over onto the user. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Swift": 
 		{
@@ -2961,7 +3276,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User shoots a rain of stars at its foe.",
 			"effect": "This deals the user’s speed in damage and does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Swords_Dance": 
 		{
@@ -2969,7 +3284,7 @@ var moves =
 			"style": "Self",
 			"flavor": "An elegant dance to prepare for an all-out assault.",
 			"effect": "On the user’s next turn,  it takes an extra dash action and deals double damage.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Takedown": 
 		{
@@ -3017,7 +3332,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User crushes the target in a massive grip. The bigger they are, the harder they fall.",
 			"effect": "This deals damage equal to half the target's current HP, rounded down.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Double_Edge": 
 		{
@@ -3081,7 +3396,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user grows to gargantuan size.",
 			"effect": "The user adds the gargantuan ability to itself, but it does not get the stat boosts. However, the maximized Pokémon is not considered legendary. Minimize and maximize are opposites, and if one is used the other will cancel it out. ",
-			"critical": "none",
+			"critical": "",
 		},
 		"Minimize": 
 		{
@@ -3089,7 +3404,7 @@ var moves =
 			"style": "Self",
 			"flavor": "The user gets smaller and faster.",
 			"effect": "For the remainder of combat, the user takes an extra dash action and rolls twice on all saves.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Milk_Drink": 
 		{
@@ -3097,7 +3412,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "Refreshing milk to heal the bones.",
 			"effect": "The target is healed for 60 damage. ",
-			"critical": "none",
+			"critical": "",
 			"out_of_battle": "Out of Combat: As a downtime action, you can get one bottle of milk that heals 60 HP.",
 		},
 		"Noble_Roar": 
@@ -3154,7 +3469,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User gives an ally a cooked, refreshing egg.",
 			"effect": "This restores 60 HP to the target.",
-			"critical": "none",
+			"critical": "",
 			"out_of_battle": "This move can be used as a downtime action to cure 60 health.",
 		},
 		"Super_Fang": 
@@ -3182,7 +3497,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "Pheromone markers signal others to back off while increasing the user’s territorial instincts.",
 			"effect": "Designate every square on the map as the user’s territory. It is under a compulsion to remain in the territory and all enemies in it currently or who enter later must make a will save or be under the compulsion as well. Allies are considered part of the pack and may come and go, but if the user leaves, even against its will, the area is no longer considered the user’s territory and the effect ends. The user’s damaging attacks do 30 extra damage while on its territory.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Stench": 
 		{
@@ -3262,7 +3577,7 @@ var moves =
 			"style": "Self",
 			"flavor": "A protective layer of acidic slime keeps attacks at bay.",
 			"effect": "From now on the user takes 30 less damage from all attacks.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Acidic_Cloud": 
 		{
@@ -3286,7 +3601,7 @@ var moves =
 			"style": "Self",
 			"flavor": "User coils up and prepares to strike, readying its venom glands.",
 			"effect": "The user’s next poison attack automatically crits.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Cross_Poison": 
 		{
@@ -3360,7 +3675,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "User injects pure adrenaline right into an ally.",
 			"effect": "The target gets an extra dash action for the remainder of combat.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Sludge_Bomb": 
 		{
@@ -3384,7 +3699,7 @@ var moves =
 			"style": "Ranged",
 			"flavor": "User covers its opponent in venom.",
 			"effect": "All targets in range that are taking repeating damage have their repeating damage doubled. Additionally, this attack does not miss.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Acid_Rain": 
 		{
@@ -3392,7 +3707,7 @@ var moves =
 			"style": "Weather",
 			"flavor": "The rain begins to bring pollutants out of the atmosphere onto the battlefield.",
 			"effect": "All Pokemon on the field take 1d60 poison damage if they don't resist poison. Those weak against it take increased damage as usual.",
-			"critical": "none",
+			"critical": "",
 		},
 		"Acid_Spray": 
 		{
@@ -3446,7 +3761,7 @@ var moves =
 		{
 			"power": 90,
 			"style": "Ranged",
-			"flavor": "User initiates anaphalactic shock in the target.",
+			"flavor": "User initiates anaphylactic shock in the target.",
 			"effect": "The target takes 60 damage, plus damage equal to twice the repeating damage it is currently taking.",
 			"critical": "+30 damage.",
 		}, 
@@ -3476,6 +3791,14 @@ var moves =
 			"style": "N/A",
 			"flavor": "The Pokemon has a tendency to picking up odd moves.",
 			"effect": "This is not a move. Instead, if your Pokemon has this, you may teach it any move of your choice as a way to give it a cute quirk.",
+			"critical": "N/A",
+		},	
+		"Cosplay": 
+		{
+			"power": 0,
+			"style": "N/A",
+			"flavor": "The Pokemon gets a special move for each costume it wears.",
+			"effect": "Replace this move slot with a unique move inspired by the outfit worn. You may never use the same move for two different costumes.",
 			"critical": "N/A",
 		},		
 	}
