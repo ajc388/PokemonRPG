@@ -1,7 +1,4 @@
 $( document ).ready( function() {
-    /*print out json files*/
-    console.log(moves);
-    
     //Delete all types without moves - needed for empty json keys
     $.each(moves, function(key) {
       if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
