@@ -13,9 +13,8 @@ Details:
 * Critical is what happens if the move is super effective
 
 Move Template:
-"": 
+		"": 
 		{
-			"name": "", 
 			"power": ,
 			"style": "",
 			"flavor": "",
@@ -1792,6 +1791,14 @@ var moves =
 			"effect": "The target takes 40 damage and 30 repeating damage.",
 			"critical": "+30 damage.",
 		},
+		"Phoenix_Force": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user bursts into flames, fainting to bring an ally back to fighting fitness.",
+			"effect": "Choose a fainted ally in range. Restore that ally to half health. This KO's the user.",
+			"critical": "none",
+		},
 		"Sunny_Day": 
 		{
 			"power": 100,
@@ -2040,7 +2047,239 @@ var moves =
 	},
 	"Ghost":
 	{
-
+		"Astonish": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User sneaks up and spooks the target.",
+			"effect": "This deals 30 damage.",
+			"critical": "Target moves 3 spaces in whatever direction the user wishes.",
+		},
+		"Confuse Ray": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user terrifies the target with pure fear.",
+			"effect": "This causes a compulsion to panic in the target.",
+			"critical": "The compulsion is harsh.",
+		},
+		"Ethereal_Body": 
+		{
+			"power": 40,
+			"style": "Self",
+			"flavor": "User moves across the battlefield, straight through solid objects.",
+			"effect": "Move 1 extra space this turn, and ignore any terrain you wish to avoid, with the exception of ghostly terrain. This move can be used if the target is pinned or trapped, and it automatically escapes such problems.",
+			"critical": "none",
+		},
+		"Ghost_Hand": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "The user passes its hand right through the target, damaging it from within.",
+			"effect": "This deals 50 damage without regard to type multipliers or damage modifiers.",
+			"critical": "none",
+		},
+		"Invisibility": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user turns transparent.",
+			"effect": "The user is now sneaking.",
+			"critical": "none",
+		},
+		"Lick": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "The user creeps the enemy out by licking it suddenly.",
+			"effect": "This stuns the target and deals 10 damage.",
+			"critical": "The stun is harsh.",
+		},
+		"Losers’_Pain": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user calls up the energy of the defeated and hurls it at a target.",
+			"effect": "This deals damage equal to 10 times the number of Pokémon fainted this fight.",
+			"critical": "The target loses 30 mind. ",
+		},
+		"Spite": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "Ghostly anger prevents a foe from using an attack.",
+			"effect": "Burn out one of the target's moves of your choice.",
+			"critical": "",
+		},
+		"Trick-or-Treat": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user decides to celebrate Halloween early.",
+			"effect": "The target’s second type is changed to ghost, and if it is holding a berry it gives it to the user.",
+			"critical": "Trick! Move the target 3 spaces in any direction you wish. If it is actually Halloween, this move automatically crits.",
+		},
+		"Destiny_Bond": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User tethers its spirit to the target’s.",
+			"effect": "If the user faints before the start of its next turn, so does the target, and vice versa.",
+			"critical": "The user will not faint if the target does.",
+		},
+		"Hex": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User takes advantage of its target’s misfortune.",
+			"effect": "This deals 30 damage, with 20 additional damage for each negative status effect the target has. ",
+			"critical": "All the target’s status effects become harsh.",
+		},
+		"Light_Spirit": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User frees itself from the concerns of this world.",
+			"effect": "For the remainder of combat, increase the user’s dash by 2. It is never too heavy to ride a Pokémon.",
+			"critical": "This move does not crit.",
+		},
+		"Memories of the Departed": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "The user picks up some of the experiences of the fainted.",
+			"effect": "If a target fainted since the user’s last turn, the user trains its mind stat.",
+			"critical": "none",
+			"out_of_battle": "This move allows the user and trainer to have recollections of what happened in the past, usually used on an item or location.",
+		},
+		"Nightshade": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "The target sees terrifying visions and begins to hurt itself in blind panic.",
+			"effect": "The target takes automatic damage equal to its strength, unchanged by type differences or damage modifiers. ",
+			"critical": "The target takes a compulsion to confusion.",
+		},
+		"Nightmare": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user reaches into the target’s dreams and turns them to horrors.",
+			"effect": "The target takes 50 repeating damage until it is awake, and this repeating damage won't help the user wake up. Using Dream Eater on the target transfers the effect to the one who ate the poisoned dream.",
+			"critical": "+30 immediate damage.",
+		},
+		"Overshadow": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "The spirit tries to wrest control of the target’s body.",
+			"effect": "The target is pinned for 60 damage.",
+			"critical": "+30 immediate damage. If used against a psychic Pokemon it instead is possessed and has a compulsion to obey your every command.",
+		},
+		"Phantasm": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User creates illusions and disappears in them.",
+			"effect": "The user is sneaking and all targets in range take a compulsion to insanity.",
+			"critical": "Allies avoid the compulsion.",
+		},
+		"Phantom_Force": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User turns invisible and reappears to strike an unblockable attack.",
+			"effect": "On the first turn, the user is sneaking. On the second turn, it reappears and deals 100 damage. This move does not miss.",
+			"critical": "none",
+		},
+		"Shadow_Ball": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots a ball of ghostly energy at the target.",
+			"effect": "This deals 50 damage to the target and all adjacent targets.",
+			"critical": "+30 damage.",
+		},
+		"Shadow_Claw": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User strikes with ghostly fingers.",
+			"effect": "This deals 50 damage and crits on any doubles.",
+			"critical": "+30 damage. ",
+		},
+		"Shadow_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "You can't block a ghostly hand.",
+			"effect": "This deals 40 damage and does not miss.",
+			"critical": "none",
+		},
+		"Shadow_Sneak": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "The user projects its shadow right behind the target and attacks it from behind.",
+			"effect": "This deals 30 damage, and has a range of 3 extra spaces. It does not miss.",
+			"critical": "none",
+		},
+		"Haunt": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "The user’s revenge lingers even after the user is gone.",
+			"effect": "If the user knows this move, it may use it on the turn after it is fainted. Choose a target in range of where the user was fainted. This deals 50 damage.",
+			"critical": "The target takes 10 repeating damage which only ends if the user is revived. ",
+		},
+		"Ominous_Wind": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "A dark, foreboding wind sweeps dense miasma across the land.",
+			"effect": "All ghost and dark Pokemon are sneaking, and all pysychic Pokemon take a compulsion to insanity from the horrible aura.",
+			"critical": "This move does 30 ghost damage to all Pokemon.",
+		},
+		"Reaper_Scythe": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "The user channels a bit of the defeated spirit of every Pokémon it’s taken down into one attack.",
+			"effect": "This deals 20 damage for every Pokémon the user has fainted since it learned the attack, but never more than the combined strength and mind scores of the user.",
+			"critical": "The target is KO’d instantly.",
+		},
+		"Shadow_Devastation": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "The user unleashes its ghostly wrath.",
+			"effect": "This deals 90 damage.",
+			"critical": "The target cannot crit for the remainder of combat.",
+		},
+		"Shadow_Force": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User turns into shadow and then disappear, reappearing from thin air to strike. ",
+			"effect": "On the first turn, the user is sneaking. On the second turn, the user deals 130 damage. This move does not miss or crit. ",
+			"critical": "none",
+		},
+		"Unhallowed_Ground": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User calls forth ghostly allies from those that have died nearby.",
+			"effect": "This deals 90 damage to all targets in range, friend or foe. It does not affect flying types.",
+			"critical": "Targets are moved 3 spaces in blind panic.",
+		},
+		"Vengeful_Spirits": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user calls up the spirits of the defeated to avenge themselves.",
+			"effect": "Choose a target in range. Every fainted allied Pokemon gets to make a natural attack against the target as if the fainted Pokémon were still active on the field. This attack has no chance to miss or crit, but the attacks of the fainted roll individually for that.",
+			"critical": "none",
+		},
 	},
 	"Grass":
 	{
