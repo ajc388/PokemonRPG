@@ -1,7 +1,4 @@
 $( document ).ready( function() {
-    /*print out json files*/
-    console.log(moves);
-    
     //Delete all types without moves - needed for empty json keys
     $.each(moves, function(key) {
       if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
@@ -44,7 +41,7 @@ $( document ).ready( function() {
     //Create auto complete feature for search bar
     $("#search").autocomplete({
       source: loadSearchTags(),
-      minLength: 0,
+      minLength: 2,
       select: search(),
       delay: 500
     });
@@ -178,13 +175,12 @@ $( document ).ready( function() {
           var critical = typeof move.critical !== "undefined" ? move.critical : "";
           var outofbattle = typeof move.out_of_battle !== "undefined" ? move.out_of_battle : "";
 
-          content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png' height='12px' width='15px'/>" + Math.pow(power,2) + "</p>");
+          content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png'/>" + Math.pow(power,2) + "</p>");
           content.append("<p><span class='descriptiveHeader'> Style: </span>" + style + "</p>");
           content.append("<p><span class='descriptiveHeader'> Effect: </span>" + effect + "</p>");
           if (critical != "") { content.append("<p><span class='descriptiveHeader'> Critical: </span>" + critical + "</p>"); }
           if (outofbattle != "") { content.append("<p><span class='descriptiveHeader'> Out Of Battle: </span>" + outofbattle + "</p>"); }
           accordion.append(content);
-
         }
       }
 
