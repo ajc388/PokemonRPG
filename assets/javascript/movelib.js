@@ -1,61 +1,61 @@
 $( document ).ready( function() {
-    //Delete all types without moves - needed for empty json keys
-    $.each(moves, function(key) {
-      if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
-    });
-
-    /*Fixed elements*/
-    $(function() {
-      fixedScroller($("#anchor"), $("#moves"))
-    });
-
-    //Displays a group of accordions for every pokemon type
-    $.each(moves, function (type, value) {
-        $("#moveList").append(
-              "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
-              "<span>"+
-              "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
-              "<span>"+type+"</span>"+
-              "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
-              "</span>"+
-             "</div>"
-            );
-
-        displayMoves(type, moves[type]);
-
-        /*SCROLL FUNCTIONALITY*/
-        $(".navIconMenu ul").append(
-                  "<li><a id='link_"+type+"'>"+
-                  "<img class='icon' src='assets/images/type_icons/"+type+".png' />"+
-                  "</a></li>");
-
-        $("#link_"+type).click(function() {
-          $('html, body').animate({
-              scrollTop: $("#category_"+type).offset().top - $("#moves").css("height").replace("px", "")
-          }, 1000 );
-    });
-
-    sortAll("Name");
-
-    /*Search Functionality*/
-    //Create auto complete feature for search bar
-    $("#search").autocomplete({
-      source: loadSearchTags(),
-      minLength: 2,
-      select: search(),
-      delay: 500
-    });
-    //bind search functionality to the search box
-    $("#search")
-      .on("keyup", function() { search(); })
-      .on('autocompleteclose', function () {  search(); });
-    });
-
-    $("#sort").on("change", function() { 
-        var selected = $(this).val();
-        sortAll(selected);
-    });
+  //Delete all types without moves - needed for empty json keys
+  $.each(moves, function(key) {
+    if ( Object.keys(moves[key]).length == 0 ) { delete moves[key]; }
   });
+
+  /*Fixed elements*/
+  $(function() {
+    fixedScroller($("#anchor"), $("#moves"))
+  });
+
+  //Displays a group of accordions for every pokemon type
+  $.each(moves, function (type, value) {
+      $("#moveList").append(
+            "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
+            "<span>"+
+            "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+            "<span>"+type+"</span>"+
+            "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+            "</span>"+
+           "</div>"
+          );
+
+      displayMoves(type, moves[type]);
+
+      /*SCROLL FUNCTIONALITY*/
+      $(".navIconMenu ul").append(
+                "<li><a id='link_"+type+"'>"+
+                "<img class='icon' src='assets/images/type_icons/"+type+".png' />"+
+                "</a></li>");
+
+      $("#link_"+type).click(function() {
+        $('html, body').animate({
+            scrollTop: $("#category_"+type).offset().top - $("#moves").css("height").replace("px", "")
+        }, 1000 );
+  });
+
+  sortAll("Name");
+
+  /*Search Functionality*/
+  //Create auto complete feature for search bar
+  $("#search").autocomplete({
+    source: loadSearchTags(),
+    minLength: 2,
+    select: search(),
+    delay: 500
+  });
+  //bind search functionality to the search box
+  $("#search")
+    .on("keyup", function() { search(); })
+    .on('autocompleteclose', function () {  search(); });
+  });
+
+  $("#sort").on("change", function() { 
+      var selected = $(this).val();
+      sortAll(selected);
+  });
+});
 
   function fixedScroller(anchor, fixedElement) {
     var move = function() {
@@ -185,7 +185,7 @@ $( document ).ready( function() {
       }
 
       $("#moveList").append(accordion);
-      accordion.accordion();
+      accordion.accordion({heightStyle: ""});
     }
     else 
     {
