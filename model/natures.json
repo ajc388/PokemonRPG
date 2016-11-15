@@ -3,7 +3,7 @@
 //Weight is an abstract number to represent the odds of the personality appearing
 //all weight values are summed when the program runs. The weight is then weight/total
 //for the percentage chance to pop up.
-var personalities =
+var natures =
 {
 	"Winning": 
 	{

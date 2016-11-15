@@ -2,23 +2,23 @@ var abilities =
 {
 	"Airborne": 
 	{
-		"Description": "This special is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain."
+		"Description": "This special is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain that doesn't specifically affect flying Pokemon. They also get +1 dash."
 	},
 	"Cosplayer":
 	{
-		"Description": "You may hold an extra accessory as part of your outfit."
+		"Description": "The pokemon may hold an extra accessory as part of its outfit."
 	},
 	"Heavy_Sleeper":
 	{
-		"Description": "You gain 30 health each turn while asleep."
+		"Description": "The Pokemon gains 30 health each turn while asleep."
 	},
-	"Hover":
+	"Levitate":
 	{
-		"Description": "You hover, avoiding the effects of terrain and becoming immune to ground attacks."
+		"Description": "The Pokemon hovers, avoiding the effects of terrain and becoming immune to ground attacks."
 	},
 	"Intimidate":
 	{
-		"Description": "You break your enemies’ focus. The first time you come in range of an enemy Pokémon, it can’t use a difficult attack."
+		"Description": "The Pokemon breaks its enemies’ focus. When it comes in range of an enemy Pokémon, that enemy can’t use a difficult attack. This never affects any given Pokemon for more than one turn."
 	},
 	"Lazy":
 	{
@@ -26,46 +26,51 @@ var abilities =
 	},
 	"Many Arms":
 	{
-		"Description": "You have 4 or more arms. When you pin a target, you may continue to make attacks as usual."
+		"Description": "The Pokemon has 4 or more arms. When it pins a target, it may continue to make attacks as usual."
 	},
 	"Minions":
 	{
-		"Description": "You have a pair of offspring that you share a hive-mind relationship with. As far as being stored in a Pokeball and league rules are concerned, you all count as one Pokémon, like Exeggcute. But as far as game rules are concerned, they are treated as separate Pokémon, with the exception that when the Pokémon is recalled its minions return with it and when it is sent out the minions appear on spaces adjacent to it. The minions are both the lowest Pokémon on the evolutionary line, having the first two moves on their sheet available and 1 in all their EV’s. These Pokémon never increase their stats or learn new moves. On the Pokémon’s turn, it can either dash and take a standard action or have both of its minions dash and take a standard action. The minions have no FP available to them; instead they share the main Pokémon’s FP. Any compulsion that affects any of the Pokémon affects them all, once again because of the hive mind. Only the main Pokémon rolls mind saves."
-	},
-	"Peculiar_Resistance":
-	{
-		"Description": "The Pokémon is resistant to another type beyond what it would normally resist."
+		"Description": "The Pokemon has a pair of offspring that it shares a hive-mind relationship with. As far as being stored in a Pokeball and league rules are concerned, you all count as one Pokémon, like Exeggcute. But as far as game rules are concerned, they are treated as separate Pokémon, with the exception that when the Pokémon is recalled its minions return with it and when it is sent out the minions appear on spaces adjacent to it. The minions are both the lowest Pokémon on the evolutionary line, having the first two moves on their sheet available and 1 in all their EV’s. These Pokémon never increase their stats or learn new moves. On the Pokémon’s turn, it can either dash and take a standard action or have both of its minions dash and take a standard action. The minions have no FP available to them; instead they share the main Pokémon’s FP. Any compulsion that affects any of the Pokémon affects them all, once again because of the hive mind. Only the main Pokémon rolls mind saves."
 	},
 	"Precision":
 	{
-		"Description": "Whenever you use a natural move that can crit, you may choose not to roll to crit. If you do so the attack hits automatically."
+		"Description": "Whenever the Pokemon uses a natural move that can crit, you may choose not to roll to crit. If you do so the attack hits automatically."
+	},
+	"Vigilant":
+	{
+		"Description": "The Pokemon is on guard. If an enemy moves next to it without making a melee attack, this Pokemon may make a natural attack of its choice against the enemy."
 	},
 	"Shell":
 	{
-		"Description": "Reduce all damage taken is reduced by ⅓ of your strength, rounded to the nearest 10. This includes self-inflicted damage."
+		"Description": "Reduce all damage taken is reduced by 1/2 of the Pokemon's strength. This includes self-inflicted damage."
 	},
 	"Sniper":
 	{
-		"Description": "Increase your range by 2."
+		"Description": "Increase the Pokemon's range by 2."
 	},
 	"Specialist":
 	{
-		"Description": "You may use one of your difficult moves as if it were natural. You may change which move every time you learn a new move."
+		"Description": "The Pokemon may use one of its difficult moves as if it were natural. You may change which move every time it learns a new move."
 	},
-	"Status_Immunity":
-	{
-		"Description": "You are immune to a particular status. For example, ghost Pokemon often have immunity to trapped."
-	},
-	"Sealthy":
+	"Stealthy":
 	{
 		"Description": "The Pokémon enters the field sneaking."
 	},
 	"Swift_Swim":
 	{
-		"Description": "You never have decreased dash in water. In fact, your dash distance is doubled. This also occurs during rain. But outside of the water your dash distance is decreased by 1. For instance, a Pokémon with dash 3 and this ability has dash 6 in the water but dash 2 on land. "
+		"Description": "The Pokemon never has decreased dash in water. In fact, its dash distance is doubled. This also occurs during rain. But outside of the water its dash distance is decreased by 1. For instance, a Pokémon with dash 3 and this ability has dash 6 in the water but dash 2 on land."
 	},
 	"Weak_Form":
 	{
-		"Description": "This special prevents you from learning any TM or HM moves, but when you evolve train all your stats twice instead of once."
-	}
+		"Description": "This ability prevents the Pokemon from learning any TM or HM moves, but when it evolves train all its stats twice instead of once."
+	}, 
+	"Lightning_Rod":
+	{
+		"Description": "If the Pokemon is hit with electric damage, it takes no damage and instead restores the use of a burnt out electric move."
+	},
+	"Gargantuan":
+	{
+		"Description": "The massive Pokemon has double HP. It cannot dodge any attacks from regularly-sized Pokemon or crit against them. If a gargantuan Pokémon is identified, attacks made against it crit automatically. One hit-KO moves do 300 damage to gargantuan Pokémon instead of automatically KOing. Gargantuan Pokémon do not respect puny trainers easily. They roll 2d6, and if the result is higher than the trainer’s level, they disobey, often attacking an ally. This applies any time the trainer wants the Pokémon to do anything. Gargantuan Pokémon take up 4 or more battlefield spaces. No gargantuan Pokémon may pass through a space occupied by another such Pokémon, and if a gargantuan Pokémon moves into a space occupied by a regularly-sized Pokémon that Pokémon must make a speed save. It is moved to a space adjacent to the gargantuan Pokémon of its choice, but if if fails the speed save it takes damage equal to the gargantuan Pokémon’s strength. Once it passess that speed save, it automatically can repeat this for the rest of the turn, automatically moving out of the way of the gargantuan Pokémon’s way. When calculating range, that range goes out from every space the Pokémon occupies to make the largest range possible."
+	},
+	"None": {}
 }
