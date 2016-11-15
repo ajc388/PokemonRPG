@@ -2602,11 +2602,335 @@ var moves =
 	},
 	"Ground":
 	{
+		"Dig_Grave": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User digs a grave and points meaningfully at the target.",
+			"effect": "The target is now weak against ghost moves.",
+			"critical": "Target takes a compulsion to overwhelming fear.",
+		},
+		"Dirt_Clod": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User throws a chunk of dirt.",
+			"effect": "This deals 20 damage.",
+			"critical": "Target is blinded.",
+		},
+		"Dust_Cloud": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "User kicks up dust into the air.",
+			"effect": "All adjacent targets, friend or foe, are blinded.",
+			"critical": "Blinding is harsh.",
+		},
+		"Magnitude": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "An upredictable quake.",
+			"effect": "This deals 1d60 damage to all targets in range.",
+			"critical": "+1d60 damage. ",
+		},
+		
+/* 
+Style: 
 
+
+Crit: 
+
+
+Sand Attack 30
+Style: Ranged
+User sprays dirt in the target’s face.
+The target is blinded.
+Crit: The blinding is harsh.
+
+
+Quicksand 40
+Style: Ranged
+The ground nearby is turned soft and mushy.
+This causes everyone on the ground and within range, friend or foe, to be trapped. Foes in water or the air are unaffected. 
+Crit: The trap is harsh. 
+
+
+Tier 2
+Bone Club 60
+Style: Melee
+User whacks the target with a femur.
+This deals 60 damage.
+Crit: Target is stunned.
+
+
+Bonemarang 60
+Style: Ranged
+Users throw a bone at a foe.
+This deals 40 damage on this turn, and to a target within range next turn. User can’t use a bone-related attack until the projectile returns.
+Crit: Roll a crit for both attacks. Each crit does +30 damage. 
+
+
+Dig 50
+Style: Melee
+The Pokémon burrows underground and then comes up for a surprise attack.
+This takes 2 turns. On the first turn, the Pokémon goes underground, and cannot be hit except by ranged ground moves and anyone else underground using dig. On the second turn, this does100 damage.
+Crit: Target is trapped.
+
+
+Entrench 70
+Style: Self
+User burrows into the ground for protection.
+The user is trapped and instead of rolling a save, may end the trap at will, losing all benefits of this move at that time. Until such time, the user takes half damage from all attacks.
+Crit: This move does not crit.
+
+
+Mud Bomb 60
+Style: Ranged
+User throws a lump of mud at the target.
+This deals 50 damage to the target and all adjacent targets, friend or foe. 
+Crit: Targets are blinded. 
+
+
+Mud Shot 50
+Style: Ranged
+User covers the target in heavy mud.
+This deals 30 damage to the target and it loses its next dash action.
+Crit: +30 damage.
+
+
+Mudslide 70
+Style: Self
+The earth beneath the user begins to flow, moving it forward.
+This deals 40 damage to all adjacent targets and the user moves 2 extra spaces.
+Crit: Targets are trapped.
+
+
+Sand Tomb 60
+Style: Ranged
+User trap the target in a whirling dust devil.
+The target takes 20 repeating damage and is trapped. Getting free of the trap gets rid of the repeating damage.
+Crit: Trap and repeating damage are both harsh.  
+
+
+Sinkhole 60
+Style: Ranged
+User traps the target in a pit that suddenly collapses.
+The target takes 30 damage and is trapped. 
+Crit: +30 damage. 
+
+
+Spikes 60
+Style: Ranged
+User pushes spiky protrusions out of the ground.
+Mark all spaces in range that have no obstacles already as having spikes on them. Any Pokémon that steps on those spaces takes 30 ground damage for each space they step on.
+Crit: This move does not crit.
+Tier 3
+
+
+Bone Rush 90
+Style: Melee
+User runs up the target and whacks it repeatedly with a femur.
+This deals 3d60 damage
+Crit: +1d60 damage.
+
+
+Bulldoze 80
+Style: Melee
+The user grinds everything in its path into the dirt.
+As the user dashes, it ignores any terrain, moving even over enemy Pokémon. This leaves a trail of ordinary terrain, that no Pokémon has difficulty crossing. Every Pokémon in the user’s path takes 30 damage. This effect can be incorporated into the user’s dash action as well as its standard action to create even more terrain transformation. And yes, the user can bulldoze straight through water to create a dike on both sides.
+
+
+Drill Run 90
+Style: Melee
+User drill into an opponent.
+This deals 70 damage and crits on any doubles. 
+Crit: +30 damage. 
+
+
+Earth Power 90
+Style: Melee
+User ruptures the nearby earth.
+Every adjacent target, friend or foe, takes 80 damage. 
+Crit: +30 damage.
+
+
+Earthquake 100
+Style: Ranged
+The ground shatters as shockwaves course in all directions.
+Every target in range, friend or foe, takes 90 damage. 
+Crit: Targets are trapped.
+
+
+Fissure 100
+Style: Ranged
+A crack opens up in the ground to swallow the target whole.
+The target gets to make 2 saves against this attack. If it fails both, it is KO’d.
+Crit: Target only gets one chance to save. 
+
+
+Thousand Arrows 80
+Style: Ranged
+User channel the power of the earth into bolts of dirt.
+This deals 60 damage and hits flying Pokémon for full damage, and also leaves them trapped on the ground. 
+*/
 	},
 	"Ice":
 	{
+/*
+	Haze ⠂ 30
+Style: Ranged
+User calls up a haze that puts everyone on an equal footing.
+All Pokémon in range have all statuses removed, whether beneficial or harmful.
+Crit: Your allies do not lose stat benefits. 
 
+
+Icy Grip ⠂ 30
+Style: Melee
+User latches on with frozen hands.
+This pins the target for 30 damage.
+Crit: +30 immediate damage.
+
+
+Mist ⠂ 40
+Style: Melee
+User conjures protective mist to keep it healthy.
+User and all adjacent allies are immune to the next status effect that hits each. 
+
+
+Powder Snow ⠂ 20
+Style: Ranged
+User throws snow over the target. 
+This deals 20 damage.
+Crit: Stun the target. 
+
+
+Snowball ⠂ 30
+Style: Ranged
+User throws some snow at the target.
+This deals 30 damage.
+Crit: +30 damage. 
+Tier 2
+
+
+Aurora Beam ⠅ 60 
+Style: Ranged
+User fires a colorful blast that chills the target.
+This deals 40 damage to all targets along a line.
+Crit: The targets have all difficult moves burnt out.
+
+
+Avalanche ⠅ 60 
+Style: Melee
+User rides a wave of frozen debris.
+This deals 50 damage to all adjacent targets, friend or foe. 
+Crit: Targets are trapped. 
+
+
+Freeze Dry ⠅ 60
+Style: Ranged
+User freezes the target and saps the moisture from it.
+This deals 50 damage and is super effective against water types.
+Crit: +30 damage.
+
+
+Frost Breath ⠅ 50
+Style: Ranged
+User breathes out frigid air from its lungs. 
+This deals 70 damage and does not crit. 
+
+
+Frozen Armor ⠅ 70
+Style: Self
+The user coats itself in layers of ice that protect against damage.
+The user gains 30 HP, even if this puts it above its max HP. While this extra HP is in place, the user is immune to status effects. 
+Crit: This move does not crit.
+
+
+Ice Punch ⠅ 60
+Style: Melee
+User pummels the target with frozen energy.
+This deals 60 damage.
+Crit: Target is trapped. 
+
+
+Ice Fang ⠅ 60
+Style: Melee
+User bites the target with frigid fangs.
+This deals 30 damage and stuns the target.
+Crit: +30 damage. 
+
+
+Ice Shard ⠅ 60
+Style: Ranged
+User chucks a fragment of ice as far as it can.
+This deals 30 damage and can hit up to 3 spaces away.
+Crit: +30 damage. 
+
+
+Icicle Spear ⠅ 60
+Style: Ranged
+User throws an icicle that splits into jagged shards.
+This deals 2d60 damage.
+Crit: +1d60 damage.
+
+
+Tier 3
+Blizzard ⠕ 100
+Style: Ranged
+User coats the area in a devastating snowstorm.
+This deals 90 damage to all targets within range, friend or foe.
+Crit: The targets are trapped.
+
+
+Freeze Shock ⠕ 100 
+Style: Ranged
+User charges up and unleash wintry doom.
+This deals 150 damage, but the user needs to be encouraged before using it. 
+Crit: +30 damage. 
+
+
+Glaciate ⠕ 90
+Style: Ranged
+User creates a glacier that binds ice around the target.
+This deals 50 damage to the target and all adjacent targets and traps them.
+Crit: +30 damage. 
+
+
+Hail ⠕ 100
+Style: Weather
+Shards of ice fall from the sky.
+This deals 1d60 damage to all targets on the field except those that resist ice damage.
+Crit: This move does not crit.
+
+
+Ice Beam ⠕ 90
+Style: Ranged
+User strikes the target with a beam that saps its heat.
+This deals 60 damage to every target along a line.
+Crit: Target is trapped. 
+
+
+Ice Burn ⠕ 80
+Style: Ranged
+User leaves the target with frostbite.
+This deals 80 damage.
+Crit: Target takes 15 repeating damage. 
+
+
+Let It Go ⠕ 100
+Style: Self
+User cools its body and give in to its desires, growing in power.
+The user restores the use of all its burnt out moves except this one.
+Crit: This move does not crit.
+
+
+Sheer Cold ⠕ 100
+Style: Ranged
+User reduces the target’s temperature to absolute 0.
+The target gets 2 speed saves against this. If it fails both, it is instantly KO’d. 
+Crit: The target only gets one save. 
+*/
 	},
 	"Normal":
 	{
