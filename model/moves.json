@@ -641,7 +641,7 @@ var moves =
 			"power": 70,
 			"style": "Melee",
 			"flavor": "User lands so hard it makes a crater. It might not be able to fly any longer, but it’s more a dragon than ever.",
-			"effect": "This deals 50 damage to all adjacent targets. Lose the flying type, and replace it with the dragon type if user isn’t already a dragon. If the user has an ability like airborne or hover, lose it, and deal 30 extra damage.",
+			"effect": "This deals 50 damage to all adjacent targets. Lose the flying type, and replace it with the dragon type if user isn’t already a dragon. If the user has an ability like airborne or levitate, lose it, and deal 30 extra damage.",
 			"critical": "All adjacent enemies are moved 4 spaced directly away from the user. If two spaces seem equally good as a landing position, the user chooses where the target lands.",
 		},
 		"Complete_Humiliation": 
@@ -797,7 +797,7 @@ var moves =
 			"power": 30,
 			"style": "Self",
 			"flavor": "The user floats on magnetic currents.",
-			"effect": "User gains the hover ability.",
+			"effect": "User gains the levitate ability.",
 			"critical": "",
 		},
 		"Magnetize": 
@@ -2789,160 +2789,182 @@ var moves =
 	},
 	"Ice":
 	{
-/*
-	Haze ⠂ 30
-Style: Ranged
-User calls up a haze that puts everyone on an equal footing.
-All Pokémon in range have all statuses removed, whether beneficial or harmful.
-Crit: Your allies do not lose stat benefits. 
-
-
-Icy Grip ⠂ 30
-Style: Melee
-User latches on with frozen hands.
-This pins the target for 30 damage.
-Crit: +30 immediate damage.
-
-
-Mist ⠂ 40
-Style: Melee
-User conjures protective mist to keep it healthy.
-User and all adjacent allies are immune to the next status effect that hits each. 
-
-
-Powder Snow ⠂ 20
-Style: Ranged
-User throws snow over the target. 
-This deals 20 damage.
-Crit: Stun the target. 
-
-
-Snowball ⠂ 30
-Style: Ranged
-User throws some snow at the target.
-This deals 30 damage.
-Crit: +30 damage. 
-Tier 2
-
-
-Aurora Beam ⠅ 60 
-Style: Ranged
-User fires a colorful blast that chills the target.
-This deals 40 damage to all targets along a line.
-Crit: The targets have all difficult moves burnt out.
-
-
-Avalanche ⠅ 60 
-Style: Melee
-User rides a wave of frozen debris.
-This deals 50 damage to all adjacent targets, friend or foe. 
-Crit: Targets are trapped. 
-
-
-Freeze Dry ⠅ 60
-Style: Ranged
-User freezes the target and saps the moisture from it.
-This deals 50 damage and is super effective against water types.
-Crit: +30 damage.
-
-
-Frost Breath ⠅ 50
-Style: Ranged
-User breathes out frigid air from its lungs. 
-This deals 70 damage and does not crit. 
-
-
-Frozen Armor ⠅ 70
-Style: Self
-The user coats itself in layers of ice that protect against damage.
-The user gains 30 HP, even if this puts it above its max HP. While this extra HP is in place, the user is immune to status effects. 
-Crit: This move does not crit.
-
-
-Ice Punch ⠅ 60
-Style: Melee
-User pummels the target with frozen energy.
-This deals 60 damage.
-Crit: Target is trapped. 
-
-
-Ice Fang ⠅ 60
-Style: Melee
-User bites the target with frigid fangs.
-This deals 30 damage and stuns the target.
-Crit: +30 damage. 
-
-
-Ice Shard ⠅ 60
-Style: Ranged
-User chucks a fragment of ice as far as it can.
-This deals 30 damage and can hit up to 3 spaces away.
-Crit: +30 damage. 
-
-
-Icicle Spear ⠅ 60
-Style: Ranged
-User throws an icicle that splits into jagged shards.
-This deals 2d60 damage.
-Crit: +1d60 damage.
-
-
-Tier 3
-Blizzard ⠕ 100
-Style: Ranged
-User coats the area in a devastating snowstorm.
-This deals 90 damage to all targets within range, friend or foe.
-Crit: The targets are trapped.
-
-
-Freeze Shock ⠕ 100 
-Style: Ranged
-User charges up and unleash wintry doom.
-This deals 150 damage, but the user needs to be encouraged before using it. 
-Crit: +30 damage. 
-
-
-Glaciate ⠕ 90
-Style: Ranged
-User creates a glacier that binds ice around the target.
-This deals 50 damage to the target and all adjacent targets and traps them.
-Crit: +30 damage. 
-
-
-Hail ⠕ 100
-Style: Weather
-Shards of ice fall from the sky.
-This deals 1d60 damage to all targets on the field except those that resist ice damage.
-Crit: This move does not crit.
-
-
-Ice Beam ⠕ 90
-Style: Ranged
-User strikes the target with a beam that saps its heat.
-This deals 60 damage to every target along a line.
-Crit: Target is trapped. 
-
-
-Ice Burn ⠕ 80
-Style: Ranged
-User leaves the target with frostbite.
-This deals 80 damage.
-Crit: Target takes 15 repeating damage. 
-
-
-Let It Go ⠕ 100
-Style: Self
-User cools its body and give in to its desires, growing in power.
-The user restores the use of all its burnt out moves except this one.
-Crit: This move does not crit.
-
-
-Sheer Cold ⠕ 100
-Style: Ranged
-User reduces the target’s temperature to absolute 0.
-The target gets 2 speed saves against this. If it fails both, it is instantly KO’d. 
-Crit: The target only gets one save. 
-*/
+		"Haze": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User calls up a haze that puts everyone on an equal footing.",
+			"effect": "All Pokémon in range have all statuses removed, whether beneficial or harmful.",
+			"critical": "Your allies an choose not to lose certain statuses.",
+		},
+		"Icy_Grip": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "User latches on with frozen hands.",
+			"effect": "This pins the target for 30 damage.",
+			"critical": "+30 immediate damage.",
+		},
+		"Mist": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User conjures protective mist to keep it healthy.",
+			"effect": "User and all adjacent allies are immune to the next status effect that hits each.",
+			"critical": "",
+		},
+		"Powder_Snow": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User throws snow over the target.",
+			"effect": "This deals 20 damage.",
+			"critical": "Stun the target.",
+		},
+		"Snowball": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User throws some snow at the target.",
+			"effect": "This deals 30 damage.",
+			"critical": "Crit: +30 damage.",
+		},
+		"Aurora_Beam": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User fires a colorful blast that chills the target.",
+			"effect": "This deals 40 damage to all targets along a line.",
+			"critical": "The targets have all difficult moves burnt out.",
+		},
+		"Avalanche": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User rides a wave of frozen debris.",
+			"effect": "This deals 50 damage to all adjacent targets, friend or foe.",
+			"critical": "Targets are trapped.",
+		},
+		"Freeze_Dry": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User freezes the target and saps the moisture from it.",
+			"effect": "This deals 50 damage and is super effective against water types.",
+			"critical": "+30 damage.",
+		},
+		"Frost_Breath": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User breathes out frigid air from its lungs.",
+			"effect": "This deals 70 damage and does not crit.",
+			"critical": "",
+		},
+		"Frozen_Armor": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "The user coats itself in layers of ice that protect against damage.",
+			"effect": "The user gains 30 HP, even if this puts it above its max HP. While this extra HP is in place, the user is immune to status effects.",
+			"critical": "",
+		},
+		"Ice_Punch": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User pummels the target with frozen energy.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is trapped.",
+		},
+		"Ice_Fang": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User bites the target with frigid fangs.",
+			"effect": "This deals 30 damage and stuns the target.",
+			"critical": "+30 damage.",
+		},
+		"Ice_Shard": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User chucks a fragment of ice as far as it can.",
+			"effect": "This deals 30 damage and has +3 range.",
+			"critical": "+30 damage.",
+		},
+		"Icicle_Spear": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User throws an icicle that splits into jagged shards.",
+			"effect": "This deals 2d60 damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Blizzard": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User coats the area in a devastating snowstorm.",
+			"effect": "This deals 90 damage to all targets within range, friend or foe.",
+			"critical": "The targets are trapped.",
+		},
+		"Freeze_Shock": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User charges up and unleash wintry doom.",
+			"effect": "This deals 150 damage, but the user needs to be encouraged before using it.",
+			"critical": "+30 damage.",
+		},
+		"Glaciate": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User creates a glacier that binds ice around the target.",
+			"effect": "This deals 50 damage to the target and all adjacent targets and traps them.",
+			"critical": "+30 damage. ",
+		},
+		"Hail": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "Shards of ice fall from the sky.",
+			"effect": "This deals 1d60 damage to all targets on the field except those that resist ice damage.",
+			"critical": "",
+		},
+		"Ice_Beam": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User strikes the target with a beam that saps its heat.",
+			"effect": "This deals 60 damage to every target along a line.",
+			"critical": "Target is trapped.",
+		},
+		"Ice_Burn": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User leaves the target with frostbite.",
+			"effect": "This deals 80 damage.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Let_It_Go": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "User cools its body and give in to its desires, growing in power.",
+			"effect": "The user restores the use of all its burnt out moves except this one and its next attack does double damage.",
+			"critical": "",
+		},
+		"Sheer_Cold": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User reduces the target’s temperature to absolute 0.",
+			"effect": "The target gets 2 speed saves against this. If it fails both, it is instantly KO’d. ",
+			"critical": "The target only gets one save.",
+		},
 	},
 	"Normal":
 	{
@@ -3088,7 +3110,7 @@ Crit: The target only gets one save.
 			"power": 40,
 			"style": "Self",
 			"flavor": "The user prepares to attack unwary foes.",
-			"effect": "For the remainder of combat, if any foe gets adjacent to the user but doesn't use a melee move on it, the user may deal its strength in damage to the enemy.",
+			"effect": "The user gains the vigilant ability.",
 			"critical": "",
 			"mark": "Designer's Choice."
 		},
