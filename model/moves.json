@@ -2095,7 +2095,7 @@ var moves =
 			"effect": "This stuns the target and deals 10 damage.",
 			"critical": "The stun is harsh.",
 		},
-		"Losers’_Pain": 
+		"Losers_Pain": 
 		{
 			"power": 30,
 			"style": "Ranged",
@@ -2152,7 +2152,7 @@ var moves =
 			"critical": "",
 			"out_of_battle": "This move allows the user and trainer to have recollections of what happened in the past, usually used on an item or location.",
 		},
-		"Nightshade": 
+		"Night_Shade": 
 		{
 			"power": 60,
 			"style": "Melee",
