@@ -4704,198 +4704,222 @@ var moves =
 	},
 	"Steel":
 	{
-/*
-Brass Knuckles ⠂ 20
-Style: Melee
-User punches its target with a metallic fist.
-This deals 20 damage.
-Crit: +30 damage.
-
-
-Bullet Punch ⠂ 40
-Style: Melee
-User strikes, quick as a bullet.
-This deals 20 damage and doesn’t miss. 
-Crit: This move does not crit.
-
-
-Interface ⠂ 40
-Style: Melee
-The user integrates with other technology. 
-This allows one technical Pokémon such as Porygon, Magnemite, or Electrode to integrate with another such Pokémon, or with any machinery on the battlefield. If used on an ally, both get double damage on their next attack and gain a friendship point. If used on an enemy, it has a harsh compulsion to aid the user, and this move bypasses type resistances. If used on technology on the field, this allows the user to hack computers or use its parts to drive machinery. 
-Crit: This move does not crit.
-Out of Combat: This move is excellent for working with tech.
-
-
-Metal Claw ⠂ 30
-Style: Melee
-The user strikes with bladelike fingers.
-This deals 30 damage.
-Crit: User’s next attack does double damage.
-
-
-Polish Armor ⠂ 30
-Style: Melee
-By buffing its armor to a perfect sheen, deflecting energy and allowing the user to slip out of tight squeezes.
-The user ignores the next status effect to hit it. 
-Crit: This move does not crit.
-
-
-Shuriken ⠂ 30
-Style: Ranged
-User throws several shards of metal at a foe.
-This deals 1d60 damage.
-Crit: +2 dice of damage. 
-
-
-Steel Bash ⠂ 40
-Style: Melee
-User bludgeon its target with steel.
-This deals 40 damage.
-Crit: Target is stunned. 
-
-
-Steel Strike ⠂ 30
-Style: Melee
-The user hits with pure steel.
-This deals 30 damage.
-Crit: +30 damage.
-Tier 2
-
-
-Acupuncture ⠅ 60
-Style: Melee
-User places steel pins in an ally’s pressure points, strengthening it.
-For the remainder of combat the target does +30 damage with all damaging attacks.
-Crit: This move does not crit. 
-
-
-Automatize ⠅ 60
-Style: Self
-User sheds parts it don’t need right now, getting lighter.
-For the remainder of combat, the user gets an extra dash action.
-Crit: This move does not crit. 
-
-
-Gear Grind ⠅ 70
-Style: Ranged
-User throws two gears at the target.
-This makes two 30 damage attacks. 
-Crit: Roll separately for each attack. Each crit does 30 damage.
-
-
-Gyro Ball ⠅ 50
-Style: Melee
-User comes at the target in a high-speed spin.
-This move does damage equal to the target’s speed.
-Crit: +30 damage.
-
-
-Heavy Slam ⠅ 60
-Style: Melee
-User slam into the target with its full weight.
-This deals the user’s strength in damage to the target and all adjacent targets.
-Crit: Target is stunned.
-
-
-Iron Head ⠅ 60
-Style: Melee
-User rams the target head on.
-This deals 60 damage.
-Crit: Target is stunned. 
-
-
-Iron Tail ⠅ 50
-Style: Melee
-A smack with a steel tail.
-This deals 50 damage.
-Crit: Target does half damage on its next attack.
-
-
-Magnet Bomb ⠅ 70
-Style: Ranged
-User launches a magnetic bomb at its targets.
-This attack deals 50 damage to the target and all adjacent targets, friend or foe. It does not miss, and electric Pokémon are weak against it.
-Crit: This does not crit. 
-
-
-Shift Gears ⠅ 60
-Style: Self
-The user optimizes its speed or strength.
-On the user’s next turn it either deals double damage or takes an extra dash action. This may not have the same effect twice in row. 
-Crit: This move does not crit.
-
-
-Spike Shot ⠅ 60
-Style: Ranged
-User fire steel spikes are its target. 
-This deals 2d60 damage.
-Crit: Add another d60 damage. 
-
-
-Steel Cage ⠅ 50
-Style: Ranged
-User launches steel spikes at the target, surrounding it in a cage.
-This deals 20 damage and the target is trapped.
-Crit: +30 damage. 
-
-
-Steel Horn ⠅ 70
-Style: Melee
-User impales a foe with a crown of spikes.
-This deals 70 damage.
-Crit: +30 damage. 
-
-
-Steel Wing ⠅ 60
-Style: Melee
-User slashes its opponent with a metallic wing.
-This deals 60 damage.
-Crit: User’s next attack deals double damage. 
-
-
-Unipole ⠅ 50
-Style: Melee
-The user is pulled by the earth’s magnetic field.
-The user moves 5 spaces directly north or south instead of dashing. It deals 30 damage to every Pokémon along its path, friend or foe.
-Crit: +20 damage on each hit.
-Tier 3
-
-
-Armor Coat ⠕ 100
-Style: Self
-The user grows an outer layer of steel plating.
-The user takes 50 less damage from all attacks for the remainder of combat.
-Crit: This move does not crit.
-
-
-Ironsides ⠕ 80
-Style: Self
-User coats itself in a layer of protective metal.
-User takes half damage from all attacks for the rest of combat.
-Crit: This move does not crit.
-
-
-Meteor Mash ⠕ 100
-Style: Melee
-User punches the target like an iron meteorite impact.
-This deals 100 damage.
-Crit: User’s next attack does double damage. 
-
-
-Steel Press ⠕ 100
-Style; Melee
-User crush the target between 2 steel plates.
-The target gets to make 2 saves against this attack. If it fails both, it is KO’d.
-Crit: The target gets no saves and is automatically KO’d.
-
-
-Trumpet ⠕ 100
- Style: Ranged
-The user sounds a victory blast that inspires everyone.
-All allies in range do 30 extra damage and take an extra dash action on their next turn, as does the user. 
-Crit: All enemies in range do half damage on their next attack.
-*/
+		"Brass_Knuckles": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "User punches its target with a metallic fist.",
+			"effect": "This deals 20 damage.",
+			"critical": "+30 damage.",
+		},
+		"Bullet_Punch": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User strikes, quick as a bullet.",
+			"effect": "This deals 30 damage and doesn’t miss. ",
+			"critical": "This move does not crit.",
+		},
+		"Interface": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "The user integrates with other technology.",
+			"effect": "This allows one technical Pokémon such as Porygon, Magnemite, or Electrode to integrate with another such Pokémon, or with any machinery on the battlefield. If used on an ally, both get double damage on their next attack and gain a friendship point. If used on an enemy, it has a harsh compulsion to aid the user, and this move bypasses type resistances. If used on technology on the field, this allows the user to hack computers or use its parts to drive machinery.",
+			"critical": "",
+		},
+		"Metal_Claw": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user strikes with bladelike fingers.",
+			"effect": "This deals 30 damage.",
+			"critical": "User’s next attack automatically crits.",
+		},
+		"Polish_Armor": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "Buffing armor to a perfect sheen allows deflecting energy and slipping out of tight squeezes.",
+			"effect": "The user ignores the next negative status effect to hit it. ",
+			"critical": "",
+		},
+		"Shuriken": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User throws several shards of metal at a foe.",
+			"effect": "This deals 1d60 damage.",
+			"critical": "+1d60 damgage.",
+		},
+		"Steel_Bash": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User bludgeons its target with steel.",
+			"effect": "This deals 40 damage.",
+			"critical": "Target is stunned. ",
+		},
+		"Steel_Strike": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user hits with pure steel.",
+			"effect": "This deals 30 damage.",
+			"critical": "Crit: +30 damage.",
+		},
+		"Acupuncture": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User places steel pins in an ally’s pressure points, strengthening it.",
+			"effect": "For the remainder of combat the target does +30 damage with all damaging attacks.",
+			"critical": "",
+		},
+		"Automatize": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User sheds parts it don’t need right now, getting lighter.",
+			"effect": "For the remainder of combat, the user gets an extra dash action.",
+			"critical": "",
+		},
+		"Gear_Grind": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User throws two gears at the target.",
+			"effect": "This makes two 30 damage attacks.",
+			"critical": "Roll separately for each attack. Each crit does +20 damage.",
+		},
+		"Gyro_Ball": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User comes at the target in a high-speed spin.",
+			"effect": "This move does damage equal to the target’s speed.",
+			"critical": "+30 damage.",
+		},
+		"Heavy_Slam": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slams into the targets with its full weight.",
+			"effect": "This deals the user’s strength in damage to the target and all adjacent targets.",
+			"critical": "Target is stunned.",
+		},
+		"Iron_Head": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User rams the target head on.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Iron_Tail": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "A smack with a steel tail.",
+			"effect": "This deals 50 damage.",
+			"critical": "Target does half damage on its next attack.",
+		},
+		"Magnet_Bomb": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User launches a magnetic bomb at its targets.",
+			"effect": "This attack deals 40 damage to the target and all adjacent targets, friend or foe. It does not miss, and electric Pokémon are weak against it.",
+			"critical": "",
+		},
+		"Shift_Gears": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user optimizes its speed or strength.",
+			"effect": "On the user’s next turn it either deals double damage or takes an extra dash action. This may not have the same effect twice in row.",
+			"critical": "",
+		},
+		"Spike_Shot": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User fires steel spikes are its target. ",
+			"effect": "This deals 2d60 damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Steel_Cage": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User launches steel spikes at the target, surrounding it in a cage.",
+			"effect": "This deals 20 damage and the target is trapped.",
+			"critical": "+30 damage.",
+		},
+		"Steel_Horn": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User impales a foe with a crown of spikes.",
+			"effect": "This deals 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Steel_Wing": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes its opponent with a metallic wing.",
+			"effect": "This deals 60 damage.",
+			"critical": "User’s next attack automaticaly crits.",
+		},
+		"Unipole": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user is pulled by the earth’s magnetic field.",
+			"effect": "The user moves 5 spaces directly north or south instead of dashing. It deals 30 damage to every Pokémon along its path, friend or foe.",
+			"critical": "Crit: +20 damage on each hit.",
+		},
+		"Armor_Coat": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "The user grows an outer layer of steel plating.",
+			"effect": "The user takes 50 less damage from all attacks for the remainder of combat.",
+			"critical": "",
+		},
+		"Ironsides": 
+		{
+			"power": 80,
+			"style": "Self",
+			"flavor": "User coats itself in a layer of protective metal.",
+			"effect": "User takes half damage from all attacks for the rest of combat.",
+			"critical": "",
+		},
+		"Meteor_Mash": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User punches the target like an iron meteorite impact.",
+			"effect": "This deals 100 damage.",
+			"critical": "User's next attack automatically crits.",
+		},
+		"Steel_Press": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User crushes the target between 2 steel plates.",
+			"effect": "The target gets to make 2 saves against this attack. If it fails both, it is KO’d.",
+			"critical": "The target only gets 1 save.",
+		},
+		"Trumpet": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user sounds a victory blast that inspires everyone.",
+			"effect": "All allies in range do 30 extra damage and take an extra dash action on their next turn, as does the user.",
+			"critical": "All enemies in range do half damage on their next attack.",
+		},
 	},
 	"Water":
 	{
