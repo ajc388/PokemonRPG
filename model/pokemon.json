@@ -6,34 +6,62 @@
 */
 var pokemon = 
 {
-	"Freebie":
-	{
-		"Name": "Freebie",
-		"HP": 10,
-		"FP": 5,
-		"IV_Attributes": 
+	"Pikachu":
+	{	
+		"Pokedex_ID": 025,
+		"Short_Description": "The electric mouse pokemon.",
+		"Long_Description": "",
+		"NickName": null,
+		"Modifier": "Shiny/Legendary/Normal",
+		"Types": ["Electric"],
+		"Nature": null,
+		"Egg_Groups": ["Field", "Fairy"],
+		"Gender": 
 		{
-			"Speed": 2,
-			"Strength": 2,
-			"Sense": 2,
-			"Mind": 2			  
-		}, 
-		"EV_Attributes":
-		{
-			"Speed": 0,
-			"Speed_Rand_Weight": 0.25,
-			"Strength": 0,
-			"Strength_Rand_Weight": 0.25,
-			"Sense": 0,
-			"Sense_Rand_Weight": 0.25,
-			"Mind": 0,
-			"Mind_Rand_Weight": 0.25,	
+			"Current": null,
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
 		},
-		"Evolution_Method": "Method",
-		"Personality_Type": "Personality",
-		"Ability": "",
-		"Egg Group": ["type1", "type2", "type3"],
-		"Possible_Moves": ["move1", "move2", "move3"],
-		"Current_Moves": ["move1"]
+		"Evolution": 
+		{
+			"Method": "A sudden massive electric surge or the power of a thunderstone can cause pikachu to evolve",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Riachu"]
+		},
+		"Ability": "Lightning_Rod",
+		"Statistics":
+		{
+			"Dash": null,
+			"Range": null,
+			"HP": null,
+			"FP": null
+		},
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}, 
+			"EV":
+			{
+				"Speed": null,
+				"Strength": null,
+				"Sense": null,
+				"Mind": null,
+				"Speed_Weight": 0.25,
+				"Strength_Weight": 0.25,
+				"Mind_Weight": 0.25,
+				"Sense_Weight": 0.25	
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["move1", "move2", "move3"],
+			"Known": ["move1"]
+		}
 	}
 };

@@ -67,5 +67,10 @@ var abilities =
 	"Weak_Form":
 	{
 		"Description": "This special prevents you from learning any TM or HM moves, but when you evolve train all your stats twice instead of once."
-	}
+	}, 
+	"Electric_Rod":
+	{
+		"Description": "Acts as a conductor for electricity. Will draw lightning to it during powerful storms."
+	},
+	"None": {}
 }
