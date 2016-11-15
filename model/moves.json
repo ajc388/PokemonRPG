@@ -4104,7 +4104,22 @@ Crit: The target only gets one save.
 	},
 	"Psychic":
 	{
-
+		"Hypnosis": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user calms the target until it falls asleep, aided by psychic power.",
+			"effect": "This causes the sleep status.",
+			"critical": "The status is harsh.",
+		},
+		"Dream Eater": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user projects itself into the target’s mind and eat its dreams.",
+			"effect": "This only affects sleeping targets, but it deals 60 damage and heals the user for half the damage dealt. It does not give the target a chance to wake up",
+			"critical": "+20 damage dealt, with increased healing.",
+		},
 	},
 	"Rock":
 	{
