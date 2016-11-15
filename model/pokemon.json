@@ -8,12 +8,11 @@ var pokemon =
 {
 	"Pikachu":
 	{	
-		"Pokedex_ID": 025,
+		"Pokedex_ID": "025",
 		"Short_Description": "Mouse Pokemon.",
 		"Long_Description": "Pikachu like to chew on power cables. A sudden electrical surge can cause one to evolve.",
-		"Modifier": "",
+		"Modifier": null,
 		"Types": ["Electric"],
-		"Nature": "",
 		"Egg_Groups": ["Field", "Fairy"],
 		"Gender": 
 		{
@@ -24,7 +23,7 @@ var pokemon =
 		"Evolution": 
 		{
 			"Method": "Electric Energy",
-			"Prior_Evolutions": [],
+			"Previous_Evolution": null,
 			"Next_Evolutions": ["Raichu"]
 		},
 		"Ability": "Lightning_Rod",
@@ -42,15 +41,14 @@ var pokemon =
 		{
 			"Learnable": ["Spark", "Thundershock", "Tail_wag", "Growl", "Play_nice", "Quick_attack", "Electro_ball", "Thunder_wave", "Feint", "Double_team", "Spark", "Nuzzle", "Shuffle", "Electrolocation", "Thunderbolt", "Discharge", "Agility", "Novelty_Pokemon"]
 		}
-	}
+	},
 	"Cosplay_Pikachu":
 	{	
-		"Pokedex_ID": 025a,
+		"Pokedex_ID": "025A",
 		"Short_Description": "Mouse Pokemon.",
 		"Long_Description": "Cosplay Pikachu are known to steal small items of human clothing to wear. If you keep missing socks, it's likely you have a cosplay Pikachu in your house.",
 		"Modifier": "Shiny",
 		"Types": ["Electric"],
-		"Nature": "",
 		"Egg_Groups": ["Field", "Fairy"],
 		"Gender": 
 		{
@@ -61,7 +59,7 @@ var pokemon =
 		"Evolution": 
 		{
 			"Method": "Electric Energy",
-			"Prior_Evolutions": [],
+			"Previous_Evolution": null,
 			"Next_Evolutions": ["Raichu"]
 		},
 		"Ability": "Lightning_Rod",
@@ -79,15 +77,14 @@ var pokemon =
 		{
 			"Learnable": ["Spark", "Cosplay", "Thundershock", "Tail_wag", "Growl", "Play_nice", "Quick_attack", "Electro_ball", "Thunder_wave", "Feint", "Double_team", "Spark", "Nuzzle", "Shuffle", "Electrolocation", "Thunderbolt", "Discharge", "Agility"]
 		}
-	}
+	},
 	"Raichu":
 	{	
 		"Pokedex_ID": 026,
 		"Short_Description": "Mouse Pokemon.",
 		"Long_Description": "Raichu's massive ears not only detect sound but also electrical signals.",
-		"Modifier": "",
+		"Modifier": null,
 		"Types": ["Electric"],
-		"Nature": "",
 		"Egg_Groups": ["Field", "Fairy"],
 		"Gender": 
 		{
@@ -97,9 +94,9 @@ var pokemon =
 		},
 		"Evolution": 
 		{
-			"Method": "",
+			"Method": null,
 			"Prior_Evolutions": ["Pikachu"],
-			"Next_Evolutions": []
+			"Next_Evolutions": null
 		},
 		"Ability": "Cosplayer",
 		"Attributes": 
@@ -116,15 +113,14 @@ var pokemon =
 		{
 			"Learnable": ["Spark", "Thundershock", "Thunder", "Quick_attack", "Electro_ball", "Thunder_wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "Tetrashock", "Lightning_reflexes", "Thunderstorm", "Lightning", "Slam"]
 		}
-	}
-	"Giant Raichu":
+	},
+	"Giant_Raichu":
 	{	
-		"Pokedex_ID": 026a,
+		"Pokedex_ID": "026A",
 		"Short_Description": "Mouse Pokemon.",
 		"Long_Description": "Dubbed 'Kaichu' by the media, this giant Raichu was most likely caused by exposure to radiation.",
 		"Modifier": "Shiny and Legendary",
 		"Types": ["Electric"],
-		"Nature": "",
 		"Egg_Groups": ["Field", "Fairy"],
 		"Gender": 
 		{
@@ -134,9 +130,9 @@ var pokemon =
 		},
 		"Evolution": 
 		{
-			"Method": "",
+			"Method": null,
 			"Prior_Evolutions": ["Pikachu"],
-			"Next_Evolutions": []
+			"Next_Evolutions": null
 		},
 		"Ability": "Gargantuan",
 		"Attributes": 
@@ -153,15 +149,14 @@ var pokemon =
 		{
 			"Learnable": ["Thunder", "Electro_ball", "Thunder_Wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "tetrashock", "Thunderstorm", "Tightning", "Slam"]
 		}
-	}	
+	},	
 	"Gastly":
 	{	
-		"Pokedex_ID": 092,
+		"Pokedex_ID": "092",
 		"Short_Description": "Gas Pokemon",
 		"Long_Description": "Gastly eggs draw sustenance from the decaying fumes of a dead body. They were once blamed for causing many illnesses.",
-		"Modifier": "",
+		"Modifier": null,
 		"Types": ["Ghost", "Poison"],
-		"Nature": "",
 		"Egg_Groups": ["amorphous"],
 		"Gender": 
 		{
@@ -172,7 +167,7 @@ var pokemon =
 		"Evolution": 
 		{
 			"Method": "Battle 000000",
-			"Prior_Evolutions": [],
+			"Prior_Evolutions": null,
 			"Next_Evolutions": ["Haunter"]
 		},
 		"Ability": "Levitate",
@@ -190,15 +185,14 @@ var pokemon =
 		{
 			"Learnable": ["Hypnosis", "Lick", "Spite", "Confuse_Ray", "Destiny_Bond", "Dark Void", "Invisibility", "Losers_Pain", "Ethereal_Body"]
 		}
-	}
+	},
 	"Haunter":
 	{	
-		"Pokedex_ID": 093,
+		"Pokedex_ID": "093",
 		"Short_Description": "Gas Pokemon",
 		"Long_Description": "Haunters have an instinct to seek out wrongdoers and make them pay for their deeds.",
-		"Modifier": "",
+		"Modifier": null,
 		"Types": ["Ghost", "Poison"],
-		"Nature": "",
 		"Egg_Groups": ["amorphous"],
 		"Gender": 
 		{
@@ -227,15 +221,14 @@ var pokemon =
 		{
 			"Learnable": ["Hypnosis", "Lick", "Ghost_Hand", "Night_Shade", "Losers_Pain", "Memories_of_the_Departed", "Shadow_Ball", "Light_Spirit", "Overshadow", "Nightmare", "Phantasm", "Shadow_Punch", "Assassinate", "Dream_Eater", "Moonshadow", "Backstab", "Chaos_Blast", "Dark_Pulse", "Haunt", "Reaper_Scythe"]
 		}
-	}	
+	},	
 	"Gengar":
 	{	
 		"Pokedex_ID": 094,
 		"Short_Description": "Shadow Pokemon",
 		"Long_Description": "Legend has it that the first Gengar was a Clefable's shadow brought to life by magic.",
-		"Modifier": "",
+		"Modifier": null,
 		"Types": ["Ghost", "Poison"],
-		"Nature": "",
 		"Egg_Groups": ["amorphous"],
 		"Gender": 
 		{
@@ -245,9 +238,9 @@ var pokemon =
 		},
 		"Evolution": 
 		{
-			"Method": "",
+			"Method": null,
 			"Prior_Evolutions": ["Haunter"],
-			"Next_Evolutions": [""]
+			"Next_Evolutions": null
 		},
 		"Ability": "Levitate",
 		"Attributes": 
@@ -265,14 +258,14 @@ var pokemon =
 			"Learnable": ["Hypnosis", "Night_Shade", "Memories_of_the_Departed", "Shadow_Ball", "Phantasm", "Assassinate", "Moonshadow", "Backstab", "Chaos_Blast", "Ultimate_Chaos", "Ominous_Wind", "Dream_Eater", "Reaper_Scythe", "Vengeful_Spirits", "Shadow_Force", "Shadow_Sneak", "Shadow_Devastation"]
 		}
 	}		
-		"":
+};
+/*	"":
 	{	
 		"Pokedex_ID": ,
 		"Short_Description": "",
 		"Long_Description": "",
 		"Modifier": "Shiny/Legendary/Normal",
 		"Types": [""],
-		"Nature": "",
 		"Egg_Groups": [""],
 		"Gender": 
 		{
@@ -301,5 +294,4 @@ var pokemon =
 		{
 			"Learnable": [""]
 		}
-	}
-};
+	}*/
