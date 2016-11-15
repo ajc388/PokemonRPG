@@ -11,14 +11,12 @@ var pokemon =
 		"Pokedex_ID": 025,
 		"Short_Description": "The electric mouse pokemon.",
 		"Long_Description": "",
-		"NickName": null,
 		"Modifier": "Shiny/Legendary/Normal",
 		"Types": ["Electric"],
-		"Nature": null,
+		"Nature": "",
 		"Egg_Groups": ["Field", "Fairy"],
 		"Gender": 
 		{
-			"Current": null,
 			"Male_Weight": 50,
 			"Female_Weight": 50,
 			"Other_Weight": 0
@@ -30,13 +28,6 @@ var pokemon =
 			"Next_Evolutions": ["Riachu"]
 		},
 		"Ability": "Lightning_Rod",
-		"Statistics":
-		{
-			"Dash": null,
-			"Range": null,
-			"HP": null,
-			"FP": null
-		},
 		"Attributes": 
 		{
 			"IV": 
@@ -45,17 +36,6 @@ var pokemon =
 				"Strength": 2,
 				"Sense": 2,
 				"Mind": 2			  
-			}, 
-			"EV":
-			{
-				"Speed": null,
-				"Strength": null,
-				"Sense": null,
-				"Mind": null,
-				"Speed_Weight": 0.25,
-				"Strength_Weight": 0.25,
-				"Mind_Weight": 0.25,
-				"Sense_Weight": 0.25	
 			}
 		},
 		"Moves":
