@@ -1510,7 +1510,7 @@ var moves =
 		{
 			"power": 80,
 			"style": "Melee",
-			"flavor": "Like the ancient Moiri, the user and allies perform a haka dance.",
+			"flavor": "Like the ancient Maori, the user and allies perform a haka dance.",
 			"effect": "This allows the user and all adjacent allies to take an extra dash action next turn, and their next attacks deal double damage.",
 			"critical": "",
 		},
