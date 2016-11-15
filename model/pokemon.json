@@ -150,11 +150,11 @@ var pokemon =
 			"Learnable": ["Thunder", "Electro_ball", "Thunder_Wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "tetrashock", "Thunderstorm", "Tightning", "Slam"]
 		}
 	},	
-	"Gastly":
+	"Ghastly":
 	{	
 		"Pokedex_ID": "092",
 		"Short_Description": "Gas Pokemon",
-		"Long_Description": "Gastly eggs draw sustenance from the decaying fumes of a dead body. They were once blamed for causing many illnesses.",
+		"Long_Description": "Ghastly eggs draw sustenance from the decaying fumes of a dead body. They were once blamed for causing many illnesses.",
 		"Modifier": null,
 		"Types": ["Ghost", "Poison"],
 		"Egg_Groups": ["amorphous"],

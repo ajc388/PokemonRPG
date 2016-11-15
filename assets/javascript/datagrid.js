@@ -51,7 +51,7 @@ function DataGrid(parameters)
       //Create auto complete feature for search bar
       $("#search").autocomplete({
         source: loadSearchTags(model),
-        minLength: Object.keys(model)/100,
+        minLength: Math.max(Object.keys(model).length/100, 2),
         select: search($(".name")),
         delay: 500
       });

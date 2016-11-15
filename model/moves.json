@@ -1510,7 +1510,7 @@ var moves =
 		{
 			"power": 80,
 			"style": "Melee",
-			"flavor": "Like the ancient Moiri, the user and allies perform a haka dance.",
+			"flavor": "Like the ancient Maori, the user and allies perform a haka dance.",
 			"effect": "This allows the user and all adjacent allies to take an extra dash action next turn, and their next attacks deal double damage.",
 			"critical": "",
 		},
@@ -4126,6 +4126,54 @@ var moves =
 	},
 	"Psychic":
 	{
+		"Amnesia": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user clears its mind to improve attack.",
+			"effect": "Choose a move that is not burnt out. For the remainder of the fight the user forgets how to use that move. Deal extra damage on the user’s next attack equal to the power of that move, or twice the move’s power if that move was natural.",
+			"critical": "",
+		},
+		"Berserk_Impulse": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user implants senseless anger into the target's conscious stream.",
+			"effect": "This cause a compulsion in the target to attack the nearest Pokemon, friend or foe.",
+			"critical": "The status is harsh.",
+		},
+		"Charm_Impulse": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user implants thoughts of friendliness into the target's conscious stream.",
+			"effect": "This causes a compulsion in the target to regard the user as an ally any anyone who threatens it as a foe.",
+			"critical": "The status is harsh.",
+		},
+		"Cosmic_Power": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user is protected by phenomenal cosmic power, yet restricted to a smaller area.",
+			"effect": "This allows the user to protect itself with psychic barriers. The user may use mind saves to dodge all attacks when desired for the remainder of combat.",
+			"critical": "",
+		},
+		"ESP": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "By expanding its sensory abilities, the user can see possibilities that would not otherwise exist.",
+			"effect": "Normally, range is calculated as if diagonal spaces are two spaces away. Treat them as being one space away, turning the user’s range into a large square.",
+			"critical": "",
+		},
+		"Heal_Block": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User prevents anyone from even thinking about healing.",
+			"effect": "No target in range can be healed until the start of the user’s next turn.",
+			"critical": "The status is harsh, meaning it lasts the rest of combat.",
+		},
 		"Hypnosis": 
 		{
 			"power": 30,
@@ -4134,26 +4182,950 @@ var moves =
 			"effect": "This causes the sleep status.",
 			"critical": "The status is harsh.",
 		},
-		"Dream Eater": 
+		"Magic_Coat": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user is protected by karma itself.",
+			"effect": "Any time the user takes repeating damage, the damage is instead dealt to the target that hit the user.",
+			"critical": "",
+		},
+		"Meditate": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "Focusing one’s thoughts prepares one for the coming battle.",
+			"effect": "The next attack the user makes does 30 extra damage.",
+			"critical": "",
+		},
+		"Mind_Reading": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user is able to read the target’s mind and act accordingly.",
+			"effect": "For the rest of combat, the user can roll twice to crit or save against the target. This move has no effect against types that resist psychic.",
+			"critical": "",
+			"out_of_battle": "This move is great for getting into people’s heads, although it is resisted by the mysteries skill.",
+		},
+		"Mind_Worm": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "This psychic attack puts a damaging meme in the target's head that keeps going.",
+			"effect": "This deals 20 repeating damage.",
+			"critical": "Repeating damage is harsh.",
+		},
+		"Paranoia": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "The user implants dread and terror into the target’s mind, and it fears the undead.",
+			"effect": "The target is weak against ghost attacks.",
+			"critical": "The target has a compulsion to paranoia.",
+		},
+		"Precognition": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "The user begins to react to things before they happen becoming much more accurate.",
+			"effect": "For the remainder of combat, any time the user rolls dice for critting or dodging, roll twice and take the better result.",
+			"critical": "",
+		},
+		"Push": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "A telekinetic shove.",
+			"effect": "Move the target 2 spaces.",
+			"critical": "+3 spaces of movement.",
+		},
+		"Psychic_Touch": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user taps the target's head and sends psychic energy through skin contact.",
+			"effect": "This deals 30 damage.",
+			"critical": "The target takes a compulsion to insanity.",
+		},
+		"Retrocognition": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user can see into the past, unlocking history and mystery.",
+			"effect": "This allows the user to see the target’s complete character sheet. The GM may divulge hints at pertinent backstory.",
+			"critical": "The user knows all the target’s tricks and gets to roll twice and take the better result any time it dodges the target.",
+			"out_of_battle": "This move can show what happened with the item or in the area in the past.",
+		},
+		"Self_Levitation": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "There must be 50 ways to learn to hover.",
+			"effect": "This grants the user the levitate special. The usermay move over terrain without penalty.",
+			"critical": "",
+		},
+		"Telekinesis": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User levitates the target into a fixed position in the air, keeping it from moving.",
+			"effect": "The target is trapped.",
+			"critical": "The target is harshly trapped.",
+		},
+		"Teleport": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user vanishes and reappears elsewhere on the battlefield.",
+			"effect": "Choose a space within range and immediately move there, bypassing the intervening spaces.",
+			"critical": "The user can teleport itself and one other individual to any location the trainer marked with the gateway move.",
+			"out_of_battle": "",
+		},
+		"Gateway": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user creates a wormhole connecting two points on the battlefield.",
+			"effect": "Choose a space within range and mark it with a gateway. All spaces on the battlefield so marked are considered adjacent to each other, even if made by different users. If there are no gateway spaces, when this move is used it creates an exra gateway space somewhere else in range if desired.",
+			"critical": "",
+		},
+		"Barrier": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user conjures a protective wall.",
+			"effect": "Increase user’s HP by 30, even above its max health.",
+			"critical": "",
+		},
+		"Brainstorm": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "A wave of psychic energy empowers the user and its friends.",
+			"effect": "The user and all allies in range are cleared of any compulsions and do +20 damage on their next attack.",
+			"critical": "All enemies in range take a compulsion to confusion.",
+			"out_of_battle": "Brainstorm is can grant the user access to new ideas, useful for assisting mental skills when no idea presents itself.",
+		},
+		"Calm_Mind": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user forgets its fears and concerns and focuses on seeing far.",
+			"effect": "Increase user’s range by 3 spaces for the duration of the fight.",
+			"critical": "",
+		},
+		"Confusion": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user bombards the target's mind with chaotic thoughts until it can take no more.",
+			"effect": "This deals 30 damage and causes a compulsion to insanity.",
+			"critical": "Target loses 30 mind.",
+		},
+		"Dream_Eater": 
 		{
 			"power": 50,
 			"style": "Ranged",
 			"flavor": "The user projects itself into the target’s mind and eat its dreams.",
-			"effect": "This only affects sleeping targets, but it deals 60 damage and heals the user for half the damage dealt. It does not give the target a chance to wake up",
+			"effect": "This only affects sleeping targets, but it deals 60 damage and heals the user for half the damage dealt. It does not give the target a chance to wake up.",
 			"critical": "+20 damage dealt, with increased healing.",
+		},
+		"Extrasensory": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots a beam guided by its mystic senses.",
+			"effect": "This deals 40 damage and does not miss.",
+			"critical": "Target is stunned.",
+		},
+		"Future_Sight": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User foretells the target’s doom.",
+			"effect": "This deals 120 damage to the target 2 turns after it is used.",
+			"critical": "The damage happens on the user’s next turn.",
+		},
+		"Gravity": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "An intense gravity well centers itself on the user.",
+			"effect": "All targets in range lose their levitate and airborne abilities and flying type. They are also now weak against ground.",
+			"critical": "Targets are trapped.",
+		},
+		"Hallucination_Aura": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user surrounds itself with a psychic field that projects illusions into others’ visual cortices.",
+			"effect": "The user begins sneaking and all units and every target in range takes a compulsion to insanity.",
+			"critical": "Allies are not affected.",
+		},
+		"Levitate": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User moves a target slowly but surely across the field.",
+			"effect": "Move the target from anywhere within range to anywhere within range.",
+			"critical": "",
+		},
+		"Psybeam": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "A beam of unbridled psychic energy.",
+			"effect": "This deals 70 damage.",
+			"critical": "The target also takes a compulsion to insanity.",
+		},
+		"Psychic_Crush": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "The target is trapped in a contracting force field force field.",
+			"effect": "This traps the target and deals 20 repeating damage. Only a mind save can counteract this, but a successful save will elimate both.",
+			"critical": "+15 repeating damage.",
+		},
+		"Psycho_Cut": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User slashes at the target with blades of pure mental energy.",
+			"effect": "40 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Psyshock": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user propels itself with a wave of telekinetic energy.",
+			"effect": "This deals 50 damage.",
+			"critical": "+30 damage.",
+		},
+		"Psywave": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "A wave of chaotic psychic energy at a foe.",
+			"effect": "This deals 2d60 damage to the target.",
+			"critical": "Target has a compulsion to confusion.",
+		},
+		"Reflect": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "User conjures a protective barrier around that bounces attacks back to where they came from",
+			"effect": "User may make mind saves in place of sense and speed saves to avoid damage. On a successful defense, the atttacker has to dodge its own move or take the effect.",
+			"critical": "",
+		},
+		"Rest": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "User falls into a healing sleep.",
+			"effect": "This heals 60 damage and removes all statuses, replacing them with the status of sleep.",
+			"critical": "",
+		},
+		"Synchronize": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user harmonizes energies with the target and then destroy it from within.",
+			"effect": "This deals 90 damage to all Pokémon in range that share a type with the user, bypassing type multipliers and damage modifiers. If the user has two types, any Pokémon with either type will be affected. This bypasses any resistances and weaknesses, except it does double damage to all Pokémon that share both types.",
+			"critical": "",
+		},
+		"Telepathic_Bond": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user and an ally share perceptions, watching each others' back with supernatural awareness.",
+			"effect": "The user and an ally in range are linked. Any time either needs to make a sense or mind save, both roll and take the higher effect. But if either takes a compulsion, both do. This effect lasts only while both are on the field simultaneously.",
+			"critical": "",
+		},
+		"Ally_Switch": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user switches places with a willing partner.",
+			"effect": "Choose any allied Pokémon on the map. Trade places with it.",
+			"critical": "",
+		},
+		"Mind_Control": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user seizes control of the target’s mind.",
+			"effect": "Force the target to take its turn immediately, taking complete control of its turn and having it dash and use a move as you see fit, even targeting a former ally.",
+			"critical": "This effect is treated as a compulsion, and until the target passes a mind save the user may continue to dictate its actions.",
+		},
+		"Mind_Crush": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User blasts the target's mind directly.",
+			"effect": "This deals 90 damage.",
+			"critical": "The target takes a compulsion to insanity.",
+		},
+		"Nullify": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The target is returned to its normal state.",
+			"effect": "This changes a mega-evolved Pokémon back to its normal form. It loses the 100 HP it gained by mega evolving.",
+			"critical": "The target can’t use any difficult moves on its next turn.",
+		},
+		"Purple_Haze": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "The user calls up purple mist that expands consciousness.",
+			"effect": "This weather nullfies all status effects except compulsions, which become harsh.",
+			"critical": "",
+		},		
+		"Psi_Kick": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user teleports and plants its foot on the unsuspecting target's face.",
+			"effect": "Instead of dashing as a part of this move, teleport to any space in range without passing through the intervening spaces. Deal the user’s strength in damage to an adjacent target.",
+			"critical": "+30 damage.",
+		},
+		"Psi_Storm": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "Mental attacks wash over everyone around in the area.",
+			"effect": "This deals 90 damage to everyone in range.",
+			"critical": "Also causes a compulsion to insanity.",
+		},
+		"Psychic": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "Telekinesis slams the target into everything in sight.",
+			"effect": "Move the target 3 spaces and deal 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Psycho_Boost": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "The user unleashes the darkest depths of its mind.",
+			"effect": "This deals 120 damage but the next attack the user makes deals half damage. ",
+			"critical": "Too deep, too dark! +60 damage and the user is stunned.",
+		},
+		"Psystrike": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user puppets its own body with psychic powers.",
+			"effect": "This deals 90 damage.",
+			"critical": "+30 damage.",
+		},
+		"Zen_Headbutt": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "Mind-to-mind energy transfer is easier when skulls are touching.",
+			"effect": "This deals 90 damage.",
+			"critical": "Target is stunned. ",
 		},
 	},
 	"Rock":
 	{
-
+		"Grind": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user moves so fast that pieces of its rocky skin grind against each other.",
+			"effect": "The user moves 4 extra spaces using this move, and takes 20 damage. ",
+			"critical": "",
+		},
+		"Heavyweight": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user latches onto the ground, using its weight to remain in place.",
+			"effect": "This prevents the user from being moved by any move, even beneficially. Any melee move used against this Pokémon instead causes the attack to face the knockback.",
+			"critical": "",
+		},
+		"Rock_Polish": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user smoothes itself out to move faster.",
+			"effect": "The user gets to take an extra dash action on the next turn.",
+			"critical": "",
+		},
+		"Slab": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "A hard hit with a hard piece of rock.",
+			"effect": "The user whacks the target for 40 damage.",
+			"critical": "The target is stunned.",
+		},
+		"Stone_Fist": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "Well documented by the Rocky movies, this punch is hard as granite.",
+			"effect": "The user deals 30 damage.",
+			"critical": "+30 damage.",
+		},
+		"Ancient_Power": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user calls upon the power it had in a previous age.",
+			"effect": "This deals 60 damage.",
+			"critical": "The user’s next attack deals double damage.",
+		},
+		"Boulder_Throw": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "Lobbing boulders might not be the most accurate attack, but doing so can make effective cordons.",
+			"effect": "This allows the user to throw a number of boulders equal to its strength divided by 10. For each boulder, pick a space within range and place a boulder marker there. Any Pokémon on that space rolls a speed save. If it passes, it immediately is moved to an adjacent space without taking damage. Otherwise, it is moved and it takes 10 damage. If the Pokémon is incapable of moving from the space, no marker is palced and the target takes 30 damage. Boulder markers are terrain that is impassible for Pokémon not strong against rock.",
+			"critical": "All boulders do double damage, but do not automatically hit.",
+		},
+		"Rock_Blast": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "The user fires a spray of rock fragments at the targets.",
+			"effect": "This deals 2d60 damage to all targets along a line.",
+			"critical": "+1d60 damage.",
+		},
+		"Rock_Throw": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user lobs a rock at the target.",
+			"effect": "This deals the user’s strength in damage to the target.",
+			"critical": "+30 damage.",
+		},
+		"Rock_Tomb": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "This traps the target under a mountain of rubble.",
+			"effect": "This deals 40 damage to the target. Additionally, it is surrounded by boulder markers that are impassible rock terrain.",
+			"critical": "The target is trapped.",
+		},
+		"Rollout": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User curls up and rolls at the target.",
+			"effect": "This deals 40 damage and allows the user to move one extra space. If it hits, the user continues to rollout on the next turn, moving 1 extra space and dealing 40 extra damage for each time it has hit. When rollout ends, the user takes a compulsion to severe dizziness.",
+			"critical": "+30 damage.",
+		},
+		"Power_Gem": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "The user fires a beam of power from its gem.",
+			"effect": "This deals 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Smackdown": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "The user knocks that airborne sissy to the ground, where it’ll have to fight for real.",
+			"effect": "The target is no longer airborne or levitating and it is weak against ground attacks. It takes 30 damage as well.",
+			"critical": "The target is stunned.",
+		},
+		"Stalagmite": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "The user stabs the opponent with a rocky protrusion.",
+			"effect": "This deals 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Diamond_Armor": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "The user covers itself in adamant plates",
+			"effect": "The user takes half damage from all attacks for the rest of combat.",
+			"critical": "",
+		},
+		"Diamond_Storm": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user whips up a storm of industrial diamonds that pelt everyone in range.",
+			"effect": "This deals 90 damage to all targets in range, friend or foe.",
+			"critical": "User’s next attack deals 30 extra damage.",
+		},
+		"Head_Smash": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "No matter what, someone’s going down.",
+			"effect": "This deals 150 damage and the user takes 60 automatic damage.",
+			"critical": "The target faints and the user takes an additional 50 damage.",
+		},
+		"Rock_Slide": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "A wave of stones buries the user’s foes.",
+			"effect": "This deals 70 damage to the target and all adjacent targets, friend or foe.",
+			"critical": "+30 damage.",
+		},
+		"Sandstorm": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "User causes the sky to go dark with gravel in the air.",
+			"effect": "All Pokémon on the field take 1d60 rock damage every turn, unless they’re resistant or immune. ",
+			"critical": "",
+		},
+		"Stone_Edge": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The razor-sharp edge of a stone knife.",
+			"effect": "The target takes 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Wide_Guard": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "Stone walls protect allies from attack.",
+			"effect": "Until the start of the user’s next turn, it is immune to all damage, as is any ally that is adjacent to the user while being attacked. Status effects still occur.",
+			"critical": "",
+		},
 	},
 	"Steel":
 	{
-
+		"Brass_Knuckles": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "User punches its target with a metallic fist.",
+			"effect": "This deals 20 damage.",
+			"critical": "+30 damage.",
+		},
+		"Bullet_Punch": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User strikes, quick as a bullet.",
+			"effect": "This deals 30 damage and doesn’t miss. ",
+			"critical": "This move does not crit.",
+		},
+		"Interface": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "The user integrates with other technology.",
+			"effect": "This allows one technical Pokémon such as Porygon, Magnemite, or Electrode to integrate with another such Pokémon, or with any machinery on the battlefield. If used on an ally, both get double damage on their next attack and gain a friendship point. If used on an enemy, it has a harsh compulsion to aid the user, and this move bypasses type resistances. If used on technology on the field, this allows the user to hack computers or use its parts to drive machinery.",
+			"critical": "",
+		},
+		"Metal_Claw": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user strikes with bladelike fingers.",
+			"effect": "This deals 30 damage.",
+			"critical": "User’s next attack automatically crits.",
+		},
+		"Polish_Armor": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "Buffing armor to a perfect sheen allows deflecting energy and slipping out of tight squeezes.",
+			"effect": "The user ignores the next negative status effect to hit it. ",
+			"critical": "",
+		},
+		"Shuriken": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User throws several shards of metal at a foe.",
+			"effect": "This deals 1d60 damage.",
+			"critical": "+1d60 damgage.",
+		},
+		"Steel_Bash": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User bludgeons its target with steel.",
+			"effect": "This deals 40 damage.",
+			"critical": "Target is stunned. ",
+		},
+		"Steel_Strike": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user hits with pure steel.",
+			"effect": "This deals 30 damage.",
+			"critical": "Crit: +30 damage.",
+		},
+		"Acupuncture": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User places steel pins in an ally’s pressure points, strengthening it.",
+			"effect": "For the remainder of combat the target does +30 damage with all damaging attacks.",
+			"critical": "",
+		},
+		"Automatize": 
+		{
+			"power": 50,
+			"style": "Self",
+			"flavor": "User sheds parts it don’t need right now, getting lighter.",
+			"effect": "For the remainder of combat, the user gets an extra dash action.",
+			"critical": "",
+		},
+		"Gear_Grind": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User throws two gears at the target.",
+			"effect": "This makes two 30 damage attacks.",
+			"critical": "Roll separately for each attack. Each crit does +20 damage.",
+		},
+		"Gyro_Ball": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User comes at the target in a high-speed spin.",
+			"effect": "This move does damage equal to the target’s speed.",
+			"critical": "+30 damage.",
+		},
+		"Heavy_Slam": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slams into the targets with its full weight.",
+			"effect": "This deals the user’s strength in damage to the target and all adjacent targets.",
+			"critical": "Target is stunned.",
+		},
+		"Iron_Head": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User rams the target head on.",
+			"effect": "This deals 60 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Iron_Tail": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "A smack with a steel tail.",
+			"effect": "This deals 50 damage.",
+			"critical": "Target does half damage on its next attack.",
+		},
+		"Magnet_Bomb": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User launches a magnetic bomb at its targets.",
+			"effect": "This attack deals 40 damage to the target and all adjacent targets, friend or foe. It does not miss, and electric Pokémon are weak against it.",
+			"critical": "",
+		},
+		"Shift_Gears": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user optimizes its speed or strength.",
+			"effect": "On the user’s next turn it either deals double damage or takes an extra dash action. This may not have the same effect twice in row.",
+			"critical": "",
+		},
+		"Spike_Shot": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User fires steel spikes are its target. ",
+			"effect": "This deals 2d60 damage.",
+			"critical": "+1d60 damage.",
+		},
+		"Steel_Cage": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User launches steel spikes at the target, surrounding it in a cage.",
+			"effect": "This deals 20 damage and the target is trapped.",
+			"critical": "+30 damage.",
+		},
+		"Steel_Horn": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "User impales a foe with a crown of spikes.",
+			"effect": "This deals 70 damage.",
+			"critical": "+30 damage.",
+		},
+		"Steel_Wing": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "User slashes its opponent with a metallic wing.",
+			"effect": "This deals 60 damage.",
+			"critical": "User’s next attack automaticaly crits.",
+		},
+		"Unipole": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user is pulled by the earth’s magnetic field.",
+			"effect": "The user moves 5 spaces directly north or south instead of dashing. It deals 30 damage to every Pokémon along its path, friend or foe.",
+			"critical": "Crit: +20 damage on each hit.",
+		},
+		"Armor_Coat": 
+		{
+			"power": 100,
+			"style": "Self",
+			"flavor": "The user grows an outer layer of steel plating.",
+			"effect": "The user takes 50 less damage from all attacks for the remainder of combat.",
+			"critical": "",
+		},
+		"Ironsides": 
+		{
+			"power": 80,
+			"style": "Self",
+			"flavor": "User coats itself in a layer of protective metal.",
+			"effect": "User takes half damage from all attacks for the rest of combat.",
+			"critical": "",
+		},
+		"Meteor_Mash": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User punches the target like an iron meteorite impact.",
+			"effect": "This deals 100 damage.",
+			"critical": "User's next attack automatically crits.",
+		},
+		"Steel_Press": 
+		{
+			"power": 100,
+			"style": "Melee",
+			"flavor": "User crushes the target between 2 steel plates.",
+			"effect": "The target gets to make 2 saves against this attack. If it fails both, it is KO’d.",
+			"critical": "The target only gets 1 save.",
+		},
+		"Trumpet": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user sounds a victory blast that inspires everyone.",
+			"effect": "All allies in range do 30 extra damage and take an extra dash action on their next turn, as does the user.",
+			"critical": "All enemies in range do half damage on their next attack.",
+		},
 	},
 	"Water":
 	{
+/*
+Aqua ⠂ 30
+Style: Ranged
+User shoots a ball of water that bursts.
+This deals 20 damage to the targeted space and every adjacent space.
+Crit: +50 damage.
 
+
+Aqua Jet ⠂ 40
+Style: Melee
+User rides a jet of water to move quickly
+Move 3 extra spaces and deal 10 damage. This move does not miss.
+Crit: +30 damage.
+
+
+Bubble ⠂ 20
+Style: Ranged
+User shoots a bubble at the target. This deals damage for unknown reasons.
+This deals 30 damage.
+Crit: Target is stunned.
+
+
+Octazooka ⠂ 40
+Style: Ranged
+A glob of ink is shot at the target’s face.
+The target is blinded and takes 10 damage.
+Crit: +30 damage.
+
+
+Soak ⠂ 30
+Style: Ranged
+User drenches the target in salt water.
+The target is now weak against electricity.
+Crit: Target’s dash is set to 0 for one turn.
+
+
+Splash   10
+Style: Melee
+User flops around the map, jumping high.
+Move without terrain penalties and do nothing to all adjacent Pokemon.
+Crit: All adjacent Pokémon are mildly moistened, which has no noticeable effect on battle performance.
+
+
+Squirt ⠂ 30
+Style: Ranged
+A small but powerful spray of water.
+This deals 20 damage and moves the target one space.
+Crit: +50 damage.
+Tier 2
+Brine ⠅ 60
+Style: Ranged
+User spits a stream of briny water, filled with its bitterness.
+This deals 40 damage, 80 if the user is at or below half health.
+Crit: Target takes 15 repeating damage. 
+
+
+Bubblebeam ⠅ 60
+Style: Ranged
+A beam of bubbles that defies explanation.
+This deals 40 damage to every target along a line.
+Crit: Target’s dash is set to 0 for its next turn.
+
+
+Clear Water ⠅ 60
+Style: Melee
+Pure water to cure the worst wounds.
+This heals the target for 40 HP.
+Crit: This move does not crit.
+Out of Combat: This move can be used as a downtime action to heal Pokémon. 
+
+
+Dive ⠅ 50
+Style: Melee Type: Water
+Dah dum… dah dum… dah dum, dah dum, dah dum, dah dum, DAH DAH!
+This takes 2 turns. On the first turn, the Pokémon goes underwater, and cannot be hit except by ranged water moves and anyone else underwater using dive. On the second turn this deals 120 damage. This move can only be used in water and it allows the user to bypass difficult water terrain.
+Crit: +30 damage.
+
+
+Downpour ⠅ 70
+Style: Ranged
+A heavy but brief downpour of water strikes everyone in range.
+This deals 40 damage to everyone in range and causes them to lose their next dash action.
+Crit: Targets are also trapped (due to mud).
+
+
+Fish ⠅ 50
+Style: Ranged
+The user draws aqutic Pokémon to its location, perhaps by using an incredibly flavorful tail.
+Choose a Pokémon in the water. It is under a compulsion to approach the user. Water Pokémon are weak to this move. 
+Crit: The compulsion is harsh.
+Out of Combat: Once per session the move acts in place of super bait for fishing.
+
+
+Muddy Water ⠅ 60
+Style: Ranged
+User blinds the target with silt. 
+Deal 30 damage and blinds the target.
+Crit: +30 damage. 
+
+
+Scald ⠅ 70
+Style: Ranged
+User shoots boiling hot water at the target to burn it.
+This deals 30 damage and the target takes 20 repeating damage.
+Crit: Reduce the target’s strength by 30. 
+
+
+Surf ⠅ 70
+Style: Melee
+The user rides a wave toward its foes, and can do so even on land.
+Move 3 extra spaces and deal 40 damage to all adjacent targets.
+Crit: +30 damage.
+
+
+Water Gun ⠅ 50
+Style: Ranged
+A blast of water pushes the target away.
+This deals 40 damage and moves the target 1 space.
+Crit: +30 damage.
+
+
+Water Jet ⠅ 60
+Style: Ranged
+A powerful gush of water.
+This deals mind + 60 damage.
+Crit: +30 damage.
+
+
+Water Shiruken ⠅ 70
+Style: Ranged
+User throw bolts of water at its target.
+This deals 1d60 damage and it has 4 extra spaces of range.
+Crit: +30 damage. 
+Tier 3
+Hurricane ⠕ 90
+Style: Ranged
+Watery chaos all around while the user stands peaceful at the center.
+This deals 90 damage to everyone in range.
+Crit: Targets are trapped.
+
+
+Hydro Cannon ⠕ 90
+Style: Ranged
+A powerful blast of water slams into the target, but it exhausts the user.
+This deals 120 damage, but the user cannot use any other moves until it is encouraged.
+Crit: Move the target 5 spaces. 
+
+
+Hydro Pump ⠕ 100
+Style: Ranged
+A powerful blast of water that obliterates anything in its path.
+This deals 100 damage.
+Crit: Move the target 3 spaces.
+
+
+Maelstrom ⠕ 100
+Style: Ranged
+User causes a chaotic cyclone water to continually buffet everyone around.
+Everyone in range 60 damage and is trapped.
+Crit: Also move everyone 3 spaces.
+
+
+Rain Dance ⠕ 100
+Style: Weather
+User calls down rain from the sky.
+Change the weather to raining, which makes all water moves natural, all fire moves difficult, makes all electric moves crit on any doubles, and allows water Pokémon with the swift swim ability to move over any terrain as if it were aquatic.
+Crit: This move does not crit.
+
+
+Rainstorm ⠕ 80
+Style: Ranged
+User causes a deluge of water to pour all around it.
+This 40 damage to all targets in range, friend or foe, and they lose their next dash action. This deals double damage if it is raining.
+Crit: +30 damage.
+
+
+Steam Eruption ⠕ 100
+Style: Ranged
+User causes a geyser of steam to erupt, burning its target.
+This deals 60 damage to the target and it takes 20 repeating damage.
+Crit: Target loses 30 mind.  
+
+
+Water Spout ⠕ 100
+Style: Ranged
+The Pokémon uses all its strength to call up a waterspout.
+This deals half the user’s current HP rounded up in damage to the target and all adjacent targets.
+Crit: Target is trapped. 
+
+
+Waterfall ⠕ 80
+Style: Ranged Type: Water
+User charges with enough power to scale a waterfall.
+This deals 60 damage and the user moves 2 extra spaces.
+Crit: +30 damage.
+
+
+Whirlpool ⠕ 90
+Style: Melee Type: Water
+User stands at the center of a whirlpool.
+This deals 50 damage to all adjacent targets.
+Crit: +30 damage. 
+*/
 	},
 	"Null":
 	{
