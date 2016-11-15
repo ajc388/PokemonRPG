@@ -2,7 +2,7 @@ var abilities =
 {
 	"Airborne": 
 	{
-		"Description": "This special is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain."
+		"Description": "This special is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain that doesn't specifically affect flying Pokemon. They also get +1 dash."
 	},
 	"Cosplayer":
 	{
@@ -12,7 +12,7 @@ var abilities =
 	{
 		"Description": "You gain 30 health each turn while asleep."
 	},
-	"Hover":
+	"Levitate":
 	{
 		"Description": "You hover, avoiding the effects of terrain and becoming immune to ground attacks."
 	},
@@ -56,7 +56,7 @@ var abilities =
 	{
 		"Description": "You are immune to a particular status. For example, ghost Pokemon often have immunity to trapped."
 	},
-	"Sealthy":
+	"Stealthy":
 	{
 		"Description": "The Pokémon enters the field sneaking."
 	},
@@ -68,9 +68,9 @@ var abilities =
 	{
 		"Description": "This special prevents you from learning any TM or HM moves, but when you evolve train all your stats twice instead of once."
 	}, 
-	"Electric_Rod":
+	"Lightning_Rod":
 	{
-		"Description": "Acts as a conductor for electricity. Will draw lightning to it during powerful storms."
+		"Description": "If the Pokemon is hit with electric damage, it takes no damage and instead restores the use of a burnt out electric move."
 	},
 	"None": {}
 }
