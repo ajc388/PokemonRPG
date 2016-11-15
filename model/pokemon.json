@@ -80,7 +80,7 @@ var pokemon =
 	},
 	"Raichu":
 	{	
-		"Pokedex_ID": 026,
+		"Pokedex_ID": "026",
 		"Short_Description": "Mouse Pokemon.",
 		"Long_Description": "Raichu's massive ears not only detect sound but also electrical signals.",
 		"Modifier": null,
@@ -224,7 +224,7 @@ var pokemon =
 	},	
 	"Gengar":
 	{	
-		"Pokedex_ID": 094,
+		"Pokedex_ID": "094",
 		"Short_Description": "Shadow Pokemon",
 		"Long_Description": "Legend has it that the first Gengar was a Clefable's shadow brought to life by magic.",
 		"Modifier": null,
