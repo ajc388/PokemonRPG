@@ -18,7 +18,7 @@ $( document ).ready( function() {
 		}
 	});
 	displayPokemon(pokemon);
-
+	sort();
 });	
 
 function search()
