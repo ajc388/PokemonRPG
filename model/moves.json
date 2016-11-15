@@ -4126,6 +4126,54 @@ var moves =
 	},
 	"Psychic":
 	{
+		"Amnesia": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user clears its mind to improve attack.",
+			"effect": "Choose a move that is not burnt out. For the remainder of the fight the user forgets how to use that move. Deal extra damage on the user’s next attack equal to the power of that move, or twice the move’s power if that move was natural.",
+			"critical": "",
+		},
+		"Berserk_Impulse": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user implants senseless anger into the target's conscious stream.",
+			"effect": "This cause a compulsion in the target to attack the nearest Pokemon, friend or foe.",
+			"critical": "The status is harsh.",
+		},
+		"Charm_Impulse": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "The user implants thoughts of friendliness into the target's conscious stream.",
+			"effect": "This causes a compulsion in the target to regard the user as an ally any anyone who threatens it as a foe.",
+			"critical": "The status is harsh.",
+		},
+		"Cosmic_Power": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user is protected by phenomenal cosmic power, yet restricted to a smaller area.",
+			"effect": "This allows the user to protect itself with psychic barriers. The user may use mind saves to dodge all attacks when desired for the remainder of combat.",
+			"critical": "",
+		},
+		"ESP": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "By expanding its sensory abilities, the user can see possibilities that would not otherwise exist.",
+			"effect": "Normally, range is calculated as if diagonal spaces are two spaces away. Treat them as being one space away, turning the user’s range into a large square.",
+			"critical": "",
+		},
+		"Heal_Block": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User prevents anyone from even thinking about healing.",
+			"effect": "No target in range can be healed until the start of the user’s next turn.",
+			"critical": "The status is harsh, meaning it lasts the rest of combat.",
+		},
 		"Hypnosis": 
 		{
 			"power": 30,
@@ -4134,13 +4182,345 @@ var moves =
 			"effect": "This causes the sleep status.",
 			"critical": "The status is harsh.",
 		},
-		"Dream Eater": 
+		"Magic_Coat": 
+		{
+			"power": 20,
+			"style": "Self",
+			"flavor": "The user is protected by karma itself.",
+			"effect": "Any time the user takes repeating damage, the damage is instead dealt to the target that hit the user.",
+			"critical": "",
+		},
+		"Meditate": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "Focusing one’s thoughts prepares one for the coming battle.",
+			"effect": "The next attack the user makes does 30 extra damage.",
+			"critical": "",
+		},
+		"Mind_Reading": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user is able to read the target’s mind and act accordingly.",
+			"effect": "For the rest of combat, the user can roll twice to crit or save against the target. This move has no effect against types that resist psychic.",
+			"critical": "",
+			"out_of_battle": "This move is great for getting into people’s heads, although it is resisted by the mysteries skill.",
+		},
+		"Mind_Worm": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "This psychic attack puts a damaging meme in the target's head that keeps going.",
+			"effect": "This deals 20 repeating damage.",
+			"critical": "Repeating damage is harsh.",
+		},
+		"Paranoia": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "The user implants dread and terror into the target’s mind, and it fears the undead.",
+			"effect": "The target is weak against ghost attacks.",
+			"critical": "The target has a compulsion to paranoia.",
+		},
+		"Precognition": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "The user begins to react to things before they happen becoming much more accurate.",
+			"effect": "For the remainder of combat, any time the user rolls dice for critting or dodging, roll twice and take the better result.",
+			"critical": "",
+		},
+		"Push": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "A telekinetic shove.",
+			"effect": "Move the target 2 spaces.",
+			"critical": "+3 spaces of movement.",
+		},
+		"Psychic_Touch": 
+		{
+			"power": 30,
+			"style": "Melee",
+			"flavor": "The user taps the target's head and sends psychic energy through skin contact.",
+			"effect": "This deals 30 damage.",
+			"critical": "The target takes a compulsion to insanity.",
+		},
+		"Retrocognition": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "The user can see into the past, unlocking history and mystery.",
+			"effect": "This allows the user to see the target’s complete character sheet. The GM may divulge hints at pertinent backstory.",
+			"critical": "The user knows all the target’s tricks and gets to roll twice and take the better result any time it dodges the target.",
+			"out_of_battle": "This move can show what happened with the item or in the area in the past.",
+		},
+		"Self_Levitation": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "There must be 50 ways to learn to hover.",
+			"effect": "This grants the user the levitate special. The usermay move over terrain without penalty.",
+			"critical": "",
+		},
+		"Telekinesis": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User levitates the target into a fixed position in the air, keeping it from moving.",
+			"effect": "The target is trapped.",
+			"critical": "The target is harshly trapped.",
+		},
+		"Teleport": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user vanishes and reappears elsewhere on the battlefield.",
+			"effect": "Choose a space within range and immediately move there, bypassing the intervening spaces.",
+			"critical": "The user can teleport itself and one other individual to any location the trainer marked with the gateway move.",
+			"out_of_battle": "",
+		},
+		"Gateway": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user creates a wormhole connecting two points on the battlefield.",
+			"effect": "Choose a space within range and mark it with a gateway. All spaces on the battlefield so marked are considered adjacent to each other, even if made by different users. If there are no gateway spaces, when this move is used it creates an exra gateway space somewhere else in range if desired.",
+			"critical": "",
+		},
+		"Barrier": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user conjures a protective wall.",
+			"effect": "Increase user’s HP by 30, even above its max health.",
+			"critical": "",
+		},
+		"Brainstorm": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "A wave of psychic energy empowers the user and its friends.",
+			"effect": "The user and all allies in range are cleared of any compulsions and do +20 damage on their next attack.",
+			"critical": "All enemies in range take a compulsion to confusion.",
+			"out_of_battle": "Brainstorm is can grant the user access to new ideas, useful for assisting mental skills when no idea presents itself.",
+		},
+		"Calm_Mind": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user forgets its fears and concerns and focuses on seeing far.",
+			"effect": "Increase user’s range by 3 spaces for the duration of the fight.",
+			"critical": "",
+		},
+		"Confusion": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user bombards the target's mind with chaotic thoughts until it can take no more.",
+			"effect": "This deals 30 damage and causes a compulsion to insanity.",
+			"critical": "Target loses 30 mind.",
+		},
+		"Dream_Eater": 
 		{
 			"power": 50,
 			"style": "Ranged",
 			"flavor": "The user projects itself into the target’s mind and eat its dreams.",
-			"effect": "This only affects sleeping targets, but it deals 60 damage and heals the user for half the damage dealt. It does not give the target a chance to wake up",
+			"effect": "This only affects sleeping targets, but it deals 60 damage and heals the user for half the damage dealt. It does not give the target a chance to wake up.",
 			"critical": "+20 damage dealt, with increased healing.",
+		},
+		"Extrasensory": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User shoots a beam guided by its mystic senses.",
+			"effect": "This deals 40 damage and does not miss.",
+			"critical": "Target is stunned.",
+		},
+		"Future_Sight": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "User foretells the target’s doom.",
+			"effect": "This deals 120 damage to the target 2 turns after it is used.",
+			"critical": "The damage happens on the user’s next turn.",
+		},
+		"Gravity": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "An intense gravity well centers itself on the user.",
+			"effect": "All targets in range lose their levitate and airborne abilities and flying type. They are also now weak against ground.",
+			"critical": "Targets are trapped.",
+		},
+		"Hallucination_Aura": 
+		{
+			"power": 60,
+			"style": "Self",
+			"flavor": "The user surrounds itself with a psychic field that projects illusions into others’ visual cortices.",
+			"effect": "The user begins sneaking and all units and every target in range takes a compulsion to insanity.",
+			"critical": "Allies are not affected.",
+		},
+		"Levitate": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User moves a target slowly but surely across the field.",
+			"effect": "Move the target from anywhere within range to anywhere within range.",
+			"critical": "",
+		},
+		"Psybeam": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "A beam of unbridled psychic energy.",
+			"effect": "This deals 70 damage.",
+			"critical": "The target also takes a compulsion to insanity.",
+		},
+		"Psychic_Crush": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "The target is trapped in a contracting force field force field.",
+			"effect": "This traps the target and deals 20 repeating damage. Only a mind save can counteract this, but a successful save will elimate both.",
+			"critical": "+15 repeating damage.",
+		},
+		"Psycho_Cut": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User slashes at the target with blades of pure mental energy.",
+			"effect": "40 damage and crits on any doubles.",
+			"critical": "+30 damage.",
+		},
+		"Psyshock": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "The user propels itself with a wave of telekinetic energy.",
+			"effect": "This deals 50 damage.",
+			"critical": "+30 damage.",
+		},
+		"Psywave": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "A wave of chaotic psychic energy at a foe.",
+			"effect": "This deals 2d60 damage to the target.",
+			"critical": "Target has a compulsion to confusion.",
+		},
+		"Reflect": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "User conjures a protective barrier around that bounces attacks back to where they came from",
+			"effect": "User may make mind saves in place of sense and speed saves to avoid damage. On a successful defense, the atttacker has to dodge its own move or take the effect.",
+			"critical": "",
+		},
+		"Rest": 
+		{
+			"power": 70,
+			"style": "Self",
+			"flavor": "User falls into a healing sleep.",
+			"effect": "This heals 60 damage and removes all statuses, replacing them with the status of sleep.",
+			"critical": "",
+		},
+		"Synchronize": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user harmonizes energies with the target and then destroy it from within.",
+			"effect": "This deals 90 damage to all Pokémon in range that share a type with the user, bypassing type multipliers and damage modifiers. If the user has two types, any Pokémon with either type will be affected. This bypasses any resistances and weaknesses, except it does double damage to all Pokémon that share both types.",
+			"critical": "",
+		},
+		"Telepathic_Bond": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "The user and an ally share perceptions, watching each others' back with supernatural awareness.",
+			"effect": "The user and an ally in range are linked. Any time either needs to make a sense or mind save, both roll and take the higher effect. But if either takes a compulsion, both do. This effect lasts only while both are on the field simultaneously.",
+			"critical": "",
+		},
+		"Ally_Switch": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user switches places with a willing partner.",
+			"effect": "Choose any allied Pokémon on the map. Trade places with it.",
+			"critical": "",
+		},
+		"Mind_Control": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The user seizes control of the target’s mind.",
+			"effect": "Force the target to take its turn immediately, taking complete control of its turn and having it dash and use a move as you see fit, even targeting a former ally.",
+			"critical": "This effect is treated as a compulsion, and until the target passes a mind save the user may continue to dictate its actions.",
+		},
+		"Mind_Crush": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "User blasts the target's mind directly.",
+			"effect": "This deals 90 damage.",
+			"critical": "The target takes a compulsion to insanity.",
+		},
+		"Nullify": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The target is returned to its normal state.",
+			"effect": "This changes a mega-evolved Pokémon back to its normal form. It loses the 100 HP it gained by mega evolving.",
+			"critical": "The target can’t use any difficult moves on its next turn.",
+		},
+		"Psi_Kick": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user teleports and plants its foot on the unsuspecting target's face.",
+			"effect": "Instead of dashing as a part of this move, teleport to any space in range without passing through the intervening spaces. Deal the user’s strength in damage to an adjacent target.",
+			"critical": "+30 damage.",
+		},
+		"Psi_Storm": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "Mental attacks wash over everyone around in the area.",
+			"effect": "This deals 90 damage to everyone in range.",
+			"critical": "Also causes a compulsion to insanity.",
+		},
+		"Psychic": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "Telekinesis slams the target into everything in sight.",
+			"effect": "Move the target 3 spaces and deal 60 damage.",
+			"critical": "+30 damage.",
+		},
+		"Psycho_Boost": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "The user unleashes the darkest depths of its mind.",
+			"effect": "This deals 120 damage but the next attack the user makes deals half damage. ",
+			"critical": "Too deep, too dark! +60 damage and the user is stunned.",
+		},
+		"Psystrike": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user puppets its own body with psychic powers.",
+			"effect": "This deals 90 damage.",
+			"critical": "+30 damage.",
+		},
+		"Zen_Headbutt": 
+		{
+			"power": 80,
+			"style": "Melee",
+			"flavor": "Mind-to-mind energy transfer is easier when skulls are touching.",
+			"effect": "This deals 90 damage.",
+			"critical": "Target is stunned. ",
 		},
 	},
 	"Rock":
