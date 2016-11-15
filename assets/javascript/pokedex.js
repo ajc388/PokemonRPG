@@ -55,30 +55,13 @@ function sort()
 	items.detach().appendTo($("#pokedex"));
 }
 
-//Display pokemon html
-//Data to display
-
-/*
-<article class="pokemon three columns">
-	<div class="pokemonHeader">
-		<img class='icon' src= 'assets/images/type_icons/Electric.png' alt='type'/>
-		<div>
-	    	<span class="Name">Pikachu : </span>
-	    	<span class="Pokedex_ID">#025</span>
-	    </div>
-		<img class='icon' src= 'assets/images/type_icons/Electric.png' />
-	</div>
-	<img class="pokepic" src="assets/images/pokemon/pikachu.png"></img>
-	<span class='shortDescription'>"A mouse pokemon"<span>
-</article>
-*/
 function displayPokemon(pokemonList)
 {
 	$.each(pokemonList, function(pokemonName, pokemon) {
 		if ( pokemon.Types.length == 1 ) { pokemon.Types[1] = pokemon.Types[0]; }
 		else if ( pokemon.Types.length > 2 ) { return; }
 
-		var article = $("<article class='pokemon three columns "+ pokemon.Types[0] +"Border' id='"+pokemonName+"' title=''></article>");
+		var article = $("<article class='pokemon three columns "+ pokemon.Types[0].toLowerCase() +"border' id='"+pokemonName+"' title=''></article>");
 		article.append(
 			"<div class='pokemonHeader'>"+
 				"<img class='icon' src= 'assets/images/type_icons/"+pokemon.Types[0]+".png' alt='"+pokemon.Types[0]+"'/>"+
@@ -103,6 +86,10 @@ function displayPokemon(pokemonList)
 				});
 	        },
 			track: true
+		});
+
+		article.on('click', function() {
+			window.open("pokemon_sheet.html?name="+pokemonName, '_blank');
 		});
 	});
 }

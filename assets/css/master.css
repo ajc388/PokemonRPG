@@ -109,7 +109,7 @@ div.userinput {
 	background-color: #FFF;
 }
 
-/*Coloring for pokemon types*/
+/*Coloring backgrounds for pokemon types*/
 .bug { background-color: #A8B820 !important; }
 .dark { background-color: #666 !important; }
 .dragon { background-color: #cc9900 !important; }
@@ -129,6 +129,27 @@ div.userinput {
 .steel { background-color: #B8B8D0 !important; }
 .water { background-color: #6890F0 !important; }
 .null {background-color: #666 !important; }
+
+/*Coloring borders for pokemon types*/
+.bugborder { border-color: #A8B820 !important; }
+.barkborder { border-color: #666 !important; }
+.dragonborder { border-color: #cc9900 !important; }
+.electricborder { border-color: #F8D030 !important; }
+.fairyborder { border-color: #ff69b4 !important; }
+.fightingborder { border-color: #CC0000 !important; }
+.fireborder { border-color: #F08030 !important; } 
+.flyingborder { border-color: #A890F0 !important; }
+.ghostborder { border-color: #705898 !important; }
+.grassborder { border-color: #78C850 !important; } 
+.groundborder { border-color: #E0C068 !important; }
+.iceborder { border-color: #98D8D8 !important; }
+.normalborder { border-color: #A8A878 !important; }
+.poisonborder { border-color: #A040A0 !important; }
+.psychicborder { border-color: #F85888 !important; }
+.rockborder { border-color: #B8A038 !important; }
+.steelborder { border-color: #B8B8D0 !important; }
+.waterborder { border-color: #6890F0 !important; }
+.nullborder {border-color: #666 !important; }
 
 .fixed {
 	position: fixed;
