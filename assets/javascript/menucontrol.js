@@ -3,6 +3,7 @@ function Menu(parameters)
 	var model = parameters.model;
   var searchFlag = typeof parameters.search == "undefined" ? false : true;
   var sortFlag = typeof parameters.sort == "undefined" ? false : true;
+  var navMenuFlag = typeof parameters.navmenu == "undefined" ? false : true;
   var title = typeof parameters.title == "undefined" ? "Menu" : parameters.title;
 
   //construct menu items
@@ -11,6 +12,18 @@ function Menu(parameters)
       '<div id="selector" class="blockheader">'+
         '<span>'+title+'</span>'+
       '</div>');
+
+  if ( navMenuFlag ) 
+  {
+    $("#selector").append(
+     '<nav class="navIconMenu">'+
+      '<ul>'+
+      '</ul>'+
+     '</nav>'
+    );
+
+    parameters.navmenu.funct(model);
+  }
 
   if ( sortFlag )
   {

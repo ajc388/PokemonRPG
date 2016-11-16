@@ -5,24 +5,33 @@ $( document ).ready( function() {
   });
 
   /*Fixed elements*/
-  $(function() {
-    fixedScroller($("#anchor"), $("#moves"))
+  Menu({
+    model: moves,
+    title: "Moves Library",
+    search: 
+    { 
+      funct: search 
+    },
+    sort: 
+    {
+      keys: ['Name', 'Power'],
+      funct: sort
+    },
+    navmenu:
+    {
+      funct: typeIconNavMenu
+    }
   });
 
   //Displays a group of accordions for every pokemon type
-  $.each(moves, function (type, value) {
-    $("#moveList").append(
-          "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
-          "<span>"+
-          "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
-          "<span>"+type+"</span>"+
-          "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
-          "</span>"+
-         "</div>"
-        );
+  displayMoves(moves);
 
-    displayMoves(type, moves[type]);
+  sort();
+});
 
+function typeIconNavMenu(moves)
+{
+  $.each(moves, function(type) {
     /*SCROLL FUNCTIONALITY*/
     $(".navIconMenu ul").append(
               "<li><a id='link_"+type+"'>"+
@@ -31,57 +40,17 @@ $( document ).ready( function() {
 
     $("#link_"+type).click(function() {
       $('html, body').animate({
-          scrollTop: $("#category_"+type).offset().top - $("#moves").css("height").replace("px", "")
+          scrollTop: $("#category_"+type).offset().top - $("#menu").css("height").replace("px", "")
       }, 1000 );
     });
   });
-
-  sortAll("Name");
-
-  /*Search Functionality*/
-  //Create auto complete feature for search bar
-  $("#search").autocomplete({
-    source: loadSearchTags(),
-    minLength: 2,
-    select: search(),
-    delay: 500
-  });
-  //bind search functionality to the search box
-  $("#search")
-    .on("keyup", function() { search(); })
-    .on('autocompleteclose', function () {  search(); });
-
-  $("#sort").on("change", function() { 
-      var selected = $(this).val();
-      sortAll(selected);
-  });
-
-});
-
-function fixedScroller(anchor, fixedElement) {
-  var move = function() {
-      var st = $(window).scrollTop();
-      var ot = anchor.offset().top;
-      if(st > ot) {
-          $(fixedElement).addClass("fixed");
-      } else {
-          if(st <= ot) {
-              $(fixedElement).removeClass("fixed");
-          }
-      }
-  };
-  $(window).scroll(move);
-  move();
 }
 
-function sortAll(sortType)
+function sort()
 {
-  $.each( moves, function(key) { sort(key, sortType); });
-}
-
-function sort(moveType, sortType)
-{
-    var accordion = $("#accordion"+moveType);
+  var input = $("#sort");  
+  $.each(moves, function(type) {
+    var accordion = $("#accordion"+type);
     var entries = accordion.children('div');
 
     //Maps the two accordion DOM elemnets to an array
@@ -91,11 +60,11 @@ function sort(moveType, sortType)
     
     //Sort the accordions by move name
     var sort = map.sort(function (a, b) {
-      if ( sortType == "Name" ) 
+      if ( input == "Name" ) 
       {
         return $(a[0]).find(".moveName").text() > $(b[0]).find(".moveName").text() ? 1 : -1;
       } 
-      else if ( sortType == "Power") 
+      else if ( input == "Power") 
       {
         return parseInt($(a[0]).find(".movePower").text()) < parseInt($(b[0]).find(".movePower").text()) ? 1 : -1;
       }
@@ -106,6 +75,7 @@ function sort(moveType, sortType)
       accordion.append(item[0]);
       accordion.append(item[1]);
     });
+  });
 }
 
 function search()
@@ -130,61 +100,56 @@ function search()
     });
 }
 
-function loadSearchTags()
+function displayMoves(moves)
 {
-  var tags = [];
-  $.each(moves, function(key, value) {
-    $.each(moves[key], function(key, value) {
-      tags.push(key);
-    });
-  });
-  return tags;
-}
+   $.each(moves, function (type, moveList) 
+   {
+      $("#moveList").append(
+          "<div class='blockheader typeheader "+type.toLowerCase()+"' id='category_"+type+"'>"+
+          "<span>"+
+          "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+          "<span>"+type+"</span>"+
+          "<img class='icon' src= 'assets/images/type_icons/"+type+".png' />"+
+          "</span>"+
+         "</div>");
 
-function displayMoves(type, moveList)
-{
-  if (Object.keys(moveList).length > 0)
-  {
-    var accordion = $("<div id='accordion"+type+"'></div>");
-    $.each(moveList, function(moveName, move) {
-      var flavor = typeof move.flavor !== "undefined" ? move.flavor : "No text!";
-      var power = typeof move.power !== "undefined" ? move.power : "0";
-
-      //Create header div for accordion
-      var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
-      header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' ></img>");
-      header.append("<span class='moveName'>"+moveName.replace('_', ' ')+"</span>");
-      header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");
-      header.append("<span class='moveFlavor'>" + flavor +"</span>");
-      header.append("<span class='movePower'>" + power + "</span>");
-      accordion.append(header);
-      
-      //Create dice icons - displayed after name inside the dice span tag
-      for ( var i = 1; i < Math.round(move.power/30, 0)+1; i++ )
+      var accordion = $("<div id='accordion"+type+"'></div>");
+      $.each(moveList, function(moveName, move) 
       {
-        accordion.find("#img_dice_"+moveName).append("<img class='icon' src='assets/images/dice_icons/die_"+i+".png'/>");
-      }
+        var flavor = typeof move.flavor !== "undefined" ? move.flavor : "No text!";
+        var power = typeof move.power !== "undefined" ? move.power : "0";
 
-      //Create content div for accordion
-      var content = $("<div class='moveContent' id='content_"+moveName+"'></div>");
-      var style = typeof move.style !== "undefined" ? move.style : "Any";
-      var effect = typeof move.effect !== "undefined" ? move.effect : "No effect";
-      var critical = typeof move.critical !== "undefined" ? move.critical : "";
-      var outofbattle = typeof move.out_of_battle !== "undefined" ? move.out_of_battle : "";
+        //Create header div for accordion
+        var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
+        header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' ></img>");
+        header.append("<span class='moveName'>"+moveName.replace('_', ' ')+"</span>");
+        header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");
+        header.append("<span class='moveFlavor'>" + flavor +"</span>");
+        header.append("<span class='movePower'>" + power + "</span>");
+        accordion.append(header);
+        
+        //Create dice icons - displayed after name inside the dice span tag
+        for ( var i = 1; i < Math.round(move.power/30, 0)+1; i++ )
+        {
+          accordion.find("#img_dice_"+moveName).append("<img class='icon' src='assets/images/dice_icons/die_"+i+".png'/>");
+        }
 
-      content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png'/>" + Math.pow(power,2) + "</p>");
-      content.append("<p><span class='descriptiveHeader'> Style: </span>" + style + "</p>");
-      content.append("<p><span class='descriptiveHeader'> Effect: </span>" + effect + "</p>");
-      if (critical != "") { content.append("<p><span class='descriptiveHeader'> Critical: </span>" + critical + "</p>"); }
-      if (outofbattle != "") { content.append("<p><span class='descriptiveHeader'> Out Of Battle: </span>" + outofbattle + "</p>"); }
-      accordion.append(content);
+        //Create content div for accordion
+        var content = $("<div class='moveContent' id='content_"+moveName+"'></div>");
+        var style = typeof move.style !== "undefined" ? move.style : "Any";
+        var effect = typeof move.effect !== "undefined" ? move.effect : "No effect";
+        var critical = typeof move.critical !== "undefined" ? move.critical : "";
+        var outofbattle = typeof move.out_of_battle !== "undefined" ? move.out_of_battle : "";
+
+        content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png'/>" + Math.pow(power,2) + "</p>");
+        content.append("<p><span class='descriptiveHeader'> Style: </span>" + style + "</p>");
+        content.append("<p><span class='descriptiveHeader'> Effect: </span>" + effect + "</p>");
+        if (critical != "") { content.append("<p><span class='descriptiveHeader'> Critical: </span>" + critical + "</p>"); }
+        if (outofbattle != "") { content.append("<p><span class='descriptiveHeader'> Out Of Battle: </span>" + outofbattle + "</p>"); }
+        accordion.append(content);
+      });
+
+      $("#moveList").append(accordion);
+      accordion.accordion({heightStyle: ""});
   });
-
-    $("#moveList").append(accordion);
-    accordion.accordion({heightStyle: ""});
-
-  } 
-  else {
-    $("#moveList").append("No data!");
-  } 
 }
