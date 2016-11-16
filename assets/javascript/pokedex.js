@@ -16,7 +16,7 @@ $( document ).ready( function() {
 	               tags.push(name.replace(/_/g, " "));
 	            });
 	        	return tags;
-	        }
+	        },
 			funct: search 
 		},
 		sort: 
@@ -24,7 +24,6 @@ $( document ).ready( function() {
 			keys: ['Name', 'Pokedex_ID', 'Type'],
 			funct: sort
 		}
-      },
 	});
 	displayPokemon(pokemon);
 	sort();
@@ -32,7 +31,7 @@ $( document ).ready( function() {
 
 function search()
 { 
-    var input = $("#search").val().toLowerCase();
+    var input = $("#search").val().toLowerCase().replace(/ /g, '_');
     var items = $(".pokemon");
     $.each(items, function() { 
         var name = $(this).find(".Name").text().replace(/ /g, '_');
