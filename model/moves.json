@@ -1007,17 +1007,26 @@ var moves =
 			"power": 90,
 			"style": "Melee",
 			"flavor": "User calls down lightning, channeling it through its own body into an explosion of lightning.",
-			"effect": "This deals 80 damage to everyone adjacent to the user.",
+			"effect": "This deals 80 damage to everyone adjacent to the user, regardless of height above the battlefield.",
+			"critical": "Stun the targets.",
+		},
+		"Electric_Surge": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "Electrical energy flows out in all directions.",
+			"effect": "This deals 90 damage to all targets within range, friend or foe.",
 			"critical": "Stun the targets.",
 		},
 		"Thunderstorm": 
 		{
 			"power": 100,
-			"style": "Ranged",
+			"style": "Weather",
 			"flavor": "User calls down lightning from the sky, blasting the area with bolt after bolt.",
-			"effect": "This deals 90 damage to all targets within range, friend or foe.",
-			"critical": "Stun the targets.",
+			"effect": "The weather is changed to thunder and lightning. Every turn, ever Pokemon on the field rolls a d6. On a 1, they are struck with lightning for 100 electric damage.",
+			"critical": "",
 		},
+		
 		"Volt_Tackle": 
 		{
 			"power": 80,
@@ -4979,163 +4988,183 @@ var moves =
 			"effect": "This deals 20 damage and moves the target one space.",
 			"critical": "+30 damage.",
 		},
-/*
-Crit: +50 damage.
-Tier 2
-Brine ⠅ 60
-Style: Ranged
-User spits a stream of briny water, filled with its bitterness.
-This deals 40 damage, 80 if the user is at or below half health.
-Crit: Target takes 15 repeating damage. 
-
-
-Bubblebeam ⠅ 60
-Style: Ranged
-A beam of bubbles that defies explanation.
-This deals 40 damage to every target along a line.
-Crit: Target’s dash is set to 0 for its next turn.
-
-
-Clear Water ⠅ 60
-Style: Melee
-Pure water to cure the worst wounds.
-This heals the target for 40 HP.
-Crit: This move does not crit.
-Out of Combat: This move can be used as a downtime action to heal Pokémon. 
-
-
-Dive ⠅ 50
-Style: Melee Type: Water
-Dah dum… dah dum… dah dum, dah dum, dah dum, dah dum, DAH DAH!
-This takes 2 turns. On the first turn, the Pokémon goes underwater, and cannot be hit except by ranged water moves and anyone else underwater using dive. On the second turn this deals 120 damage. This move can only be used in water and it allows the user to bypass difficult water terrain.
-Crit: +30 damage.
-
-
-Downpour ⠅ 70
-Style: Ranged
-A heavy but brief downpour of water strikes everyone in range.
-This deals 40 damage to everyone in range and causes them to lose their next dash action.
-Crit: Targets are also trapped (due to mud).
-
-
-Fish ⠅ 50
-Style: Ranged
-The user draws aqutic Pokémon to its location, perhaps by using an incredibly flavorful tail.
-Choose a Pokémon in the water. It is under a compulsion to approach the user. Water Pokémon are weak to this move. 
-Crit: The compulsion is harsh.
-Out of Combat: Once per session the move acts in place of super bait for fishing.
-
-
-Muddy Water ⠅ 60
-Style: Ranged
-User blinds the target with silt. 
-Deal 30 damage and blinds the target.
-Crit: +30 damage. 
-
-
-Scald ⠅ 70
-Style: Ranged
-User shoots boiling hot water at the target to burn it.
-This deals 30 damage and the target takes 20 repeating damage.
-Crit: Reduce the target’s strength by 30. 
-
-
-Surf ⠅ 70
-Style: Melee
-The user rides a wave toward its foes, and can do so even on land.
-Move 3 extra spaces and deal 40 damage to all adjacent targets.
-Crit: +30 damage.
-
-
-Water Gun ⠅ 50
-Style: Ranged
-A blast of water pushes the target away.
-This deals 40 damage and moves the target 1 space.
-Crit: +30 damage.
-
-
-Water Jet ⠅ 60
-Style: Ranged
-A powerful gush of water.
-This deals mind + 60 damage.
-Crit: +30 damage.
-
-
-Water Shiruken ⠅ 70
-Style: Ranged
-User throw bolts of water at its target.
-This deals 1d60 damage and it has 4 extra spaces of range.
-Crit: +30 damage. 
-Tier 3
-Hurricane ⠕ 90
-Style: Ranged
-Watery chaos all around while the user stands peaceful at the center.
-This deals 90 damage to everyone in range.
-Crit: Targets are trapped.
-
-
-Hydro Cannon ⠕ 90
-Style: Ranged
-A powerful blast of water slams into the target, but it exhausts the user.
-This deals 120 damage, but the user cannot use any other moves until it is encouraged.
-Crit: Move the target 5 spaces. 
-
-
-Hydro Pump ⠕ 100
-Style: Ranged
-A powerful blast of water that obliterates anything in its path.
-This deals 100 damage.
-Crit: Move the target 3 spaces.
-
-
-Maelstrom ⠕ 100
-Style: Ranged
-User causes a chaotic cyclone water to continually buffet everyone around.
-Everyone in range 60 damage and is trapped.
-Crit: Also move everyone 3 spaces.
-
-
-Rain Dance ⠕ 100
-Style: Weather
-User calls down rain from the sky.
-Change the weather to raining, which makes all water moves natural, all fire moves difficult, makes all electric moves crit on any doubles, and allows water Pokémon with the swift swim ability to move over any terrain as if it were aquatic.
-Crit: This move does not crit.
-
-
-Rainstorm ⠕ 80
-Style: Ranged
-User causes a deluge of water to pour all around it.
-This 40 damage to all targets in range, friend or foe, and they lose their next dash action. This deals double damage if it is raining.
-Crit: +30 damage.
-
-
-Steam Eruption ⠕ 100
-Style: Ranged
-User causes a geyser of steam to erupt, burning its target.
-This deals 60 damage to the target and it takes 20 repeating damage.
-Crit: Target loses 30 mind.  
-
-
-Water Spout ⠕ 100
-Style: Ranged
-The Pokémon uses all its strength to call up a waterspout.
-This deals half the user’s current HP rounded up in damage to the target and all adjacent targets.
-Crit: Target is trapped. 
-
-
-Waterfall ⠕ 80
-Style: Ranged Type: Water
-User charges with enough power to scale a waterfall.
-This deals 60 damage and the user moves 2 extra spaces.
-Crit: +30 damage.
-
-
-Whirlpool ⠕ 90
-Style: Melee Type: Water
-User stands at the center of a whirlpool.
-This deals 50 damage to all adjacent targets.
-Crit: +30 damage. 
-*/
+		"Brine": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User spits a stream of briny water, filled with its bitterness.",
+			"effect": "This deals 40 damage, 80 if the user is at or below half health.",
+			"critical": "Target takes 15 repeating damage.",
+		},
+		"Bubblebeam": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "A beam of bubbles that defies explanation.",
+			"effect": "This deals 40 damage to every target along a line.",
+			"critical": "Target’s dash is set to 0 for its next turn.",
+		},
+		"Clear_Water": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "Pure water to cure the worst wounds.",
+			"effect": "This heals the target for 40 HP.",
+			"critical": "",
+		},
+		"Dive": 
+		{
+			"power": 50,
+			"style": "Melee",
+			"flavor": "Dah dum… dah dum… dah dum, dah dum, dah dum, dah dum, DAH DAH!",
+			"effect": "This takes 2 turns. On the first turn, the Pokémon goes underwater, and cannot be hit except by ranged water moves and anyone else underwater using dive. On the second turn this deals 120 damage. This move can only be used in water and it allows the user to bypass difficult water terrain.",
+			"critical": "+30 damage.",
+		},
+		"Downpour": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "A heavy but brief downpour of water strikes everyone in range.",
+			"effect": "This deals 40 damage to everyone in range and causes them to lose their next dash action.",
+			"critical": "Targets are also trapped (due to mud).",
+		},
+		"Fish": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "The user draws aqutic Pokémon to its location, perhaps by using an incredibly flavorful tail.",
+			"effect": "Choose a Pokémon in the water. It is under a compulsion to approach the user. Water Pokémon are weak to this move.",
+			"critical": "The compulsion is harsh.",
+			"out_of_battle": "Once per session the move acts in place of super bait for fishing.",
+		},
+		"Muddy_Water": 
+		{
+			"power": 60,
+			"style": "Ranged",
+			"flavor": "User blinds the target with silt.",
+			"effect": "Deal 30 damage and blinds the target.",
+			"critical": "+30 damage.",
+		},
+		"Scald": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User shoots boiling hot water at the target to burn it.",
+			"effect": "This deals 30 damage and the target takes 20 repeating damage.",
+			"critical": "Burn out the target's difficult moves.",
+		},
+		"Surf": 
+		{
+			"power": 70,
+			"style": "Melee",
+			"flavor": "The user rides a wave toward its foes, and can do so even on land.",
+			"effect": "Move 3 extra spaces and deal 30 damage to all adjacent targets.",
+			"critical": "+30 damage.",
+		},
+		"Water_Gun": 
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "A blast of water pushes the target away.",
+			"effect": "This deals 40 damage and moves the target 1 space.",
+			"critical": "+30 damage.",
+		},
+		"Water_Jet": 
+		{
+			"power": 60,
+			"style": "Melee",
+			"flavor": "The user propels itself with a powerful gush of water.",
+			"effect": "User moves 2 extra spaces and deals 40 damage.",
+			"critical": "+30 damage.",
+		},
+		"Water_Shiruken": 
+		{
+			"power": 70,
+			"style": "Ranged",
+			"flavor": "User throw bolts of water at its target.",
+			"effect": "This deals 1d60 damage and it has 4 extra spaces of range.",
+			"critical": "+30 damage.",
+		},
+		"Hurricane": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "Watery chaos all around while the user stands peaceful at the center.",
+			"effect": "This deals 80 damage to everyone in range.",
+			"critical": "Targets are trapped.",
+		},
+		"Hydro_Cannon": 
+		{
+			"power": 90,
+			"style": "Ranged",
+			"flavor": "A powerful blast of water slams into the target, but it exhausts the user.",
+			"effect": "This deals 120 damage, but the user cannot use any other moves until it is encouraged.",
+			"critical": "Move the target 3 spaces.",
+		},
+		"Hydro_Pump": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "A powerful blast of water that obliterates anything in its path.",
+			"effect": "This deals 100 damage.",
+			"critical": "Move the target 3 spaces.",
+		},
+		"Maelstrom": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User causes a chaotic cyclone water to continually buffet everyone around.",
+			"effect": "Everyone in range 60 damage and is trapped.",
+			"critical": "Also move everyone 3 spaces.",
+		},
+		"Rain_Dance": 
+		{
+			"power": 100,
+			"style": "Weather",
+			"flavor": "User calls down rain from the sky.",
+			"effect": "Change the weather to raining, which makes all water moves natural, all fire moves difficult, makes all electric moves crit on any doubles, and allows water Pokémon with the swift swim ability to move over any terrain as if it were aquatic.",
+			"critical": "",
+		},
+		"Rainstorm": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User causes a deluge of water to pour all around it.",
+			"effect": "This 40 damage to all targets in range, friend or foe, and they lose their next dash action. This deals double damage if it is raining.",
+			"critical": "+30 damage.",
+		},
+		"Steam_Eruption": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User causes a geyser of steam to erupt, burning its target.",
+			"effect": "This deals 60 damage to the target and it takes 20 repeating damage.",
+			"critical": "Target burns out its difficult moves.",
+		},
+		"Water_Spout": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "The Pokémon uses all its strength to call up a waterspout.",
+			"effect": "This deals half the user’s current HP rounded up in damage to the target and all adjacent targets.",
+			"critical": "Targets are trapped.",
+		},
+		"Waterfall": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "User charges with enough power to scale a waterfall.",
+			"effect": "This deals 60 damage and the user moves 2 extra spaces.",
+			"critical": "+30 damage.",
+		},
+		"Whirlpool": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "User stands at the center of a whirlpool.",
+			"effect": "This deals 50 damage to all adjacent targets and they are trapped.",
+			"critical": "+30 damage.",
+		},
 	},
 	"Null":
 	{
