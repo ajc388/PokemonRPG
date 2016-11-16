@@ -26,7 +26,7 @@ var abilities =
 	},
 	"Many Arms":
 	{
-		"Description": "The Pokemon has 4 or more arms. When it pins a target, it may continue to make attacks as usual."
+		"Description": "The Pokemon has 4 or more arms. When it uses a pinning move, it may pin any number of adjacent targets."
 	},
 	"Minions":
 	{
@@ -52,6 +52,10 @@ var abilities =
 	{
 		"Description": "The Pokemon may use one of its difficult moves as if it were natural. You may change which move every time it learns a new move."
 	},
+	"Spiked":
+	{
+		"Description": "The Pokemon is covered in spikes. Anyone who makes a melee attack against it takes 1d60 damage."
+	}
 	"Stealthy":
 	{
 		"Description": "The Pokémon enters the field sneaking."

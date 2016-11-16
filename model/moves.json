@@ -5130,8 +5130,7 @@ Crit: +30 damage.
 	"Null":
 	{
 		"Novelty_Pokemon": 
-		{
-			"name": "Novelty Pokemon", 
+		{ 
 			"power": 0,
 			"style": "N/A",
 			"flavor": "The Pokemon has a tendency to picking up odd moves.",
