@@ -4923,53 +4923,63 @@ var moves =
 	},
 	"Water":
 	{
+		"Aqua": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User shoots a ball of water that bursts.",
+			"effect": "This deals 20 damage to the targeted space and every adjacent space.",
+			"critical": "+30 damage.",
+		},
+		"Aqua_Jet": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "User rides a jet of water to move quickly",
+			"effect": "Move 3 extra spaces and deal 10 damage. This move does not miss.",
+			"critical": "+30 damage.",
+		},
+		"Bubble": 
+		{
+			"power": 20,
+			"style": "Ranged",
+			"flavor": "User shoots a bubble at the target. This deals damage for unknown reasons.",
+			"effect": "This deals 30 damage.",
+			"critical": "Target is stunned.",
+		},
+		"Octazooka": 
+		{
+			"power": 40,
+			"style": "Ranged",
+			"flavor": "A glob of ink is shot at the target’s face.",
+			"effect": "The target is blinded and takes 10 damage.",
+			"critical": "+30 damage.",
+		},
+		"Soak": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "User drenches the target in salt water.",
+			"effect": "The target is now weak against electricity.",
+			"critical": "Target’s dash is set to 0 for one turn.",
+		},
+		"Splash": 
+		{
+			"power": 10,
+			"style": "Melee",
+			"flavor": "User flops around the map, jumping high.",
+			"effect": "Move without terrain penalties and do nothing to all adjacent Pokemon.",
+			"critical": "All adjacent Pokémon are mildly moistened, which has no noticeable effect on battle performance.",
+		},
+		"Squirt": 
+		{
+			"power": 30,
+			"style": "Ranged",
+			"flavor": "A small but powerful spray of water.",
+			"effect": "This deals 20 damage and moves the target one space.",
+			"critical": "+30 damage.",
+		},
 /*
-Aqua ⠂ 30
-Style: Ranged
-User shoots a ball of water that bursts.
-This deals 20 damage to the targeted space and every adjacent space.
-Crit: +50 damage.
-
-
-Aqua Jet ⠂ 40
-Style: Melee
-User rides a jet of water to move quickly
-Move 3 extra spaces and deal 10 damage. This move does not miss.
-Crit: +30 damage.
-
-
-Bubble ⠂ 20
-Style: Ranged
-User shoots a bubble at the target. This deals damage for unknown reasons.
-This deals 30 damage.
-Crit: Target is stunned.
-
-
-Octazooka ⠂ 40
-Style: Ranged
-A glob of ink is shot at the target’s face.
-The target is blinded and takes 10 damage.
-Crit: +30 damage.
-
-
-Soak ⠂ 30
-Style: Ranged
-User drenches the target in salt water.
-The target is now weak against electricity.
-Crit: Target’s dash is set to 0 for one turn.
-
-
-Splash   10
-Style: Melee
-User flops around the map, jumping high.
-Move without terrain penalties and do nothing to all adjacent Pokemon.
-Crit: All adjacent Pokémon are mildly moistened, which has no noticeable effect on battle performance.
-
-
-Squirt ⠂ 30
-Style: Ranged
-A small but powerful spray of water.
-This deals 20 damage and moves the target one space.
 Crit: +50 damage.
 Tier 2
 Brine ⠅ 60

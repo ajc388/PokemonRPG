@@ -2,7 +2,11 @@ var abilities =
 {
 	"Airborne": 
 	{
-		"Description": "This special is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain that doesn't specifically affect flying Pokemon. They also get +1 dash."
+		"Description": "This ability is used by most flying Pokémon. It allows them to fly over the battlefield without regard to terrain that doesn't specifically affect flying Pokemon. They also get +1 dash."
+	},
+	"Amorphous":
+	{
+		"Description": "The Pokemon is a liquid, and once per battle it can ignore a normal melee attack or any steel, rock, or fighting attack."
 	},
 	"Cosplayer":
 	{
@@ -55,10 +59,14 @@ var abilities =
 	"Spiked":
 	{
 		"Description": "The Pokemon is covered in spikes. Anyone who makes a melee attack against it takes 1d60 damage."
-	}
+	},
 	"Stealthy":
 	{
 		"Description": "The Pokémon enters the field sneaking."
+	},
+	"Sturdy":
+	{
+		"Description": "The Pokemon can take a hit and keep on going. The first time it is KO'd in a fight it stays on the field with 10 health."
 	},
 	"Swift_Swim":
 	{
