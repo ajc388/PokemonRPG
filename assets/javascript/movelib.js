@@ -41,14 +41,14 @@ function typeIconNavMenu(moves)
     $("#link_"+type).click(function() {
       $('html, body').animate({
           scrollTop: $("#category_"+type).offset().top - $("#menu").css("height").replace("px", "")
-      }, 1000 );
+      }, 1500 );
     });
   });
 }
 
 function sort()
 {
-  var input = $("#sort");  
+  var input = $("#sort").val();  
   $.each(moves, function(type) {
     var accordion = $("#accordion"+type);
     var entries = accordion.children('div');
@@ -83,7 +83,7 @@ function search()
     var input = $("#search").val().toLowerCase();
     var prevKey = "";
     $(".moveName").each( function() { 
-        var moveName = $(this).text().replace(' ', '_');
+        var moveName = $(this).text().replace(/ /g, '_');
         if (moveName.toLowerCase().indexOf(input)!=-1) {
           var key = $(this).parent().parent().prop("id").replace("accordion", "");
         
@@ -122,7 +122,7 @@ function displayMoves(moves)
         //Create header div for accordion
         var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
         header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' ></img>");
-        header.append("<span class='moveName'>"+moveName.replace('_', ' ')+"</span>");
+        header.append("<span class='moveName'>"+moveName.replace(/_/g, ' ')+"</span>");
         header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");
         header.append("<span class='moveFlavor'>" + flavor +"</span>");
         header.append("<span class='movePower'>" + power + "</span>");
