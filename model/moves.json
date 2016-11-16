@@ -51,6 +51,14 @@ var moves =
 			"effect": "This deals 20 damage and the user heals half the damage dealt.",
 			"critical": "+20 damage dealt with increased healing. ",
 		},
+		"Jumping_Bean": 
+		{
+			"power": 30,
+			"style": "Self",
+			"flavor": "The user leaps inside its coccoon, moving forward.",
+			"effect": "The user moves 3 additional spaces.",
+			"critical": "",
+		},		
 		"Powder": 
 		{
 			"power": 30,
@@ -2564,10 +2572,18 @@ var moves =
 		{
 			"power": 80,
 			"style": "Ranged",
-			"flavor": "User surrounds itself with 10,000 cherry blossoms.",
+			"flavor": "User surrounds itself with 1,000 cherry blossoms.",
 			"effect": "This deals 40 damage to every target in range and blinds them.",
 			"critical": "+30 damage.",
 		},
+		"Petal_Blizzard": 
+		{
+			"power": 100,
+			"style": "Ranged",
+			"flavor": "User surrounds itself with 10,000 cherry blossoms.",
+			"effect": "This deals 90 damage to everyone in range.",
+			"critical": "Targets are blinded.",
+		},	
 		"Power_Whip": 
 		{
 			"power": 90,
@@ -3155,6 +3171,14 @@ var moves =
 			"effect": "This move deals 50 damage. It can only be used while asleep.",
 			"critical": "+30 damage",
 		},
+		"Slime_Punch": 
+		{
+			"power": 40,
+			"style": "Melee",
+			"flavor": "The user whacks the target with a sticky fist.",
+			"effect": "Pin the target for 40 damage.",
+			"critical": "Pin is harsh",
+		},
 		"Snore": 
 		{
 			"power": 40,
@@ -3561,7 +3585,7 @@ var moves =
 			"power": 50,
 			"style": "Ranged",
 			"flavor": "A move that paralyzes the target with fear. ",
-			"effect": "The target is trapped.",
+			"effect": "The target is trapped. This has a range of 2 extra space.",
 			"critical": "The trap is harsh",
 		},
 		"Screech": 
