@@ -10,6 +10,16 @@ $( document ).ready( function() {
     title: "Moves Library",
     search: 
     { 
+      tags: function() 
+      {
+        var tags = [];
+        $.each(moves, function(key, moveList) {
+          $.each(moveList, function(moveName) {
+            tags.push(moveName.replace(/_/g, " "));
+          });
+        });
+        return tags;
+      },
       funct: search 
     },
     sort: 
@@ -80,7 +90,7 @@ function sort()
 
 function search()
 {
-    var input = $("#search").val().toLowerCase();
+    var input = $("#search").val().toLowerCase().replace(/ /g, '_');
     var prevKey = "";
     $(".moveName").each( function() { 
         var moveName = $(this).text().replace(/ /g, '_');
@@ -116,6 +126,7 @@ function displayMoves(moves)
       var accordion = $("<div id='accordion"+type+"'></div>");
       $.each(moveList, function(moveName, move) 
       {
+        moveName = moveName.replace(/ /g, '_');
         var flavor = typeof move.flavor !== "undefined" ? move.flavor : "No text!";
         var power = typeof move.power !== "undefined" ? move.power : "0";
 

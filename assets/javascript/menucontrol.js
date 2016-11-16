@@ -55,8 +55,8 @@ function Menu(parameters)
     /*Search Functionality*/
     //Create auto complete feature for search bar
     $("#search").autocomplete({
-      source: loadSearchTags(model),
-      minLength: Math.max(Object.keys(model).length/100, 2),
+      source: parameters.search.tags(),
+      minLength: Math.max(Object.keys(model).length/50, 2),
       select: parameters.search.funct(),
       delay: 500
     });
@@ -70,15 +70,6 @@ function Menu(parameters)
   $(function() {
     fixedScroller($("#anchor"), $("#selector"))
   });
-  
-  function loadSearchTags(model)
-  {
-    var tags = [];
-    $.each(model, function(key, value) {
-      tags.push(key.replace("_", " "));
-    });
-    return tags;
-  }
 
   function fixedScroller(anchor, fixedElement) {
     var move = function() {

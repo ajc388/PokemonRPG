@@ -9,6 +9,14 @@ $( document ).ready( function() {
 		title: "Pokedex",
 		search: 
 		{ 
+			tags: function() 
+	        {
+	            var tags = [];
+	            $.each(pokemon, function(name) {
+	               tags.push(name.replace(/_/g, " "));
+	            });
+	        	return tags;
+	        }
 			funct: search 
 		},
 		sort: 
@@ -16,6 +24,7 @@ $( document ).ready( function() {
 			keys: ['Name', 'Pokedex_ID', 'Type'],
 			funct: sort
 		}
+      },
 	});
 	displayPokemon(pokemon);
 	sort();
