@@ -3,6 +3,7 @@ function Menu(parameters)
 	var model = parameters.model;
   var searchFlag = typeof parameters.search == "undefined" ? false : true;
   var sortFlag = typeof parameters.sort == "undefined" ? false : true;
+  var navMenuFlag = typeof parameters.navmenu == "undefined" ? false : true;
   var title = typeof parameters.title == "undefined" ? "Menu" : parameters.title;
 
   //construct menu items
@@ -11,6 +12,18 @@ function Menu(parameters)
       '<div id="selector" class="blockheader">'+
         '<span>'+title+'</span>'+
       '</div>');
+
+  if ( navMenuFlag ) 
+  {
+    $("#selector").append(
+     '<nav class="navIconMenu">'+
+      '<ul>'+
+      '</ul>'+
+     '</nav>'
+    );
+
+    parameters.navmenu.funct(model);
+  }
 
   if ( sortFlag )
   {
@@ -42,8 +55,8 @@ function Menu(parameters)
     /*Search Functionality*/
     //Create auto complete feature for search bar
     $("#search").autocomplete({
-      source: loadSearchTags(model),
-      minLength: Math.max(Object.keys(model).length/100, 2),
+      source: parameters.search.tags(),
+      minLength: Math.max(Object.keys(model).length/50, 2),
       select: parameters.search.funct(),
       delay: 500
     });
@@ -57,15 +70,6 @@ function Menu(parameters)
   $(function() {
     fixedScroller($("#anchor"), $("#selector"))
   });
-  
-  function loadSearchTags(model)
-  {
-    var tags = [];
-    $.each(model, function(key, value) {
-      tags.push(key.replace("_", " "));
-    });
-    return tags;
-  }
 
   function fixedScroller(anchor, fixedElement) {
     var move = function() {

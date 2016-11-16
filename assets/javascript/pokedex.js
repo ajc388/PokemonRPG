@@ -9,6 +9,14 @@ $( document ).ready( function() {
 		title: "Pokedex",
 		search: 
 		{ 
+			tags: function() 
+	        {
+	            var tags = [];
+	            $.each(pokemon, function(name) {
+	               tags.push(name.replace(/_/g, " "));
+	            });
+	        	return tags;
+	        },
 			funct: search 
 		},
 		sort: 
@@ -23,7 +31,7 @@ $( document ).ready( function() {
 
 function search()
 { 
-    var input = $("#search").val().toLowerCase();
+    var input = $("#search").val().toLowerCase().replace(/ /g, '_');
     var items = $(".pokemon");
     $.each(items, function() { 
         var name = $(this).find(".Name").text().replace(/ /g, '_');
