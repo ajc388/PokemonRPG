@@ -1,0 +1,75 @@
+/*
+I've been having trouble doing data entry on Pokemon moves, so I'm doing a separate file and adding them to the 
+main one once they're complete.
+"":
+	{	
+		"Pokedex_ID": ,
+		"Short_Description": "",
+		"Long_Description": "",
+		"Modifier": "Shiny/Legendary/Normal",
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": []
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+*/
+
+"":
+	{	
+		"Pokedex_ID": ,
+		"Short_Description": "",
+		"Long_Description": "",
+		"Modifier": "Shiny/Legendary/Normal",
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": []
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
