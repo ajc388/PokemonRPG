@@ -84,5 +84,56 @@ var abilities =
 	{
 		"Description": "The massive Pokemon has double HP. It cannot dodge any attacks from regularly-sized Pokemon or crit against them. If a gargantuan Pokémon is identified, attacks made against it crit automatically. One hit-KO moves do 300 damage to gargantuan Pokémon instead of automatically KOing. Gargantuan Pokémon do not respect puny trainers easily. They roll 2d6, and if the result is higher than the trainer’s level, they disobey, often attacking an ally. This applies any time the trainer wants the Pokémon to do anything. Gargantuan Pokémon take up 4 or more battlefield spaces. No gargantuan Pokémon may pass through a space occupied by another such Pokémon, and if a gargantuan Pokémon moves into a space occupied by a regularly-sized Pokémon that Pokémon must make a speed save. It is moved to a space adjacent to the gargantuan Pokémon of its choice, but if if fails the speed save it takes damage equal to the gargantuan Pokémon’s strength. Once it passess that speed save, it automatically can repeat this for the rest of the turn, automatically moving out of the way of the gargantuan Pokémon’s way. When calculating range, that range goes out from every space the Pokémon occupies to make the largest range possible."
 	},
+	"Prankster":
+	{
+		"Description": "The Pokemon is good at messing with others. On any move that inflicts a status effect or harsher status effect on a crit, it crits on any doubles."
+	},
+	"Reckless"
+	{
+		"Description": "Whenever the Pokemon uses an attack that deals damage to itself, it deals that amount of extra damage to the target." 
+	},
+/*	
+Adaptability
+	All moves of type are natural
+
+Shed Skin
+	Might cure status conditions that aren't harsh.
+
+Soundproof
+	Immune to sound moves
+
+Moxie
+	If you faint a Pokemon your next move crits
+
+Pickpocket
+	If you melee attack, speed save to steal enemy's item.
+
+Anger Point
+	Hit by a crit, restore use of burnt out move.
+
+Analytic
+	Move last, automatically crit. 
+
+Cheek Pouch
+	Pokemon can store an extra berry in its cheek.
+
+Early Bird
+	Awaken quickly from sleep.
+
+Imposter
+	Ditto uses transform immediately.
+
+Multiscale
+	Take half damage when at full health. 
+
+Natural Cure
+	Heal any status conditions when switching out. 
+
+Heavyweight
+	Can't be moved.
+
+Natural_Steel
+	Can get STAB from steel moves.
+	*/
 	"None": {}
 }
