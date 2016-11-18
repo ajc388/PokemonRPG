@@ -4,7 +4,7 @@ main one once they're complete.
 "":
 	{	
 		"Pokedex_ID": ,
-		"Short_Description": "",
+		"Short_Description": " Pokemon",
 		"Long_Description": "",
 		"Modifier": "Shiny/Legendary/Normal",
 		"Types": [""],
@@ -36,16 +36,198 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
+	}
 */
 
-"":
+
+"Squirtle":
 	{	
-		"Pokedex_ID": ,
-		"Short_Description": "",
-		"Long_Description": "",
-		"Modifier": "Shiny/Legendary/Normal",
-		"Types": [""],
-		"Egg_Groups": [""],
+		"Pokedex_ID": 007,
+		"Short_Description": "Tiny Turtle Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Water"],
+		"Egg_Groups": ["Monster", "Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 87.5,
+			"Female_Weight": 12.5,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Wartortle"]
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}		
+	}
+"Wartortle":
+	{	
+		"Pokedex_ID": 008,
+		"Short_Description": "Turtle Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Water"],
+		"Egg_Groups": ["Monster", "Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 87.5,
+			"Female_Weight": 12.5,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": ["Squirtle"],
+			"Next_Evolutions": ["Blastoise"]
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}		
+	}
+"Blastoise":
+	{	
+		"Pokedex_ID": 009,
+		"Short_Description": "Shellfish Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Water"],
+		"Egg_Groups": ["Monster", "Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 87.5,
+			"Female_Weight": 12.5,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": ["Wartortle"],
+			"Next_Evolutions": [""]
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 4,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}		
+	}
+"Caterpie":
+	{	
+		"Pokedex_ID": 010,
+		"Short_Description": "Worm Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Bug"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Helping OOOOOO",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Metapod"]
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	}	
+"Metapod":
+	{	
+		"Pokedex_ID": 011,
+		"Short_Description": "Cocoon Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Bug"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Cocoon",
+			"Prior_Evolutions": ["Caterpie"],
+			"Next_Evolutions": ["Butterfree"]
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 0,
+				"Strength": 4,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Harden", "Jumping_Bean"]
+		}
+	}	
+"Butterfree":
+	{	
+		"Pokedex_ID": 012,
+		"Short_Description": "Butterfly Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
 		"Gender": 
 		{
 			"Male_Weight": 50,
@@ -55,8 +237,44 @@ main one once they're complete.
 		"Evolution": 
 		{
 			"Method": "",
-			"Prior_Evolutions": [],
+			"Prior_Evolutions": ["Metapod"],
 			"Next_Evolutions": []
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	}	
+"Weedle":
+	{	
+		"Pokedex_ID": 013,
+		"Short_Description": "Hairy Bug Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Kakuna"]
 		},
 		"Ability": "",
 		"Attributes": 
@@ -73,3 +291,76 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
+	}
+"Kakuna":
+	{	
+		"Pokedex_ID": 014,
+		"Short_Description": "Cocoon Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Cocoon",
+			"Prior_Evolutions": ["Caterpie"],
+			"Next_Evolutions": ["Beedrill"]
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 0,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Harden", "Jumping_Bean"]
+		}
+	}
+"Beedrill":
+	{	
+		"Pokedex_ID": 015,
+		"Short_Description": "Poison Bee Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": ["Kakuna"],
+			"Next_Evolutions": []
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Honey_Gather"]
+		}
+	}			

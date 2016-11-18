@@ -118,7 +118,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": 004,
 		"Short_Description": "Lizard Pokemon",
-		"Long_Description": "Placeholder.",
+		"Long_Description": "Charmander are very cooperative. They spread out to find food and call each other to share it. This behavior reverses when they hit puberty, and the males compete fiercely for female attention.",
 		"Modifier": "",
 		"Types": ["Fire"],
 		"Egg_Groups": ["Monster", "Dragon"],
@@ -154,7 +154,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": 005,
 		"Short_Description": "Flame Pokemon",
-		"Long_Description": "Placeholder.",
+		"Long_Description": "The color of Charmeleon's tail flame can vary based on its emotions and its recent diet. If your Charmeleon's flame is oddly colored, it might be sick.",
 		"Modifier": "",
 		"Types": ["Fire"],
 		"Egg_Groups": ["Monster", "Dragon"],
@@ -190,7 +190,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": 006,
 		"Short_Description": "Flame Pokemon",
-		"Long_Description": "Airborne.",
+		"Long_Description": "When a pair of Charizard mate, they mate for life. The pair will fly off to a new area to begin raising a family.",
 		"Modifier": "",
 		"Types": ["Fire", "Flying"],
 		"Egg_Groups": ["Monster", "Dragon"],
@@ -206,7 +206,7 @@ var pokemon =
 			"Prior_Evolutions": ["Charmeleon"],
 			"Next_Evolutions": []
 		},
-		"Ability": "None",
+		"Ability": "Airborne",
 		"Attributes": 
 		{
 			"IV": 
