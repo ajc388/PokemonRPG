@@ -508,7 +508,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},
-"Rattata":
+"Raticate":
 	{	
 		"Pokedex_ID": 020,
 		"Short_Description": "Mouse Pokemon",
@@ -543,4 +543,76 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	},			
+	},		
+"Spearow":
+	{	
+		"Pokedex_ID": 021,
+		"Short_Description": "Tiny Bird Pokemon",
+		"Long_Description": "",
+		"Modifier": "",
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Fearow"]
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Fearow":
+	{	
+		"Pokedex_ID": 022,
+		"Short_Description": "Beak Pokemon",
+		"Long_Description": "",
+		"Modifier": "",
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": ["Spearow"],
+			"Next_Evolutions": []
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},		
