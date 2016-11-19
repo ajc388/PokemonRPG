@@ -36,7 +36,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	}
+	},
 */
 
 
@@ -75,7 +75,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}		
-	}
+	},
 "Wartortle":
 	{	
 		"Pokedex_ID": 008,
@@ -111,7 +111,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}		
-	}
+	},
 "Blastoise":
 	{	
 		"Pokedex_ID": 009,
@@ -147,7 +147,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}		
-	}
+	},
 "Caterpie":
 	{	
 		"Pokedex_ID": 010,
@@ -164,7 +164,7 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": "Helping OOOOOO",
+			"Method": "Battle OOOOOO",
 			"Prior_Evolutions": [],
 			"Next_Evolutions": ["Metapod"]
 		},
@@ -183,7 +183,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	}	
+	},	
 "Metapod":
 	{	
 		"Pokedex_ID": 011,
@@ -219,7 +219,7 @@ main one once they're complete.
 		{
 			"Learnable": ["Harden", "Jumping_Bean"]
 		}
-	}	
+	},	
 "Butterfree":
 	{	
 		"Pokedex_ID": 012,
@@ -240,7 +240,7 @@ main one once they're complete.
 			"Prior_Evolutions": ["Metapod"],
 			"Next_Evolutions": []
 		},
-		"Ability": "",
+		"Ability": "Airborne",
 		"Attributes": 
 		{
 			"IV": 
@@ -255,7 +255,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	}	
+	},
 "Weedle":
 	{	
 		"Pokedex_ID": 013,
@@ -291,7 +291,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	}
+	},
 "Kakuna":
 	{	
 		"Pokedex_ID": 014,
@@ -327,7 +327,7 @@ main one once they're complete.
 		{
 			"Learnable": ["Harden", "Jumping_Bean"]
 		}
-	}
+	},
 "Beedrill":
 	{	
 		"Pokedex_ID": 015,
@@ -363,4 +363,184 @@ main one once they're complete.
 		{
 			"Learnable": ["Honey_Gather"]
 		}
-	}			
+	},
+"Pidgey":
+	{	
+		"Pokedex_ID": 016,
+		"Short_Description": "Tiny Bird Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Pidgeotto"]
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"Pidgeotto":
+	{	
+		"Pokedex_ID": 017,
+		"Short_Description": "Bird Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": ["Pidgey"],
+			"Next_Evolutions": ["Pidgeot"]
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"Pidgeot":
+	{	
+		"Pokedex_ID": 018
+		"Short_Description": "Bird Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": "",
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": ["Pidgeotto"]
+			"Next_Evolutions": []
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Fly"]
+		}
+	},	
+"Rattata":
+	{	
+		"Pokedex_ID": 019,
+		"Short_Description": "Mouse Pokemon",
+		"Long_Description": "",
+		"Modifier": "",
+		"Types": ["Normal"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": [],
+			"Next_Evolutions": ["Raticate"]
+		},
+		"Ability": "Cheek_Pouch",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Rattata":
+	{	
+		"Pokedex_ID": 020,
+		"Short_Description": "Mouse Pokemon",
+		"Long_Description": "",
+		"Modifier": "",
+		"Types": ["Normal"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": ["Rattata"],
+			"Next_Evolutions": []
+		},
+		"Ability": "Cheek_Pouch",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},			

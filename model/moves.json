@@ -115,6 +115,7 @@ var moves =
 			"flavor": "The user gathers up some honey and eats it.",
 			"effect": "This heal the user for 40 HP. If used while adjacent to an allied plant Pokémon, that Pokémon’s next attack deals double damage.",
 			"critical": "",
+			"out_of_battle": "Once per session, this Pokemon can produce a jar of honey that heals 40 HP.",
 		},
 		"Infestation": 
 		{
@@ -3584,7 +3585,7 @@ var moves =
 		{
 			"power": 50,
 			"style": "Ranged",
-			"flavor": "A move that paralyzes the target with fear. ",
+			"flavor": "A move that paralyzes the target with fear.",
 			"effect": "The target is trapped. This has a range of 2 extra space.",
 			"critical": "The trap is harsh",
 		},
@@ -3603,7 +3604,7 @@ var moves =
 			"flavor": "The Pokémon turns nearby terrain into a secret base.",
 			"effect": "The Pokémon cannot move on the turn it uses this. Mark the area it’s standing on as containing a base. Any Pokémon in that base takes half damage from all attacks and has 2 extra spaces of range.",
 			"critical": "",
-			"out_of_battle": "This creates a secret base in a tree, cave, or something else that allows the players some downtime even in a somewhat hostile environment. The secret base can be decorated, furnished, and even used as a home for a long time to come, or it can simply be used as a temporary camp. Wild Pokémon and trainers will have a hard time finding, let alone entering the secret base. This is a great way to get some downtime. ",
+			"out_of_battle": "This creates a secret base in a tree, cave, or something else that allows the players some downtime even in an otherwise hostile environment. The secret base can be decorated, furnished, and even used as a home for a long time to come, or it can simply be used as a temporary camp. Wild Pokémon and trainers will have a hard time finding, let alone entering the secret base.",
 		},
 		"Self_Destruct": 
 		{
