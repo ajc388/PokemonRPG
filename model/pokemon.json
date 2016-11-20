@@ -41,7 +41,7 @@ var pokemon =
 		{
 			"Learnable": ["Tackle", "Growl", "Graft", "Overgrowth", "Leech_Seed", "Vine_Whip", "Poison_Powder", "Sleep_Powder,", "Sweet_Scent", "Razor_Leaf", "Worry_Seed"]
 		}
-	}
+	},
 	"Ivysaur":
 	{	
 		"Pokedex_ID": 002,
@@ -77,7 +77,7 @@ var pokemon =
 		{
 			"Learnable": ["Razor_Leaf", "Poison_Powder", "Graft", "Overgrowth", "Vine_Whip", "Sleep_Powder,", "Sweet_Scent", "Double_Edge", "Synthesis", "Slam", "Coffee_Seed", "Poison_Thorns"]
 		}
-	}
+	},
 	"Venusaur":
 	{	
 		"Pokedex_ID": 003,
@@ -113,7 +113,7 @@ var pokemon =
 		{
 			"Learnable": ["Razor_Leaf", "Overgrowth", "Graft", "Vine_Whip", "Double_Edge", "Synthesis", "Slam", "Poison_Thorns", "Solar_Beam", "Petal_Dance", "Takedown", "Petal_Blizzard"]
 		}
-	}
+	},
 "Charmander":
 	{	
 		"Pokedex_ID": 004,
@@ -149,7 +149,7 @@ var pokemon =
 		{
 			"Learnable": ["Scratch", "Ember", "Growl", "Smokescreen", "Dragon_Rage", "Fire_Fang", "Flamethrower", "Thermography", "Flame", "Torch"]
 		}
-	}
+	},
 	"Charmeleon":
 	{	
 		"Pokedex_ID": 005,
@@ -185,7 +185,7 @@ var pokemon =
 		{
 			"Learnable": ["Ember", "Fire_Fang", "Flame_Burst", "Smokescreen", "Dragon_Rage",  "Flamethrower", "Thermography", "Slash", "Scary_Face", "Fire_Spin", "Inferno"]
 		}
-	}
+	},
 	"Charizard":
 	{	
 		"Pokedex_ID": 006,
@@ -221,7 +221,655 @@ var pokemon =
 		{
 			"Learnable": ["Fire_Fang", "Flame_Burst", "Air_Slash", "Dragon_Landing", "Smokescreen", "Flamethrower", "Thermography", "Slash", "Scary_Face", "Fire_Spin", "Inferno", "Heat_Wave", "Flare_Blitz", "Wing_Attack"]
 		}
-	}
+	},
+"Squirtle":
+	{	
+		"Pokedex_ID": 007,
+		"Short_Description": "Tiny Turtle Pokemon",
+		"Long_Description": "Squirtle shell painting is becoming a fad in port towns, with the best artists winning large awards.",
+		"Modifier": null,
+		"Types": ["Water"],
+		"Egg_Groups": ["Monster", "Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 87.5,
+			"Female_Weight": 12.5,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Wartortle"]
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Tackle", "Tail_Wag", "Water_Gun", "Bubble", "Bite", "Protect", "Rapid_Spin", "Aqua_Jet", "Soak", "Squirt"]
+		}		
+	},
+"Wartortle":
+	{	
+		"Pokedex_ID": 008,
+		"Short_Description": "Turtle Pokemon",
+		"Long_Description": "Wartortle consume waste scrap metal from the bottom of rivers, lakes, and oceans. When they consume enough, they can evolve into Blastoise.",
+		"Modifier": null,
+		"Types": ["Water"],
+		"Egg_Groups": ["Monster", "Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 87.5,
+			"Female_Weight": 12.5,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": ["Squirtle"],
+			"Next_Evolutions": ["Blastoise"]
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Water_Gun", "Withdraw", "Bite", "Skull_Bash", "Aqua_Jet", "Clear_Water", "Shell_Smash"]
+		}		
+	},
+"Blastoise":
+	{	
+		"Pokedex_ID": 009,
+		"Short_Description": "Shellfish Pokemon",
+		"Long_Description": "Blastoise are highly sought after for firefighting teams and fire hydrants are designed to feed water directly to them. Most firefighters are given a squirtle when they join in hopes they can evolve it.",
+		"Modifier": null,
+		"Types": ["Water"],
+		"Egg_Groups": ["Monster", "Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 87.5,
+			"Female_Weight": 12.5,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Wartortle"],
+			"Next_Evolutions": null
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 4,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Water_Gun", "Water_Jet", "Withdraw", "Bite", "Protect", "Skull_Bash", "Rain_Dance", "Hydro_Pump", "Hydro_Cannon", "Hurricane", "Rainstorm"]
+		}		
+	},
+"Caterpie":
+	{	
+		"Pokedex_ID": 010,
+		"Short_Description": "Worm Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": null,
+		"Types": ["Bug"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Metapod"]
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Tackle", "String_Shot", "Bug_Bite"]
+		}
+	},	
+"Metapod":
+	{	
+		"Pokedex_ID": 011,
+		"Short_Description": "Cocoon Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": null,
+		"Types": ["Bug"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Cocoon",
+			"Prior_Evolutions": ["Caterpie"],
+			"Next_Evolutions": ["Butterfree"]
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 0,
+				"Strength": 4,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Harden", "Jumping_Bean"]
+		}
+	},	
+"Butterfree":
+	{	
+		"Pokedex_ID": 012,
+		"Short_Description": "Butterfly Pokemon",
+		"Long_Description": "Butterfree migrate to stay in warm areas. One Butterfree was found with over 100 different pollen samples on it from 5 different continents.",
+		"Modifier": null,
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Metapod"],
+			"Next_Evolutions": null
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Confusion", "Poison_Powder", "Stun_Spore", "Sleep_Powder", "Gust", "Whirlwind", "Psybeam", "Silver_Wind", "Tailwind", "Rage_Powder", "Bug_Buzz"]
+		}
+	},
+"Weedle":
+	{	
+		"Pokedex_ID": 013,
+		"Short_Description": "Hairy Bug Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": null,
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Kakuna"]
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Poison_Sting", "String_Shot", "Bug_Bite"]
+		}
+	},
+"Kakuna":
+	{	
+		"Pokedex_ID": 014,
+		"Short_Description": "Cocoon Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": null,
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Cocoon",
+			"Prior_Evolutions": ["Caterpie"],
+			"Next_Evolutions": ["Beedrill"]
+		},
+		"Ability": "Shell",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 0,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Harden", "Jumping_Bean"]
+		}
+	},
+"Beedrill":
+	{	
+		"Pokedex_ID": 015,
+		"Short_Description": "Poison Bee Pokemon",
+		"Long_Description": "Placeholder",
+		"Modifier": null,
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Kakuna"],
+			"Next_Evolutions": null
+		},
+		"Ability": "",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Fury_Attack", "Focus_Energy", "Twineedle", "Rage", "Pursuit", "Pin_Missile", "Agility", "Poison_Jab", "Fell_Stiner", "Adrenaline_Shot", "Hive_Mind", "Queen_Bee", "Honey_Gather"]
+		}
+	},
+"Pidgey":
+	{	
+		"Pokedex_ID": 016,
+		"Short_Description": "Tiny Bird Pokemon",
+		"Long_Description": "Pidgey were once hard to find, but they have adapted incredibly well to urban environments.",
+		"Modifier": null,
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Pidgeotto"]
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Talon", "Feather_Dance", "Tackle", "Sand_Attack", "Gust", "Quick_Attack", "Twister", "Agility", "Mirror_Move"]
+		}
+	},
+	"Pidgeotto":
+	{	
+		"Pokedex_ID": 017,
+		"Short_Description": "Bird Pokemon",
+		"Long_Description": "While Pidgeys are mainly scavengers, Pidgeotto are mainly hunters.",
+		"Modifier": null,
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": ["Pidgey"],
+			"Next_Evolutions": ["Pidgeot"]
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 4,
+				"Strength": 1,
+				"Sense": 3,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Talon", "Feather_Dance", "Gust", "Peck", "Sand_Attack", "Quick_Attack", "Whirlwind", "Twister", "Agility", "Wing_Attack", "Roost", "Tailwind", "Air_Slash"]
+		}
+	},
+	"Pidgeot":
+	{	
+		"Pokedex_ID": 018,
+		"Short_Description": "Bird Pokemon",
+		"Long_Description": "Male Pidgeots have an incredibly-bright plumage to attract mates. The females have more boring feathers.",
+		"Modifier": null,
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Pidgeotto"],
+			"Next_Evolutions": null,
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 4,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Peck", "Mirror_Move", "Gust", "Whirlwind", "Wing_Attack", "Roost", "Tailwind", "Hurricane", "Air_Slash", "Gale_Force", "Oblivion_Wing", "Sonic_Wake", "Fly"]
+		}
+	},	
+"Rattata":
+	{	
+		"Pokedex_ID": 019,
+		"Short_Description": "Mouse Pokemon",
+		"Long_Description": "Rattata are one of the most common urban Pokemon and can be found in nearly every city, as well as fields.",
+		"Modifier": null,
+		"Types": ["Normal"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Raticate"]
+		},
+		"Ability": "Cheek_Pouch",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Tackle", "Tail_Wag", "Quick_Attack", "Focus_Energy", "Bite", "Pursuit", "Thief", "Squeak"]
+		}
+	},
+"Raticate":
+	{	
+		"Pokedex_ID": 020,
+		"Short_Description": "Mouse Pokemon",
+		"Long_Description": "Placeholder.",
+		"Modifier": null,
+		"Types": ["Normal"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Rattata"],
+			"Next_Evolutions": null
+		},
+		"Ability": "Cheek_Pouch",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Quick_Attack", "Focus_Energy", "Bite", "Scary_Face", "Hyper_Fang", "Super_Fang", "Double-Edge", "Chomp", "Backstab", "Thief", "Hit_and_Run", "Hawkeye"]
+		}
+	},		
+"Spearow":
+	{	
+		"Pokedex_ID": 021,
+		"Short_Description": "Tiny Bird Pokemon",
+		"Long_Description": "Spearow beaks are incredibly sharp, and were once attached to the end of poles to make weapons.",
+		"Modifier": null,
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Fearow"]
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 1,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Talon", "Mirror_Move", "Growl", "Leer", "Pursuit", "Fury_Attack", "Aerial_Ace", "Agility", "Focus_Energy"]
+		}
+	},
+"Fearow":
+	{	
+		"Pokedex_ID": 022,
+		"Short_Description": "Beak Pokemon",
+		"Long_Description": "Fearow can hunt, but they prefer to scavenge dead bodies. They are considered bad omens and were named accordingly.",
+		"Modifier": null,
+		"Types": ["Normal", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Spearow"],
+			"Next_Evolutions": null
+		},
+		"Ability": "Airborne",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Wing_Attack", "Peck", "Pluck", "Fury_Attack", "Aerial_Ace", "Mirror_Move", "Roost", "Drill_Run", "Drill_Peck", "Egg_Bomb", "Gale_Force", "Sky_Drop"]
+		}
+	},		
+"Ekans":
+	{	
+		"Pokedex_ID": 023,
+		"Short_Description": "Snake Pokemon",
+		"Long_Description": "Placeholder.",
+		"Modifier": null,
+		"Types": ["Poison"],
+		"Egg_Groups": ["Field", "Dragon"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": ["Arbok"]
+		},
+		"Ability": "Shed_Skin",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Poison_Sting", "Coil", "Wrap", "Bite", "Glare", "Screech", "Acid", "Acid_Spray", "Mud_Bomb", "Gastro_Acid", "Haze", "Thermography"]
+		}
+	},
+"Arbok":
+	{	
+		"Pokedex_ID": 024,
+		"Short_Description": "Cobra Pokemon",
+		"Long_Description": "Placeholder.",
+		"Modifier": null,
+		"Types": ["Poison"],
+		"Egg_Groups": ["Field", "Dragon"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": ["Ekans"],
+			"Next_Evolutions": null
+		},
+		"Ability": "Intimidate",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Poison_Sting", "Gastro_Acid", "Acid", "Glare", "Screech", "Bite", "Crunch", "Acid_Spray", "Mud_Bomb", "Belch", "Coil", "Gunk_Shot", "Ice_Fang", "Thunder_Fang", "Fire_Fang", "Thermography"]
+		}
+	},
 	"Pikachu":
 	{	
 		"Pokedex_ID": "025",

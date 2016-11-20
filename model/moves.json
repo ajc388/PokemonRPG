@@ -181,6 +181,14 @@ var moves =
 			"effect": "Restore 60 HP.",
 			"critical": "",
 		},
+		"Twineedle": 
+		{
+			"power": 90,
+			"style": "Melee",
+			"flavor": "The user hits with a pair of insectoid spikes.",
+			"effect": "This is a pair of 40 damage attacks.",
+			"critical": "Roll a crit for each attack, each crit deals +20 damage.",
+		},		
 		"Queen_Bee": 
 		{
 			"power": 100,
@@ -1954,8 +1962,8 @@ var moves =
 			"power": 70,
 			"style": "Melee",
 			"flavor": "The user picks up the target and drops it from the heights.",
-			"effect": "On the first turn the user grabs the target. The target is pinned for no damage. While this move is in use the user is flying a number of spaces above the battlefield equal to its dash distance. The user may release the target on any turn after the first. It takes damage equal to the user’s speed.",
-			"critical": "+30 damage.",
+			"effect": "Pin the target for 30 damage. Instead of adding 30 damage every time you succeed instead of adding damage, double the 30.",
+			"critical": "Double damage.",
 		},
 		"Tailwind": 
 		{
@@ -2046,6 +2054,14 @@ var moves =
 			"effect": "The user must draw a straight line that passes through no fewer than 10 spaces and no more than 10 plus the user’s dash distance. All Pokémon along this path take 20 damage unless they can pass a speed save. If the user’s path runs through terrain it cannot pass through before the first 10 spaces are up, it takes 100 damage from plowing straight into something.",
 			"critical": "",
 		},
+		"Talon": 
+		{
+			"power": 20,
+			"style": "Melee",
+			"flavor": "A light strike with talons.",
+			"effect": "Deal 20 damage.",
+			"critical": "+30 damage",
+		},		
 		"Bombing_Run": 
 		{
 			"power": 100,
@@ -3726,7 +3742,7 @@ var moves =
 			"effect": "This deals damage equal to half the target's current HP, rounded down.",
 			"critical": "",
 		},
-		"Double_Edge": 
+		"Double-Edge": 
 		{
 			"power": 90,
 			"style": "Melee",
