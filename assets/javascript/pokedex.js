@@ -21,7 +21,7 @@ $( document ).ready( function() {
 		},
 		sort: 
 		{
-			keys: ['Name', 'Pokedex_ID', 'Type'],
+			keys: ['Pokedex_ID', 'Name', 'Type'],
 			funct: sort
 		}
 	});
