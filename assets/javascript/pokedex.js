@@ -51,7 +51,7 @@ function sort()
 	var items = $(".pokemon");
 	items = items.sort(function (a, b) {
 	  if ( selected === "Pokedex_ID" ) { 
-	    return parseInt($(a).find("."+selected).text()) > parseInt($(b).find("."+selected).text()) ? 1 : -1; 
+	    return $(a).find("."+selected).text() > $(b).find("."+selected).text() ? 1 : -1; 
 	  }
 	  else if ( selected === "Name" ) { 
 	    return $(a).find("."+selected).text() > $(b).find("."+selected).text() ? 1 : -1; 
@@ -97,7 +97,7 @@ function displayPokemon(pokemonList)
 		});
 
 		article.on('click', function() {
-			window.open("pokemon_sheet.html?name="+pokemonName, '_blank');
+			window.open("pokemon.html?name="+pokemonName, '_blank');
 		});
 	});
 }
