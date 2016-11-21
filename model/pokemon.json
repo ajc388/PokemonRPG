@@ -408,7 +408,7 @@ var pokemon =
 		"Short_Description": "Butterfly Pokemon",
 		"Long_Description": "Butterfree migrate to stay in warm areas. One Butterfree was found with over 100 different pollen samples on it from 5 different continents.",
 		"Modifier": null,
-		"Types": ["Bug", "Poison"],
+		"Types": ["Bug", "Flying"],
 		"Egg_Groups": ["Bug"],
 		"Gender": 
 		{
