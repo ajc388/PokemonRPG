@@ -11,6 +11,8 @@
   <script src="assets/vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/vendor/jquery-ui-1.12.1/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/pokemon.css" />
+  <link rel="stylesheet" type="text/css" href="assets/vendor/skeleton-2.0.4/css/skeleton.css" />
 
 </head>
 
@@ -29,10 +31,112 @@
     </nav>
   </header>
   
-  <section class="block" id="pokemon_sheet">
-   
-  </section>
+  <!--96 pixels to the inch-->
+  <!--standar page size is 8.5 x 11 inches -->
+  <!--2550 pixels x 3300 pixels-->
+  <div class="blockheader" id="">
+    <span>Pokemon Sheet : </span>
+    <span>Pikachu</span>
+  </div>
 
+  <article class="page" id="pokemonSheet">
+    <section class="pageHeader">
+      <span id="modifier" class="header four columns">Shiny or Legendary</span>
+      <span id="name" class="header four columns">Name</span>
+      <span class="four columns">
+        <span id="gender" class="two columns">♂</span>
+        <span id="eggOne" class="header five columns">Egg group1 </span>
+        <span id="eggTwo" class="header five columns">Egg group2</span>
+      </span>
+    </section>
+
+    <section class="">
+      <div class="eight columns">
+        <!-- Attribute block -->
+        <div id="attributes" class="six columns">
+          <div class="header"> 
+            <span class="four columns"></span>
+            <span class="four columns">IV</span>
+            <span class="four columns">EV</span>
+          </div>
+          <div id="speed">
+            <span class="four columns">Speed: </span>
+            <span class="iv four columns">○○○○●● </span>
+            <span class="ev four columns">●●●●○○ </span>
+          </div>
+          <div id="strength">
+            <span class="four columns">Strength: </span>
+            <span class="iv four columns">○○○○○● </span>
+            <span class="ev four columns">●●○○○○ </span>
+          </div>
+          <div id="sense">
+            <span class="four columns">Sense: </span>
+            <span class="iv four columns">○○●●●● </span>
+            <span class="ev four columns">●●●●○○ </span>
+          </div>
+          <div id="mind">
+            <span class="four columns">Sense: </span>
+            <span class="iv four columns">○○○●●● </span>
+            <span class="ev four columns">●●○○○○ </span>
+          </div>
+        </div>
+        <!-- Health and Friendship Block -->
+        <div class="six columns">
+          <div id="healthBar">
+            <div class="header twelve columns">
+              <span>HP:</span>
+            </div>
+            <div>
+              <span class="center twelve columns">[][][][][] | [][][][][] | [][][][][]</span>
+              <span class="center twelve columns">[][][][][] | [][][][][] | [][][][][]</span>
+            </div>
+          </div>
+          <div id="friendshipBar">
+            <div class="header twelve columns">
+              <span>FP:</span>
+            </div>
+            <div>
+              <span class="center twelve columns">[][][][][] | [][][][][] | [][][][][]</span>   
+            </div>
+          </div>
+        </div>
+
+        <div id="derivedStatistics" class="six columns">  <span class="six columns">
+            <span class="label">Dash: </span>
+            <span>2</span>
+          </span>
+          <span class="six columns">
+            <span class="label">Range: </span>
+            <span>5</span>
+          </span>
+        </div>
+
+        <div id="evolutionMethod" class="six columns">  
+          <span>
+               This is the evolution method block.
+          </span>
+        </div>
+
+        <div id="holds" class="twelve columns">
+          <span class="three columns">Holds: </span>
+          <span class="underline nine columns" style="height: 25px"> </span>
+        </div>
+      </div>
+
+      <!--Pokemon description-->
+      <div class='pokemon four columns'>
+        <img class='pokepic' src='assets/images/pokemon/Pikachu.png' />
+        <div class="nature">
+            A randomly generated nature for the pikachu. This will probably take up a lot of text to describe.
+        </div>
+      </div>
+    </section>
+
+  </article>
+
+  <aside class="sidebar" id="editor">
+
+  </aside>
 
 </body>
 </html>

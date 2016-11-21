@@ -1,0 +1,26 @@
+.page { 
+	width: 670px;
+	border: 0px; 
+	margin: 0% 5%; 
+	padding: 0px; 
+
+	font-size: 12pt;
+}
+.pageHeader {
+}
+.header {
+	text-align: center;
+	font-weight: bold;
+}
+.label {
+	text-align: left;
+	font-weight: bold;
+}
+.center {
+	text-align: center;
+}
+.underline {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #333;
+}
