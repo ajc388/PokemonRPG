@@ -10,7 +10,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "001",
 		"Short_Description": "Seed Pokemon",
-		"Long_Description": "Ancient Bulbasaur fossils indicate it was actually once two separate Pokemon.",
+		"Long_Description": "Ancient Bulbasaur fossils indicate it was actually once two separate Pokemon. The bulb still has separate DNA from the reptillian part, but they still form a single organism.",
 		"Modifier": "",
 		"Types": ["Grass", "Poison"],
 		"Egg_Groups": ["Monster", "Grass"],
@@ -530,7 +530,7 @@ var pokemon =
 			"Prior_Evolutions": ["Kakuna"],
 			"Next_Evolutions": null
 		},
-		"Ability": "",
+		"Ability": "Levitate",
 		"Attributes": 
 		{
 			"IV": 
@@ -680,7 +680,7 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 2,
 				"Mind": 1			  
 			}
@@ -715,7 +715,7 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 3,
 				"Sense": 2,
 				"Mind": 1			  
@@ -752,7 +752,7 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 1,
+				"Strength": 2,
 				"Sense": 2,
 				"Mind": 2			  
 			}
@@ -788,7 +788,7 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 2,
 				"Mind": 2			  
 			}
@@ -824,7 +824,7 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 2,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 2,
 				"Mind": 2			  
 			}
@@ -862,7 +862,7 @@ var pokemon =
 				"Speed": 2,
 				"Strength": 3,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -873,7 +873,7 @@ var pokemon =
 	"Pikachu":
 	{	
 		"Pokedex_ID": "025",
-		"Short_Description": "Mouse Pokemon.",
+		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "Pikachu like to chew on power cables. A sudden electrical surge can cause one to evolve.",
 		"Modifier": null,
 		"Types": ["Electric"],
@@ -909,7 +909,7 @@ var pokemon =
 	"Cosplay_Pikachu":
 	{	
 		"Pokedex_ID": "025A",
-		"Short_Description": "Mouse Pokemon.",
+		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "Cosplay Pikachu are known to steal small items of human clothing to wear. If you keep missing socks, it's likely you have a cosplay Pikachu in your house.",
 		"Modifier": "Shiny",
 		"Types": ["Electric"],
@@ -945,7 +945,7 @@ var pokemon =
 	"Raichu":
 	{	
 		"Pokedex_ID": "026",
-		"Short_Description": "Mouse Pokemon.",
+		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "Raichu's massive ears not only detect sound but also electrical signals.",
 		"Modifier": null,
 		"Types": ["Electric"],
@@ -981,7 +981,7 @@ var pokemon =
 	"Giant_Raichu":
 	{	
 		"Pokedex_ID": "026A",
-		"Short_Description": "Mouse Pokemon.",
+		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "Dubbed 'Kaichu' by the media, this giant Raichu was most likely caused by exposure to radiation.",
 		"Modifier": "Shiny and Legendary",
 		"Types": ["Electric"],
