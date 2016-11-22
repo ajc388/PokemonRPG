@@ -31,8 +31,8 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 1,
-				"Strength": 2,
+				"Speed": 2,
+				"Strength": 3,
 				"Sense": 2,
 				"Mind": 3			  
 			}
@@ -67,9 +67,9 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 1,
+				"Speed": 2,
 				"Strength": 3,
-				"Sense": 2,
+				"Sense": 3,
 				"Mind": 3			  
 			}
 		},
@@ -103,10 +103,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 1,
+				"Speed": 2,
 				"Strength": 3,
 				"Sense": 3,
-				"Mind": 3			  
+				"Mind": 4			  
 			}
 		},
 		"Moves":
@@ -139,9 +139,9 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 2,
-				"Sense": 2,
+				"Sense": 3,
 				"Mind": 2			  
 			}
 		},
@@ -175,10 +175,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 2,
-				"Mind": 3			  
+				"Speed": 3,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -212,8 +212,8 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
-				"Sense": 2,
+				"Strength": 3,
+				"Sense": 3,
 				"Mind": 3			  
 			}
 		},
@@ -247,9 +247,9 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 1,
+				"Speed": 2,
 				"Strength": 3,
-				"Sense": 2,
+				"Sense": 3,
 				"Mind": 2			  
 			}
 		},
@@ -284,9 +284,9 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 1,
-				"Strength": 3,
+				"Strength": 4,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -320,9 +320,9 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 1,
-				"Strength": 4,
+				"Strength": 5,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -355,7 +355,7 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 4,
 				"Strength": 1,
 				"Sense": 3,
 				"Mind": 2			  
@@ -392,9 +392,9 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 0,
-				"Strength": 4,
+				"Strength": 5,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -429,8 +429,8 @@ var pokemon =
 			{
 				"Speed": 3,
 				"Strength": 1,
-				"Sense": 3,
-				"Mind": 3			  
+				"Sense": 4,
+				"Mind": 4			  
 			}
 		},
 		"Moves":
@@ -463,9 +463,9 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 2,
-				"Sense": 2,
+				"Sense": 3,
 				"Mind": 2			  
 			}
 		},
@@ -500,8 +500,8 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 0,
-				"Strength": 4,
-				"Sense": 2,
+				"Strength": 5,
+				"Sense": 3,
 				"Mind": 3			  
 			}
 		},
@@ -536,8 +536,8 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
-				"Sense": 2,
+				"Strength": 3,
+				"Sense": 3,
 				"Mind": 3			  
 			}
 		},
@@ -571,10 +571,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 1,
 				"Sense": 3,
-				"Mind": 1			  
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -608,9 +608,9 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 4,
-				"Strength": 1,
+				"Strength": 2,
 				"Sense": 3,
-				"Mind": 1			  
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -643,10 +643,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 4,
+				"Speed": 5,
 				"Strength": 2,
 				"Sense": 3,
-				"Mind": 1			  
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -681,8 +681,8 @@ var pokemon =
 			{
 				"Speed": 3,
 				"Strength": 3,
-				"Sense": 2,
-				"Mind": 1			  
+				"Sense": 3,
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -717,8 +717,8 @@ var pokemon =
 			{
 				"Speed": 4,
 				"Strength": 3,
-				"Sense": 2,
-				"Mind": 1			  
+				"Sense": 3,
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -751,8 +751,8 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
-				"Strength": 2,
+				"Speed": 4,
+				"Strength": 3,
 				"Sense": 2,
 				"Mind": 2			  
 			}
@@ -787,9 +787,9 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 3,
-				"Sense": 2,
+				"Sense": 3,
 				"Mind": 2			  
 			}
 		},
@@ -824,9 +824,9 @@ var pokemon =
 			"IV": 
 			{
 				"Speed": 2,
-				"Strength": 3,
+				"Strength": 4,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -859,8 +859,8 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
-				"Strength": 3,
+				"Speed": 3,
+				"Strength": 4,
 				"Sense": 2,
 				"Mind": 3			  
 			}
@@ -895,10 +895,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 1,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -931,10 +931,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 1,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -967,15 +967,15 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 2,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Spark", "Thundershock", "Thunder", "Quick_attack", "Electro_ball", "Thunder_wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "Tetrashock", "Lightning_reflexes", "Thunderstorm", "Lightning", "Slam"]
+			"Learnable": ["Spark", "Thundershock", "Thunder", "Quick_attack", "Electro_ball", "Thunder_wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "Tetrashock", "Lightning_reflexes", "Thunderstorm", "Lightning", "Slam", "Ball_Lightning"]
 		}
 	},
 	"Giant_Raichu":
@@ -1003,15 +1003,15 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 4,
 				"Sense": 3,
-				"Mind": 4			  
+				"Mind": 5			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Thunder", "Electro_ball", "Thunder_Wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "tetrashock", "Thunderstorm", "Tightning", "Slam"]
+			"Learnable": ["Thunder", "Electro_ball", "Thunder_Wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "tetrashock", "Thunderstorm", "Tightning", "Slam", "Ball_Lightning"]
 		}
 	},	
 	"Ghastly":
@@ -1039,10 +1039,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 1,
 				"Sense": 2,
-				"Mind": 3			  
+				"Mind": 4			  
 			}
 		},
 		"Moves":
@@ -1075,10 +1075,10 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 2,
 				"Sense": 2,
-				"Mind": 3			  
+				"Mind": 4			  
 			}
 		},
 		"Moves":
@@ -1111,9 +1111,9 @@ var pokemon =
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 2,
-				"Sense": 2,
+				"Sense": 3,
 				"Mind": 4			  
 			}
 		},
