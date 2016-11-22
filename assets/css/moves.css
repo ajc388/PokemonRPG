@@ -9,7 +9,7 @@
 }
 
 div.moveHeader {
-	height: 25px;
+	height: 38px;
 }
 .moveHeader span.moveName {
 	display: inline-block;
@@ -40,6 +40,12 @@ div.moveHeader {
 	font-weight: bold;
 	width: 5%;
 	min-width: 40px;
+}
+.moveHeader span.moveStyle {
+	display: inline-block;
+	vertical-align: super;
+	width: 100px;
+	min-width: 100px;
 }
 div.typeheader {
 	border-style: outset;

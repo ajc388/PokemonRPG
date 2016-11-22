@@ -5,7 +5,7 @@ $( document ).ready( function() {
 
 function displayMoves(moves, pokemonMoves)
 {
-   var accordion = $("<div id='accordion'></div>");
+   var accordion = $("<div id='accordion' class='twelve columns'></div>");
    $.each(pokemonMoves, function(id, pokemonMove) 
    {
       var type = 'Electric';
@@ -16,14 +16,15 @@ function displayMoves(moves, pokemonMoves)
         var moveName = pokemonMove.replace(/ /g, '_');
         var flavor = typeof move.flavor !== "undefined" ? move.flavor : "No text!";
         var power = typeof move.power !== "undefined" ? move.power : "0";
-
+        var style = typeof move.style !== "undefined" ? move.style : "Any";
+        
         //Create header div for accordion
-        var header = $("<div class='moveHeader "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
-        header.append("<img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' ></img>");
-        header.append("<span class='moveName'>"+moveName.replace(/_/g, ' ')+"</span>");
-        header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");
-        header.append("<span class='moveFlavor'>" + flavor +"</span>");
-        header.append("<span class='movePower'>" + power + "</span>");
+        var header = $("<div class='moveHeader twelve columns "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
+        header.append("<span class='one-half column'><img class='icon' id='img_icon_"+moveName+"' src= 'assets/images/type_icons/"+type+".png' /></span>");
+        header.append("<span class='four columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
+        //header.append("<span class='moveDice' id='img_dice_"+moveName+"'></span>");
+        header.append("<span class='seven columns'>" + flavor +"</span>");
+        header.append("<span style='text-align: right;' class='label one-half columns'>" + power + "</span>");
         accordion.append(header);
         
         //Create dice icons - displayed after name inside the dice span tag
@@ -33,17 +34,15 @@ function displayMoves(moves, pokemonMoves)
         }
 
         //Create content div for accordion
-        var content = $("<div class='moveContent' id='content_"+moveName+"'></div>");
-        var style = typeof move.style !== "undefined" ? move.style : "Any";
+        var content = $("<div class='moveContent twelve columns' id='content_"+moveName+"'></div>");
         var effect = typeof move.effect !== "undefined" ? move.effect : "No effect";
         var critical = typeof move.critical !== "undefined" ? move.critical : "";
         var outofbattle = typeof move.out_of_battle !== "undefined" ? move.out_of_battle : "";
 
-        content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png'/>" + Math.pow(power,2) + "</p>");
-        content.append("<p><span class='descriptiveHeader'> Style: </span>" + style + "</p>");
-        content.append("<p><span class='descriptiveHeader'> Effect: </span>" + effect + "</p>");
-        if (critical != "") { content.append("<p><span class='descriptiveHeader'> Critical: </span>" + critical + "</p>"); }
-        if (outofbattle != "") { content.append("<p><span class='descriptiveHeader'> Out Of Battle: </span>" + outofbattle + "</p>"); }
+        //content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png'/>" + Math.pow(power,2) + "</p>");
+        content.append("<p><span class='label'> Effect: </span>" + effect + "</p>");
+        if (critical != "") { content.append("<p><span class='label'> Critical: </span>" + critical + "</p>"); }
+        if (outofbattle != "") { content.append("<p><span class='label'> Out Of Battle: </span>" + outofbattle + "</p>"); }
         accordion.append(content);
       }
     });

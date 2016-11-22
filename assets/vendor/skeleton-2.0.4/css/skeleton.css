@@ -56,7 +56,8 @@
     margin-left: 0%; 
     margin-bottom: 0px;
   }
-
+  .one-half.column,
+  .one-half.columns               { width: 4.16666666667%; }
   .one.column,
   .one.columns                    { width: 8.3%; }
   .two.columns                    { width: 15.6666666667%; }
@@ -96,7 +97,7 @@
   .offset-by-eleven.column,
   .offset-by-eleven.columns       { margin-left: 90.6666666666%; }
 
-
+  .shift { margin-left: 1.5%;}
 }
 
 /* Base Styles

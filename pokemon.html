@@ -12,7 +12,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
   <link rel="stylesheet" type="text/css" href="assets/vendor/skeleton-2.0.4/css/skeleton.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/pokemon.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/moves.css" />
 
   <!--Model-->
   <script type="text/javascript" src="model/moves.json"></script>
@@ -64,82 +63,80 @@
   <article class="twelve columns" id="pokemonSheet">
     <section class="pageHeader twelve columns">
       <div class="twelve columns">
-        <span class="one column" style="text-align:center;"><img src="assets/images/pokeball.png" alt="swirly design"/></span>
-        <span class="ten columns header">
+        <span class="left one-half column"><img class="twelve columns" src="assets/images/pokeball.png" alt="swirly design"/></span>
+        <span class="eleven columns header">
           <h2 class="fancy">
             <span id="shiny" class="shiny">Shiny</span>
             <span id="name" class="name">Pikachu</span>
             <span id="legend" class="legend">Legend</span>
           </h2>
         </span>
-        <span class="one column" style="text-align:center;"><img src="assets/images/pokeball.png" alt="swirly design"/></span>
+        <span class="right one-half column"><img class="twelve columns" src="assets/images/pokeball.png" alt="swirly design"/></span>
       </div>
     </section>
 
     <section class="twelve columns">
       <!-- Health and Friendship Block -->
       <div class="twelve columns">
-        <span id="health" class="eight columns">
+        <span id="health" class="left eight columns">
           <h3>
             <span class="label">HP</span>
-            <span id="hpBar">□□□□□|□□□□□|□□□□□|□□□□□|□□□□□|□□□□□</span>
+            <span id="hpBar">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□</span>
           </h3>
         </span>
-        <span id="friendship" class="four columns">
+        <span id="friendship" class="right four columns">
           <h3>
             <span class="label">FP</span>
-            <span id="fpBar">□□□□□|□□□□□|□□□□□</span>
+            <span id="fpBar">□□□□□ □□□□□ □□□□□</span>
           </h3>
         <span>
       </div>
 
       <div class="first-row twelve columns">
         <!-- Attribute block -->
-        <div id="attributes" class=" border four columns">
-          <span class="header"> 
-            <h5>
-              <span class="offset-by-three four columns">IV</span>
-              <span class="offset-by-one four columns">EV</span>
-            </h5>
+        <div id="attributes" class="border four columns">
+          <span class="header" style='font-size:1.25em'> 
+            <span class="shift offset-by-three four columns">IV</span>
+            <span class="shift offset-by-one four columns">EV</span>
           </span>
           <span id="speed">
             <h5>
               <span class="label three columns">Speed </span>
-              <span class="center iv four columns">○○○○●● </span>
+              <span class="right four columns">○○○○●● </span>
               <span class="center one column"> | </span> 
-              <span class="center ev four columns">●●●●○○ </span>
+              <span class="left four columns">●●●●○○ </span>
             </h5>
           </span>
           <span id="strength">
             <h5>
               <span class="label three columns">Strength </span>
-              <span class="center iv four columns">○○○○○● </span> 
+              <span class="right iv four columns">○○○○○● </span> 
               <span class="center one column"> | </span> 
-              <span class="center ev four columns">●●○○○○ </span>
+              <span class="left ev four columns">●●○○○○ </span>
             </h5>
           </span>
           <span id="sense">
             <h5>
               <span class="label three columns">Sense </span>
-              <span class="center iv four columns">○○●●●● </span> 
+              <span class="right iv four columns">○○●●●● </span> 
               <span class="center one column"> | </span> 
-              <span class="center ev four columns">●●●●○○ </span>
+              <span class="left ev four columns">●●●●○○ </span>
             </h5>
           </span>
           <span id="mind">
             <h5>
               <span class="label three columns">Mind </span>
-              <span class="center iv four columns">○○○●●● </span> 
+              <span class="right iv four columns">○○○●●● </span> 
               <span class="center one column"> | </span> 
-              <span class="center ev four columns">●●○○○○ </span>
+              <span class="left ev four columns">●●○○○○ </span>
             </h5>
           </span>
         </div>
 
-        <div class="pokemon four columns electricborder" id="Pikachu" title="">
+        <div class="shift four columns border electricborder" id="Pikachu" title="">
           <div class="twelve columns">
             <h5>
-              <span id="gender" class="two columns">♂</span>
+              <span id="gender" class="offset-by-one one column">♂</span>
               <span id="eggOne" class="header five columns">Egg group1 </span>
               <span id="eggTwo" class="header five columns">Egg group2</span>
             </h5>
@@ -147,7 +144,7 @@
           </div>
         </div>
 
-        <div class="border four columns">
+        <div class="shift border four columns">
           <table class="twelve columns">
             <tr>
               <th class="two columns"></th>
@@ -181,17 +178,17 @@
 
       <div class="second-row twelve columns">
         <div class="eight columns">
-          <div class="six columns">
+          <div class="six columns border">
             <h5>
               <span class="label five columns">Dash</span>
-              <span id="dashVal" class="one column">2</span>
-              <span class="label five columns">Range</span>
-              <span id="rangeVal" class="one column">5</span>
+              <span id="dashVal" class="one-half column">2</span>
+              <span class="offset-by-one label five columns">Range</span>
+              <span id="rangeVal" class="one-half column">5</span>
             </h5>
           </div>
 
-          <div class="center six columns">
-            <span class="label">Evolution Method: </span>
+          <div class="shift center six columns">
+            <span class="label">Evolves: </span>
             <span id="evolutionMethod">Electric Energy</span>
           </div>
 
@@ -201,7 +198,7 @@
           </div>
         </div>
 
-        <div class="four columns">
+        <div class="shift four columns">
           <span class="header">Nature: </span>
           <span id="nature">Insert a really large crazy complex nature right here right meow. This text might be a lot longer than you think it will be taking up a ton of space.</span>
         </div>

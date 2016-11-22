@@ -201,9 +201,10 @@ table tr td {
 	text-align: left;
 	font-weight: bold;
 }
-.center {
-	text-align: center;
-}
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }
+
 .underline {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -223,4 +224,17 @@ table tr td {
 	border-width: 3px;
 	border-color: lightblue;
 	padding: 5px;
+}
+
+div.moveHeader {
+	height: 38px;
+}
+
+.moveHeader {
+	border-width: 2px 2px 0px 2px;
+	border-style: outset;
+}
+.moveContent {
+	border-width: 2px 2px 2px 0px;
+	border-style: outset;
 }

@@ -42,6 +42,17 @@
 	.first-row {
 		height: 148px !important;
 	}
+	.moveContent {
+		display: block !important;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #000;
+	}
+	.moveHeader {
+		border-width: 1px;
+		border-style: solid;
+		border-color: #000;
+	}
 }
 
 /*Pokemon aritcle layout*/
