@@ -135,15 +135,15 @@ main one once they're complete.
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 2,
 				"Sense": 3,
-				"Mind": 3			  
+				"Mind": 2			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Growl", "Scratch", "Poison_Fang", "Tail_Wag", "Double_Kick", "Poison_Sting", "Fury_Swipes", "Bite", "Crunch", "Poison_Fang"]
 		}
 	},
 "Nidorina":
@@ -171,10 +171,10 @@ main one once they're complete.
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 3,
 				"Strength": 3,
 				"Sense": 3,
-				"Mind": 3			  
+				"Mind": 2			  
 			}
 		},
 		"Moves":
@@ -207,10 +207,10 @@ main one once they're complete.
 		{
 			"IV": 
 			{
-				"Speed": 2,
+				"Speed": 4,
 				"Strength": 3,
-				"Sense": 4,
-				"Mind": 3			  
+				"Sense": 3,
+				"Mind": 2			  
 			}
 		},
 		"Moves":
