@@ -1,7 +1,6 @@
   $( document ).ready( function() {
       /*print out json files*/
       console.log(moves);
-      //console.log(pokemon);
 
       //Delete all types without moves - needed for empty json keys
       $.each(moves, function(key) {
