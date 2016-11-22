@@ -23,10 +23,10 @@ var pokemon =
 		"Evolution": 
 		{
 			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": [],
+			"Prior_Evolutions": null,
 			"Next_Evolutions": ["Ivysaur"]
 		},
-		"Ability": "None",
+		"Ability": "Chlorophyll",
 		"Attributes": 
 		{
 			"IV": 
@@ -62,7 +62,7 @@ var pokemon =
 			"Prior_Evolutions": ["Bulbasaur"],
 			"Next_Evolutions": ["Venusaur"]
 		},
-		"Ability": "None",
+		"Ability": "Chlorophyll",
 		"Attributes": 
 		{
 			"IV": 
@@ -94,11 +94,11 @@ var pokemon =
 		},
 		"Evolution": 
 		{
-			"Method": "",
+			"Method": null,
 			"Prior_Evolutions": ["Ivysaur"],
-			"Next_Evolutions": [""]
+			"Next_Evolutions": null
 		},
-		"Ability": "None",
+		"Ability": "Chlorophyll",
 		"Attributes": 
 		{
 			"IV": 
@@ -131,10 +131,10 @@ var pokemon =
 		"Evolution": 
 		{
 			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": [],
+			"Prior_Evolutions": null,
 			"Next_Evolutions": ["Charmeleon"]
 		},
-		"Ability": "None",
+		"Ability": "Shed_Skin",
 		"Attributes": 
 		{
 			"IV": 
@@ -170,7 +170,7 @@ var pokemon =
 			"Prior_Evolutions": ["Charmander"],
 			"Next_Evolutions": ["Charizard"]
 		},
-		"Ability": "None",
+		"Ability": "Shed_Skin",
 		"Attributes": 
 		{
 			"IV": 
@@ -202,9 +202,9 @@ var pokemon =
 		},
 		"Evolution": 
 		{
-			"Method": "",
+			"Method": null,
 			"Prior_Evolutions": ["Charmeleon"],
-			"Next_Evolutions": []
+			"Next_Evolutions": null
 		},
 		"Ability": "Airborne",
 		"Attributes": 
@@ -350,7 +350,7 @@ var pokemon =
 			"Prior_Evolutions": null,
 			"Next_Evolutions": ["Metapod"]
 		},
-		"Ability": "",
+		"Ability": "Compound_Eyes",
 		"Attributes": 
 		{
 			"IV": 
@@ -458,7 +458,7 @@ var pokemon =
 			"Prior_Evolutions": null,
 			"Next_Evolutions": ["Kakuna"]
 		},
-		"Ability": "",
+		"Ability": "Compound_Eyes",
 		"Attributes": 
 		{
 			"IV": 

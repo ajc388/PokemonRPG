@@ -8,6 +8,14 @@ var abilities =
 	{
 		"Description": "The Pokemon is a liquid, and once per battle it can ignore a normal melee attack or any steel, rock, or fighting attack."
 	},
+	"Chlorophyll":
+	{
+		"Description": "If the Pokemon is in sunlight, it gets an extra dash action."
+	},
+	"Compound_Eyes":
+	{
+		"Description": "Better senses lead to higher crits. The Pokemon crits on any doubles."
+	},
 	"Cosplayer":
 	{
 		"Description": "The pokemon may hold an extra accessory as part of its outfit."

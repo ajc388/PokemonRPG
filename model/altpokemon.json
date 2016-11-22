@@ -58,7 +58,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Sandslash",
 		},
-		"Ability": "none",
+		"Ability": "Shell",
 		"Attributes": 
 		{
 			"IV": 
@@ -71,7 +71,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Scratch", "Defense_Curl", "Entrench", "Sand_Attack", "Poison_Sting", "Rollout", "Rapid_Spin", "Fury_Cutter", "Swift", "Magnitude", "Sand_Tomb", "Slash", "Dig", "Swords_Dance"]
 		}
 	},
 "Sandslash":
@@ -94,7 +94,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Sandshrew",
 			"Next_Evolutions": null,
 		},
-		"Ability": "none",
+		"Ability": "Spiked",
 		"Attributes": 
 		{
 			"IV": 
@@ -107,7 +107,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Magnitude", "Slash", "Entrench", "Crush_Claw", "Acupuncture", "Poison_Sting", "Pin_Missile", "Rollout", "Berserker_Toxin", "Rapid_Spin", "Fury_Cutter", "Swift", "Sand_Tomb", "Dig", "Swords_Dance""Sandstorm", "Earthquake"]
 		}
 	},
 "Nidoran♀":
@@ -346,7 +346,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Clefable"
 		},
-		"Ability": "none",
+		"Ability": "Friend_Guard",
 		"Attributes": 
 		{
 			"IV": 
@@ -382,7 +382,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Clefairy",
 			"Next_Evolutions": null
 		},
-		"Ability": "none",
+		"Ability": "Friend_Guard",
 		"Attributes": 
 		{
 			"IV": 
@@ -562,7 +562,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Golbat"
 		},
-		"Ability": "none",
+		"Ability": "Airborne",
 		"Attributes": 
 		{
 			"IV": 
@@ -599,7 +599,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Zubat",
 			"Next_Evolutions": null
 		},
-		"Ability": "none",
+		"Ability": "Airborne",
 		"Attributes": 
 		{
 			"IV": 
@@ -612,7 +612,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Vampire_Bite"]
 		}
 	},	
 	"Oddish":
@@ -635,7 +635,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Gloom"
 		},
-		"Ability": "none",
+		"Ability": "Chlorophyll",
 		"Attributes": 
 		{
 			"IV": 
@@ -648,7 +648,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Healing_Herb", "Herbal_Remedy"]
 		}
 	},		
 	"Gloom":
@@ -671,7 +671,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Oddish",
 			"Next_Evolutions": "Vileplume"
 		},
-		"Ability": "none",
+		"Ability": "Chlorophyll",
 		"Attributes": 
 		{
 			"IV": 
@@ -707,7 +707,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Gloom",
 			"Next_Evolutions": null
 		},
-		"Ability": "none",
+		"Ability": "Chlorophyll",
 		"Attributes": 
 		{
 			"IV": 
@@ -743,7 +743,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Parasect"
 		},
-		"Ability": "none",
+		"Ability": "Compound_Eyes",
 		"Attributes": 
 		{
 			"IV": 
@@ -759,7 +759,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},		
-	"Paras":
+	"Parasect":
 	{	
 		"Pokedex_ID": "047",
 		"Short_Description": "Mushroom Pokemon",
@@ -776,10 +776,10 @@ main one once they're complete.
 		"Evolution": 
 		{
 			"Method": null,
-			"Prior_Evolutions": Paras,
+			"Prior_Evolutions": "Paras",
 			"Next_Evolutions": null
 		},
-		"Ability": "none",
+		"Ability": "Compound_Eyes",
 		"Attributes": 
 		{
 			"IV": 
@@ -815,7 +815,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Venomoth"
 		},
-		"Ability": "none",
+		"Ability": "Compound_Eyes",
 		"Attributes": 
 		{
 			"IV": 
@@ -851,7 +851,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Venonat",
 			"Next_Evolutions": null
 		},
-		"Ability": "none",
+		"Ability": "Levitate",
 		"Attributes": 
 		{
 			"IV": 
@@ -959,7 +959,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Persian"
 		},
-		"Ability": "none",
+		"Ability": "Stealthy",
 		"Attributes": 
 		{
 			"IV": 
@@ -972,7 +972,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Bribery"]
 		}
 	},
 	"Persian":
@@ -995,7 +995,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Meowth",
 			"Next_Evolutions": 
 		},
-		"Ability": "none",
+		"Ability": "Stealthy",
 		"Attributes": 
 		{
 			"IV": 
@@ -1008,7 +1008,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Bribery"]
 		}
 	},
 	"Psyduck":
@@ -1067,7 +1067,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Psyduck",
 			"Next_Evolutions": null
 		},
-		"Ability": "none",
+		"Ability": "Swift_Swim",
 		"Attributes": 
 		{
 			"IV": 
@@ -1103,7 +1103,7 @@ main one once they're complete.
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Primeape"
 		},
-		"Ability": "Vigilant",
+		"Ability": "Anger_Point",
 		"Attributes": 
 		{
 			"IV": 
@@ -1116,7 +1116,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Poo_Fling"]
+			"Learnable": ["Poo_Fling", "Anger_Strike", "Beat_Up"]
 		}
 	},	
 	"Primeape":
@@ -1139,7 +1139,7 @@ main one once they're complete.
 			"Prior_Evolutions": "Mankey",
 			"Next_Evolutions": null
 		},
-		"Ability": "Vigilant",
+		"Ability": "Anger_Point",
 		"Attributes": 
 		{
 			"IV": 
@@ -1152,7 +1152,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Poo_Fling"]
+			"Learnable": ["Poo_Fling", "Anger_Strike", "Beat_Up"]
 		}
 	},	
 	"Growlithe":
