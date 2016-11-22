@@ -48,16 +48,14 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 1200px) {
+@media (min-width: 550px) {
   .container {
     width: 100%; }
   .column,
   .columns {
-    margin-left: 1%; 
-    margin-bottom: 10px;}
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
+    margin-left: 0%; 
+    margin-bottom: 0px;
+  }
 
   .one.column,
   .one.columns                    { width: 8.3%; }
@@ -86,7 +84,7 @@
   .offset-by-three.column,
   .offset-by-three.columns        { margin-left: 26%;            }
   .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-four.columns         { margin-left: 32.3333333333%; }
   .offset-by-five.column,
   .offset-by-five.columns         { margin-left: 43.3333333333%; }
   .offset-by-six.column,

@@ -50,9 +50,12 @@ div.blockheader {
 	padding: 3px;
 	height: 33px;
 }
-div.blockHeader span {
+div.blockheader span {
 	display: inline-block; 
-	width: 100%;
+}
+div.blockheader span.title
+{
+	width:50%;
 }
 
 /*User controls section*/
@@ -83,7 +86,6 @@ div.userinput {
 }
 .button {
 	color: #FFF;
-	width: 120px;
 	background-color: #333;
 	vertical-align: top;
 }
@@ -151,6 +153,10 @@ div.userinput {
 .waterborder { border-color: #6890F0 !important; }
 .nullborder {border-color: #666 !important; }
 
+.border {
+	border: outset 3px #333;
+	border-radius: 6px;
+}
 .fixed {
 	position: fixed;
 	top: 0px;
@@ -162,28 +168,59 @@ div.userinput {
 }
 
 /*Data tables*/
-table.dataGrid {
+table {
 	margin-width: 0px;
 	width: 100%;
 }
-table tr.dataRowHeader:first-child {
+table tr:first-child {
 	background-color: #333;
-	font-size: 130%;
+	font-size: 110%;
 	color: white;
 }
-table tr.dataRow:nth-child(even) {
+table tr:nth-child(even) {
 	background-color: #EEE;
 }
-table tr.dataRow:not(:first-child):hover {
+table tr:not(:first-child):hover {
 	background-color: lightblue;
 }
-table tr.dataRow {
-	font-size: 120%;
+table tr th {
+	margin-width: 0px;
+	padding: 5px;
 }
-table th.dataHeader {
-	padding: 12px;
-}
-table td.dataValue {
-	padding: 10px;
+table tr td {
+	margin-width: 0px;
+	padding: 5px;
 	text-align: center;
+}
+
+.header {
+	text-align: center;
+	font-weight: bold;
+}
+.label {
+	text-align: left;
+	font-weight: bold;
+}
+.center {
+	text-align: center;
+}
+.underline {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #333;
+}
+.fancy {
+	font-family: cursive;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.ui-tooltip-content {
+	background-color: #333;
+	color: white;
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: lightblue;
+	padding: 5px;
 }
