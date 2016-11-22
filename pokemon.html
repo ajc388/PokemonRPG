@@ -3,9 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Pokemon RPG</title>
-  <meta name="description" content="Local pokemon toolkit">
+  <meta name="description" content="Pokemon toolkit">
   <meta name="author" content="Cameron">
   <script src="assets/vendor/jquery-3.1.1/jquery-3.1.1.js"></script>
   <script src="assets/vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -34,20 +33,37 @@
   <!--96 pixels to the inch-->
   <!--standar page size is 8.5 x 11 inches -->
   <!--2550 pixels x 3300 pixels-->
-  <div class="blockheader" id="">
-    <span>Pokemon Sheet : </span>
-    <span>Pikachu</span>
+  <div class="blockheader" id="menu">
+    <span class="three columns" style="text-align: left;">
+      <span><button class="button ui-button ui-widget ui-corner-all" id="previous"> << </button></span>
+      <span><button class='button ui-button ui-widget ui-corner-all' id="save">Save</button></span>
+    </span>
+    <span class="five columns">
+      <span>Pokemon Sheet - </span>
+      <span>Pikachu - </span>
+      <span>#025</span>
+    </span>
+    <span class="four columns" style="text-align: right;">
+      <span>
+        <label for="fileName">File : </label>
+        <input class="input" type="text" name="fileName" />
+        <button class="button ui-button ui-widget ui-corner-all" id="load">Load</button>
+      </span>
+      <span><button class="button ui-button ui-widget ui-corner-all" id="next"> >> </button></span>
+    </span>
   </div>
 
   <article class="page" id="pokemonSheet">
     <section class="pageHeader">
-      <span id="modifier" class="header four columns">Shiny or Legendary</span>
-      <span id="name" class="header four columns">Name</span>
-      <span class="four columns">
-        <span id="gender" class="two columns">♂</span>
-        <span id="eggOne" class="header five columns">Egg group1 </span>
-        <span id="eggTwo" class="header five columns">Egg group2</span>
-      </span>
+      <div>
+        <span id="modifier" class="header four columns">Shiny or Legendary</span>
+        <span id="name" class="header four columns">Name</span>
+        <span class="four columns">
+          <span id="gender" class="two columns">♂</span>
+          <span id="eggOne" class="header five columns">Egg group1 </span>
+          <span id="eggTwo" class="header five columns">Egg group2</span>
+        </span>
+      </div>
     </section>
 
     <section class="">
@@ -61,23 +77,23 @@
           </div>
           <div id="speed">
             <span class="four columns">Speed: </span>
-            <span class="iv four columns">○○○○●● </span>
-            <span class="ev four columns">●●●●○○ </span>
+            <span class="center iv four columns">○○○○●● </span>
+            <span class="center ev four columns">●●●●○○ </span>
           </div>
           <div id="strength">
             <span class="four columns">Strength: </span>
-            <span class="iv four columns">○○○○○● </span>
-            <span class="ev four columns">●●○○○○ </span>
+            <span class="center iv four columns">○○○○○● </span>
+            <span class="center ev four columns">●●○○○○ </span>
           </div>
           <div id="sense">
             <span class="four columns">Sense: </span>
-            <span class="iv four columns">○○●●●● </span>
-            <span class="ev four columns">●●●●○○ </span>
+            <span class="center iv four columns">○○●●●● </span>
+            <span class="center ev four columns">●●●●○○ </span>
           </div>
           <div id="mind">
             <span class="four columns">Sense: </span>
-            <span class="iv four columns">○○○●●● </span>
-            <span class="ev four columns">●●○○○○ </span>
+            <span class="center iv four columns">○○○●●● </span>
+            <span class="center ev four columns">●●○○○○ </span>
           </div>
         </div>
         <!-- Health and Friendship Block -->
@@ -124,7 +140,7 @@
       </div>
 
       <!--Pokemon description-->
-      <div class='pokemon four columns'>
+      <div class='pokemon' class='four columns'>
         <img class='pokepic' src='assets/images/pokemon/Pikachu.png' />
         <div class="nature">
             A randomly generated nature for the pikachu. This will probably take up a lot of text to describe.
@@ -134,7 +150,7 @@
 
   </article>
 
-  <aside class="sidebar" id="editor">
+  <aside class="sidebar" id="sidebar">
 
   </aside>
 

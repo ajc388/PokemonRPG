@@ -1,26 +1,36 @@
-.page { 
-	width: 670px;
-	border: 0px; 
-	margin: 0% 5%; 
-	padding: 0px; 
+@media print{
+	body 
+	{
+		font-family: ;
+		background-color:#FFF; 
+		background-image: none; 
+		color: #000;
+	}
+	#header { display: none; }
+	#menu { display: none; }
+	#sidebar { display: none; }
 
-	font-size: 12pt;
-}
-.pageHeader {
-}
-.header {
-	text-align: center;
-	font-weight: bold;
-}
-.label {
-	text-align: left;
-	font-weight: bold;
-}
-.center {
-	text-align: center;
-}
-.underline {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #333;
+	.page 
+	{ 
+		width: 777px;
+		height: 1017px;
+		margin: 0px 19.2px;
+		border: 0px; 
+		padding: 0px; 
+	}
+
+	/*skeleton css translations*/
+	.one.column, .one.columns { width: 64.75px;}
+	.two.columns { width: 129.5px; }
+	.three.columns { width: 194.25px;}
+	.four.columns { width: 259px;}
+	.five.columns { width: 323.75px; }
+	.six.columns { width: 388.5px;}
+	.seven.columns { width: 453.25px;}
+	.eight.columns { width: 518px;}
+	.nine.columns { width: 582.75px; }
+	.ten.columns { width: 647.5px;}
+	.eleven.columns { width: 712.25px;}
+	.twelve.columns { width: 777px; }
+
 }
