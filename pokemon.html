@@ -10,8 +10,8 @@
   <script src="assets/vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/vendor/jquery-ui-1.12.1/jquery-ui.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/pokemon.css" />
   <link rel="stylesheet" type="text/css" href="assets/vendor/skeleton-2.0.4/css/skeleton.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/pokemon.css" />
 
 </head>
 
@@ -30,9 +30,6 @@
     </nav>
   </header>
   
-  <!--96 pixels to the inch-->
-  <!--standar page size is 8.5 x 11 inches -->
-  <!--2550 pixels x 3300 pixels-->
   <div class="blockheader" id="menu">
     <span class="three columns" style="text-align: left;">
       <span><button class="button ui-button ui-widget ui-corner-all" id="previous"> << </button></span>
@@ -55,101 +52,137 @@
 
   <article class="page" id="pokemonSheet">
     <section class="pageHeader">
-      <div>
-        <span id="modifier" class="header four columns">Shiny or Legendary</span>
-        <span id="name" class="header four columns">Name</span>
-        <span class="four columns">
-          <span id="gender" class="two columns">♂</span>
-          <span id="eggOne" class="header five columns">Egg group1 </span>
-          <span id="eggTwo" class="header five columns">Egg group2</span>
+      <div class="twelve columns">
+        <span class="one column" style="text-align:center;"><img src="assets/images/pokeball.png" alt="swirly design"/></span>
+        <span class="ten columns header">
+          <h2 class="fancy">
+            <span id="shiny" class="shiny">Shiny</span>
+            <span id="name" class="name">Pikachu</span>
+            <span id="legend" class="legend">Legend</span>
+          </h2>
         </span>
+        <span class="one column" style="text-align:center;"><img src="assets/images/pokeball.png" alt="swirly design"/></span>
       </div>
     </section>
 
     <section class="">
-      <div class="eight columns">
-        <!-- Attribute block -->
-        <div id="attributes" class="six columns">
-          <div class="header"> 
-            <span class="four columns"></span>
-            <span class="four columns">IV</span>
-            <span class="four columns">EV</span>
-          </div>
-          <div id="speed">
-            <span class="four columns">Speed: </span>
-            <span class="center iv four columns">○○○○●● </span>
-            <span class="center ev four columns">●●●●○○ </span>
-          </div>
-          <div id="strength">
-            <span class="four columns">Strength: </span>
-            <span class="center iv four columns">○○○○○● </span>
-            <span class="center ev four columns">●●○○○○ </span>
-          </div>
-          <div id="sense">
-            <span class="four columns">Sense: </span>
-            <span class="center iv four columns">○○●●●● </span>
-            <span class="center ev four columns">●●●●○○ </span>
-          </div>
-          <div id="mind">
-            <span class="four columns">Sense: </span>
-            <span class="center iv four columns">○○○●●● </span>
-            <span class="center ev four columns">●●○○○○ </span>
-          </div>
-        </div>
-        <!-- Health and Friendship Block -->
-        <div class="six columns">
-          <div id="healthBar">
-            <div class="header twelve columns">
-              <span>HP:</span>
-            </div>
-            <div>
-              <span class="center twelve columns">[][][][][] | [][][][][] | [][][][][]</span>
-              <span class="center twelve columns">[][][][][] | [][][][][] | [][][][][]</span>
-            </div>
-          </div>
-          <div id="friendshipBar">
-            <div class="header twelve columns">
-              <span>FP:</span>
-            </div>
-            <div>
-              <span class="center twelve columns">[][][][][] | [][][][][] | [][][][][]</span>   
-            </div>
-          </div>
-        </div>
-
-        <div id="derivedStatistics" class="six columns">  <span class="six columns">
-            <span class="label">Dash: </span>
-            <span>2</span>
-          </span>
-          <span class="six columns">
-            <span class="label">Range: </span>
-            <span>5</span>
-          </span>
-        </div>
-
-        <div id="evolutionMethod" class="six columns">  
-          <span>
-               This is the evolution method block.
-          </span>
-        </div>
-
-        <div id="holds" class="twelve columns">
-          <span class="three columns">Holds: </span>
-          <span class="underline nine columns" style="height: 25px"> </span>
-        </div>
+      <!-- Health and Friendship Block -->
+      <div>
+        <span id="health" class="eight columns">
+          <h3>
+            <span class="label">HP</span>
+            <span id="hpBar">□□□□□|□□□□□|□□□□□|□□□□□|□□□□□|□□□□□</span>
+          </h3>
+        </span>
+        <span id="friendship" class="four columns">
+          <h3>
+            <span class="label">FP</span>
+            <span id="fpBar">□□□□□|□□□□□|□□□□□</span>
+          </h3>
+        <span>
       </div>
 
-      <!--Pokemon description-->
-      <div class='pokemon' class='four columns'>
-        <img class='pokepic' src='assets/images/pokemon/Pikachu.png' />
-        <div class="nature">
-            A randomly generated nature for the pikachu. This will probably take up a lot of text to describe.
+      <!-- Attribute block -->
+      <div id="attributes" class="border four columns">
+        <span class="header"> 
+          <span class="offset-by-four four columns">IV</span>
+          <span class="four columns">EV</span>
+        </span>
+        <span id="speed">
+          <span class="label four columns">Speed: </span>
+          <span class="center iv four columns">○○○○●● </span>
+          <span class="center ev four columns">●●●●○○ </span>
+        </span>
+        <span id="strength">
+          <span class="label four columns">Strength: </span>
+          <span class="center iv four columns">○○○○○● </span>
+          <span class="center ev four columns">●●○○○○ </span>
+        </span>
+        <span id="sense">
+          <span class="label four columns">Sense: </span>
+          <span class="center iv four columns">○○●●●● </span>
+          <span class="center ev four columns">●●●●○○ </span>
+        </span>
+        <span id="mind">
+          <span class="label four columns">Sense: </span>
+          <span class="center iv four columns">○○○●●● </span>
+          <span class="center ev four columns">●●○○○○ </span>
+        </span>
+      </div>
+
+      <article class="pokemon four columns electricborder" id="Pikachu" title="">
+        <div class="pokemonHeader" style="height:30px">
+          <span class="two columns"><img class="icon" src="assets/images/type_icons/Electric.png" alt="Electric"></span>
+          <span class="eight columns">  
+            <span class="Name">Pikachu : </span>
+            <span class="Pokedex_ID">025</span>
+          </span>
+          <span class="two columns"><img class="icon" src="assets/images/type_icons/Electric.png" alt="Electric"></span>
         </div>
+        <div>
+          <span class="offset-by-two columns"><img class="eight columns" src="assets/images/pokemon/Pikachu.png"></span>
+        </div>
+        <div class="description twelve columns">
+          <span id="gender" class="two columns">♂</span>
+          <span id="eggOne" class="header five columns">Egg group1 </span>
+          <span id="eggTwo" class="header five columns">Egg group2</span>
+        </div>
+      </article>
+
+      <div class="border four columns">
+        <table class="twelve columns">
+          <tr>
+            <th class="two columns"></th>
+            <th class="five columns">Electric</th>
+            <th class="five columns">None</th>
+          </tr>
+          <tr>
+            <td class="label two columns">2x</td>
+            <td class="five columns">
+              <img class="icon" src="assets/images/type_icons/Ground.png" alt="Ground">
+            </td>
+            <td class="five columns"></td>
+          </tr>
+          <tr>
+            <td class="label two columns">1/2x</td>
+            <td class="five columns">
+              <img class="icon" src="assets/images/type_icons/Electric.png" alt="Electric"/>
+              <img class="icon" src="assets/images/type_icons/Flying.png" alt="Flying"/>
+              <img class="icon" src="assets/images/type_icons/Steel.png" alt="Steel"/>
+            </td>
+            <td class="five columns"></td>
+          </tr>
+          <tr>
+            <td class="label two columns">0x</td>
+            <td class="five columns"></td>
+            <td class="five columns"></td>
+          </tr>
+        </table>
       </div>
     </section>
 
   </article>
 
+  <!-- <div id="derivedStatistics" class="six columns">  <span class="six columns">
+          <span class="label">Dash: </span>
+          <span>2</span>
+        </span>
+        <span class="six columns">
+          <span class="label">Range: </span>
+          <span>5</span>
+        </span>
+      </div>
+  
+      <div id="holds" class="twelve columns">
+        <span class="three columns">Holds: </span>
+        <span class="underline nine columns" style="height: 25px"> </span>
+      </div>
+
+      <div id="evolutionMethod" class="six columns">  
+        <span>
+             This is the evolution method block.
+        </span>
+      </div>-->
   <aside class="sidebar" id="sidebar">
 
   </aside>

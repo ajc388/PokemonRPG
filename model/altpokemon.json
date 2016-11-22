@@ -64,9 +64,9 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -99,10 +99,10 @@ main one once they're complete.
 		{
 			"IV": 
 			{
-				"Speed": 3,
+				"Speed": 4,
 				"Strength": 3,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -110,7 +110,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},
-"Nidoran_♀":
+"Nidoran♀":
 	{	
 		"Pokedex_ID": "29",
 		"Short_Description": "Poison Pin Pokemon",
@@ -137,8 +137,8 @@ main one once they're complete.
 			{
 				"Speed": 2,
 				"Strength": 2,
-				"Sense": 2,
-				"Mind": 2			  
+				"Sense": 3,
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -172,9 +172,9 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 2,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -208,8 +208,8 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 2,
-				"Strength": 2,
-				"Sense": 3,
+				"Strength": 3,
+				"Sense": 4,
 				"Mind": 3			  
 			}
 		},
@@ -218,7 +218,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},	
-"Nidoran_♂":
+"Nidoran♂":
 	{	
 		"Pokedex_ID": "32",
 		"Short_Description": "Poison Pin Pokemon",
@@ -243,8 +243,8 @@ main one once they're complete.
 		{
 			"IV": 
 			{
-				"Speed": 2,
-				"Strength": 2,
+				"Speed": 3,
+				"Strength": 3,
 				"Sense": 2,
 				"Mind": 2			  
 			}
@@ -280,9 +280,9 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -316,9 +316,9 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 3,
+				"Strength": 4,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -353,8 +353,8 @@ main one once they're complete.
 			{
 				"Speed": 2,
 				"Strength": 2,
-				"Sense": 3,
-				"Mind": 2			  
+				"Sense": 4,
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -389,8 +389,8 @@ main one once they're complete.
 			{
 				"Speed": 2,
 				"Strength": 2,
-				"Sense": 3,
-				"Mind": 3			  
+				"Sense": 4,
+				"Mind": 4			  
 			}
 		},
 		"Moves":
@@ -424,9 +424,9 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 2,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -450,7 +450,7 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": "Battle",
+			"Method": "Battle OOOOOO",
 			"Prior_Evolutions": null,
 			"Next_Evolutions": "Ninetails",
 		},
@@ -460,9 +460,9 @@ main one once they're complete.
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 2,
+				"Strength": 3,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -474,7 +474,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "039",
 		"Short_Description": "Balloon Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Jigglypuff inflate themselves and float on the wind to travel with seasonal gusts.",
 		"Modifier": null,
 		"Types": ["Normal", "Fairy"],
 		"Egg_Groups": ["Fairy"],
@@ -497,8 +497,8 @@ main one once they're complete.
 			{
 				"Speed": 2,
 				"Strength": 2,
-				"Sense": 3,
-				"Mind": 2			  
+				"Sense": 4,
+				"Mind": 3			  
 			}
 		},
 		"Moves":
@@ -510,7 +510,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "040",
 		"Short_Description": "Balloon Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Wigglytuff typically hate bullies and will defend weaker Pokemon.",
 		"Modifier": null,
 		"Types": ["Normal", "Fairy"],
 		"Egg_Groups": ["Fairy"],
@@ -533,6 +533,439 @@ main one once they're complete.
 			{
 				"Speed": 2,
 				"Strength": 3,
+				"Sense": 4,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"Zubat":
+	{	
+		"Pokedex_ID": "041",
+		"Short_Description": "Bat Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Poison", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Golbat"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+	"Golbat":
+	{	
+//Should Crobat be added to the game, Knock off a point of Zubat's and Golbat's stats.
+		"Pokedex_ID": "042",
+		"Short_Description": "Bat Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Poison", "Flying"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Zubat",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+	"Oddish":
+	{	
+		"Pokedex_ID": "043",
+		"Short_Description": "Weed Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Grass", "Poison"],
+		"Egg_Groups": ["Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Gloom"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},		
+	"Gloom":
+	{	
+		"Pokedex_ID": "044",
+		"Short_Description": "Weed Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Grass", "Poison"],
+		"Egg_Groups": ["Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Plant Energy",
+			"Prior_Evolutions": "Oddish",
+			"Next_Evolutions": "Vileplume"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Stench"]
+		}
+	},		
+	"Vileplume":
+	{	
+		"Pokedex_ID": "045",
+		"Short_Description": "Flower Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Grass", "Poison"],
+		"Egg_Groups": ["Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Plant Energy",
+			"Prior_Evolutions": "Gloom",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Stench"]
+		}
+	},		
+"Paras":
+	{	
+		"Pokedex_ID": "046",
+		"Short_Description": "Mushroom Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Bug", "Grass"],
+		"Egg_Groups": ["Bug", "Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Parasect"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},		
+	"Paras":
+	{	
+		"Pokedex_ID": "047",
+		"Short_Description": "Mushroom Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Bug", "Grass"],
+		"Egg_Groups": ["Bug", "Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": Paras,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 4,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+	"Venonat":
+	{	
+		"Pokedex_ID": "048",
+		"Short_Description": "Insect Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Venomoth"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+	"Venomoth":
+	{	
+		"Pokedex_ID": "049",
+		"Short_Description": "Poison Moth Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Bug", "Poison"],
+		"Egg_Groups": ["Bug"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Venonat",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+	"Diglett":
+	{	
+		"Pokedex_ID": "050",
+		"Short_Description": "Mole Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Ground"],
+		"Egg_Groups": ["Ground", "Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Combine 3 Diglett",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Dugtrio"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"Dugtrio":
+	{	
+		"Pokedex_ID": "051",
+		"Short_Description": "Mole Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Ground"],
+		"Egg_Groups": ["Ground", "Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Diglett",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"Meowth":
+	{	
+		"Pokedex_ID": "052",
+		"Short_Description": "Scratch Cat Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Normal"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Friendship",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Persian"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 3,
 				"Sense": 3,
 				"Mind": 2			  
 			}
@@ -542,3 +975,261 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},
+	"Persian":
+	{	
+		"Pokedex_ID": "053",
+		"Short_Description": "Classy Cat Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Normal"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Meowth",
+			"Next_Evolutions": 
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 4,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"Psyduck":
+	{	
+		"Pokedex_ID": "054",
+		"Short_Description": "Duck Pokemon",
+		"Long_Description": "Psyduck can't fly due to their massive heads.",
+		"Modifier": null,
+		"Types": ["Water"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Golduck"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Duckface"]
+		}
+	},
+	"Golduck":
+	{	
+		"Pokedex_ID": "055",
+		"Short_Description": "Duck Pokemon",
+		"Long_Description": "Etymologists suspect that Golduck once had golden-colored feathers due to its name.",
+		"Modifier": null,
+		"Types": ["Water"],
+		"Egg_Groups": ["Flying"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Psyduck",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Duckface"]
+		}
+	},
+	"Mankey":
+	{	
+		"Pokedex_ID": "056",
+		"Short_Description": "Pig Monkey Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Fighting"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Primeape"
+		},
+		"Ability": "Vigilant",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Poo_Fling"]
+		}
+	},	
+	"Primeape":
+	{	
+		"Pokedex_ID": "057",
+		"Short_Description": "Pig Monkey Pokemon",
+		"Long_Description": "Primeape are incredibly strong but lacking discipline. Many trainers choose to put heavy weights on their Primeape's arms to slow down and power up its punches, and to help it train strength.",
+		"Modifier": null,
+		"Types": ["Fighting"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Mankey",
+			"Next_Evolutions": null
+		},
+		"Ability": "Vigilant",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 4,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Poo_Fling"]
+		}
+	},	
+	"Growlithe":
+	{	
+		"Pokedex_ID": "58",
+		"Short_Description": "Puppy Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Fire"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 75,
+			"Female_Weight": 25,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Fire Energy",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Arcanine"
+		},
+		"Ability": "Vigilant",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Odor_Sleuth"]
+		}
+	},
+	"Arcanine":
+	{	
+		"Pokedex_ID": "59",
+		"Short_Description": "Legendary Pokemon",
+		"Long_Description": "",
+		"Modifier": null,
+		"Types": ["Fire"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 75,
+			"Female_Weight": 25,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Growlithe",
+			"Next_Evolutions": null
+		},
+		"Ability": "Vigilant",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 4,
+				"Sense": 3,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Odor_Sleuth"]
+		}
+	},		
+/*
+Chansey know Fairy Godmother, healer ability.
+Scyther Reaper Strike
+Kabutops Reaper Strike
+Snorlax knows stench.
+*/

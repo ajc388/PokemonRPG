@@ -104,6 +104,10 @@ var abilities =
 	{
 		"Description": "Right before the Pokemon's turn starts, if it has any negative status condidions, make a strength save and if it passes remove one."
 	},
+	"Healer":
+	{
+		"Description": "Once per turn, the Pokemon may cure a status condition or 1d60 HP to an adjacent Pokemon."
+	},
 	"Soundproof":
 	{
 		"Description": "The Pokemon is immune to any moves that rely on sound, such as trumpet, sing, or boomburst."

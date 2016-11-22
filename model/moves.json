@@ -1963,7 +1963,7 @@ var moves =
 			"style": "Melee",
 			"flavor": "The user picks up the target and drops it from the heights.",
 			"effect": "Pin the target for 30 damage. Instead of adding 30 damage every time you succeed instead of adding damage, double the 30.",
-			"critical": "Double damage.",
+			"critical": "Double the damage.",
 		},
 		"Tailwind": 
 		{
@@ -2068,6 +2068,14 @@ var moves =
 			"style": "Ranged",
 			"flavor": "The user flies over the battlefield, shooting balls of elemental energy at its foes.",
 			"effect": "This move can only be learned by Pokémon who have a type besides flying, and treat this move as if it is that type. Once learned, classify it is a move of whatever type the Pokémon has that isn’t flying. For example, a fire/flying type once it learns this move treats it as a fire move. Move twice the user’s dash distance, flying over any Pokémon in the way. Every Pokémon along the path takes 30 damage of this move’s new type. Yes, even though this is classified as a ranged move, the user can only target enemies directly below it and and it changes locations while using it.",
+			"critical": "",
+		},
+		"Duckface":
+		{
+			"power": 50,
+			"style": "Ranged",
+			"flavor": "No one can resist the power of the duckface.",
+			"effect": "Choose a target in range. The target is stunned. This move does not miss.",
 			"critical": "",
 		},
 		"Gale_Force": 
