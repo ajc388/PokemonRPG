@@ -359,7 +359,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Sing", "Disarming_Voice", "Pound", "Growl", "Encore", "Double_Slap", "Defense_Curl", "Follow_Me", "Minimize", "Metronome", "Cosmic_Power"]
 		}
 	},
 	"Clefable":
@@ -395,7 +395,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Sing", "Disarming_Voice", "Pound", "Encore", "Double_Slap", "Follow_Me", "Minimize", "Metronome", "Cosmic_Power", "Moonlight", "Moonblast", "Gravity", "Meteor_Mash", "Friendship_Is_Magic", "Geas"]
 		}
 	},
 "Vulpix":
@@ -423,15 +423,15 @@ main one once they're complete.
 		{
 			"IV": 
 			{
-				"Speed": 2,
-				"Strength": 3,
+				"Speed": 3,
+				"Strength": 2,
 				"Sense": 3,
 				"Mind": 3			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Ember", "Tail_Wag", "Roar", "Baby-Doll_Eyes", "Quick_Attack", "Confuse_Ray", "Will-O-Wisp", "Hex", "Flame_Burst", "Flamethrower", "Extrasensory"]
 		}
 	},
 "Ninetails":
@@ -467,7 +467,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Ember", "Tail_Wag", "Roar", "Confuse_Ray", "Will-O-Wisp", "Hex", "Flame_Burst", "Flamethrower", "Extrasensory", "Combustion", "Firestorm", "Blue_Flare", "Inferno", "Fire_spin"]
 		}
 	},
 	"Jigglypuff":
@@ -612,7 +612,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Vampire_Bite"]
+			"Learnable": ["Sabretooth", "Vampire_Bite"]
 		}
 	},	
 	"Oddish":
@@ -900,7 +900,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Sand_Attack", "Scratch", "Growl", "Astonish", "Mud-Slap", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb"]
 		}
 	},
 	"Dugtrio":
@@ -936,7 +936,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Astonish", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb", "Earth_Power", "Dig", "Slash", "Earthquake", "Fissure"]
 		}
 	},
 	"Meowth":
@@ -972,7 +972,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Bribery"]
+			"Learnable": ["Scratch", "Ambush", "Stealth", "Growl", "Bite", "Fury_Swipes", "Screech", "Feint_Attack", "Taunt", "Pay_Day", "Steal_Heart", "Slash", "Nasty_Plot", "Night_Slash", "Feint", "Bribery", "Backstab"]
 		}
 	},
 	"Persian":
@@ -1008,7 +1008,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Bribery"]
+			"Learnable": ["Slash", "Ambush", "Stealth", "Pay_Day", "Bite", "Fury_Swipes", "Screech", "Feint_Attack", "Taunt", "Steal_Heart", "Nasty_Plot", "Night_Slash", "Feint", "Bribery", "Backstab", "Assassinate"]
 		}
 	},
 	"Psyduck":
