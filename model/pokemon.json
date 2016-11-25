@@ -622,7 +622,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "018",
 		"Short_Description": "Bird Pokemon",
-		"Long_Description": "Male Pidgeots have an incredibly-bright plumage to attract mates. The females have more boring feathers.",
+		"Long_Description": "Male Pidgeots have an incredibly-bright plumage to attract mates. The females have plainer feathers.",
 		"Modifier": null,
 		"Types": ["Normal", "Flying"],
 		"Egg_Groups": ["Flying"],
@@ -947,7 +947,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "026",
 		"Short_Description": "Mouse Pokemon",
-		"Long_Description": "Raichu's massive ears not only detect sound but also electrical signals.",
+		"Long_Description": "Raichu's massive ears not only detect sound but also electrical signals. They can sometimes be seen dancing to radio tunes they pick up.",
 		"Modifier": null,
 		"Types": ["Electric"],
 		"Egg_Groups": ["Field", "Fairy"],
@@ -1015,11 +1015,11 @@ var pokemon =
 			"Learnable": ["Thunder", "Electro_ball", "Thunder_Wave", "Electrolocation", "Thunderbolt", "Discharge", "Wild_charge", "tetrashock", "Thunderstorm", "Tightning", "Slam", "Ball_Lightning"]
 		}
 	},	
-	"Ghastly":
+	"Gastly":
 	{	
 		"Pokedex_ID": "092",
 		"Short_Description": "Gas Pokemon",
-		"Long_Description": "Ghastly eggs draw sustenance from the decaying fumes of a dead body. They were once blamed for causing many illnesses.",
+		"Long_Description": "Gastly eggs draw sustenance from the decaying fumes of a dead body. Gastly were once blamed for causing many illnesses.",
 		"Modifier": null,
 		"Types": ["Ghost", "Poison"],
 		"Egg_Groups": ["amorphous"],
