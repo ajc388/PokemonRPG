@@ -91,6 +91,12 @@ table tr td {
 	padding: 5px;
 	text-align: center;
 }
+.actual 
+{
+	font-weight: thicker !important;
+	color: #000;
+}
+.potential { color: #AAA; }
 
 .first-row { height: 230px; }
 div.first-row div { height: inherit; }

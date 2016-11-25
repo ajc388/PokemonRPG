@@ -5,18 +5,51 @@ $( document ).ready( function() {
   var pokemonName = location.search.substring(location.search.indexOf('=')+1);
   var selectedPokemon = pokemon[pokemonName];
   
+  displayHP(selectedPokemon);
+  displayFP(selectedPokemon);
   displayAttributes(selectedPokemon);
   displayPokemon(selectedPokemon, pokemonName);
-  displayCounters(selectedPokemon);
+  //displayCounters(selectedPokemon);
 
   displayMoves(moves, selectedPokemon);
 });
+
+function displayHP(pokemon)
+{
+  var ivStrength = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Strength !== "undefined" ? pokemon.Attributes.IV.Strength : 0;
+  var evStrength = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Strength !== "undefined" ? pokemon.Attributes.EV.Strength : 0;
+  var ivMind = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Mind !== "undefined" ? pokemon.Attributes.IV.Mind : 0;
+  var evMind = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Mind !== "undefined" ? pokemon.Attributes.EV.Mind : 0;
+  var hp = (ivStrength + evStrength)*2 + ivMind + evMind;
+  
+  $("#hpBar").append("<span class='actual'>"+displayBoxes(0, hp)+"</span>");
+  $("#hpBar").append("<span class='potential'>"+displayBoxes(hp, 36)+"</span>");
+}
+
+function displayFP(pokemon)
+{
+  var ivMind = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Mind !== "undefined" ? pokemon.Attributes.IV.Mind : 0;
+  var evMind = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Mind !== "undefined" ? pokemon.Attributes.EV.Mind : 0;
+  var fp = ivMind + evMind;
+
+  $("#fpBar").append("<span class='actual'>"+displayBoxes(0, fp)+"</span>");
+  $("#fpBar").append("<span class='potential'>"+displayBoxes(fp, 12)+"</span>");
+}
+
+function displayBoxes(prev, limit)
+{
+  for (var i = prev, str = ""; i < limit; i++) { 
+    if (i%6 == 0 ) { str += " "; }
+    str += "□"; 
+  }
+  return str;
+}
 
 function displayCounters(pokemon) 
 {
   var primaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length > 0 ? selectedPokemon.Types[0] : "None";
   var secondaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length == 2 ? selectedPokemon.Types[1] : "None";
-  
+  //var counters = 
 
 }
 
