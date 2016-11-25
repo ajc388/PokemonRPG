@@ -1,25 +1,99 @@
 $( document ).ready( function() {
   console.log(moves);
   
+  //Extracting key name from url
   var pokemonName = location.search.substring(location.search.indexOf('=')+1);
   var selectedPokemon = pokemon[pokemonName];
+  
+  displayAttributes(selectedPokemon);
+  displayPokemon(selectedPokemon, pokemonName);
+  displayCounters(selectedPokemon);
 
-  //problem should this build entirely from the model dynamically? 
-  //allowing new attributes to be added?
-  displayAttributeIV($("#iv_speed"), selectedPokemon.Attributes.IV.Speed );
-  displayAttributeIV($("#iv_strength"), selectedPokemon.Attributes.IV.Strength );
-  displayAttributeIV($("#iv_sense"), selectedPokemon.Attributes.IV.Sense );
-  displayAttributeIV($("#iv_mind"), selectedPokemon.Attributes.IV.Mind );
-
-  displayAttributeEV($("#ev_speed"), selectedPokemon.Attributes.EV.Speed );
-  displayAttributeEV($("#ev_strength"), selectedPokemon.Attributes.EV.Strength );
-  displayAttributeEV($("#ev_sense"), selectedPokemon.Attributes.EV.Sense );
-  displayAttributeEV($("#ev_mind"), selectedPokemon.Attributes.EV.Mind );
-
-
-
-  displayMoves(moves, ["Spark", "Thunder_Shock", "Squeak", "Tail_Wag", "Growl", "Play_Nice", "Quick_Attack", "Electro_Ball", "Thunder_Wave", "Feint", "Double_Team", "Spark", "Nuzzle", "Shuffle", "Electrolocation", "Thunderbolt", "Discharge", "Agility", "Novelty_Pokemon"]);
+  displayMoves(moves, selectedPokemon);
 });
+
+function displayCounters(pokemon) 
+{
+  var primaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length > 0 ? selectedPokemon.Types[0] : "None";
+  var secondaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length == 2 ? selectedPokemon.Types[1] : "None";
+  
+
+}
+
+function displayPokemon(selectedPokemon, pokemonName)
+{
+  var primaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length > 0 ? selectedPokemon.Types[0] : "null";
+  $("#pokemon").addClass("border").addClass(primaryType.toLowerCase() + "border");
+  
+  $("#pokemon").append("<span class='twelve columns'>" +
+    "<h5>"+
+    "<span id='gender' class='offset-by-one one column'></span>"+
+    "<span id='eggGroups' class='ten columns'></span>"+
+    "</h5>"+
+    "</span>"+
+    "<span class='offset-by-four columns'><img class='five columns' src='assets/images/pokemon/"+pokemonName+".png'></span>"+
+    "</span>");
+  
+  displayGender(selectedPokemon);
+  displayEggGroups(selectedPokemon);
+}
+
+function displayGender(pokemon)
+{
+  var male = pokemon.Gender !== "undefined" && pokemon.Gender.Male_Weight !== "undefined" ? pokemon.Gender.Male_Weight : 50;
+  var female = pokemon.Gender !== "undefined" && pokemon.Gender.Female_Weight !== "undefined" ? pokemon.Gender.Female_Weight : 50;
+  var other = pokemon.Gender !== "undefined" && pokemon.Gender.Other_Weight !== "undefined" ? pokemon.Gender.Other_Weight : 0;
+
+  var rand = Math.random() * (male+female+other);
+  if ( rand <= male ) { $("#gender").append("<img class='icon' style='vertical-align: middle;' src='assets/images/gender_icons/male.png' alt='male'/>");}
+  else if ( rand <= male+female ) { $("#gender").append("<img class='icon' style='vertical-align: middle;' src='assets/images/gender_icons/female.png' alt='female'/>");}
+  else if ( rand <= male+female+other ) { $("#gender").append("<img class='icon' style='vertical-align: middle;' src='assets/images/gender_icons/other.png' alt='other'/>");}
+}
+
+function displayEggGroups(pokemon)
+{
+  if ( typeof pokemon.Egg_Groups !== "undefined" )
+  { 
+    var eggGroups = pokemon.Egg_Groups;
+    if ( eggGroups.length == 1 )
+    {
+      $("#eggGroups").append("<span class='center twelve columns'>"+ eggGroups[0] +"</span>");
+    }
+    else if ( eggGroups.length == 2)
+    {
+      $("#eggGroups").append("<span class='center six columns'>"+ eggGroups[0] +"</span>");
+      $("#eggGroups").append("<span class='center six columns'>"+ eggGroups[1] +"</span>"); 
+    }
+  } 
+  else 
+  {
+     $("#eggGroups").append("<span class='center twelve columns'> None </span>");
+  }
+  
+}
+
+function displayAttributes(pokemon) 
+{
+  var ivSpeed = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Speed !== "undefined" ? pokemon.Attributes.IV.Speed : 0;
+  var ivStrength = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Strength !== "undefined" ? pokemon.Attributes.IV.Strength : 0;
+  var ivSense = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Strength !== "undefined" ? pokemon.Attributes.IV.Strength : 0;
+  var ivMind = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Mind !== "undefined" ? pokemon.Attributes.IV.Mind : 0;
+  
+  var evSpeed = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Speed !== "undefined" ? pokemon.Attributes.EV.Strength : 0;
+  var evStrength = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Strength !== "undefined" ? pokemon.Attributes.EV.Strength : 0;
+  var evSense = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Sense !== "undefined" ? pokemon.Attributes.EV.Strength : 0;
+  var evMind = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Mind !== "undefined" ? pokemon.Attributes.EV.Mind : 0;
+
+  displayAttributeIV($("#iv_speed"), ivSpeed );
+  displayAttributeIV($("#iv_strength"), ivStrength );
+  displayAttributeIV($("#iv_sense"), ivSense );
+  displayAttributeIV($("#iv_mind"), ivMind );
+
+  displayAttributeEV($("#ev_speed"), evSpeed );
+  displayAttributeEV($("#ev_strength"), evStrength );
+  displayAttributeEV($("#ev_sense"), evSense );
+  displayAttributeEV($("#ev_mind"), evMind );
+}
 
 function displayAttributeEV(element, val)
 {
@@ -37,8 +111,9 @@ function displayAttributeIV(element, val)
   element.html(str);
 }
 
-function displayMoves(moves, pokemonMoves)
-{
+function displayMoves(moves, pokemon)
+{ 
+   var pokemonMoves = typeof pokemon.Moves !== "undefined" && typeof pokemon.Moves.Learnable !== "undefined" ? pokemon.Moves.Learnable : [];
    var accordion = $("<div id='accordion' class='twelve columns'></div>");
    $.each(pokemonMoves, function(id, pokemonMove) 
    {
@@ -53,8 +128,8 @@ function displayMoves(moves, pokemonMoves)
         //Create header div for accordion
         var header = $("<div class='moveHeader twelve columns "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
         header.append("<span class='one-half column'><img class='icon' src= 'assets/images/type_icons/"+move.type+".png' /></span>");
-        header.append("<span class='four columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
-        header.append("<span class='seven columns'>" + flavor +"</span>");
+        header.append("<span class='three columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
+        header.append("<span class='eight columns'>" + flavor +"</span>");
         header.append("<span style='text-align: right;' class='label one-half columns'>" + power + "</span>");
         accordion.append(header);
 
