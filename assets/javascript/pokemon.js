@@ -15,7 +15,6 @@ $( document ).ready( function() {
   displayAbility(selectedPokemon, abilities);
   displayEvolution(selectedPokemon);
   displayNature(selectedPokemon, natures);
-
   displayMoves(selectedPokemon, moves);
 });
 
@@ -154,7 +153,10 @@ function displayNature(pokemon, natures)
   $.each(natures, function(name, nature) {
     var weight = nature.Weight;
     runningTotal += weight;
-    if ( rand < runningTotal ) { key = name; }
+    if ( rand < runningTotal ) { 
+      key = name; 
+      return false; //jquery break
+    }
   });
 
   $("#nature").append("<span class='header'>"+key.replace(/_/g, " ")+": </span>");
@@ -175,6 +177,18 @@ function displayPokemon(pokemon, pokemonName)
     "<span class='offset-by-four columns'><img class='five columns' src='assets/images/pokemon/"+pokemonName+".png'></span>"+
     "</span>");
   
+  $("#pokemon").tooltip({
+      content: "<div><p>"+ pokemon.Long_Description +"</p></div>",
+      open: function(event, ui)
+          {
+            ui.tooltip.hover(
+              function () {
+                $(this).fadeTo("slow", 1);
+        });
+          },
+      track: true
+    });
+
   displayGender(pokemon);
   displayEggGroups(pokemon);
 }
