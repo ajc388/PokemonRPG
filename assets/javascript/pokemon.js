@@ -10,8 +10,9 @@ $( document ).ready( function() {
   displayAttributes(selectedPokemon);
   displayPokemon(selectedPokemon, pokemonName);
   //displayCounters(selectedPokemon);
+  displayDashRange(selectedPokemon);
 
-  displayMoves(moves, selectedPokemon);
+  displayMoves(selectedPokemon, moves);
 });
 
 function displayHP(pokemon)
@@ -47,15 +48,27 @@ function displayBoxes(prev, limit)
 
 function displayCounters(pokemon) 
 {
-  var primaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length > 0 ? selectedPokemon.Types[0] : "None";
-  var secondaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length == 2 ? selectedPokemon.Types[1] : "None";
+  var primaryType = pokemon.Types !== "undefined" && pokemon.Types.length > 0 ? pokemon.Types[0] : "None";
+  var secondaryType = pokemon.Types !== "undefined" && pokemon.Types.length == 2 ? pokemon.Types[1] : "None";
   //var counters = 
 
 }
 
-function displayPokemon(selectedPokemon, pokemonName)
+function displayDashRange(pokemon)
 {
-  var primaryType = selectedPokemon.Types !== "undefined" && selectedPokemon.Types.length > 0 ? selectedPokemon.Types[0] : "null";
+  var ivSpeed = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Speed !== "undefined" ? pokemon.Attributes.IV.Speed : 0;
+  var ivSense = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Sense !== "undefined" ? pokemon.Attributes.IV.Sense : 0;
+  
+  var dash = ivSpeed;
+  var range = ivSense+1;
+
+  $("#dash").html(dash);
+  $("#range").html(range);
+}
+
+function displayPokemon(pokemon, pokemonName)
+{
+  var primaryType = pokemon.Types !== "undefined" && pokemon.Types.length > 0 ? pokemon.Types[0] : "null";
   $("#pokemon").addClass("border").addClass(primaryType.toLowerCase() + "border");
   
   $("#pokemon").append("<span class='twelve columns'>" +
@@ -67,8 +80,8 @@ function displayPokemon(selectedPokemon, pokemonName)
     "<span class='offset-by-four columns'><img class='five columns' src='assets/images/pokemon/"+pokemonName+".png'></span>"+
     "</span>");
   
-  displayGender(selectedPokemon);
-  displayEggGroups(selectedPokemon);
+  displayGender(pokemon);
+  displayEggGroups(pokemon);
 }
 
 function displayGender(pokemon)
@@ -109,7 +122,7 @@ function displayAttributes(pokemon)
 {
   var ivSpeed = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Speed !== "undefined" ? pokemon.Attributes.IV.Speed : 0;
   var ivStrength = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Strength !== "undefined" ? pokemon.Attributes.IV.Strength : 0;
-  var ivSense = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Strength !== "undefined" ? pokemon.Attributes.IV.Strength : 0;
+  var ivSense = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Sense !== "undefined" ? pokemon.Attributes.IV.Sense : 0;
   var ivMind = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Mind !== "undefined" ? pokemon.Attributes.IV.Mind : 0;
   
   var evSpeed = typeof pokemon.Attributes.EV !== "undefined" && typeof pokemon.Attributes.EV.Speed !== "undefined" ? pokemon.Attributes.EV.Strength : 0;
@@ -144,7 +157,7 @@ function displayAttributeIV(element, val)
   element.html(str);
 }
 
-function displayMoves(moves, pokemon)
+function displayMoves(pokemon, moves)
 { 
    var pokemonMoves = typeof pokemon.Moves !== "undefined" && typeof pokemon.Moves.Learnable !== "undefined" ? pokemon.Moves.Learnable : [];
    var accordion = $("<div id='accordion' class='twelve columns'></div>");

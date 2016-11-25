@@ -100,4 +100,4 @@ table tr td {
 
 .first-row { height: 230px; }
 div.first-row div { height: inherit; }
-.second-row { height: 100px;}
+.second-row { margin-top: 5px; margin-bottom: 5px; height: 100px;}
