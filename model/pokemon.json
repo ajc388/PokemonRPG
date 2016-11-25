@@ -875,7 +875,8 @@ var pokemon =
 		"Pokedex_ID": "025",
 		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "Pikachu like to chew on power cables. A sudden electrical surge can cause one to evolve.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Electric"],
 		"Egg_Groups": ["Field", "Fairy"],
 		"Gender": 

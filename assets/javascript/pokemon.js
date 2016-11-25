@@ -5,6 +5,7 @@ $( document ).ready( function() {
   var pokemonName = location.search.substring(location.search.indexOf('=')+1);
   var selectedPokemon = pokemon[pokemonName];
   
+  displayLabels(selectedPokemon, pokemonName);
   displayHP(selectedPokemon);
   displayFP(selectedPokemon);
   displayAttributes(selectedPokemon);
@@ -14,6 +15,16 @@ $( document ).ready( function() {
 
   displayMoves(selectedPokemon, moves);
 });
+
+function displayLabels(pokemon, name) 
+{
+  var shiny = typeof pokemon.Shiny !== "undefined" && pokemon.Shiny ? "Shiny" : "";
+  var legend = typeof pokemon.Legendary !== "undefined" && pokemon.Legendary ? "Legend" : "";
+  
+  $("#shiny").html(shiny);
+  $("#name").html(name);
+  $("#legend").html(legend);
+}
 
 function displayHP(pokemon)
 {
