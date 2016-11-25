@@ -12,8 +12,9 @@ $( document ).ready( function() {
   displayPokemon(selectedPokemon, pokemonName);
   displayCounters(selectedPokemon, counters);
   displayDashRange(selectedPokemon);
-  //displayEvolutionMethod();
-
+  displayAbility(selectedPokemon, abilities);
+  displayEvolution(selectedPokemon);
+  displayNature(selectedPokemon, natures);
   displayMoves(selectedPokemon, moves);
 });
 
@@ -120,6 +121,48 @@ function displayDashRange(pokemon)
   $("#range").html(range);
 }
 
+function displayAbility(pokemon, abilities)
+{
+  var ability = typeof pokemon.Ability !== "undefined" ? abilities[pokemon.Ability]: "None";
+  $("#ability").append("<span class='label'>"+pokemon.Ability+": </span>");
+  $("#ability").append("<span>"+ability["Description"]+"</span>");
+}
+
+function displayEvolution(pokemon)
+{
+  var evolutionMethod = typeof pokemon.Evolution !== "undefined" && typeof pokemon.Evolution.Method !== "undefined" && pokemon.Evolution.Method != null ? pokemon.Evolution.Method : "Mysterious";
+  if ( typeof pokemon.Evolution !== "undefined" && typeof pokemon.Evolution.Next_Evolutions !== "undefined" && pokemon.Evolution.Next_Evolutions != null )
+  {
+    $("#evolution").html(evolutionMethod);
+  } else {
+    $("#evolution").html("Final Form");
+  }
+}
+
+function displayNature(pokemon, natures)
+{
+  var total = 0;
+  $.each(natures, function(name, nature) {
+    var weight = nature.Weight;
+    total += weight;
+  });
+
+  var rand = Math.random()*total;
+  var runningTotal = 0;
+  var key = "";
+  $.each(natures, function(name, nature) {
+    var weight = nature.Weight;
+    runningTotal += weight;
+    if ( rand < runningTotal ) { 
+      key = name; 
+      return false; //jquery break
+    }
+  });
+
+  $("#nature").append("<span class='header'>"+key.replace(/_/g, " ")+": </span>");
+  $("#nature").append("<span>"+natures[key]["Description"]+"</span>");
+}
+
 function displayPokemon(pokemon, pokemonName)
 {
   var primaryType = pokemon.Types !== "undefined" && pokemon.Types.length > 0 ? pokemon.Types[0] : "null";
@@ -134,6 +177,18 @@ function displayPokemon(pokemon, pokemonName)
     "<span class='offset-by-four columns'><img class='five columns' src='assets/images/pokemon/"+pokemonName+".png'></span>"+
     "</span>");
   
+  $("#pokemon").tooltip({
+      content: "<div><p>"+ pokemon.Long_Description +"</p></div>",
+      open: function(event, ui)
+          {
+            ui.tooltip.hover(
+              function () {
+                $(this).fadeTo("slow", 1);
+        });
+          },
+      track: true
+    });
+
   displayGender(pokemon);
   displayEggGroups(pokemon);
 }

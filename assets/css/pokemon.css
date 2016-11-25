@@ -98,6 +98,10 @@ table tr td {
 }
 .potential { color: #AAA; }
 
+div.pokemon:hover {
+	background-color: lightblue;
+}
+
 .first-row { height: 230px; }
 div.first-row div { height: inherit; }
 .second-row { margin-top: 5px; margin-bottom: 5px; height: 100px;}
