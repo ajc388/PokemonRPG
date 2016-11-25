@@ -12,6 +12,7 @@ $( document ).ready( function() {
   displayPokemon(selectedPokemon, pokemonName);
   displayCounters(selectedPokemon, counters);
   displayDashRange(selectedPokemon);
+  //displayEvolutionMethod();
 
   displayMoves(selectedPokemon, moves);
 });
@@ -72,8 +73,8 @@ function displayCounters(pokemon, counters)
   }
   else if ( pokemon.Types.length == 2 )
   {
-    row.append("<th class='ten columns'>"+primaryType+"</th>");
-    row.append("<th class='ten columns'>"+secondaryType+"</th>");
+    row.append("<th class='five columns'>"+primaryType+"</th>");
+    row.append("<th class='five columns'>"+secondaryType+"</th>");
   }
   table.append(row);
 
