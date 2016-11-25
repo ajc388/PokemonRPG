@@ -46,9 +46,9 @@
       <span><button class='button ui-button ui-widget ui-corner-all' id="save">Save</button></span>
     </span>
     <span class="five columns">
-      <span>Pokemon Sheet - </span>
-      <span>Pikachu - </span>
-      <span>#025</span>
+      <span>Pokemon - </span>
+      <span id="pokemonName">Pikachu - </span>
+      <span id="pokedexID">#025</span>
     </span>
     <span class="four columns" style="text-align: right;">
       <span>
@@ -66,9 +66,9 @@
         <span class="left one-half column"><img class="twelve columns" src="assets/images/pokeball.png" alt="swirly design"/></span>
         <span class="eleven columns header">
           <h2 class="fancy">
-            <span id="shiny" class="shiny">Shiny</span>
-            <span id="name" class="name">Pikachu</span>
-            <span id="legend" class="legend">Legend</span>
+            <span id="shiny" class="shiny"></span>
+            <span id="name" class="name"></span>
+            <span id="legend" class="legend"></span>
           </h2>
         </span>
         <span class="right one-half column"><img class="twelve columns" src="assets/images/pokeball.png" alt="swirly design"/></span>
@@ -79,111 +79,77 @@
       <!-- Health and Friendship Block -->
       <div class="twelve columns">
         <span id="health" class="left eight columns">
-          <h3>
+          <h4>
             <span class="label">HP</span>
-            <span id="hpBar">□□□□□ □□□□□ □□□□□ □□□□□ □□□□□ □□□□□</span>
-          </h3>
+            <span id="hpBar"></span>
+          </h4>
         </span>
         <span id="friendship" class="right four columns">
-          <h3>
+          <h4>
             <span class="label">FP</span>
-            <span id="fpBar">□□□□□ □□□□□ □□□□□</span>
-          </h3>
-        <span>
+            <span id="fpBar"></span>
+          </h4>
+        </span>
       </div>
 
       <div class="first-row twelve columns">
         <!-- Attribute block -->
         <div id="attributes" class="border four columns">
           <span class="header" style='font-size:1.25em' class="twelve columns"> 
-            <span class="offset-by-three four columns">IV</span>
-            <span class="offset-by-one four columns">EV</span>
+            <span class="right offset-by-three four columns">IV &nbsp &nbsp </span>
+            <span class="left offset-by-one four columns"> &nbsp &nbsp EV</span>
           </span>
           <span id="speed" class="twelve columns">
             <h5>
               <span class="label three columns">Speed </span>
-              <span class="right four columns" id="iv_speed">○○○○○○</span>
+              <span class="right four columns" id="iv_speed"></span>
               <span class="center one column"> | </span> 
-              <span class="left four columns" id="ev_speed">○○○○○○</span>
+              <span class="left four columns" id="ev_speed"></span>
             </h5>
           </span>
           <span id="strength" class="twelve columns">
             <h5>
               <span class="label three columns">Strength </span>
-              <span class="right four columns" id="iv_strength">○○○○○○ </span> 
+              <span class="right four columns" id="iv_strength"> </span> 
               <span class="center one column"> | </span> 
-              <span class="left four columns" id="ev_strength">○○○○○○ </span>
+              <span class="left four columns" id="ev_strength"> </span>
             </h5>
           </span>
           <span id="sense" class="twelve columns">
             <h5>
               <span class="label three columns">Sense </span>
-              <span class="right four columns" id="iv_sense">○○○○○○ </span> 
+              <span class="right four columns" id="iv_sense"></span> 
               <span class="center one column"> | </span> 
-              <span class="left four columns" id="ev_sense">○○○○○○ </span>
+              <span class="left four columns" id="ev_sense"></span>
             </h5>
           </span>
           <span id="mind" class="twelve columns">
             <h5>
               <span class="label three columns">Mind </span>
-              <span class="right four columns" id="iv_mind">○○○○○○ </span> 
+              <span class="right four columns" id="iv_mind"></span> 
               <span class="center one column"> | </span> 
-              <span class="left four columns" id="ev_mind">○○○○○○ </span>
+              <span class="left four columns" id="ev_mind"></span>
             </h5>
           </span>
         </div>
 
-        <div class="shift four columns border electricborder" id="Pikachu" title="">
-          <div class="twelve columns">
-            <h5>
-              <span id="gender" class="offset-by-one one column">♂</span>
-              <span id="eggOne" class="header five columns">Egg group1 </span>
-              <span id="eggTwo" class="header five columns">Egg group2</span>
-            </h5>
-            <span class="offset-by-four columns"><img class="five columns" src="assets/images/pokemon/Pikachu.png"></span>
-          </div>
+        <div class="shift four columns" id="pokemon" title="">
+          
         </div>
 
-        <div class="shift border four columns">
-          <table class="twelve columns">
-            <tr>
-              <th class="two columns"></th>
-              <th class="five columns">Electric</th>
-              <th class="five columns">None</th>
-            </tr>
-            <tr>
-              <td class="label two columns">2x</td>
-              <td class="five columns">
-                <img class="icon" src="assets/images/type_icons/Ground.png" alt="Ground">
-              </td>
-              <td class="five columns"></td>
-            </tr>
-            <tr>
-              <td class="label two columns">1/2x</td>
-              <td class="five columns">
-                <img class="icon" src="assets/images/type_icons/Electric.png" alt="Electric"/>
-                <img class="icon" src="assets/images/type_icons/Flying.png" alt="Flying"/>
-                <img class="icon" src="assets/images/type_icons/Steel.png" alt="Steel"/>
-              </td>
-              <td class="five columns"></td>
-            </tr>
-            <tr>
-              <td class="label two columns">0x</td>
-              <td class="five columns"></td>
-              <td class="five columns"></td>
-            </tr>
-          </table>
+        <div class="shift border four columns" id="counters">
+        
         </div>
       </div>
 
-      <div class="second-row twelve columns">
+      <div class="second-row twelve columns border">
         <div class="eight columns">
-          <div class="six columns border">
+          <div class="six columns">
             <h5>
-              <span class="label five columns">Dash</span>
-              <span id="dashVal" class="one-half column">2</span>
-              <span class="offset-by-one label five columns">Range</span>
-              <span id="rangeVal" class="one-half column">5</span>
+              <span class="label three columns">Dash</span>
+              <span id="dash" class="shift center three columns"></span>
+              <span class="label three columns">Range</span>
+              <span id="range" class="shift center three columns"></span>
             </h5>
           </div>
 
