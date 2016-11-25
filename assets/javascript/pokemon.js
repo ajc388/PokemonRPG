@@ -12,7 +12,9 @@ $( document ).ready( function() {
   displayPokemon(selectedPokemon, pokemonName);
   displayCounters(selectedPokemon, counters);
   displayDashRange(selectedPokemon);
-  //displayEvolutionMethod();
+  displayAbility(selectedPokemon, abilities);
+  displayEvolution(selectedPokemon);
+  displayNature(selectedPokemon, natures);
 
   displayMoves(selectedPokemon, moves);
 });
@@ -118,6 +120,45 @@ function displayDashRange(pokemon)
 
   $("#dash").html(dash);
   $("#range").html(range);
+}
+
+function displayAbility(pokemon, abilities)
+{
+  var ability = typeof pokemon.Ability !== "undefined" ? abilities[pokemon.Ability]: "None";
+  $("#ability").append("<span class='label'>"+pokemon.Ability+": </span>");
+  $("#ability").append("<span>"+ability["Description"]+"</span>");
+}
+
+function displayEvolution(pokemon)
+{
+  var evolutionMethod = typeof pokemon.Evolution !== "undefined" && typeof pokemon.Evolution.Method !== "undefined" && pokemon.Evolution.Method != null ? pokemon.Evolution.Method : "Mysterious";
+  if ( typeof pokemon.Evolution !== "undefined" && typeof pokemon.Evolution.Next_Evolutions !== "undefined" && pokemon.Evolution.Next_Evolutions != null )
+  {
+    $("#evolution").html(evolutionMethod);
+  } else {
+    $("#evolution").html("Final Form");
+  }
+}
+
+function displayNature(pokemon, natures)
+{
+  var total = 0;
+  $.each(natures, function(name, nature) {
+    var weight = nature.Weight;
+    total += weight;
+  });
+
+  var rand = Math.random()*total;
+  var runningTotal = 0;
+  var key = "";
+  $.each(natures, function(name, nature) {
+    var weight = nature.Weight;
+    runningTotal += weight;
+    if ( rand < runningTotal ) { key = name; }
+  });
+
+  $("#nature").append("<span class='header'>"+key.replace(/_/g, " ")+": </span>");
+  $("#nature").append("<span>"+natures[key]["Description"]+"</span>");
 }
 
 function displayPokemon(pokemon, pokemonName)
