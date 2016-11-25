@@ -10,7 +10,7 @@ $( document ).ready( function() {
   displayFP(selectedPokemon);
   displayAttributes(selectedPokemon);
   displayPokemon(selectedPokemon, pokemonName);
-  //displayCounters(selectedPokemon);
+  displayCounters(selectedPokemon, counters);
   displayDashRange(selectedPokemon);
 
   displayMoves(selectedPokemon, moves);
@@ -57,19 +57,61 @@ function displayBoxes(prev, limit)
   return str;
 }
 
-function displayCounters(pokemon) 
+function displayCounters(pokemon, counters) 
 {
   var primaryType = pokemon.Types !== "undefined" && pokemon.Types.length > 0 ? pokemon.Types[0] : "None";
   var secondaryType = pokemon.Types !== "undefined" && pokemon.Types.length == 2 ? pokemon.Types[1] : "None";
-  //var counters = 
 
+  var table = $("<table class='twelve columns'></table>");
+  var row = $("<tr></tr>");
+  //Add header
+  row.append("<th class='two columns'></th>");
+  if ( pokemon.Types.length == 0 || pokemon.Types.length == 1 )
+  {
+    row.append("<th class='ten columns'>"+primaryType+"</th>");
+  }
+  else if ( pokemon.Types.length == 2 )
+  {
+    row.append("<th class='ten columns'>"+primaryType+"</th>");
+    row.append("<th class='ten columns'>"+secondaryType+"</th>");
+  }
+  table.append(row);
+
+  //Add table body
+  for ( var key in counters[primaryType]) 
+  {
+    var row = $("<tr></tr>");
+    var primaryCounters = primaryType != "None" ? counters[primaryType][key] : [];
+    var secondaryCounters = secondaryType != "None" ? counters[secondaryType][key] : [];
+    row.append("<td class='label two columns'>"+key+"</td>");
+    if ( pokemon.Types.length == 0 || pokemon.Types.length == 1 )
+    {
+      row.append("<td class='ten columns'>"+displayCounterIcons(primaryCounters)+"</td>");
+    } 
+    else if ( pokemon.Types.length == 2 ) 
+    {
+      row.append("<td class='five columns'>"+displayCounterIcons(primaryCounters)+"</td>");
+      row.append("<td class='five columns'>"+displayCounterIcons(secondaryCounters)+"</td>");
+    }
+    table.append(row);
+  }
+  
+  $("#counters").append(table);
+}
+
+function displayCounterIcons(counters)
+{
+  var str = "";
+  $.each(counters, function(id, type) {
+    str += "<img class='icon' src='assets/images/type_icons/"+type+".png' alt='"+type+"'/>";
+  });
+  return str;
 }
 
 function displayDashRange(pokemon)
 {
   var ivSpeed = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Speed !== "undefined" ? pokemon.Attributes.IV.Speed : 0;
   var ivSense = typeof pokemon.Attributes.IV !== "undefined" && typeof pokemon.Attributes.IV.Sense !== "undefined" ? pokemon.Attributes.IV.Sense : 0;
-  
   var dash = ivSpeed;
   var range = ivSense+1;
 
@@ -83,10 +125,10 @@ function displayPokemon(pokemon, pokemonName)
   $("#pokemon").addClass("border").addClass(primaryType.toLowerCase() + "border");
   
   $("#pokemon").append("<span class='twelve columns'>" +
-    "<h5>"+
+    "<h4>"+
     "<span id='gender' class='offset-by-one one column'></span>"+
-    "<span id='eggGroups' class='ten columns'></span>"+
-    "</h5>"+
+    "<span id='eggGroups' class='header ten columns'></span>"+
+    "</h4>"+
     "</span>"+
     "<span class='offset-by-four columns'><img class='five columns' src='assets/images/pokemon/"+pokemonName+".png'></span>"+
     "</span>");
@@ -102,9 +144,9 @@ function displayGender(pokemon)
   var other = pokemon.Gender !== "undefined" && pokemon.Gender.Other_Weight !== "undefined" ? pokemon.Gender.Other_Weight : 0;
 
   var rand = Math.random() * (male+female+other);
-  if ( rand <= male ) { $("#gender").append("<img class='icon' style='vertical-align: middle;' src='assets/images/gender_icons/male.png' alt='male'/>");}
-  else if ( rand <= male+female ) { $("#gender").append("<img class='icon' style='vertical-align: middle;' src='assets/images/gender_icons/female.png' alt='female'/>");}
-  else if ( rand <= male+female+other ) { $("#gender").append("<img class='icon' style='vertical-align: middle;' src='assets/images/gender_icons/other.png' alt='other'/>");}
+  if ( rand <= male ) { $("#gender").append("<img class='icon' src='assets/images/gender_icons/male.png' alt='male'/>");}
+  else if ( rand <= male+female ) { $("#gender").append("<img class='icon' src='assets/images/gender_icons/female.png' alt='female'/>");}
+  else if ( rand <= male+female+other ) { $("#gender").append("<img class='icon' src='assets/images/gender_icons/other.png' alt='other'/>");}
 }
 
 function displayEggGroups(pokemon)
