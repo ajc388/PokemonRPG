@@ -3428,7 +3428,7 @@ var moves =
 		{
 			"power": 60,
 			"style": "Ranged",
-			"flavor": "User draw attention to itself.",
+			"flavor": "User draws attention to itself.",
 			"effect": "This places a harsh compulsion on all enemies in range to attack only the user.",
 			"critical": "",
 		},

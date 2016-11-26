@@ -575,7 +575,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Absorb", "Supersonic", "Astonish", "Bite", "Wing_Attack", "Confuse_Ray", "Air_Cutter", "Swift", "Poison_Fang", "Mean_Look", "Leech_Life", "Haze", "Venoshock", "Air_Slash"]
 		}
 	},	
 	"Golbat":
@@ -612,7 +612,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Sabretooth", "Vampire_Bite"]
+			"Learnable": ["Screech", "Leech_Life", "Supersonic", "Astonish", "Bite", "Air_Cutter", "Poison_Fang", "Mean_Look", "Haze", "Venoshock", "Air_Slash", "Sabretooth", "Vampire_Bite"]
 		}
 	},	
 	"Oddish":
@@ -648,7 +648,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Healing_Herb", "Herbal_Remedy"]
+			"Learnable": ["Absorb", "Sweet_Scent", "Acid", "Grass_Whistle", "Poison_Powder", "Stun_Spore", "Sleep_Powder", "Healing_Herb", "Herbal_Remedy", "Ingrain", "Leaf_Blade"]
 		}
 	},		
 	"Gloom":
@@ -684,7 +684,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Stench"]
+			"Learnable": ["Mega_Drain", "Stun_Spore", "Toxic", "Acidic_Cloud", "Ingrain", "Stench"]
 		}
 	},		
 	"Vileplume":
@@ -720,7 +720,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Stench"]
+			"Learnable": ["Stench", "Acid", "Acidic_Cloud", "Razor_Wind", "Mega_Drain", "Moonlight", "Giga_Drain", "Toxic", "Petal_Dance", "Solar_Beam"]
 		}
 	},		
 "Paras":
@@ -756,7 +756,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Scratch", "Stun_Spore", "Poison_Powder", "Leech_Life", "Fury_Cutter", "Spore", "Slash", "Growth", "Mega_Drain", "Aromatherapy", "Rage_Powder", "Infestation"]
 		}
 	},		
 	"Parasect":
@@ -792,7 +792,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Cross_Poison", "Aromatherapy", "Rage_Powder", "Slash", "X-Scissor", "Giga_Drain", "Toxic_Cloud"]
 		}
 	},	
 	"Venonat":
