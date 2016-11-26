@@ -72,6 +72,9 @@
   .eleven.columns                 { width: 90.6666666666%; }
   .twelve.columns                 { width: 100%; }
 
+  /*Used in page seperation*/
+  .one-third.column               { width: 33.333333%;}
+  .two-thirds.columns             { width: 66.666666%;}
 
   /* Offsets */
   .offset-by-one.column,

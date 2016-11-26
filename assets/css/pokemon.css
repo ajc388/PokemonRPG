@@ -15,7 +15,7 @@
 	#menu { display: none; }
 	#sidebar { display: none; }
 
-	.page { width: auto; height: auto; margin: 0in; border: 0in; padding: 0in; }
+	.page { width: 100% !important; height: auto; margin: 0in; border: 0in; padding: 0in; }
 
 	h1 { font-size: 2.5rem !important; letter-spacing: -.1rem;}
 	h2 { font-size: 2.20rem !important; letter-spacing: -.1rem; }
@@ -68,3 +68,15 @@ table tr td { height: 50px; }
 
 .actual { font-weight: 700 !important; }
 .potential { color: #BBB; }
+
+.sidebar { 
+	background-color: #333; 
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+#unusedmoves
+{
+	height: 1000px; /*temporary*/
+	border: 5px solid #333;
+	background-color: #EEE;
+}

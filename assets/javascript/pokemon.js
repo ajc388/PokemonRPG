@@ -319,7 +319,7 @@ function displayMoves(pokemon, moves)
           // Refresh accordion to handle new order
           $( this ).accordion( "refresh" );
         }
-      });
+    });
 }
 
 function findMove(moves, pokemonMove) 
