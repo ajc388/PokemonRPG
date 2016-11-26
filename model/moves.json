@@ -1114,10 +1114,10 @@ var moves =
 		},
 		"Glomp": 
 		{
-			"power": 10,
+			"power": 40,
 			"style": "Melee",
 			"flavor": "User tacklehugs its opponent, distracting it with kindness.",
-			"effect": "This pins the target for no damage, and grants it a friendship point. The target is under a compulsion not to hurt the user.",
+			"effect": "This pins the target for 10 damage, and grants it a friendship point. The target is under a compulsion not to hurt the user.",
 			"critical": "Target has a compulsion to protect and aid the user above all else. ",
 		},
 		"Sweet_Kiss": 
