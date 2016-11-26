@@ -237,4 +237,5 @@ div.moveHeader {
 .moveContent {
 	border-width: 2px 2px 2px 0px;
 	border-style: outset;
+	background-color: #FFF;
 }

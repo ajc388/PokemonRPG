@@ -281,28 +281,45 @@ function displayMoves(pokemon, moves)
         var style = typeof move.style !== "undefined" ? move.style : "Any";
         
         //Create header div for accordion
+        var container = $("<article class='group twelve columns'></div>");
+
         var header = $("<div class='moveHeader twelve columns "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
         header.append("<span class='one-half column'><img class='icon' src= 'assets/images/type_icons/"+move.type+".png' /></span>");
         header.append("<span class='three columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
         header.append("<span class='eight columns'>" + flavor +"</span>");
         header.append("<span style='text-align: right;' class='label one-half columns'>" + power + "</span>");
-        accordion.append(header);
-
+        container.append(header);
+       
         //Create content div for accordion
         var content = $("<div class='moveContent twelve columns' id='content_"+moveName+"'></div>");
         var effect = typeof move.effect !== "undefined" ? move.effect : "No effect";
         var critical = typeof move.critical !== "undefined" ? move.critical : "";
         var outofbattle = typeof move.out_of_battle !== "undefined" ? move.out_of_battle : "";
 
-        //content.append("<p><span class='descriptiveHeader'> Value: </span><img src='assets/images/pokedollar.png'/>" + Math.pow(power,2) + "</p>");
         content.append("<p><span class='label'> Effect: </span>" + effect + "</p>");
         if (critical != "") { content.append("<p><span class='label'> Critical: </span>" + critical + "</p>"); }
         if (outofbattle != "") { content.append("<p><span class='label'> Out Of Battle: </span>" + outofbattle + "</p>"); }
-        accordion.append(content);
+        container.append(content);
+
+        accordion.append(container);
       }
     });
     $("#moves").append(accordion);
-    accordion.accordion({heightStyle: ""});
+    accordion
+      .accordion({
+        header: ".moveHeader",
+        heightStyle: ""
+      })
+      .sortable({
+        axis: "y",
+        handle: ".moveHeader",
+        stop: function( event, ui ) {
+          // IE doesn't register the blur when sorting
+          ui.item.children(".moveHeader").triggerHandler( "focusout" );
+          // Refresh accordion to handle new order
+          $( this ).accordion( "refresh" );
+        }
+      });
 }
 
 function findMove(moves, pokemonMove) 
