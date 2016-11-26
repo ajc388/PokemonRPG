@@ -1152,7 +1152,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Fury_Swipes", "Focus_Energy", "Scratch", "Karate_Chop", "Seismic_Toss", "Cross_Chop", "Thrash", "Punishment", "Close_Combat", "War_Dance", "Poo_Fling", "Anger_Strike", "Beat_Up"]
+			"Learnable": ["Fury_Swipes", "Focus_Energy", "Scratch", "Roundhouse", "Karate_Chop", "Seismic_Toss", "Cross_Chop", "Thrash", "Punishment", "Close_Combat", "War_Dance", "Poo_Fling", "Anger_Strike", "Beat_Up"]
 		}
 	},	
 	"Growlithe":
