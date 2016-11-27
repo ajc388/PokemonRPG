@@ -1,10 +1,11 @@
-/*Menu section*/
+/*Generalized section*/
 body {
 	padding: 0px;
 	margin: 0px;
 }
-.banner img {
-}
+div { height: inherit;}
+
+/*Menu section*/
 .banner nav.menu li a {
     font-size: 120%;
     padding: 10px 10px;
@@ -39,55 +40,26 @@ div.block {
 }
 
 div.blockheader {
-	font-size: 150%;
 	font-weight: bold;
-	display: block;
-	text-align: center;
-	width: 99.5%;
 	color: white;
 	background-color: #333;
-	margin-bottom: 10px;
-	padding: 3px;
-	height: 33px;
+	margin-bottom: 5px;
 }
 div.blockheader span {
 	display: inline-block; 
 }
-div.blockheader span.title
-{
-	width:50%;
-}
 
 /*User controls section*/
 div.userinput {
-	background-color: #CCA;
-	display: block;
-	border-style: solid;
-	border-width: 1px;
-	margin-left: 22%;
-	padding: 25px;
-	width: 50%;
-	min-width: 200px;
-	border-radius: 20px;
-	margin-top:20px;
-	margin-bottom:20px;
-}
-.userinput label {
-	font-weight: bold;
-	display: -webkit-inline-box;
-	width: 150px;
-	margin-bottom: 10px;
-}
-.input {
-	display: -webkit-inline-box;
-	margin-left:10px;
-	margin-right:10px;
-	width: 150px;
+	background-color: #EEE;
+	border: 1px solid #000;
+	border-radius: 15px;
+	margin-bottom: 5px;
+	padding: 5px;
 }
 .button {
 	color: #FFF;
 	background-color: #333;
-	vertical-align: top;
 }
 
 .search {
@@ -226,16 +198,16 @@ table tr td {
 	padding: 5px;
 }
 
-div.moveHeader {
-	height: 38px;
-}
-
-.moveHeader {
+.move-header {
 	border-width: 2px 2px 0px 2px;
 	border-style: outset;
 }
-.moveContent {
+.move-content {
 	border-width: 2px 2px 2px 0px;
 	border-style: outset;
 	background-color: #FFF;
+}
+.move-content p {
+	margin-bottom: 5px;
+	line-height: 1em;
 }
