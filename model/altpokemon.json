@@ -359,7 +359,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Sing", "Disarming_Voice", "Pound", "Growl", "Encore", "Double_Slap", "Defense_Curl", "Follow_Me", "Minimize", "Metronome", "Cosmic_Power"]
+			"Learnable": ["Sing", "Disarming_Voice", "Pound", "Fairy_Tail", "Growl", "Fairy_Dust", "Encore", "Double_Slap", "Defense_Curl", "Follow_Me", "Minimize", "Metronome", "Cosmic_Power"]
 		}
 	},
 	"Clefable":
@@ -503,7 +503,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Sing", "Defense_Curl", "Charm", "Pound", "Glomp", "Fairy_Dust", "Play_Nice", "Disarming_Voice", "Disable", "Double_Slap", "Rollout", "Round"]
 		}
 	},
 		"Wigglytuff":
@@ -539,7 +539,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Defense_Curl", "Pound", "Play_Nice", "Rest", "Body_Slam", "Glomp", "Gyro_Ball", "Mimic", "Double-Edge", "Double_Slap", "Rollout", "Round", "Giant_Slayer"]
 		}
 	},
 	"Zubat":
@@ -828,7 +828,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Tackle", "Disable", "Foresight", "Supersonic", "Confusion", "Poison_Powder", "Leech_Life", "Stun_Spore", "Psybeam", "Sleep_Powder", "Signal_Beam", "Zen_Headbutt", "Poison_Fang", "Psychic"]
 		}
 	},	
 	"Venomoth":
@@ -864,7 +864,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Bug_Buzz", "Silver_Wind", "Foresight", "Supersonic", "Confusion", "Poison_Powder", "Stun_Spore", "Psybeam", "Sleep_Powder", "Gust", "Signal_Beam", "Zen_Headbutt", "Poison_Fang", "Psychic"]
 		}
 	},	
 	"Diglett":
@@ -900,7 +900,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Sand_Attack", "Scratch", "Growl", "Astonish", "Mud-Slap", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb"]
+			"Learnable": ["Sand_Attack", "Scratch", "Dig_Grave", "Growl", "Astonish", "Dirt_Clod", "Mud-Slap", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb"]
 		}
 	},
 	"Dugtrio":
@@ -936,7 +936,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Astonish", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb", "Earth_Power", "Dig", "Slash", "Earthquake", "Fissure"]
+			"Learnable": ["Astonish", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb", "Earth_Power", "Dig", "Slash", "Earthquake", "Fissure", "Mudslide", "Rock_Slide"]
 		}
 	},
 	"Meowth":
@@ -1044,7 +1044,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Duckface"]
+			"Learnable": ["Scratch", "Tail_Wag", "Water_Gun", "Confusion", "Fury_Swipes", "Disable", "Screech", "Aqua_Tail", "Soak", "Duckface"]
 		}
 	},
 	"Golduck":
@@ -1080,7 +1080,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Duckface"]
+			"Learnable": ["Aqua_Jet", "Water_Gun", "Confusion", "Fury_Swipes", "Zen_Headbutt", "Amnesia", "Hydro_Pump", "Duckface"]
 		}
 	},
 	"Mankey":
@@ -1116,7 +1116,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Poo_Fling", "Anger_Strike", "Beat_Up"]
+			"Learnable": ["Fury_Swipes", "Focus_Energy", "Scratch", "Low_Kick", "Karate_Chop", "Seismic_Toss", "Screech", "Cross_Chop", "Thrash", "Punishment", "Close_Combat", "Poo_Fling", "Anger_Strike", "Beat_Up"]
 		}
 	},	
 	"Primeape":
@@ -1152,7 +1152,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Poo_Fling", "Anger_Strike", "Beat_Up"]
+			"Learnable": ["Fury_Swipes", "Focus_Energy", "Scratch", "Roundhouse", "Karate_Chop", "Seismic_Toss", "Cross_Chop", "Thrash", "Punishment", "Close_Combat", "War_Dance", "Poo_Fling", "Anger_Strike", "Beat_Up"]
 		}
 	},	
 	"Growlithe":

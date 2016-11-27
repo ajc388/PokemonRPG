@@ -1,18 +1,14 @@
-/*Menu section*/
+/*Generalized section*/
 body {
 	padding: 0px;
 	margin: 0px;
 }
-.banner img {
-}
-.banner nav.menu li a {
-    font-size: 120%;
-    padding: 10px 10px;
-}
-nav.menu {
-	width: 100%;
-	display: inline-block;
-}
+div { height: inherit;}
+
+/*Menu section*/
+nav.menu { margin-bottom: 5px;}
+.banner nav.menu li a { padding: 10px 10px; }
+nav.menu { display: inline-block; }
 nav.menu ul {
 	list-style-type: none;
     margin: 0;
@@ -20,92 +16,37 @@ nav.menu ul {
     overflow: hidden;
     background-color: #333;
 }
-nav.menu li {
-    display: inline-block;
-}
+nav.menu li { display: inline-block; }
 nav.menu li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
-nav.menu li a:hover {
-    background-color: #111;
-}
+nav.menu li a:hover { background-color: #111; }
 
 /*Blocks section*/
-div.block {
-	width: 100%;
-}
-
-div.blockheader {
+div.block-header {
 	font-weight: bold;
-	text-align: center;
 	color: white;
 	background-color: #333;
-	padding: 3px;
-	height: inherit;
-}
-div.blockheader span {
-	display: inline-block; 
-}
-div.blockheader span.title
-{
-	width:50%;
+	margin-bottom: 5px;
+	padding-top: 0px 3px;
 }
 
+.input { margin-top:1%;}
 /*User controls section*/
-div.userinput {
-	background-color: #CCA;
-	display: block;
-	border-style: solid;
-	border-width: 1px;
-	margin-left: 22%;
-	padding: 25px;
-	width: 50%;
-	min-width: 200px;
-	border-radius: 20px;
-	margin-top:20px;
-	margin-bottom:20px;
+div.user-input {
+	background-color: #EEE;
+	border: 1px solid #000;
+	border-radius: 15px;
+	margin-bottom: 5px;
+	padding: 5px;
 }
-.userinput label {
-	font-weight: bold;
-	display: -webkit-inline-box;
-	width: 150px;
-	margin-bottom: 10px;
-}
-.input {
-	display: -webkit-inline-box;
-	margin-left:10px;
-	margin-right:10px;
-	width: 150px;
-}
-.button {
-	color: #FFF;
-	background-color: #333;
-	vertical-align: top;
-}
-
-.search {
-	position: absolute;
-	right: 5px;
-}
-.search input {
-	vertical-align: middle;
-}
-
-.sort {
-	position: absolute;
-	right: 280px;
-}
-.sort input {
-	vertical-align: middle;
-}
+.button { color: #FFF; background-color: #333; }
 
 /*Auto complete section*/
-.ui-autocomplete {
-	background-color: #FFF;
-}
+.ui-autocomplete { background-color: #FFF; }
 
 /*Coloring backgrounds for pokemon types*/
 .bug { background-color: #A8B820 !important; }
@@ -159,40 +100,26 @@ div.userinput {
 	z-index: 100;
 }
 .icon {
-	display: inline-block;
+	max-width: 25px;
 	vertical-align: inherit;
+}
+.nav-icon-menu ul { padding-left:0px; margin-top: 0px; }
+.nav-icon-menu ul li { display: -webkit-inline-box; }
+.nav-icon-menu ul a:hover { 
+	position: relative;
+	top: 1px;
+	left: 1px;
+	background-color: #111;
 }
 
 /*Data tables*/
-table {
-	margin-width: 0px;
-	width: 100%;
-}
-table tr:first-child {
-	background-color: #333;
-	font-size: 120%;
-	color: white;
-}
-table tr:nth-child(even) {
-	background-color: #EEE;
-}
-table tr:not(:first-child):hover {
-	background-color: lightblue;
-}
-table tr th {
-	margin-width: 0px;
-	padding: 5px;
-}
-table tr td {
-	margin-width: 0px;
-	padding: 5px;
-	text-align: center;
-}
+table { margin-width: 0px; }
+table tr:first-child { background-color: #333; color: white; }
+table tr:nth-child(even) { border: 1px solid #EEE; background-color: #EEE; }
+table tr:not(:first-child):hover { background-color: lightblue; }
+table tr td { padding: 5px; text-align: center; }
 
-.header {
-	text-align: center;
-	font-weight: bold;
-}
+.header { text-align: center; font-weight: bold; }
 .label {
 	text-align: left;
 	font-weight: bold;
@@ -200,38 +127,39 @@ table tr td {
 .center { text-align: center; }
 .right { text-align: right; }
 .left { text-align: left; }
-
-.underline {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #333;
-}
+.underline { border: 1px solid #333; }
 .fancy {
 	font-family: cursive;
 	font-style: italic;
 	font-weight: bold;
 }
 
+
 .ui-tooltip-content {
 	background-color: #333;
 	color: white;
 	border-radius: 15px;
-	border-style: solid;
-	border-width: 3px;
-	border-color: lightblue;
+	border: 3px solid lightblue;
 	padding: 5px;
 }
 
-div.moveHeader {
-	height: 38px;
-}
-
-.moveHeader {
+.move-header {
 	border-width: 2px 2px 0px 2px;
 	border-style: outset;
 }
-.moveContent {
+.move-content {
 	border-width: 2px 2px 2px 0px;
 	border-style: outset;
 	background-color: #FFF;
 }
+.move-content p {
+	margin-bottom: 5px;
+	line-height: 1em;
+}
+.flex { display: inline-flex;}
+
+/*pokemon*/
+article.pokemon { margin-bottom: 5px; margin-left: 1%;}
+article.pokemon:nth-child(4n+1) { margin-left: 0px; }
+article.pokemon:nth-child(4n+1):hover { margin-left: 0.2%; background-color: lightblue; }
+article.pokemon:hover { margin-left: 1.2%; background-color: lightblue; }

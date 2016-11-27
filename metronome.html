@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon RPG - Metronome</title>
+  <meta name="description" content="Local pokemon toolkit">
+  <meta name="author" content="Cameron">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/jquery-ui-1.12.1/jquery-ui.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/master.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/moves.css" />
+  <link rel="stylesheet" type="text/css" href="assets/vendor/skeleton-2.0.4/css/skeleton.css" />
+
+  <script type="text/javascript" src="model/moves.json"></script>
+  <script src="assets/vendor/jquery-3.1.1/jquery-3.1.1.js"></script>
+  <script src="assets/vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
+  <script src="assets/javascript/metronome.js"></script>
+  
+</head>
+
+<body>
+  <header id="header" class="banner twelve columns">
+    <span class="center twelve columns"><img src="assets/images/pokemon_menu.png" alt ="Pokemon RPG Menu"/></span>
+    <nav class="menu twelve columns">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="metronome.html">Metronome</a></li>
+          <li><a href="moves.html">Moves</a></li>
+          <li><a href="natures.html">Natures</a></li>
+          <li><a href="abilities.html">Abilities</a></li>
+          <li><a href="pokedex.html">Pokedex</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <section class="block twelve columns" id="randomGenerator">
+    <div class="block-header twelve columns" id="randomGeneratorDescription">
+      <h4 class="center"><span>Metronome</span></h4>
+    </div>
+
+    <div class="user-input offset-by-three six columns" id="randomGeneratorForm" >
+      <div class="twelve columns">
+        <span class="offset-by-two eight columns">
+          <label class="label six columns" for="numberMoves">Number of Moves : </label>
+          <input class="input six columns" type="number" name="numberMoves" id="numberMovesTextBox" min="1" max="10" value="1"/>
+        </span>
+      </div>
+      <div class="twelve columns">
+        <span class="offset-by-two eight columns">
+          <label class="label six columns" for="moveType">Move Type : </label>
+          <select class="input six columns" name="moveType" id="moveTypeDropdownList"></select><br/>
+        </span>
+      </div>
+      <div class="twelve columns">
+        <span class="offset-by-two columns"><button class="button ui-button ui-widget ui-corner-all" id="randomize">Randomize</button></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block twelve columns" id="selectedMoveSection">
+    <div class="block-header twelve columns" id="selectedMoveSelectionDescription">
+      <h4 class="center"><span>Pokemon Moves</span></h4>
+    </div>
+    <div class="twelve columns" id="moveList">
+    </div>
+  </section>
+
+</body>
+</html>

@@ -9,28 +9,30 @@ function Menu(parameters)
   //construct menu items
   $("#menu").append(
       '<div id="anchor"></div>'+
-      '<div id="selector" class="blockheader">'+
-        '<span>'+title+'</span>'+
+      '<div id="selector" class="block-header twelve columns">'+
+        '<span id="title" class="header one column"><h4>'+title+'</h4></span>'+
       '</div>');
 
   if ( navMenuFlag ) 
   {
-    $("#selector").append(
-     '<nav class="navIconMenu">'+
-      '<ul>'+
+    $("#selector").prepend(
+     '<nav class="left nav-icon-menu five columns">'+
+      '<ul class="twelve columns">'+
       '</ul>'+
      '</nav>'
     );
 
     parameters.navmenu.funct(model);
+  } else {
+    $("#title").addClass("offset-by-five");
   }
 
   if ( sortFlag )
   {
     $("#selector").append(
-      '<span class="sort">'+
-        '<label for="sort">Sort: </label>'+
-        '<select class="input" id="sort"></select>'+
+      '<span class="shift three columns">'+
+        '<h5><label class="header offset-by-two four columns" for="sort">Sort</label>'+
+        '<select class="input right offset-by-one five columns" id="sort"></select></h5>'+
       '</span>');
 
     //is there a better way to do this?!
@@ -41,15 +43,17 @@ function Menu(parameters)
     });
 
     $("#sort").on("change", function() { parameters.sort.funct(); });
+  } else {
+    $("#searchBar").addClass("offset-by-three");
   }
 
   if ( searchFlag ) 
   {
     //Add search bar in
     $("#selector").append(
-        '<span class="search">'+
-          '<label for="search">Search: </label>'+
-          '<input class="input" id="search" type="search"></input>'+
+        '<span id="searchBar" class="three columns">'+
+          '<h5><label class="header offset-by-two four columns" for="search">Search</label>'+
+          '<input class="input right offset-by-one five columns" id="search" type="search"></input></h5>'+
         '</span>');
 
     /*Search Functionality*/
