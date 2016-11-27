@@ -51,9 +51,7 @@
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  .container {
-    width: 100%; 
-  }
+  .container { width: 100%;  }
   .column,
   .columns {
     margin-left: 0%; 
@@ -122,12 +120,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0rem;
   font-weight: 300; 
 }
-h1 { font-size: 2.4em; line-height: 1.5em; letter-spacing: -.1rem;}
-h2 { font-size: 2.2em; line-height: 1.4em; letter-spacing: -.1rem; }
-h3 { font-size: 2.0em; line-height: 1.3em;letter-spacing: -.1rem; }
-h4 { font-size: 1.8em; line-height: 1.2em; letter-spacing: -.08rem; }
-h5 { font-size: 1.4em; line-height: 1.1em; letter-spacing: -.05rem; }
-h6 { font-size: 1.2em; line-height: 1.0em; letter-spacing: 0; }
+h1 { font-size: 2.4rem; line-height: 1.4rem; letter-spacing: -.1rem;}
+h2 { font-size: 2.4rem; line-height: 1.4rem; letter-spacing: -.1rem; }
+h3 { font-size: 2.4rem; line-height: 1.4rem;letter-spacing: -.1rem; }
+h4 { font-size: 1.4rem; line-height: 1.4rem; letter-spacing: -.08rem; }
+h5 { font-size: 1.4rem; line-height: 1.4rem; letter-spacing: -.05rem; }
+h6 { font-size: 1.4rem; line-height: 1.4rem; letter-spacing: 0; }
 
 p { margin-top: 0; }
 
@@ -141,28 +139,20 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+/* mobile */
+@media (min-width: 200px) { html { font-size: 10pt; } }
 
 /* Larger than mobile */
-@media (max-width: 400px) {
-  html { font-size: 8px; }
-}
+@media (min-width: 400px) { html { font-size: 10pt; } }
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (max-width: 550px) {
-  html { font-size: 10px; }
-}
+/* Larger than mobile */
+@media (min-width: 500px) { html { font-size: 8pt; } }
 
 /* Larger than tablet */
-@media (max-width: 750px) {
-  html { font-size: 12px; }
-}
+@media (min-width: 750px) { html { font-size: 9pt; } }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
-  html { font-size: 14px; }
-}
+@media (min-width: 1000px) { html { font-size: 12pt; } }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
-  html { font-size: 16px; }
-}
+@media (min-width: 1200px) { html { font-size: 13pt; } }

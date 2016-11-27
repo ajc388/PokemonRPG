@@ -43,7 +43,7 @@ $( document ).ready( function() {
 
           var container = $("<article class='group twelve columns'></div>");
 
-          var header = $("<div class='move-header twelve columns "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
+          var header = $("<div class='flex move-header twelve columns "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
           header.append("<span class='one-half column'><img class='icon' src= 'assets/images/type_icons/"+move.type+".png' /></span>");
           header.append("<span class='three columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
           header.append("<span class='eight columns'>" + flavor +"</span>");

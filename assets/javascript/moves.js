@@ -115,7 +115,7 @@ function displayMoves(moves)
    $.each(moves, function (type, moveList) 
    {
       $("#moveList").append(
-          "<div class='block-header twelve columns' id='category_"+type+"'>"+
+          "<div class='flex block-header twelve columns' id='category_"+type+"'>"+
           "<span class='left one column'><img class='icon' src= 'assets/images/type_icons/"+type+".png' /></span>"+
           "<span class='header ten columns'><h4>"+type+"</h5></span>"+
           "<span class='right one column'><img class='icon' src= 'assets/images/type_icons/"+type+".png' /></span>"+
@@ -134,7 +134,7 @@ function displayMoves(moves)
         header.append("<span class='one-half column'><img class='icon' src= 'assets/images/type_icons/"+type+".png' /></span>");
         header.append("<span class='three columns'><span class='label move-name'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
         header.append("<span class='fancy eight columns'>" + flavor +"</span>");
-        header.append("<span style='text-align: right;' class='label one-half columns move-power'>" + power + "</span>");
+        header.append("<span class='right label one-half columns move-power'>" + power + "</span>");
         accordion.append(header);
        
         //Create content div for accordion
