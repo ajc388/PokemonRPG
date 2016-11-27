@@ -123,11 +123,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0rem;
   font-weight: 300; 
 }
-h1 { font-size: 3.0rem; line-height: 1.0rem; letter-spacing: -.1rem;}
-h2 { font-size: 2.5rem; line-height: 1.0rem; letter-spacing: -.1rem; }
-h3 { font-size: 2.0rem; line-height: 1.0rem;letter-spacing: -.1rem; }
-h4 { font-size: 2.0rem; line-height: 1.0rem; letter-spacing: -.08rem; }
-h5 { font-size: 1.5rem; line-height: 1.0rem; letter-spacing: -.05rem; }
+h1 { font-size: 3.0rem; line-height: 1.4rem; letter-spacing: -.1rem;}
+h2 { font-size: 2.5rem; line-height: 1.3rem; letter-spacing: -.1rem; }
+h3 { font-size: 2.0rem; line-height: 1.3rem;letter-spacing: -.1rem; }
+h4 { font-size: 2.0rem; line-height: 1.2rem; letter-spacing: -.08rem; }
+h5 { font-size: 1.5rem; line-height: 1.2rem; letter-spacing: -.05rem; }
 h6 { font-size: 1.0rem; line-height: 1.0rem; letter-spacing: 0; }
 
 p { margin-top: 0; }
@@ -155,7 +155,7 @@ there.
 @media (min-width: 750px) { html { font-size: 9pt; } }
 
 /* Larger than desktop */
-@media (min-width: 1000px) { html { font-size: 12pt; } }
+@media (min-width: 1000px) { html { font-size: 11pt; } }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) { html { font-size: 13pt; } }
+@media (min-width: 1200px) { html { font-size: 11pt; } }
