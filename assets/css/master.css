@@ -6,14 +6,8 @@ body {
 div { height: inherit;}
 
 /*Menu section*/
-.banner nav.menu li a {
-    font-size: 120%;
-    padding: 10px 10px;
-}
-nav.menu {
-	width: 100%;
-	display: inline-block;
-}
+.banner nav.menu li a { padding: 10px 10px; }
+nav.menu { display: inline-block; }
 nav.menu ul {
 	list-style-type: none;
     margin: 0;
@@ -21,67 +15,39 @@ nav.menu ul {
     overflow: hidden;
     background-color: #333;
 }
-nav.menu li {
-    display: inline-block;
-}
+nav.menu li { display: inline-block; }
 nav.menu li a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
 }
-nav.menu li a:hover {
-    background-color: #111;
-}
+nav.menu li a:hover { background-color: #111; }
 
 /*Blocks section*/
-div.block {
-	width: 100%;
-}
-
-div.blockheader {
+div.block-header {
 	font-weight: bold;
 	color: white;
 	background-color: #333;
 	margin-bottom: 5px;
+	margin-top: 5px;
 }
-div.blockheader span {
+div.block-header span {
 	display: inline-block; 
 }
 
 /*User controls section*/
-div.userinput {
+div.user-input {
 	background-color: #EEE;
 	border: 1px solid #000;
 	border-radius: 15px;
 	margin-bottom: 5px;
 	padding: 5px;
 }
-.button {
-	color: #FFF;
-	background-color: #333;
-}
-
-.search {
-	position: absolute;
-	right: 5px;
-}
-.search input {
-	vertical-align: middle;
-}
-
-.sort {
-	position: absolute;
-	right: 280px;
-}
-.sort input {
-	vertical-align: middle;
-}
+.button { color: #FFF; background-color: #333; }
 
 /*Auto complete section*/
-.ui-autocomplete {
-	background-color: #FFF;
-}
+.ui-autocomplete { background-color: #FFF; }
 
 /*Coloring backgrounds for pokemon types*/
 .bug { background-color: #A8B820 !important; }
@@ -140,27 +106,18 @@ div.userinput {
 }
 
 /*Data tables*/
-table {
-	margin-width: 0px;
-	width: 100%;
-}
+table { margin-width: 0px; }
 table tr:first-child {
 	background-color: #333;
 	font-size: 120%;
 	color: white;
 }
-table tr:nth-child(even) {
-	background-color: #EEE;
-}
-table tr:not(:first-child):hover {
-	background-color: lightblue;
-}
-table tr th {
-	margin-width: 0px;
+table tr:nth-child(even) { background-color: #EEE; }
+table tr:not(:first-child):hover { background-color: lightblue; }
+table tr th { 
 	padding: 5px;
 }
 table tr td {
-	margin-width: 0px;
 	padding: 5px;
 	text-align: center;
 }
@@ -178,9 +135,7 @@ table tr td {
 .left { text-align: left; }
 
 .underline {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #333;
+	border: 1px solid #333;
 }
 .fancy {
 	font-family: cursive;
@@ -192,9 +147,7 @@ table tr td {
 	background-color: #333;
 	color: white;
 	border-radius: 15px;
-	border-style: solid;
-	border-width: 3px;
-	border-color: lightblue;
+	border: 3px solid lightblue;
 	padding: 5px;
 }
 
