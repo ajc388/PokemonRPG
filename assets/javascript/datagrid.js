@@ -13,17 +13,17 @@ function DataGrid(parameters)
     //construct menu items
     $("#datagrid").append(
         '<div id="anchor"></div>'+
-        '<div id="selector" class="blockheader">'+
-          '<span >'+title+'</span>'+
+        '<div id="selector" class="block-header twelve columns">'+
+          '<span id="title" class="header six columns"><h4>'+title+'</h4></span>'+
         '</div>'+
-        '<div id="grid"></div>');
+        '<div id="grid" class="twelve columns"></div>');
 
     if ( sortFlag )
     {
       $("#selector").append(
-        '<span class="sort">'+
-          '<label for="sort">Sort: </label>'+
-          '<select class="input" id="sort"></select>'+
+        '<span class="shift three columns">'+
+          '<h5><label class="header offset-by-one five columns" for="sort">Sort</label>'+
+          '<select class="input right offset-by-one five columns" id="sort"></select></h5>'+
         '</span>');
 
       //is there a better way to do this?!
@@ -35,16 +35,15 @@ function DataGrid(parameters)
       });
 
       $("#sort").on("change", function() { sort(); });
-    }
-
+    } 
     //Build dom elements
     if ( searchFlag ) 
     {
       //Add search bar in
       $("#selector").append(
-          '<span class="search">'+
-            '<label for="search">Search: </label>'+
-            '<input class="input" id="search" type="search"></input>'+
+          '<span id="searchBar" class="shift three columns">'+
+            '<h5><label class="header offset-by-one five columns" for="search">Search</label>'+
+            '<input class="input right offset-by-one five columns" id="search" type="search"></input></h5>'+
           '</span>');
 
       /*Search Functionality*/
@@ -129,11 +128,11 @@ function DataGrid(parameters)
     {
       if (Object.keys(data).length > 0)
       {
-        var table = $("<table id='dataGrid' class='dataGrid'></table>");
+        var table = $("<table id='dataGrid' class='dataGrid twelve columns'></table>");
         if ( headerFlag )
         {
           var row = $("<tr class='dataRowHeader'></tr>");
-          row.append("<th class='dataHeader'>Name</th>");
+          row.append("<th class='header'><h6>Name</h6></th>");
           $.each(data[Object.keys(data)[0]], function(key) {
             row.append("<th class='dataHeader'>"+ key +"</th>");
           });

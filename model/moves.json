@@ -2014,14 +2014,6 @@ var moves =
 			"effect": "Identify any target on the map. If the user is blinded, the target is no longer identified.",
 			"critical": "The target is harshly identified.",
 		},
-		"Hurricane": 
-		{
-			"power": 100,
-			"style": "Ranged",
-			"flavor": "Massive winds blow everyone in dizzying circles.",
-			"effect": "This deals 90 damage to everyone within range, friend or foe.",
-			"critical": "The targets have a compulsion to confusion.",
-		},
 		"Oblivion_Wing": 
 		{
 			"power": 90,

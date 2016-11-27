@@ -69,18 +69,18 @@ function displayPokemon(pokemonList)
 		if ( pokemon.Types.length == 1 ) { pokemon.Types[1] = pokemon.Types[0]; }
 		else if ( pokemon.Types.length > 2 ) { return; }
 
-		var article = $("<article class='pokemon three columns "+ pokemon.Types[0].toLowerCase() +"border' id='"+pokemonName+"' title=''></article>");
+		var article = $("<article class='pokemon three columns border "+ pokemon.Types[0].toLowerCase() +"border' id='"+pokemonName+"' title=''></article>");
 		article.append(
-			"<div class='pokemonHeader'>"+
-				"<img class='icon' src= 'assets/images/type_icons/"+pokemon.Types[0]+".png' alt='"+pokemon.Types[0]+"'/>"+
-				"<div>"+
-					"<span class='Name'>"+pokemonName.replace(/_/g, " ")+" : </span>"+
-	    			"<span class='Pokedex_ID'>"+pokemon.Pokedex_ID+"</span>"+
-	    		"</div>"+
-				"<img class='icon' src= 'assets/images/type_icons/"+pokemon.Types[1]+".png' alt='"+pokemon.Types[1]+"'/>"+
+			"<div class='flex twelve columns'>"+
+				"<img class='icon one column' src= 'assets/images/type_icons/"+pokemon.Types[0]+".png' alt='"+pokemon.Types[0]+"'/>"+
+				"<span class='ten columns'>"+
+					"<h5 class='header'><span>"+pokemonName.replace(/_/g, " ")+" : </span>"+
+	    			"<span>"+pokemon.Pokedex_ID+"</span></h5>"+
+	    		"</span>"+
+				"<img class='icon one column' src= 'assets/images/type_icons/"+pokemon.Types[1]+".png' alt='"+pokemon.Types[1]+"'/>"+
 			"</div>");
-		article.append("<img class='pokepic' src='assets/images/pokemon/"+pokemonName+".png' />");
-		article.append("<div class='shortDescription'><span>"+pokemon.Short_Description+"</span></div>");
+		article.append("<div class='twelve columns'><img class='pokepic offset-by-one ten columns' src='assets/images/pokemon/"+pokemonName+".png' /></div>");
+		article.append("<div class='center twelve columns'><span>"+pokemon.Short_Description+"</span></div>");
 
 		$("#pokedex").append(article);
 
