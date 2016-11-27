@@ -31,11 +31,11 @@ div.block-header {
 	background-color: #333;
 	margin-bottom: 5px;
 	margin-top: 5px;
-}
-div.block-header span {
-	display: inline-block; 
+	padding-top:3px;
+	padding-bottom: 3px;
 }
 
+.input { margin-top:1%;}
 /*User controls section*/
 div.user-input {
 	background-color: #EEE;
@@ -104,6 +104,9 @@ div.user-input {
 	display: inline-block;
 	vertical-align: inherit;
 }
+.nav-icon-menu ul { padding-left:0px; margin-top: 0px; }
+.nav-icon-menu ul li { display: -webkit-inline-box; }
+.nav-icon-menu ul li:hover { background-color: #111;}
 
 /*Data tables*/
 table { margin-width: 0px; }
@@ -114,18 +117,13 @@ table tr:first-child {
 }
 table tr:nth-child(even) { background-color: #EEE; }
 table tr:not(:first-child):hover { background-color: lightblue; }
-table tr th { 
-	padding: 5px;
-}
+table tr th { padding: 5px; }
 table tr td {
 	padding: 5px;
 	text-align: center;
 }
 
-.header {
-	text-align: center;
-	font-weight: bold;
-}
+.header { text-align: center; font-weight: bold; }
 .label {
 	text-align: left;
 	font-weight: bold;
@@ -133,15 +131,13 @@ table tr td {
 .center { text-align: center; }
 .right { text-align: right; }
 .left { text-align: left; }
-
-.underline {
-	border: 1px solid #333;
-}
+.underline { border: 1px solid #333; }
 .fancy {
 	font-family: cursive;
 	font-style: italic;
 	font-weight: bold;
 }
+
 
 .ui-tooltip-content {
 	background-color: #333;

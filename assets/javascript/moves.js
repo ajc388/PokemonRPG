@@ -7,7 +7,7 @@ $( document ).ready( function() {
   /*Fixed elements*/
   Menu({
     model: moves,
-    title: "Moves Library",
+    title: "Moves",
     search: 
     { 
       tags: function() 
@@ -43,7 +43,7 @@ function typeIconNavMenu(moves)
 {
   $.each(moves, function(type) {
     /*SCROLL FUNCTIONALITY*/
-    $(".navIconMenu ul").append(
+    $(".nav-icon-menu ul").append(
               "<li><a id='link_"+type+"'>"+
               "<img class='icon' src='assets/images/type_icons/"+type+".png' />"+
               "</a></li>");
