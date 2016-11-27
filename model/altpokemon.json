@@ -6,7 +6,8 @@ main one once they're complete.
 		"Pokedex_ID": "",
 		"Short_Description": " Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": [""],
 		"Egg_Groups": [""],
 		"Gender": 
@@ -43,7 +44,8 @@ main one once they're complete.
 		"Pokedex_ID": "027",
 		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Ground"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -79,7 +81,8 @@ main one once they're complete.
 		"Pokedex_ID": "028",
 		"Short_Description": "Mouse Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Ground"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -115,7 +118,8 @@ main one once they're complete.
 		"Pokedex_ID": "29",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison"],
 		"Egg_Groups": ["Monster", "Field"],
 		"Gender": 
@@ -151,7 +155,8 @@ main one once they're complete.
 		"Pokedex_ID": "30",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison"],
 		"Egg_Groups": ["Monster", "Field"],
 		"Gender": 
@@ -187,7 +192,8 @@ main one once they're complete.
 		"Pokedex_ID": "31",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "Nidoqueen and Nidoking fight together well in pairs. Though Nidoqueen prefer to fire projectiles in a support role, they are fully capable of handling themselves in a brawl.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison"],
 		"Egg_Groups": ["Monster", "Field"],
 		"Gender": 
@@ -223,7 +229,8 @@ main one once they're complete.
 		"Pokedex_ID": "32",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison"],
 		"Egg_Groups": ["Monster", "Field"],
 		"Gender": 
@@ -259,7 +266,8 @@ main one once they're complete.
 		"Pokedex_ID": "33",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison"],
 		"Egg_Groups": ["Monster", "Field"],
 		"Gender": 
@@ -295,7 +303,8 @@ main one once they're complete.
 		"Pokedex_ID": "34",
 		"Short_Description": "Drill Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison", "Ground"],
 		"Egg_Groups": ["Monster", "Field"],
 		"Gender": 
@@ -330,8 +339,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "035",
 		"Short_Description": "Fairy Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Clefairy are capable of surviving in the vacuum of space.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fairy"],
 		"Egg_Groups": ["Fairy"],
 		"Gender": 
@@ -366,8 +376,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "036",
 		"Short_Description": "Fairy Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Clefable landed on earth when an interstellar meteorite landed at mount moon, with fragments landing elsewhere in the world. How they survived such an impact is a mystery.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fairy"],
 		"Egg_Groups": ["Fairy"],
 		"Gender": 
@@ -402,8 +413,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "037",
 		"Short_Description": "Fox Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Each of a Vulpix's tails has a different power in it. If a tail gets severed it can never relearn the associated move.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fire"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -438,8 +450,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "038",
 		"Short_Description": "Fox Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Ninetails is capable of using all of its tails in conjunction to handle even stronger moves than its previous form.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fire"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -475,7 +488,8 @@ main one once they're complete.
 		"Pokedex_ID": "039",
 		"Short_Description": "Balloon Pokemon",
 		"Long_Description": "Jigglypuff inflate themselves and float on the wind to travel with seasonal gusts.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Normal", "Fairy"],
 		"Egg_Groups": ["Fairy"],
 		"Gender": 
@@ -506,12 +520,13 @@ main one once they're complete.
 			"Learnable": ["Sing", "Defense_Curl", "Charm", "Pound", "Glomp", "Fairy_Dust", "Play_Nice", "Disarming_Voice", "Disable", "Double_Slap", "Rollout", "Round"]
 		}
 	},
-		"Wigglytuff":
+"Wigglytuff":
 	{	
 		"Pokedex_ID": "040",
 		"Short_Description": "Balloon Pokemon",
 		"Long_Description": "Wigglytuff typically hate bullies and will defend weaker Pokemon.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Normal", "Fairy"],
 		"Egg_Groups": ["Fairy"],
 		"Gender": 
@@ -546,8 +561,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "041",
 		"Short_Description": "Bat Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Zubat have little interest in direct combat. They typically inflict status effects on predators and then leave. This defensive measure also works by annoying trainers into leaving.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison", "Flying"],
 		"Egg_Groups": ["Flying"],
 		"Gender": 
@@ -583,8 +599,9 @@ main one once they're complete.
 //Should Crobat be added to the game, Knock off a point of Zubat's and Golbat's stats.
 		"Pokedex_ID": "042",
 		"Short_Description": "Bat Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Golbat swallow their prey whole, expanding to eat things larger than themselves. They will lie on the ground for days sometimes digesting.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Poison", "Flying"],
 		"Egg_Groups": ["Flying"],
 		"Gender": 
@@ -619,8 +636,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "043",
 		"Short_Description": "Weed Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Oddish typically find a sunny patch to root in for the day, becoming active at night.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Grass", "Poison"],
 		"Egg_Groups": ["Grass"],
 		"Gender": 
@@ -655,8 +673,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "044",
 		"Short_Description": "Weed Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Gloom's horrible stench is a terrific defense method.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Grass", "Poison"],
 		"Egg_Groups": ["Grass"],
 		"Gender": 
@@ -691,8 +710,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "045",
 		"Short_Description": "Flower Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "Vileplume are actually capable of creating a variety of scents, many of them pleasant. They typically only emit stench when humans or other potential predators are around, and so are associated with that scent.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Grass", "Poison"],
 		"Egg_Groups": ["Grass"],
 		"Gender": 
@@ -727,8 +747,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "046",
 		"Short_Description": "Mushroom Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "The mushrooms on the back of a Paras filter out the toxins it builds up in its body, and they can expel those toxins in concentrated form for defense or to subdue prey.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Bug", "Grass"],
 		"Egg_Groups": ["Bug", "Grass"],
 		"Gender": 
@@ -763,8 +784,9 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "047",
 		"Short_Description": "Mushroom Pokemon",
-		"Long_Description": "",
-		"Modifier": null,
+		"Long_Description": "In some parasect the insect part has actually died, but the mushroom has seized complete control of the nervous system.",
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Bug", "Grass"],
 		"Egg_Groups": ["Bug", "Grass"],
 		"Gender": 
@@ -800,7 +822,8 @@ main one once they're complete.
 		"Pokedex_ID": "048",
 		"Short_Description": "Insect Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Bug", "Poison"],
 		"Egg_Groups": ["Bug"],
 		"Gender": 
@@ -836,7 +859,8 @@ main one once they're complete.
 		"Pokedex_ID": "049",
 		"Short_Description": "Poison Moth Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Bug", "Poison"],
 		"Egg_Groups": ["Bug"],
 		"Gender": 
@@ -872,7 +896,8 @@ main one once they're complete.
 		"Pokedex_ID": "050",
 		"Short_Description": "Mole Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Ground"],
 		"Egg_Groups": ["Ground", "Field"],
 		"Gender": 
@@ -908,7 +933,8 @@ main one once they're complete.
 		"Pokedex_ID": "051",
 		"Short_Description": "Mole Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Ground"],
 		"Egg_Groups": ["Ground", "Field"],
 		"Gender": 
@@ -944,7 +970,8 @@ main one once they're complete.
 		"Pokedex_ID": "052",
 		"Short_Description": "Scratch Cat Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Normal"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -980,7 +1007,8 @@ main one once they're complete.
 		"Pokedex_ID": "053",
 		"Short_Description": "Classy Cat Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Normal"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -1016,7 +1044,8 @@ main one once they're complete.
 		"Pokedex_ID": "054",
 		"Short_Description": "Duck Pokemon",
 		"Long_Description": "Psyduck can't fly due to their massive heads.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Water"],
 		"Egg_Groups": ["Flying"],
 		"Gender": 
@@ -1052,7 +1081,8 @@ main one once they're complete.
 		"Pokedex_ID": "055",
 		"Short_Description": "Duck Pokemon",
 		"Long_Description": "Etymologists suspect that Golduck once had golden-colored feathers due to its name.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Water"],
 		"Egg_Groups": ["Flying"],
 		"Gender": 
@@ -1088,7 +1118,8 @@ main one once they're complete.
 		"Pokedex_ID": "056",
 		"Short_Description": "Pig Monkey Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fighting"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -1124,7 +1155,8 @@ main one once they're complete.
 		"Pokedex_ID": "057",
 		"Short_Description": "Pig Monkey Pokemon",
 		"Long_Description": "Primeape are incredibly strong but lacking discipline. Many trainers choose to put heavy weights on their Primeape's arms to slow down and power up its punches, and to help it train strength.",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fighting"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -1160,7 +1192,8 @@ main one once they're complete.
 		"Pokedex_ID": "58",
 		"Short_Description": "Puppy Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fire"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -1188,7 +1221,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Odor_Sleuth"]
+			"Learnable": ["Ember", "Odor_Sleuth", "Bite", "Flame_Wheel", "Fire_Fang", "Take_Down", "Flame_Burst", "Agility", "Retaliate", "Flamethrower", "Mark_Territory", "Herd"]
 		}
 	},
 	"Arcanine":
@@ -1196,7 +1229,8 @@ main one once they're complete.
 		"Pokedex_ID": "59",
 		"Short_Description": "Legendary Pokemon",
 		"Long_Description": "",
-		"Modifier": null,
+		"Shiny": false,
+		"Legendary": false,
 		"Types": ["Fire"],
 		"Egg_Groups": ["Field"],
 		"Gender": 
@@ -1224,7 +1258,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Odor_Sleuth"]
+			"Learnable": ["Ember", "Bite", "Odor_Sleuth", "Roar", "Crunch", "Heat_Wave", "Outrage", "Flare_Blitz", "Brand", "Burning_Land", "Pyre", "Mark_Territory", "Herd", "Noble_Roar"]
 		}
 	},		
 /*
