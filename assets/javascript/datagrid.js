@@ -132,9 +132,9 @@ function DataGrid(parameters)
         if ( headerFlag )
         {
           var row = $("<tr class='dataRowHeader'></tr>");
-          row.append("<th class='header'><h6>Name</h6></th>");
+          row.append("<th class='header'><h5>Name</h5></th>");
           $.each(data[Object.keys(data)[0]], function(key) {
-            row.append("<th class='dataHeader'>"+ key +"</th>");
+            row.append("<th class='dataHeader'><h5>"+ key +"</h5></th>");
           });
           table.append(row);
         }
