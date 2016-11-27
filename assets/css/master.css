@@ -6,6 +6,7 @@ body {
 div { height: inherit;}
 
 /*Menu section*/
+nav.menu { margin-bottom: 5px;}
 .banner nav.menu li a { padding: 10px 10px; }
 nav.menu { display: inline-block; }
 nav.menu ul {
@@ -30,9 +31,7 @@ div.block-header {
 	color: white;
 	background-color: #333;
 	margin-bottom: 5px;
-	margin-top: 5px;
-	padding-top:3px;
-	padding-bottom: 3px;
+	padding-top: 0px 3px;
 }
 
 .input { margin-top:1%;}
@@ -106,7 +105,12 @@ div.user-input {
 }
 .nav-icon-menu ul { padding-left:0px; margin-top: 0px; }
 .nav-icon-menu ul li { display: -webkit-inline-box; }
-.nav-icon-menu ul li:hover { background-color: #111;}
+.nav-icon-menu ul a:hover { 
+	position: relative;
+	top: 1px;
+	left: 1px;
+	background-color: #111;
+}
 
 /*Data tables*/
 table { margin-width: 0px; }
