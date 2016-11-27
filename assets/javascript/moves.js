@@ -91,22 +91,29 @@ function sort()
 function search()
 {
     var input = $("#search").val().toLowerCase().replace(/ /g, '_');
+    var shownPrevType = "";
     var prevType = "";
+    var hidden = true;
+
     $(".move-name").each( function() { 
         var moveName = $(this).text().replace(/ /g, '_');
-        if (moveName.toLowerCase().indexOf(input)!=-1) {
-          var type = $(this).parent().parent().parent().prop("id").replace("accordion", "");
-          
-          $("#header_"+moveName).show();
-          if ( prevType != type ) { $("#content_"+moveName).show(); } 
-          else { $("#content_"+moveName).hide(); }
+        var type = $(this).parent().parent().parent().prop("id").replace("accordion", "");
 
-          prevType = type;
+        if (moveName.toLowerCase().indexOf(input)!=-1) {
+          $("#header_"+moveName).show();
+          $("#category_"+type).show();
+          if ( shownPrevType != type ) { $("#content_"+moveName).show(); } 
+          else { $("#content_"+moveName).hide(); }
+          hidden = false;
+          shownPrevType = type;
         }
         else { 
           $("#header_"+moveName).hide(); 
           $("#content_"+moveName).hide(); 
+          if ( hidden ) { $("#category_"+prevType).hide(); }
         }
+        if ( prevType != type ) { hidden = true; }
+        prevType = type;
     });
 }
 
