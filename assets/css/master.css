@@ -114,18 +114,10 @@ div.user-input {
 
 /*Data tables*/
 table { margin-width: 0px; }
-table tr:first-child {
-	background-color: #333;
-	font-size: 120%;
-	color: white;
-}
-table tr:nth-child(even) { background-color: #EEE; }
+table tr:first-child { background-color: #333; color: white; }
+table tr:nth-child(even) { border: 1px solid #EEE; background-color: #EEE; }
 table tr:not(:first-child):hover { background-color: lightblue; }
-table tr th { padding: 5px; }
-table tr td {
-	padding: 5px;
-	text-align: center;
-}
+table tr td { padding: 5px; text-align: center; }
 
 .header { text-align: center; font-weight: bold; }
 .label {
