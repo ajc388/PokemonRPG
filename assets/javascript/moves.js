@@ -72,11 +72,11 @@ function sort()
     var sort = map.sort(function (a, b) {
       if ( input == "Name" ) 
       {
-        return $(a[0]).find(".moveName").text() > $(b[0]).find(".moveName").text() ? 1 : -1;
+        return $(a[0]).find(".move-name").text() > $(b[0]).find(".move-name").text() ? 1 : -1;
       } 
       else if ( input == "Power") 
       {
-        return parseInt($(a[0]).find(".movePower").text()) < parseInt($(b[0]).find(".movePower").text()) ? 1 : -1;
+        return parseInt($(a[0]).find(".move-power").text()) < parseInt($(b[0]).find(".move-power").text()) ? 1 : -1;
       }
     });
   
@@ -91,17 +91,17 @@ function sort()
 function search()
 {
     var input = $("#search").val().toLowerCase().replace(/ /g, '_');
-    var prevKey = "";
-    $(".moveName").each( function() { 
+    var prevType = "";
+    $(".move-name").each( function() { 
         var moveName = $(this).text().replace(/ /g, '_');
         if (moveName.toLowerCase().indexOf(input)!=-1) {
-          var key = $(this).parent().parent().prop("id").replace("accordion", "");
-        
+          var type = $(this).parent().parent().parent().prop("id").replace("accordion", "");
+          
           $("#header_"+moveName).show();
-          if ( prevKey != key ) { $("#content_"+moveName).show(); } 
+          if ( prevType != type ) { $("#content_"+moveName).show(); } 
           else { $("#content_"+moveName).hide(); }
 
-          prevKey = key;
+          prevType = type;
         }
         else { 
           $("#header_"+moveName).hide(); 
@@ -117,11 +117,11 @@ function displayMoves(moves)
       $("#moveList").append(
           "<div class='block-header twelve columns' id='category_"+type+"'>"+
           "<span class='left one column'><img class='icon' src= 'assets/images/type_icons/"+type+".png' /></span>"+
-          "<span class='header ten columns'><h5>"+type+"</h5></span>"+
+          "<span class='header ten columns'><h4>"+type+"</h5></span>"+
           "<span class='right one column'><img class='icon' src= 'assets/images/type_icons/"+type+".png' /></span>"+
          "</div>");
 
-      var accordion = $("<div id='accordion"+type+"'></div>");
+      var accordion = $("<div id='accordion"+type+"' class='twelve columns'></div>");
       $.each(moveList, function(moveName, move) 
       {
         moveName = moveName.replace(/ /g, '_');
@@ -132,9 +132,9 @@ function displayMoves(moves)
         //Create header div for accordion
         var header = $("<div class='move-header twelve columns "+ type.toLowerCase() +"' id='header_"+moveName+"'></div>");
         header.append("<span class='one-half column'><img class='icon' src= 'assets/images/type_icons/"+type+".png' /></span>");
-        header.append("<span class='three columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
+        header.append("<span class='three columns'><span class='label move-name'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
         header.append("<span class='fancy eight columns'>" + flavor +"</span>");
-        header.append("<span style='text-align: right;' class='label one-half columns'>" + power + "</span>");
+        header.append("<span style='text-align: right;' class='label one-half columns move-power'>" + power + "</span>");
         accordion.append(header);
        
         //Create content div for accordion
