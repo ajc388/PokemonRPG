@@ -1046,7 +1046,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "027",
 		"Short_Description": "Mouse Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Sandshrew typically burrow underground to remain warm in cold desert nights.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Ground"],
@@ -1083,7 +1083,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "028",
 		"Short_Description": "Mouse Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Sandslash spikes are colored the same as local rock.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Ground"],
@@ -1113,12 +1113,12 @@ var pokemon =
 		},
 		"Moves":
 		{
-			"Learnable": ["Magnitude", "Slash", "Entrench", "Crush_Claw", "Acupuncture", "Poison_Sting", "Pin_Missile", "Rollout", "Berserker_Toxin", "Rapid_Spin", "Fury_Cutter", "Swift", "Sand_Tomb", "Dig", "Swords_Dance", "Sandstorm", "Earthquake"]
+			"Learnable": ["Magnitude", "Slash", "Entrench", "Crush_Claw", "Acupuncture", "Poison_Sting", "Pin_Missile", "Rollout", "Berserker_Toxin", "Rapid_Spin", "Fury_Cutter", "Swift", "Sand_Tomb", "Dig", "Swords_Dance", "Sandstorm", "Earthquake", "Rollout"]
 		}
 	},
 "Nidoran♀":
 	{	
-		"Pokedex_ID": "29",
+		"Pokedex_ID": "029",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "Male and female Nidoran were so different that researchers originally classified them as two different species. The different classification remains today through inertia.",
 		"Shiny": false,
@@ -1155,7 +1155,7 @@ var pokemon =
 	},
 "Nidorina":
 	{	
-		"Pokedex_ID": "30",
+		"Pokedex_ID": "030",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "Nidorina typically grow faster than their male counterparts.",
 		"Shiny": false,
@@ -1192,7 +1192,7 @@ var pokemon =
 	},
 "Nidoqueen":
 	{	
-		"Pokedex_ID": "31",
+		"Pokedex_ID": "031",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "Nidoqueen and Nidoking fight together well in pairs, and they will ruthlessly defend their offspring.",
 		"Shiny": false,
@@ -1229,7 +1229,7 @@ var pokemon =
 	},	
 "Nidoran♂":
 	{	
-		"Pokedex_ID": "32",
+		"Pokedex_ID": "032",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "Male and female Nidoran do not get along well as children.",
 		"Shiny": false,
@@ -1266,7 +1266,7 @@ var pokemon =
 	},	
 "Nidorino":
 	{	
-		"Pokedex_ID": "33",
+		"Pokedex_ID": "033",
 		"Short_Description": "Poison Pin Pokemon",
 		"Long_Description": "Nidorino and Nidorina start to pair off as they age.",
 		"Shiny": false,
@@ -1303,7 +1303,7 @@ var pokemon =
 	},
 "Nidoking":
 	{	
-		"Pokedex_ID": "34",
+		"Pokedex_ID": "034",
 		"Short_Description": "Drill Pokemon",
 		"Long_Description": "Nidoking will normally only pick fights they feel they can win, but when family is threatened they will always fight to the death when necessary.",
 		"Shiny": false,
@@ -2192,7 +2192,7 @@ var pokemon =
 	},	
 	"Growlithe":
 	{	
-		"Pokedex_ID": "58",
+		"Pokedex_ID": "058",
 		"Short_Description": "Puppy Pokemon",
 		"Long_Description": "Pet lovers have a sharp divide over whether Meowth or Growlite make better pets.", 
 		"Shiny": false,
@@ -2229,7 +2229,7 @@ var pokemon =
 	},
 	"Arcanine":
 	{	
-		"Pokedex_ID": "59",
+		"Pokedex_ID": "059",
 		"Short_Description": "Legendary Pokemon",
 		"Long_Description": "Arcanine were once so rare as to be legendary, but they were also the first Pokemon to live among humans. In time, they domesticated themselves.",
 		"Shiny": false,
