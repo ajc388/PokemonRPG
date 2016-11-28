@@ -14,7 +14,7 @@ function DataGrid(parameters)
     $("#data-grid").append(
         '<div id="anchor"></div>'+
         '<div id="selector" class="block-header twelve columns">'+
-          '<span id="title" class="header six columns"><h4>'+title+'</h4></span>'+
+          '<span id="title" class="header offset-by-three three columns"><h4>'+title+'</h4></span>'+
         '</div>'+
         '<div id="grid" class="twelve columns"></div>');
 
