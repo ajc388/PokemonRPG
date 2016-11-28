@@ -41,27 +41,27 @@
   </header>
   
   <div class="block-header twelve columns" id="menu">
-    <span class="left four columns">
+    <div class="left four columns">
       <span><button class="button ui-button ui-widget ui-corner-all" id="previous"> &lt&lt </button></span>
+      <span><button class="button ui-button ui-widget ui-corner-all" id="next"> &gt&gt </button></span>
       <span><button class='button ui-button ui-widget ui-corner-all' id="save">Save</button></span>
       <span><button class='button ui-button ui-widget ui-corner-all' id="print">Print</button></span>
-    </span>
-    <span class="shift four columns">
-      <h4>
+    </div>
+    <div class="shift four columns">
+      <h4 class="header">
         <span>Pokemon -</span>
         <span id="pokemonName">Pikachu -</span>
         <span id="pokedexID">#025</span>
       </h4>
-    </span>
-    <span class="shift right four columns">
+    </div>
+    <div class="shift right four columns">
       <span>Cache :</span>
       <span><input class="input" type="text" name="fileName" /></span>
-      <span><button class="button ui-button ui-widget ui-corner-all" id="next"> &gt&gt </button></span>
-    </span>
+    </div>
   </div>
 
   <div class="twelve columns">
-    <article class="page two-thirds columns" id="pokemonSheet">
+    <article class="page twelve columns" id="pokemonSheet">
       <section class="pageHeader twelve columns">
         <span class="twelve columns">
           <h2 class="center fancy">
@@ -93,38 +93,38 @@
           <!-- Attribute block -->
           <div id="attributes" class="border four columns">
             <span class="twelve columns"> 
-              <h6 class="header">
+              <h5 class="header">
                 <span class="header offset-by-four four columns">IV</span>
                 <span class="header four columns">EV</span>
-              </h6>
+              </h5>
             </span>
             <span id="speed" class="twelve columns">
-              <h6>
+              <h5>
                 <span class="label four columns">Speed </span>
                 <span class="center four columns" id="iv_speed"></span>
                 <span class="center four columns" id="ev_speed"></span>
-              </h6>
+              </h5>
             </span>
             <span id="strength" class="twelve columns">
-              <h6>
-                <span class="left label four columns">Strength </span>
+              <h5>
+                <span class="label four columns">Strength </span>
                 <span class="center four columns" id="iv_strength"> </span>
                 <span class="center four columns" id="ev_strength"> </span>
-              </h6>
+              </h5>
             </span>
             <span id="sense" class="twelve columns">
-              <h6>
-                <span class="left label four columns">Sense </span>
+              <h5>
+                <span class="label four columns">Sense </span>
                 <span class="center four columns" id="iv_sense"></span>
                 <span class="center four columns" id="ev_sense"></span>
-              </h6>
+              </h5>
             </span>
             <span id="mind" class="twelve columns">
-              <h6>
-                <span class="left label four columns">Mind </span>
+              <h5>
+                <span class="label four columns">Mind </span>
                 <span class="center four columns" id="iv_mind"></span>
                 <span class="center four columns" id="ev_mind"></span>
-              </h6>
+              </h5>
             </span>
           </div>
 

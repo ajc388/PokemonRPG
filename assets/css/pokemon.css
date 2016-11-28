@@ -23,8 +23,6 @@
 	.move-header { border: 1px solid #000; }
 	.move-content { display: block !important; padding: 0px; border: 1px solid #000; }
 	 div.first-row { height: 118px !important; }
-	
-	.collapse { min-width: 0px !important;}
 }
 
 div { padding: 1px;}
@@ -36,10 +34,10 @@ div.pokemon:hover { background-color: lightblue; }
 }
 
 @media (min-width: 500px) { 
-	table tr th { height: 2.6vw; padding: 6px; }
-	table tr td { height: 2.5vw; padding: 1px; }
+	table tr th { height: 3vw; padding: 6px; }
+	table tr td { height: 3.8vw; padding: 1px; }
 	
-	div.first-row { height: 12vw; margin-bottom: 2px;}
+	div.first-row { height: 16vw; margin-bottom: 2px;}
 	div.second-row { margin-top: 2px; margin-bottom: 2px;}
 }
 
@@ -61,3 +59,4 @@ div.pokemon:hover { background-color: lightblue; }
 	border: 5px solid #333;
 	background-color: #EEE;
 }
+#attributes span { line-height: 3.1vw;}
