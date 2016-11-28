@@ -41,16 +41,64 @@
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+/* For devices larger than 200px */
+@media (min-width: 200px) {
   .container {
-    width: 85%;
-    padding: 0; 
+    width: 100%;
+    padding: 0px; 
   }
+
+  /*Only if we are inside of a container using inline span should we use the dynamic sizes*/
+  span.one-half.column,
+  span.one-half.columns               { width: 4.16666666667%; }
+  span.one.column,
+  span.one.columns                    { width: 8.3%; }
+  span.two.columns                    { width: 15.6666666667%; }
+  span.three.columns                  { width: 24%;            }
+  span.four.columns                   { width: 32.3333333333%; }
+  span.five.columns                   { width: 41.6666666667%; }
+  span.six.columns                    { width: 49%;            }
+  span.seven.columns                  { width: 57.3333333333%; }
+  span.eight.columns                  { width: 65.6666666667%; }
+  span.nine.columns                   { width: 74%;          }
+  span.ten.columns                    { width: 82.3333333333%; }
+  span.eleven.columns                 { width: 90.6666666666%; }
+  span.twelve.columns                 { width: 100%; }
+
+  /* Offsets */
+  span.offset-by-one.column,
+  span.offset-by-one.columns          { margin-left: 8.3%; }
+  span.offset-by-two.column,
+  span.offset-by-two.columns          { margin-left: 15.6666666667%; }
+  span.offset-by-three.column,
+  span.offset-by-three.columns        { margin-left: 24%;            }
+  span.offset-by-four.column,
+  span.offset-by-four.columns         { margin-left: 32.3333333333%; }
+  span.offset-by-five.column,
+  span.offset-by-five.columns         { margin-left: 41.6666666667%; }
+  span.offset-by-six.column,
+  span.offset-by-six.columns          { margin-left: 49%;            }
+  span.offset-by-seven.column,
+  span.offset-by-seven.columns        { margin-left: 57.3333333333%; }
+  span.offset-by-eight.column,
+  span.offset-by-eight.columns        { margin-left: 65.6666666667%; }
+  span.offset-by-nine.column,
+  span.offset-by-nine.columns         { margin-left: 74%;          }
+  span.offset-by-ten.column,
+  span.offset-by-ten.columns          { margin-left: 82.3333333333%; }
+  span.offset-by-eleven.column,
+  span.offset-by-eleven.columns       { margin-left: 90.6666666666%; }
+
+  /*table sizing added in*/
+  td.two.columns,th.two.columns       { width: 15.6666666667%; }
+  td.five.columns,th.five.columns     { width: 41.6666666667%; }
+  td.ten.columns,th.ten.columns       { width: 82.3333333333%; }
+
+  .left, .right, .center              { text-align: center; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* For devices larger than 500px */
+@media (min-width: 500px) {
   .container { width: 100%;  }
   .column,
   .columns {
@@ -102,6 +150,10 @@
   .offset-by-eleven.columns       { margin-left: 90.6666666666%; }
 
   .shift { margin-left: 1.5%;}
+
+  .left { text-align: left; }
+  .center { text-align: center; }
+  .right { text-align: right; }
 }
 
 /* Base Styles

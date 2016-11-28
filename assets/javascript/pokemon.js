@@ -105,7 +105,7 @@ function displayCounterIcons(counters)
 {
   var str = "";
   $.each(counters, function(id, type) {
-    str += "<img class='icon' src='assets/images/type_icons/"+type+".png' alt='"+type+"'/>";
+    str += "<img class='icon two columns' src='assets/images/type_icons/"+type+".png' alt='"+type+"'/>";
   });
   return str;
 }
@@ -168,13 +168,14 @@ function displayPokemon(pokemon, pokemonName)
   var primaryType = pokemon.Types !== "undefined" && pokemon.Types.length > 0 ? pokemon.Types[0] : "null";
   $("#pokemon").addClass("border").addClass(primaryType.toLowerCase() + "border");
   
+  //important to keep the pokemon as a div because of grid changes
   $("#pokemon").append("<span class='twelve columns'>" +
-    "<h4>"+
-    "<span id='gender' class='offset-by-one one column'></span>"+
+    "<h5>"+
+    "<span id='gender'></span>"+
     "<span id='eggGroups' class='header ten columns'></span>"+
-    "</h4>"+
+    "</h5>"+
     "</span>"+
-    "<span class='offset-by-four columns'><img class='five columns' src='assets/images/pokemon/"+pokemonName+".png'></span>"+
+    "<div class='offset-by-four columns'><img class='pokepic five columns' src='assets/images/pokemon/"+pokemonName+".png'></div>"+
     "</span>");
   
   $("#pokemon").tooltip({
@@ -200,9 +201,9 @@ function displayGender(pokemon)
   var other = pokemon.Gender !== "undefined" && pokemon.Gender.Other_Weight !== "undefined" ? pokemon.Gender.Other_Weight : 0;
 
   var rand = Math.random() * (male+female+other);
-  if ( rand <= male ) { $("#gender").append("<img class='icon' src='assets/images/gender_icons/male.png' alt='male'/>");}
-  else if ( rand <= male+female ) { $("#gender").append("<img class='icon' src='assets/images/gender_icons/female.png' alt='female'/>");}
-  else if ( rand <= male+female+other ) { $("#gender").append("<img class='icon' src='assets/images/gender_icons/other.png' alt='other'/>");}
+  if ( rand <= male ) { $("#gender").append("<img class='icon offset-by-one one column' src='assets/images/gender_icons/male.png' alt='male'/>");}
+  else if ( rand <= male+female ) { $("#gender").append("<img class='icon offset-by-one one column' src='assets/images/gender_icons/female.png' alt='female'/>");}
+  else if ( rand <= male+female+other ) { $("#gender").append("<img class='icon offset-by-one one column' src='assets/images/gender_icons/other.png' alt='other'/>");}
 }
 
 function displayEggGroups(pokemon)
@@ -283,7 +284,7 @@ function displayMoves(pokemon, moves)
         //Create header div for accordion
         var container = $("<article class='group twelve columns'></div>");
 
-        var header = $("<div class='moveHeader twelve columns "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
+        var header = $("<div class='move-header twelve columns "+ move.type.toLowerCase() +"' id='header_"+moveName+"'></div>");
         header.append("<span class='one-half column'><img class='icon' src= 'assets/images/type_icons/"+move.type+".png' /></span>");
         header.append("<span class='three columns'><span class='label'>"+moveName.replace(/_/g, ' ')+"</span><span> - "+style+"</span>");
         header.append("<span class='eight columns'>" + flavor +"</span>");
@@ -291,7 +292,7 @@ function displayMoves(pokemon, moves)
         container.append(header);
        
         //Create content div for accordion
-        var content = $("<div class='moveContent twelve columns' id='content_"+moveName+"'></div>");
+        var content = $("<div class='move-content twelve columns' id='content_"+moveName+"'></div>");
         var effect = typeof move.effect !== "undefined" ? move.effect : "No effect";
         var critical = typeof move.critical !== "undefined" ? move.critical : "";
         var outofbattle = typeof move.out_of_battle !== "undefined" ? move.out_of_battle : "";
@@ -307,15 +308,15 @@ function displayMoves(pokemon, moves)
     $("#moves").append(accordion);
     accordion
       .accordion({
-        header: ".moveHeader",
+        header: ".move-header",
         heightStyle: ""
       })
       .sortable({
         axis: "y",
-        handle: ".moveHeader",
+        handle: ".move-header",
         stop: function( event, ui ) {
           // IE doesn't register the blur when sorting
-          ui.item.children(".moveHeader").triggerHandler( "focusout" );
+          ui.item.children(".move-header").triggerHandler( "focusout" );
           // Refresh accordion to handle new order
           $( this ).accordion( "refresh" );
         }
