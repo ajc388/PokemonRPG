@@ -1777,6 +1777,15 @@ var moves =
 			"effect": "The target and all adjacent targets have their HP halved, rounded up. This affects friend and foe.",
 			"critical": "",
 		},
+		"Plasma_Stream": 
+		{
+			"power": 80,
+			"style": "Ranged",
+			"flavor": "A small blast of superheated Plasma covers the area.",
+			"effect": "This deals 70 damage to the target and all adjacent targets.",
+			"critical": "+30 electric damage.",
+		},		
+		
 		"Fire_Blast": 
 		{
 			"power": 100,
@@ -1989,12 +1998,20 @@ var moves =
 			"effect": "This deals 80 damage.",
 			"critical": "User crits on any doubles for the remainder of combat.",
 		},
-		"Dragon_Ascent": 
+		"Dino_Might": 
 		{
 			"power": 100,
+			"style": "Melee",
+			"flavor": "The user strikes with reptillian strength.",
+			"effect": "This deals the user's strength + 30 damage to all adjacent targets.",
+			"critical": "Damage instead equals double the user's strength.",
+		},
+		"Dragon_Ascent": 
+		{
+			"power": 120,
 			"style": "Self",
 			"flavor": "User mega evolves without needing to draw power from any stone.",
-			"effect": "This move causes the user to mega evolve and immediately be able to take another standard action.",
+			"effect": "This move causes the user to mega evolve. This may be used even if the user is otherwise unable to mega-evolve Pokemon.",
 			"critical": "",
 			"opinion": "It is our opinion that this move should be dragon type.",
 		},

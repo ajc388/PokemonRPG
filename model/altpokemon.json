@@ -117,11 +117,11 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "29",
 		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Male and female Nidoran were so different that researchers originally classified them as two different species. The different classification remains today through inertia.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
-		"Egg_Groups": ["Monster", "Field"],
+		"Egg_Groups": ["None"],
 		"Gender": 
 		{
 			"Male_Weight": 0,
@@ -147,14 +147,14 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Growl", "Scratch", "Poison_Fang", "Tail_Wag", "Double_Kick", "Poison_Sting", "Fury_Swipes", "Bite", "Crunch", "Poison_Fang"]
+			"Learnable": ["Growl", "Scratch", "Poison_Sting", "Tail_Wag", "Double_Kick", "Poison_Sting", "Fury_Swipes", "Bite", "Crunch", "Poison_Fang"]
 		}
 	},
 "Nidorina":
 	{	
 		"Pokedex_ID": "30",
 		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Nidorina typically grow faster than their male counterparts.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
@@ -167,7 +167,7 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": "Battle OOOOOO",
+			"Method": "Lunar Energy",
 			"Prior_Evolutions": "Nidoran_♀",
 			"Next_Evolutions": "Nidoqueen",
 		},
@@ -184,14 +184,14 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Poison_Sting", "Growl", "Flatter", "Double_Kick", "Crunch", "Poison_Fang", "Mud_Bomb", "Low_Kick"]
 		}
 	},
 "Nidoqueen":
 	{	
 		"Pokedex_ID": "31",
 		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "Nidoqueen and Nidoking fight together well in pairs. Though Nidoqueen prefer to fire projectiles in a support role, they are fully capable of handling themselves in a brawl.",
+		"Long_Description": "Nidoqueen and Nidoking fight together well in pairs, and they will ruthlessly defend their offspring.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
@@ -221,18 +221,18 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Berserker_Toxin", "Poison_Tail", "Acupressure", "Spike_Cannon", "Fairy_Godmother", "Body_Slam", "Spikes", "Earth_Power"]
 		}
 	},	
 "Nidoran♂":
 	{	
 		"Pokedex_ID": "32",
 		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Male and female Nidoran do not get along well as children.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
-		"Egg_Groups": ["Monster", "Field"],
+		"Egg_Groups": ["None"],
 		"Gender": 
 		{
 			"Male_Weight": 100,
@@ -258,14 +258,14 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Poison_Sting", "Focus_Energy", "Double_Kick", "Fury_Attack", "Flatter", "Horn_Attack"]
 		}
 	},	
 "Nidorino":
 	{	
 		"Pokedex_ID": "33",
 		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Nidorino and Nidorina start to pair off as they age.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
@@ -278,7 +278,7 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": "Battle OOOOOO",
+			"Method": "Lunar Energy",
 			"Prior_Evolutions": "Nidoran_♂",
 			"Next_Evolutions": "Nidoking",
 		},
@@ -295,14 +295,14 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Focus_Energy", "Poison_Sting", "Double_Kick", "Fury_Attack", "Horn_Drill", "Knockout_Venom", "Bulldoze"]
 		}
 	},
 "Nidoking":
 	{	
 		"Pokedex_ID": "34",
 		"Short_Description": "Drill Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Nidoking will normally only pick fights they feel they can win, but when family is threatened they will always fight to the death when necessary.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison", "Ground"],
@@ -332,7 +332,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": [""]
+			"Learnable": ["Spike_Cannon", "Slam", "Pound", "Drill_Run", "Bulldoze", "Bullrush", "Fists_of_Fury", "Drill_Run"]
 		}
 	},
 "Clefairy":
@@ -591,7 +591,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Absorb", "Supersonic", "Astonish", "Bite", "Wing_Attack", "Confuse_Ray", "Air_Cutter", "Swift", "Poison_Fang", "Mean_Look", "Leech_Life", "Haze", "Venoshock", "Air_Slash"]
+			"Learnable": ["Absorb", "Supersonic", "Astonish", "Bite", "Wing_Attack", "Confuse_Ray", "Air_Cutter", "Swift", "Poison_Fang", "Mean_Look", "Leech_Life", "Haze", "Venoshock", "Air_Slash", "Sonar"]
 		}
 	},	
 	"Golbat":
@@ -629,7 +629,7 @@ main one once they're complete.
 		},
 		"Moves":
 		{
-			"Learnable": ["Screech", "Leech_Life", "Supersonic", "Astonish", "Bite", "Air_Cutter", "Poison_Fang", "Mean_Look", "Haze", "Venoshock", "Air_Slash", "Sabretooth", "Vampire_Bite"]
+			"Learnable": ["Screech", "Sonar", "Supersonic", "Astonish", "Bite", "Air_Cutter", "Poison_Fang", "Mean_Look", "Haze", "Venoshock", "Air_Slash", "Sabretooth", "Vampire_Bite"]
 		}
 	},	
 	"Oddish":
@@ -673,7 +673,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "044",
 		"Short_Description": "Weed Pokemon",
-		"Long_Description": "Gloom's horrible stench is a terrific defense method.",
+		"Long_Description": "Gloom's horrible stench is a terrific defense method. Gloom trainers are usually nose-blind.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Grass", "Poison"],
@@ -821,7 +821,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "048",
 		"Short_Description": "Insect Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Venonat is covered in sticky hairs that hold poisons close to its body. Petting one is not advised.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug", "Poison"],
@@ -858,7 +858,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "049",
 		"Short_Description": "Poison Moth Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Venomoth are attracted to bright lights, which they then viciously attack. This has become a problem in many rural areas.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug", "Poison"],
@@ -895,7 +895,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "050",
 		"Short_Description": "Mole Pokemon",
-		"Long_Description": "",
+		"Long_Description": "The phrase 'The color of a Diglett's rump' is proverbial for a fact that cannot be known.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Ground"],
@@ -932,7 +932,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "051",
 		"Short_Description": "Mole Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Diglett are adapted to the pressure of the ground and are hurt if separated from it. Dugtrio are three Diglett pressing against each other to help provide this pressure, though they still prefer the comfort of the ground.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Ground"],
@@ -969,7 +969,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "052",
 		"Short_Description": "Scratch Cat Pokemon",
-		"Long_Description": "",
+		"Long_Description": "The coins a Meowth produces have a number of uses in industry, but they are also used in jewelry and decoration. These various uses provide a limit on inflation and make them an excellent medium of exchange.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Normal"],
@@ -1006,7 +1006,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "053",
 		"Short_Description": "Classy Cat Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Persian seem overly-awed by shiny badges, obeying a trainer with only a single one. They're otherwise considered unmanageable extremely independent.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Normal"],
@@ -1043,7 +1043,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "054",
 		"Short_Description": "Duck Pokemon",
-		"Long_Description": "Psyduck can't fly due to their massive heads.",
+		"Long_Description": "Psyduck can't fly due to their massive heads. They also can't move on land effectively. But they manage well in water due to bouyancy.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Water"],
@@ -1080,7 +1080,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "055",
 		"Short_Description": "Duck Pokemon",
-		"Long_Description": "Etymologists suspect that Golduck once had golden-colored feathers due to its name.",
+		"Long_Description": "While a Golduck's head is smaller than a Psyduck's, its brain seems to make excellent use of the space. It seems to have the same number of neurons, but without the excessive swelling of a Psyduck's cranium.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Water"],
@@ -1117,7 +1117,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "056",
 		"Short_Description": "Pig Monkey Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Mankey can gain sustenance from just about any organic substance. They prefer junk food.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Fighting"],
@@ -1191,7 +1191,8 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "58",
 		"Short_Description": "Puppy Pokemon",
-		"Long_Description": "",
+		"Long_Description": "" 
+		",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Fire"],
@@ -1228,7 +1229,7 @@ main one once they're complete.
 	{	
 		"Pokedex_ID": "59",
 		"Short_Description": "Legendary Pokemon",
-		"Long_Description": "",
+		"Long_Description": "Arcanine were once so rare as to be legendary, but they were also the first Pokemon to live among humans. In time, they domesticated themselves.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Fire"],
