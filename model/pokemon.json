@@ -114,7 +114,7 @@ var pokemon =
 		},
 		"Moves":
 		{
-			"Learnable": ["Razor_Leaf", "Overgrowth", "Graft", "Vine_Whip", "Double_Edge", "Synthesis", "Slam", "Poison_Thorns", "Solar_Beam", "Petal_Dance", "Takedown", "Petal_Blizzard"]
+			"Learnable": ["Razor_Leaf", "Overgrowth", "Graft", "Vine_Whip", "Double_Edge", "Synthesis", "Slam", "Poison_Thorns", "Solar_Beam", "Petal_Dance", "Takedown", "Petal_Blizzard", "Dino_Might"]
 		}
 	},
 "Charmander":
