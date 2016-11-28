@@ -14,17 +14,17 @@ function DataGrid(parameters)
     $("#data-grid").append(
         '<div id="anchor"></div>'+
         '<div id="selector" class="block-header twelve columns">'+
-          '<span id="title" class="header offset-by-three three columns"><h4>'+title+'</h4></span>'+
+          '<div id="title" class="header offset-by-three three columns"><h4>'+title+'</h4></div>'+
         '</div>'+
         '<div id="grid" class="twelve columns"></div>');
 
     if ( sortFlag )
     {
       $("#selector").append(
-        '<span class="shift three columns">'+
+        '<div class="shift three columns">'+
           '<h5><label class="header offset-by-one five columns" for="sort">Sort</label>'+
           '<select class="input right offset-by-one five columns" id="sort"></select></h5>'+
-        '</span>');
+        '</div>');
 
       //is there a better way to do this?!
       $("#sort").append("<option value='Name'>Name</option>");
@@ -41,10 +41,10 @@ function DataGrid(parameters)
     {
       //Add search bar in
       $("#selector").append(
-          '<span id="searchBar" class="shift three columns">'+
+          '<div id="searchBar" class="shift three columns">'+
             '<h5><label class="header offset-by-one five columns" for="search">Search</label>'+
             '<input class="input right offset-by-one five columns" id="search" type="search"></input></h5>'+
-          '</span>');
+          '</div>');
 
       /*Search Functionality*/
       //Create auto complete feature for search bar
