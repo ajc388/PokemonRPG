@@ -140,7 +140,7 @@ function DataGrid(parameters)
         }
         $.each(data, function(key) {
           var row = $("<tr class='dataRow'></tr>");
-          row.append("<td class='dataValue Name'>"+key.replace("_", " ")+"</td>");
+          row.append("<td class='dataValue name'>"+key.replace("_", " ")+"</td>");
           
           $.each(data[key], function(att, val) {
               row.append("<td class='dataValue "+att+"'>"+val+"</td>");    
