@@ -1,8 +1,5 @@
 /*Generalized section*/
-body {
-	padding: 0px;
-	margin: 0px;
-}
+body { padding: 0px; margin: 0px; }
 div { height: inherit;}
 
 /*Menu section*/
@@ -160,6 +157,6 @@ table tr th { padding: 10px; }
 
 /*pokemon*/
 article.pokemon { min-width: 250px; margin-bottom: 5px; margin-left: 1%;}
-article.pokemon:nth-child(4n+1) { margin-left: 0px; }
-article.pokemon:nth-child(4n+1):hover { margin-left: 0.2%; background-color: lightblue; }
+article.pokemon:not([style*="display:none"]):nth-child(4n+1) { margin-left: 0px; }
+article.pokemon:not([style*="display:none"]):nth-child(4n+1):hover { margin-left: 0.2%; background-color: lightblue; }
 article.pokemon:hover { margin-left: 1.2%; background-color: lightblue; }
