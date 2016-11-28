@@ -11,20 +11,20 @@ function DataGrid(parameters)
     var headerFlag = typeof parameters.headerFlag == "undefined" ? true : parameters.headerFlag;
     
     //construct menu items
-    $("#datagrid").append(
+    $("#data-grid").append(
         '<div id="anchor"></div>'+
         '<div id="selector" class="block-header twelve columns">'+
-          '<span id="title" class="header six columns"><h4>'+title+'</h4></span>'+
+          '<div id="title" class="header offset-by-three three columns"><h4>'+title+'</h4></div>'+
         '</div>'+
         '<div id="grid" class="twelve columns"></div>');
 
     if ( sortFlag )
     {
       $("#selector").append(
-        '<span class="shift three columns">'+
+        '<div class="shift three columns">'+
           '<h5><label class="header offset-by-one five columns" for="sort">Sort</label>'+
           '<select class="input right offset-by-one five columns" id="sort"></select></h5>'+
-        '</span>');
+        '</div>');
 
       //is there a better way to do this?!
       $("#sort").append("<option value='Name'>Name</option>");
@@ -41,23 +41,23 @@ function DataGrid(parameters)
     {
       //Add search bar in
       $("#selector").append(
-          '<span id="searchBar" class="shift three columns">'+
+          '<div id="searchBar" class="shift three columns">'+
             '<h5><label class="header offset-by-one five columns" for="search">Search</label>'+
             '<input class="input right offset-by-one five columns" id="search" type="search"></input></h5>'+
-          '</span>');
+          '</div>');
 
       /*Search Functionality*/
       //Create auto complete feature for search bar
       $("#search").autocomplete({
         source: loadSearchTags(model),
         minLength: Math.max(Object.keys(model).length/100, 2),
-        select: search($(".name")),
+        select: search($(".Name")),
         delay: 500
       });
       //bind search functionality to the search box
       $("#search")
-        .on("keyup", function() { search($(".name")); })
-        .on('autocompleteclose', function () { search($(".name")); });
+        .on("keyup", function() { search($(".Name")); })
+        .on('autocompleteclose', function () { search($(".Name")); });
     }
     
     displayTable(model, $("#grid"));
@@ -72,7 +72,7 @@ function DataGrid(parameters)
 
     //FUNCTIONS
     function sort() {
-      var rows = $(".dataRow");
+      var rows = $(".data-row");
       var col = $("#sort").val();
       rows = rows.sort(function (a, b) {
         if ( $.type($(a).find("."+col).text()) === "number") { 
@@ -89,7 +89,7 @@ function DataGrid(parameters)
     { 
         var input = $("#search").val().toLowerCase();
         $(criteria).each(function() { 
-            var name = $(this).text().replace(' ', '_');
+            var name = $(this).text();
             if (name.toLowerCase().indexOf(input)!=-1) {
               $(this).parent().show(); //should be a table row
             }
@@ -103,7 +103,7 @@ function DataGrid(parameters)
     {
       var tags = [];
       $.each(model, function(key, value) {
-        tags.push(key);
+        tags.push(key.replace(/_/g, " "));
       });
       return tags;
     }
@@ -128,22 +128,22 @@ function DataGrid(parameters)
     {
       if (Object.keys(data).length > 0)
       {
-        var table = $("<table id='dataGrid' class='dataGrid twelve columns'></table>");
+        var table = $("<table id='dataGrid' class='data-grid twelve columns'></table>");
         if ( headerFlag )
         {
-          var row = $("<tr class='dataRowHeader'></tr>");
+          var row = $("<tr class='data-row-header'></tr>");
           row.append("<th class='header'><h5>Name</h5></th>");
           $.each(data[Object.keys(data)[0]], function(key) {
-            row.append("<th class='dataHeader'><h5>"+ key +"</h5></th>");
+            row.append("<th class='data-header'><h5>"+ key +"</h5></th>");
           });
           table.append(row);
         }
         $.each(data, function(key) {
-          var row = $("<tr class='dataRow'></tr>");
-          row.append("<td class='dataValue Name'>"+key.replace("_", " ")+"</td>");
+          var row = $("<tr class='data-row'></tr>");
+          row.append("<td class='data-value Name'>"+key.replace("_", " ")+"</td>");
           
           $.each(data[key], function(att, val) {
-              row.append("<td class='dataValue "+att+"'>"+val+"</td>");    
+              row.append("<td class='data-value "+att+"'>"+val+"</td>");    
           });
           table.append(row);
         });

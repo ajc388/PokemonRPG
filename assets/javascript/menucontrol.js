@@ -10,7 +10,7 @@ function Menu(parameters)
   $("#menu").append(
       '<div id="anchor"></div>'+
       '<div id="selector" class="block-header twelve columns">'+
-        '<span id="title" class="header one column"><h4>'+title+'</h4></span>'+
+        '<div id="title" class="one column"><h4 class="header">'+title+'</h4></div>'+
       '</div>');
 
   if ( navMenuFlag ) 
@@ -30,10 +30,10 @@ function Menu(parameters)
   if ( sortFlag )
   {
     $("#selector").append(
-      '<span class="shift three columns">'+
+      '<div class="shift three columns">'+
         '<h5><label class="header offset-by-two four columns" for="sort">Sort</label>'+
         '<select class="input right offset-by-one five columns" id="sort"></select></h5>'+
-      '</span>');
+      '</div>');
 
     //is there a better way to do this?!
     $.each(parameters.sort.keys, function (key, value) {
@@ -51,10 +51,10 @@ function Menu(parameters)
   {
     //Add search bar in
     $("#selector").append(
-        '<span id="searchBar" class="three columns">'+
+        '<div id="searchBar" class="three columns">'+
           '<h5><label class="header offset-by-two four columns" for="search">Search</label>'+
           '<input class="input right offset-by-one five columns" id="search" type="search"></input></h5>'+
-        '</span>');
+        '</div>');
 
     /*Search Functionality*/
     //Create auto complete feature for search bar
