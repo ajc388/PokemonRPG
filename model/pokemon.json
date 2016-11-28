@@ -47,7 +47,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "002",
 		"Short_Description": "Seed Pokemon",
-		"Long_Description": "Placeholder.",
+		"Long_Description": "Ivysaur often accumulate other plants on their back growing in conjunction with the main flower.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Grass", "Poison"],
@@ -84,7 +84,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "003",
 		"Short_Description": "Seed Pokemon",
-		"Long_Description": "Placeholder.",
+		"Long_Description": "The flower on its back blooms in sunlight but puckers up in darkness to conserve heat.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Grass", "Poison"],
@@ -343,7 +343,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "010",
 		"Short_Description": "Worm Pokemon",
-		"Long_Description": "Placeholder",
+		"Long_Description": "Caterpie and Weedle will happily chew the same leaves together. This familiarity does not last.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug"],
@@ -380,7 +380,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "011",
 		"Short_Description": "Cocoon Pokemon",
-		"Long_Description": "Placeholder",
+		"Long_Description": "Metapod's coloration keeps them concealed among green leaves.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug"],
@@ -454,7 +454,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "013",
 		"Short_Description": "Hairy Bug Pokemon",
-		"Long_Description": "Placeholder",
+		"Long_Description": "The stinger on a Weedle's tail contains a different toxin than the one on its head.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug", "Poison"],
@@ -491,7 +491,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "014",
 		"Short_Description": "Cocoon Pokemon",
-		"Long_Description": "Placeholder",
+		"Long_Description": "Kakuna's yellow coloration warns predators that the bug is highly toxic.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug", "Poison"],
@@ -526,9 +526,9 @@ var pokemon =
 	},
 "Beedrill":
 	{	
-		"Pokedex_ID": "015",
+		"Pokedex_ID": "015", 
 		"Short_Description": "Poison Bee Pokemon",
-		"Long_Description": "Placeholder",
+		"Long_Description": "Beedrill are highly territorial, and they especially hate Butterfree which they will chase for miles.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Bug", "Poison"],
@@ -824,7 +824,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "023",
 		"Short_Description": "Snake Pokemon",
-		"Long_Description": "Placeholder.",
+		"Long_Description": "Ekans rattle warns it is about to strike. Trainers try to teach their Ekans to avoid this tell.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
@@ -861,7 +861,7 @@ var pokemon =
 	{	
 		"Pokedex_ID": "024",
 		"Short_Description": "Cobra Pokemon",
-		"Long_Description": "Placeholder.",
+		"Long_Description": "The sign on an Arbok's belly differs slightly for each Arbok. When researchers covered up parts of that sign with makeup, Arbok were unable to recognize other Arbok they had known since childhood.",
 		"Shiny": false,
 		"Legendary": false,
 		"Types": ["Poison"],
