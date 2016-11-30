@@ -39,15 +39,15 @@ main one once they're complete.
 		}
 	},
 */
-"Sandshrew":
+"Poliwag":
 	{	
-		"Pokedex_ID": "027",
-		"Short_Description": "Mouse Pokemon",
+		"Pokedex_ID": "060",
+		"Short_Description": "Tadpole Pokemon",
 		"Long_Description": "",
 		"Shiny": false,
 		"Legendary": false,
-		"Types": ["Ground"],
-		"Egg_Groups": ["Field"],
+		"Types": ["Water"],
+		"Egg_Groups": ["Amphibian"],
 		"Gender": 
 		{
 			"Male_Weight": 50,
@@ -58,996 +58,33 @@ main one once they're complete.
 		{
 			"Method": "Battle OOOOOO",
 			"Prior_Evolutions": null,
-			"Next_Evolutions": "Sandslash",
+			"Next_Evolutions": null
 		},
-		"Ability": "Shell",
+		"Ability": "none",
 		"Attributes": 
 		{
 			"IV": 
 			{
 				"Speed": 3,
-				"Strength": 3,
+				"Strength": 2,
 				"Sense": 2,
 				"Mind": 3			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Scratch", "Defense_Curl", "Entrench", "Sand_Attack", "Poison_Sting", "Rollout", "Rapid_Spin", "Fury_Cutter", "Swift", "Magnitude", "Sand_Tomb", "Slash", "Dig", "Swords_Dance"]
+			"Learnable": [""]
 		}
 	},
-"Sandslash":
+"Poliwhirl":
 	{	
-		"Pokedex_ID": "028",
-		"Short_Description": "Mouse Pokemon",
+		"Pokedex_ID": "061",
+		"Short_Description": "Tadpole Pokemon",
 		"Long_Description": "",
 		"Shiny": false,
 		"Legendary": false,
-		"Types": ["Ground"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": "Sandshrew",
-			"Next_Evolutions": null,
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 4,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Magnitude", "Slash", "Entrench", "Crush_Claw", "Acupuncture", "Poison_Sting", "Pin_Missile", "Rollout", "Berserker_Toxin", "Rapid_Spin", "Fury_Cutter", "Swift", "Sand_Tomb", "Dig", "Swords_Dance""Sandstorm", "Earthquake"]
-		}
-	},
-"Nidoran♀":
-	{	
-		"Pokedex_ID": "29",
-		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "Male and female Nidoran were so different that researchers originally classified them as two different species. The different classification remains today through inertia.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison"],
-		"Egg_Groups": ["None"],
-		"Gender": 
-		{
-			"Male_Weight": 0,
-			"Female_Weight": 100,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Nidorina",
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 2,
-				"Sense": 3,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Growl", "Scratch", "Poison_Sting", "Tail_Wag", "Double_Kick", "Poison_Sting", "Fury_Swipes", "Bite", "Crunch", "Poison_Fang"]
-		}
-	},
-"Nidorina":
-	{	
-		"Pokedex_ID": "30",
-		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "Nidorina typically grow faster than their male counterparts.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison"],
-		"Egg_Groups": ["Monster", "Field"],
-		"Gender": 
-		{
-			"Male_Weight": 0,
-			"Female_Weight": 100,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Lunar Energy",
-			"Prior_Evolutions": "Nidoran_♀",
-			"Next_Evolutions": "Nidoqueen",
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Poison_Sting", "Growl", "Flatter", "Double_Kick", "Crunch", "Poison_Fang", "Mud_Bomb", "Low_Kick"]
-		}
-	},
-"Nidoqueen":
-	{	
-		"Pokedex_ID": "31",
-		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "Nidoqueen and Nidoking fight together well in pairs, and they will ruthlessly defend their offspring.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison"],
-		"Egg_Groups": ["Monster", "Field"],
-		"Gender": 
-		{
-			"Male_Weight": 0,
-			"Female_Weight": 100,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Nidorina",
-			"Next_Evolutions": null,
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 4,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Berserker_Toxin", "Poison_Tail", "Acupressure", "Spike_Cannon", "Fairy_Godmother", "Body_Slam", "Spikes", "Earth_Power"]
-		}
-	},	
-"Nidoran♂":
-	{	
-		"Pokedex_ID": "32",
-		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "Male and female Nidoran do not get along well as children.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison"],
-		"Egg_Groups": ["None"],
-		"Gender": 
-		{
-			"Male_Weight": 100,
-			"Female_Weight": 0,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Nidorino",
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Poison_Sting", "Focus_Energy", "Double_Kick", "Fury_Attack", "Flatter", "Horn_Attack"]
-		}
-	},	
-"Nidorino":
-	{	
-		"Pokedex_ID": "33",
-		"Short_Description": "Poison Pin Pokemon",
-		"Long_Description": "Nidorino and Nidorina start to pair off as they age.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison"],
-		"Egg_Groups": ["Monster", "Field"],
-		"Gender": 
-		{
-			"Male_Weight": 100,
-			"Female_Weight": 0,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Lunar Energy",
-			"Prior_Evolutions": "Nidoran_♂",
-			"Next_Evolutions": "Nidoking",
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Focus_Energy", "Poison_Sting", "Double_Kick", "Fury_Attack", "Horn_Drill", "Knockout_Venom", "Bulldoze"]
-		}
-	},
-"Nidoking":
-	{	
-		"Pokedex_ID": "34",
-		"Short_Description": "Drill Pokemon",
-		"Long_Description": "Nidoking will normally only pick fights they feel they can win, but when family is threatened they will always fight to the death when necessary.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison", "Ground"],
-		"Egg_Groups": ["Monster", "Field"],
-		"Gender": 
-		{
-			"Male_Weight": 100,
-			"Female_Weight": 0,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Nidorino",
-			"Next_Evolutions": null,
-		},
-		"Ability": "Spiked",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 4,
-				"Sense": 2,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Spike_Cannon", "Slam", "Pound", "Drill_Run", "Bulldoze", "Bullrush", "Fists_of_Fury", "Drill_Run"]
-		}
-	},
-"Clefairy":
-	{	
-		"Pokedex_ID": "035",
-		"Short_Description": "Fairy Pokemon",
-		"Long_Description": "Clefairy are capable of surviving in the vacuum of space.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Fairy"],
-		"Egg_Groups": ["Fairy"],
-		"Gender": 
-		{
-			"Male_Weight": 25,
-			"Female_Weight": 75,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Lunar Energy",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Clefable"
-		},
-		"Ability": "Friend_Guard",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 4,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Sing", "Disarming_Voice", "Pound", "Fairy_Tail", "Growl", "Fairy_Dust", "Encore", "Double_Slap", "Defense_Curl", "Follow_Me", "Minimize", "Metronome", "Cosmic_Power"]
-		}
-	},
-	"Clefable":
-	{	
-		"Pokedex_ID": "036",
-		"Short_Description": "Fairy Pokemon",
-		"Long_Description": "Clefable landed on earth when an interstellar meteorite landed at mount moon, with fragments landing elsewhere in the world. How they survived such an impact is a mystery.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Fairy"],
-		"Egg_Groups": ["Fairy"],
-		"Gender": 
-		{
-			"Male_Weight": 25,
-			"Female_Weight": 75,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Clefairy",
-			"Next_Evolutions": null
-		},
-		"Ability": "Friend_Guard",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 4,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Sing", "Disarming_Voice", "Pound", "Encore", "Double_Slap", "Follow_Me", "Minimize", "Metronome", "Cosmic_Power", "Moonlight", "Moonblast", "Gravity", "Meteor_Mash", "Friendship_Is_Magic", "Geas"]
-		}
-	},
-"Vulpix":
-	{	
-		"Pokedex_ID": "037",
-		"Short_Description": "Fox Pokemon",
-		"Long_Description": "Each of a Vulpix's tails has a different power in it. If a tail gets severed it can never relearn the associated move.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Fire"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 25,
-			"Female_Weight": 75,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Ninetails",
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 2,
-				"Sense": 3,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Ember", "Tail_Wag", "Roar", "Baby-Doll_Eyes", "Quick_Attack", "Confuse_Ray", "Will-O-Wisp", "Hex", "Flame_Burst", "Flamethrower", "Extrasensory"]
-		}
-	},
-"Ninetails":
-	{	
-		"Pokedex_ID": "038",
-		"Short_Description": "Fox Pokemon",
-		"Long_Description": "Ninetails is capable of using all of its tails in conjunction to handle even stronger moves than its previous form.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Fire"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 25,
-			"Female_Weight": 75,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Ninetails",
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Ember", "Tail_Wag", "Roar", "Confuse_Ray", "Will-O-Wisp", "Hex", "Flame_Burst", "Flamethrower", "Extrasensory", "Combustion", "Firestorm", "Blue_Flare", "Inferno", "Fire_spin"]
-		}
-	},
-	"Jigglypuff":
-	{	
-		"Pokedex_ID": "039",
-		"Short_Description": "Balloon Pokemon",
-		"Long_Description": "Jigglypuff inflate themselves and float on the wind to travel with seasonal gusts.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Normal", "Fairy"],
-		"Egg_Groups": ["Fairy"],
-		"Gender": 
-		{
-			"Male_Weight": 25,
-			"Female_Weight": 75,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Lunar Energy",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Wigglytuff"
-		},
-		"Ability": "Friend_Guard",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 4,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Sing", "Defense_Curl", "Charm", "Pound", "Glomp", "Fairy_Dust", "Play_Nice", "Disarming_Voice", "Disable", "Double_Slap", "Rollout", "Round"]
-		}
-	},
-"Wigglytuff":
-	{	
-		"Pokedex_ID": "040",
-		"Short_Description": "Balloon Pokemon",
-		"Long_Description": "Wigglytuff typically hate bullies and will defend weaker Pokemon.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Normal", "Fairy"],
-		"Egg_Groups": ["Fairy"],
-		"Gender": 
-		{
-			"Male_Weight": 25,
-			"Female_Weight": 75,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Jigglypuff",
-			"Next_Evolutions": null,
-		},
-		"Ability": "Friend_Guard",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 4,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Defense_Curl", "Pound", "Play_Nice", "Rest", "Body_Slam", "Glomp", "Gyro_Ball", "Mimic", "Double-Edge", "Double_Slap", "Rollout", "Round", "Giant_Slayer"]
-		}
-	},
-	"Zubat":
-	{	
-		"Pokedex_ID": "041",
-		"Short_Description": "Bat Pokemon",
-		"Long_Description": "Zubat have little interest in direct combat. They typically inflict status effects on predators and then leave. This defensive measure also works by annoying trainers into leaving.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison", "Flying"],
-		"Egg_Groups": ["Flying"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Golbat"
-		},
-		"Ability": "Airborne",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 2,
-				"Sense": 3,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Absorb", "Supersonic", "Astonish", "Bite", "Wing_Attack", "Confuse_Ray", "Air_Cutter", "Swift", "Poison_Fang", "Mean_Look", "Leech_Life", "Haze", "Venoshock", "Air_Slash", "Sonar"]
-		}
-	},	
-	"Golbat":
-	{	
-//Should Crobat be added to the game, Knock off a point of Zubat's and Golbat's stats.
-		"Pokedex_ID": "042",
-		"Short_Description": "Bat Pokemon",
-		"Long_Description": "Golbat swallow their prey whole, expanding to eat things larger than themselves. They will lie on the ground for days sometimes digesting.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Poison", "Flying"],
-		"Egg_Groups": ["Flying"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Zubat",
-			"Next_Evolutions": null
-		},
-		"Ability": "Airborne",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Screech", "Sonar", "Supersonic", "Astonish", "Bite", "Air_Cutter", "Poison_Fang", "Mean_Look", "Haze", "Venoshock", "Air_Slash", "Sabretooth", "Vampire_Bite"]
-		}
-	},	
-	"Oddish":
-	{	
-		"Pokedex_ID": "043",
-		"Short_Description": "Weed Pokemon",
-		"Long_Description": "Oddish typically find a sunny patch to root in for the day, becoming active at night.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Grass", "Poison"],
-		"Egg_Groups": ["Grass"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Gloom"
-		},
-		"Ability": "Chlorophyll",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 3			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Absorb", "Sweet_Scent", "Acid", "Grass_Whistle", "Poison_Powder", "Stun_Spore", "Sleep_Powder", "Healing_Herb", "Herbal_Remedy", "Ingrain", "Leaf_Blade"]
-		}
-	},		
-	"Gloom":
-	{	
-		"Pokedex_ID": "044",
-		"Short_Description": "Weed Pokemon",
-		"Long_Description": "Gloom's horrible stench is a terrific defense method. Gloom trainers are usually nose-blind.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Grass", "Poison"],
-		"Egg_Groups": ["Grass"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Plant Energy",
-			"Prior_Evolutions": "Oddish",
-			"Next_Evolutions": "Vileplume"
-		},
-		"Ability": "Chlorophyll",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Mega_Drain", "Stun_Spore", "Toxic", "Acidic_Cloud", "Ingrain", "Stench"]
-		}
-	},		
-	"Vileplume":
-	{	
-		"Pokedex_ID": "045",
-		"Short_Description": "Flower Pokemon",
-		"Long_Description": "Vileplume are actually capable of creating a variety of scents, many of them pleasant. They typically only emit stench when humans or other potential predators are around, and so are associated with that scent.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Grass", "Poison"],
-		"Egg_Groups": ["Grass"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Plant Energy",
-			"Prior_Evolutions": "Gloom",
-			"Next_Evolutions": null
-		},
-		"Ability": "Chlorophyll",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Stench", "Acid", "Acidic_Cloud", "Razor_Wind", "Mega_Drain", "Moonlight", "Giga_Drain", "Toxic", "Petal_Dance", "Solar_Beam"]
-		}
-	},		
-"Paras":
-	{	
-		"Pokedex_ID": "046",
-		"Short_Description": "Mushroom Pokemon",
-		"Long_Description": "The mushrooms on the back of a Paras filter out the toxins it builds up in its body, and they can expel those toxins in concentrated form for defense or to subdue prey.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Bug", "Grass"],
-		"Egg_Groups": ["Bug", "Grass"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Parasect"
-		},
-		"Ability": "Compound_Eyes",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 3,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Scratch", "Stun_Spore", "Poison_Powder", "Leech_Life", "Fury_Cutter", "Spore", "Slash", "Growth", "Mega_Drain", "Aromatherapy", "Rage_Powder", "Infestation"]
-		}
-	},		
-	"Parasect":
-	{	
-		"Pokedex_ID": "047",
-		"Short_Description": "Mushroom Pokemon",
-		"Long_Description": "In some parasect the insect part has actually died, but the mushroom has seized complete control of the nervous system.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Bug", "Grass"],
-		"Egg_Groups": ["Bug", "Grass"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Paras",
-			"Next_Evolutions": null
-		},
-		"Ability": "Compound_Eyes",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 4,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Cross_Poison", "Aromatherapy", "Rage_Powder", "Slash", "X-Scissor", "Giga_Drain", "Toxic_Cloud"]
-		}
-	},	
-	"Venonat":
-	{	
-		"Pokedex_ID": "048",
-		"Short_Description": "Insect Pokemon",
-		"Long_Description": "Venonat is covered in sticky hairs that hold poisons close to its body. Petting one is not advised.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Bug", "Poison"],
-		"Egg_Groups": ["Bug"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Venomoth"
-		},
-		"Ability": "Compound_Eyes",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 3,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Tackle", "Disable", "Foresight", "Supersonic", "Confusion", "Poison_Powder", "Leech_Life", "Stun_Spore", "Psybeam", "Sleep_Powder", "Signal_Beam", "Zen_Headbutt", "Poison_Fang", "Psychic"]
-		}
-	},	
-	"Venomoth":
-	{	
-		"Pokedex_ID": "049",
-		"Short_Description": "Poison Moth Pokemon",
-		"Long_Description": "Venomoth are attracted to bright lights, which they then viciously attack. This has become a problem in many rural areas.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Bug", "Poison"],
-		"Egg_Groups": ["Bug"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Venonat",
-			"Next_Evolutions": null
-		},
-		"Ability": "Levitate",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 2,
-				"Sense": 3,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Bug_Buzz", "Silver_Wind", "Foresight", "Supersonic", "Confusion", "Poison_Powder", "Stun_Spore", "Psybeam", "Sleep_Powder", "Gust", "Signal_Beam", "Zen_Headbutt", "Poison_Fang", "Psychic"]
-		}
-	},	
-	"Diglett":
-	{	
-		"Pokedex_ID": "050",
-		"Short_Description": "Mole Pokemon",
-		"Long_Description": "The phrase 'The color of a Diglett's rump' is proverbial for a fact that cannot be known.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Ground"],
-		"Egg_Groups": ["Ground", "Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Combine 3 Diglett",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Dugtrio"
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Sand_Attack", "Scratch", "Dig_Grave", "Growl", "Astonish", "Dirt_Clod", "Mud-Slap", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb"]
-		}
-	},
-	"Dugtrio":
-	{	
-		"Pokedex_ID": "051",
-		"Short_Description": "Mole Pokemon",
-		"Long_Description": "Diglett are adapted to the pressure of the ground and are hurt if separated from it. Dugtrio are three Diglett pressing against each other to help provide this pressure, though they still prefer the comfort of the ground.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Ground"],
-		"Egg_Groups": ["Ground", "Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Diglett",
-			"Next_Evolutions": null
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 2,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Astonish", "Magnitude", "Bulldoze", "Chaos_Swipe", "Mud_Bomb", "Earth_Power", "Dig", "Slash", "Earthquake", "Fissure", "Mudslide", "Rock_Slide"]
-		}
-	},
-	"Meowth":
-	{	
-		"Pokedex_ID": "052",
-		"Short_Description": "Scratch Cat Pokemon",
-		"Long_Description": "The coins a Meowth produces have a number of uses in industry, but they are also used in jewelry and decoration. These various uses provide a limit on inflation and make them an excellent medium of exchange.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Normal"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Friendship",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Persian"
-		},
-		"Ability": "Stealthy",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 3,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Scratch", "Ambush", "Stealth", "Growl", "Bite", "Fury_Swipes", "Screech", "Feint_Attack", "Taunt", "Pay_Day", "Steal_Heart", "Slash", "Nasty_Plot", "Night_Slash", "Feint", "Bribery", "Backstab"]
-		}
-	},
-	"Persian":
-	{	
-		"Pokedex_ID": "053",
-		"Short_Description": "Classy Cat Pokemon",
-		"Long_Description": "Persian seem overly-awed by shiny badges, obeying a trainer with only a single one. They're otherwise considered unmanageable extremely independent.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Normal"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Meowth",
-			"Next_Evolutions": 
-		},
-		"Ability": "Stealthy",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 4,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Slash", "Ambush", "Stealth", "Pay_Day", "Bite", "Fury_Swipes", "Screech", "Feint_Attack", "Taunt", "Steal_Heart", "Nasty_Plot", "Night_Slash", "Feint", "Bribery", "Backstab", "Assassinate"]
-		}
-	},
-	"Psyduck":
-	{	
-		"Pokedex_ID": "054",
-		"Short_Description": "Duck Pokemon",
-		"Long_Description": "Psyduck can't fly due to their massive heads. They also can't move on land effectively. But they manage well in water due to bouyancy.",
-		"Shiny": false,
-		"Legendary": false,
 		"Types": ["Water"],
-		"Egg_Groups": ["Flying"],
+		"Egg_Groups": ["Amphibian"],
 		"Gender": 
 		{
 			"Male_Weight": 50,
@@ -1056,35 +93,35 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": "Battle OOOOOO",
+			"Method": "Water Energy",
 			"Prior_Evolutions": null,
-			"Next_Evolutions": "Golduck"
+			"Next_Evolutions": null
 		},
 		"Ability": "none",
 		"Attributes": 
 		{
 			"IV": 
 			{
-				"Speed": 1,
+				"Speed": 3,
 				"Strength": 3,
-				"Sense": 3,
-				"Mind": 4			  
+				"Sense": 2,
+				"Mind": 3			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Scratch", "Tail_Wag", "Water_Gun", "Confusion", "Fury_Swipes", "Disable", "Screech", "Aqua_Tail", "Soak", "Duckface"]
+			"Learnable": [""]
 		}
 	},
-	"Golduck":
+"Poliwrath":
 	{	
-		"Pokedex_ID": "055",
-		"Short_Description": "Duck Pokemon",
-		"Long_Description": "While a Golduck's head is smaller than a Psyduck's, its brain seems to make excellent use of the space. It seems to have the same number of neurons, but without the excessive swelling of a Psyduck's cranium.",
+		"Pokedex_ID": "062",
+		"Short_Description": "Tadpole Pokemon",
+		"Long_Description": "",
 		"Shiny": false,
 		"Legendary": false,
-		"Types": ["Water"],
-		"Egg_Groups": ["Flying"],
+		"Types": ["Water", "Fighting"],
+		"Egg_Groups": ["Amphibian"],
 		"Gender": 
 		{
 			"Male_Weight": 50,
@@ -1093,48 +130,11 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": null,
-			"Prior_Evolutions": "Psyduck",
+			"Method": "Water Energy",
+			"Prior_Evolutions": null,
 			"Next_Evolutions": null
 		},
-		"Ability": "Swift_Swim",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 3,
-				"Sense": 3,
-				"Mind": 4			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Aqua_Jet", "Water_Gun", "Confusion", "Fury_Swipes", "Zen_Headbutt", "Amnesia", "Hydro_Pump", "Duckface"]
-		}
-	},
-	"Mankey":
-	{	
-		"Pokedex_ID": "056",
-		"Short_Description": "Pig Monkey Pokemon",
-		"Long_Description": "Mankey can gain sustenance from just about any organic substance. They prefer junk food.",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Fighting"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "Battle OOOOOO",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": "Primeape"
-		},
-		"Ability": "Anger_Point",
+		"Ability": "none",
 		"Attributes": 
 		{
 			"IV": 
@@ -1142,61 +142,23 @@ main one once they're complete.
 				"Speed": 3,
 				"Strength": 4,
 				"Sense": 2,
-				"Mind": 2			  
+				"Mind": 3			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Fury_Swipes", "Focus_Energy", "Scratch", "Low_Kick", "Karate_Chop", "Seismic_Toss", "Screech", "Cross_Chop", "Thrash", "Punishment", "Close_Combat", "Poo_Fling", "Anger_Strike", "Beat_Up"]
+			"Learnable": [""]
 		}
-	},	
-	"Primeape":
+	},
+"Abra":
 	{	
-		"Pokedex_ID": "057",
-		"Short_Description": "Pig Monkey Pokemon",
-		"Long_Description": "Primeape are incredibly strong but lacking discipline. Many trainers choose to put heavy weights on their Primeape's arms to slow down and power up its punches, and to help it train strength.",
+		"Pokedex_ID": "063",
+		"Short_Description": "Psi Pokemon",
+		"Long_Description": "Abra teleport to the last safe place they remember, be it a hidey-hole, their mother's arms, or even where their friends were last.",
 		"Shiny": false,
 		"Legendary": false,
-		"Types": ["Fighting"],
-		"Egg_Groups": ["Field"],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": null,
-			"Prior_Evolutions": "Mankey",
-			"Next_Evolutions": null
-		},
-		"Ability": "Anger_Point",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 4,
-				"Strength": 4,
-				"Sense": 2,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": ["Fury_Swipes", "Focus_Energy", "Scratch", "Roundhouse", "Karate_Chop", "Seismic_Toss", "Cross_Chop", "Thrash", "Punishment", "Close_Combat", "War_Dance", "Poo_Fling", "Anger_Strike", "Beat_Up"]
-		}
-	},	
-	"Growlithe":
-	{	
-		"Pokedex_ID": "58",
-		"Short_Description": "Puppy Pokemon",
-		"Long_Description": "" 
-		",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": ["Fire"],
-		"Egg_Groups": ["Field"],
+		"Types": ["Psychic"],
+		"Egg_Groups": ["Anthro"],
 		"Gender": 
 		{
 			"Male_Weight": 75,
@@ -1205,35 +167,72 @@ main one once they're complete.
 		},
 		"Evolution": 
 		{
-			"Method": "Fire Energy",
+			"Method": "Battle OOOOOO",
 			"Prior_Evolutions": null,
-			"Next_Evolutions": "Arcanine"
+			"Next_Evolutions": "Kadabra"
 		},
-		"Ability": "Vigilant",
+		"Ability": "none",
 		"Attributes": 
 		{
 			"IV": 
 			{
-				"Speed": 3,
-				"Strength": 3,
+				"Speed": 2,
+				"Strength": 1,
 				"Sense": 3,
-				"Mind": 2			  
+				"Mind": 4			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Ember", "Odor_Sleuth", "Bite", "Flame_Wheel", "Fire_Fang", "Take_Down", "Flame_Burst", "Agility", "Retaliate", "Flamethrower", "Mark_Territory", "Herd"]
+			"Learnable": ["Teleport", "Gateway", "ESP", "Mind_Reading", "Charm_Impulse", "Berserk_Impulse", "Self_Levitation"]
 		}
 	},
-	"Arcanine":
+"Kadabra":
 	{	
-		"Pokedex_ID": "59",
-		"Short_Description": "Legendary Pokemon",
-		"Long_Description": "Arcanine were once so rare as to be legendary, but they were also the first Pokemon to live among humans. In time, they domesticated themselves.",
+		"Pokedex_ID": "064",
+		"Short_Description": "Psi Pokemon",
+		"Long_Description": "",
 		"Shiny": false,
 		"Legendary": false,
-		"Types": ["Fire"],
-		"Egg_Groups": ["Field"],
+		"Types": ["Psychic"],
+		"Egg_Groups": ["Anthro"],
+		"Gender": 
+		{
+			"Male_Weight": 75,
+			"Female_Weight": 25,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Cross-Train",
+			"Prior_Evolutions": "Abra",
+			"Next_Evolutions": "Alakazam",
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Confusion", "Disable", "Brainstorm", "Psychic_Crush", "Gravity", "Psybeam", "Reflect", "Psycho_Cut", "Psi_Kick", "Telekinesis", "Gateway", "Hallucination_Aura", "Levitate", "Ally_Switch", "Future_Sight"]
+		}
+	},
+"Alakazam":
+	{	
+		"Pokedex_ID": "065",
+		"Short_Description": "Psi Pokemon",
+		"Long_Description": "Having associated with different ways of thinking, Kadabra can evolve into Alakazam.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Psychic"],
+		"Egg_Groups": ["Anthro"],
 		"Gender": 
 		{
 			"Male_Weight": 75,
@@ -1243,25 +242,505 @@ main one once they're complete.
 		"Evolution": 
 		{
 			"Method": null,
-			"Prior_Evolutions": "Growlithe",
+			"Prior_Evolutions": "Kadabra",
 			"Next_Evolutions": null
 		},
-		"Ability": "Vigilant",
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 1,
+				"Sense": 4,
+				"Mind": 5			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Psycho_Cut", "Disable", "Psybeam", "Levitate", "Brainstorm", "Telekinesis", "Psychic", "Purple_Haze", "Psi_Storm", "Nullify", "Psystrike"]
+		}
+	},	
+"Macchop":
+	{	
+		"Pokedex_ID": "66",
+		"Short_Description": "Superpower Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Fighting"],
+		"Egg_Groups": ["Anthro"],
+		"Gender": 
+		{
+			"Male_Weight": 75,
+			"Female_Weight": 25,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
 		"Attributes": 
 		{
 			"IV": 
 			{
 				"Speed": 3,
 				"Strength": 4,
-				"Sense": 3,
+				"Sense": 2,
+				"Mind": 1			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Low_Kick", "Focus_Energy", "Palm_Strike", "Karate_Chop", "Foresight", "Low_Sweep", "Seismic_Toss"]
+		}
+	},
+"Machoke":
+	{	
+		"Pokedex_ID": "67",
+		"Short_Description": "Superpower Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Fighting"],
+		"Egg_Groups": ["Anthro"],
+		"Gender": 
+		{
+			"Male_Weight": 75,
+			"Female_Weight": 25,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 4,
+				"Sense": 2,
 				"Mind": 2			  
 			}
 		},
 		"Moves":
 		{
-			"Learnable": ["Ember", "Bite", "Odor_Sleuth", "Roar", "Crunch", "Heat_Wave", "Outrage", "Flare_Blitz", "Brand", "Burning_Land", "Pyre", "Mark_Territory", "Herd", "Noble_Roar"]
+			"Learnable": ["Seismic_Toss", "Knock_Off", "Dual_Chop", "Submission", "Bulk_Up", "Scary_Face", "War_Dance", "Dynamic_Punch"]
+		}
+	},	
+"Machamp":
+	{	
+		"Pokedex_ID": "68",
+		"Short_Description": "Superpower Pokemon",
+		"Long_Description": "One pair of Machamp's arms will demonstrate techniques it learned under one trainer while the other pair will demonstrate techniques it learned from the other.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Fighting"],
+		"Egg_Groups": ["Anthro"],
+		"Gender": 
+		{
+			"Male_Weight": 75,
+			"Female_Weight": 25,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "Many_Arms",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["Seismic_Toss", "Knock_Off", "Dual_Chop", "Submission", "Bulk_Up", "Scary_Face", "War_Dance", "Dynamic_Punch", "One-Armed_Hold"]
 		}
 	},		
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
 /*
 Chansey know Fairy Godmother, healer ability.
 Scyther Reaper Strike
