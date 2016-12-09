@@ -372,6 +372,487 @@ main one once they're complete.
 			"Learnable": ["Seismic_Toss", "Knock_Off", "Dual_Chop", "Submission", "Bulk_Up", "Scary_Face", "War_Dance", "Dynamic_Punch", "One-Armed_Hold"]
 		}
 	},		
+"Bellsprout":
+	{	
+		"Pokedex_ID": "069",
+		"Short_Description": "Flower Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Grass", "Poison"],
+		"Egg_Groups": ["Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Weepinbell"
+		},
+		"Ability": "Chlorophyll",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 2,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Weepinbell":
+	{	
+		"Pokedex_ID": "070",
+		"Short_Description": "Flycatcher Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Grass", "Poison"],
+		"Egg_Groups": ["Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Plant Energy",
+			"Prior_Evolutions": "Bellsprout",
+			"Next_Evolutions": "Victreebel"
+		},
+		"Ability": "Chlorophyll",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 3,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+"Victreebel":
+	{	
+		"Pokedex_ID": "071",
+		"Short_Description": "Flycatcher Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Grass", "Poison"],
+		"Egg_Groups": ["Grass"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Weepinbell",
+			"Next_Evolutions": null
+		},
+		"Ability": "Chlorophyll",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 4,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Tentacool":
+	{	
+		"Pokedex_ID": "072",
+		"Short_Description": "Jellyfish Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Water", "Poison"],
+		"Egg_Groups": ["Crustacean"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Tentacruel"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Tentacruel":
+	{	
+		"Pokedex_ID": "073",
+		"Short_Description": "Jellyfish Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Water", "Poison"],
+		"Egg_Groups": ["Crustacean"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Tentacool",
+			"Next_Evolutions": null
+		},
+		"Ability": "Many_Arms",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+"Geodude":
+	{	
+		"Pokedex_ID": "074",
+		"Short_Description": "Rock Pokemon",
+		"Long_Description": "Geodude eggs are laid in underground pools where they slowly with mineral-laden water. All their internal organs are made of crystal.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Rock", "Ground"],
+		"Egg_Groups": ["Mineral"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Graveler"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Graveler":
+	{	
+		"Pokedex_ID": "075",
+		"Short_Description": "Rock Pokemon",
+		"Long_Description": "Graveler are incredibly sturdy. Their tough organs can survive for days without being attached to their body, part of why Graveler can piece themselves together after being shattered.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Rock", "Ground"],
+		"Egg_Groups": ["Mineral"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Cross-Train",
+			"Prior_Evolutions": "Geodude",
+			"Next_Evolutions": "Golem"
+		},
+		"Ability": "Many_Arms",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Golem":
+	{	
+		"Pokedex_ID": "076",
+		"Short_Description": "Megaton Pokemon",
+		"Long_Description": "Graveler are incredibly sturdy. Their tough organs can survive for days without being attached to their body, part of why Graveler can piece themselves together after being shattered.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Rock", "Ground"],
+		"Egg_Groups": ["Mineral"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Graveler",
+			"Next_Evolutions": null
+		},
+		"Ability": "Many_Arms",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 3,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 3			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},	
+"Ponyta":
+	{	
+		"Pokedex_ID": "077",
+		"Short_Description": "Fire Horse Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Fire"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Battle OOOOOO",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Rapidash"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 4,
+				"Strength": 3,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Rapidash":
+	{	
+		"Pokedex_ID": "078",
+		"Short_Description": "Fire Horse Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Fire"],
+		"Egg_Groups": ["Field"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Ponyta",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 4,
+				"Strength": 4,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
+"Slowpoke":
+	{	
+		"Pokedex_ID": "079",
+		"Short_Description": "Dopey Pokemon",
+		"Long_Description": "Slowpoke seem unaware due to their poor physical senses, but their psychic senses are quite acute.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Water", "Psychic"],
+		"Egg_Groups": ["Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "Combine Shellder & Slowpoke",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": "Slowbro"
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 2,
+				"Sense": 4,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["ESP"]
+		}
+	},
+"Slowbro":
+	{	
+		"Pokedex_ID": "080",
+		"Short_Description": "Hermit Crab Pokemon",
+		"Long_Description": "Slowpoke seem unaware due to their poor physical senses, but their psychic senses are quite acute.",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": ["Water", "Psychic"],
+		"Egg_Groups": ["Amphibian"],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": null,
+			"Prior_Evolutions": "Slowpoke",
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 1,
+				"Strength": 3,
+				"Sense": 4,
+				"Mind": 4			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": ["ESP"]
+		}
+	},
+	"":
+	{	
+		"Pokedex_ID": "",
+		"Short_Description": " Pokemon",
+		"Long_Description": "",
+		"Shiny": false,
+		"Legendary": false,
+		"Types": [""],
+		"Egg_Groups": [""],
+		"Gender": 
+		{
+			"Male_Weight": 50,
+			"Female_Weight": 50,
+			"Other_Weight": 0
+		},
+		"Evolution": 
+		{
+			"Method": "",
+			"Prior_Evolutions": null,
+			"Next_Evolutions": null
+		},
+		"Ability": "none",
+		"Attributes": 
+		{
+			"IV": 
+			{
+				"Speed": 2,
+				"Strength": 2,
+				"Sense": 2,
+				"Mind": 2			  
+			}
+		},
+		"Moves":
+		{
+			"Learnable": [""]
+		}
+	},
 	"":
 	{	
 		"Pokedex_ID": "",
@@ -482,42 +963,6 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	},"":
-	{	
-		"Pokedex_ID": "",
-		"Short_Description": " Pokemon",
-		"Long_Description": "",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": [""],
-		"Egg_Groups": [""],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": null
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 2,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": [""]
-		}
 	},
 	"":
 	{	
@@ -556,7 +1001,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},
-	"":
+"":
 	{	
 		"Pokedex_ID": "",
 		"Short_Description": " Pokemon",
@@ -593,7 +1038,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},
-	"":
+"":
 	{	
 		"Pokedex_ID": "",
 		"Short_Description": " Pokemon",
@@ -630,7 +1075,7 @@ main one once they're complete.
 			"Learnable": [""]
 		}
 	},
-	"":
+"":
 	{	
 		"Pokedex_ID": "",
 		"Short_Description": " Pokemon",
@@ -666,81 +1111,7 @@ main one once they're complete.
 		{
 			"Learnable": [""]
 		}
-	},
-	"":
-	{	
-		"Pokedex_ID": "",
-		"Short_Description": " Pokemon",
-		"Long_Description": "",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": [""],
-		"Egg_Groups": [""],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": null
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 2,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": [""]
-		}
-	},
-	"":
-	{	
-		"Pokedex_ID": "",
-		"Short_Description": " Pokemon",
-		"Long_Description": "",
-		"Shiny": false,
-		"Legendary": false,
-		"Types": [""],
-		"Egg_Groups": [""],
-		"Gender": 
-		{
-			"Male_Weight": 50,
-			"Female_Weight": 50,
-			"Other_Weight": 0
-		},
-		"Evolution": 
-		{
-			"Method": "",
-			"Prior_Evolutions": null,
-			"Next_Evolutions": null
-		},
-		"Ability": "none",
-		"Attributes": 
-		{
-			"IV": 
-			{
-				"Speed": 2,
-				"Strength": 2,
-				"Sense": 2,
-				"Mind": 2			  
-			}
-		},
-		"Moves":
-		{
-			"Learnable": [""]
-		}
-	},
+	},	
 /*
 Chansey know Fairy Godmother, healer ability.
 Scyther Reaper Strike
